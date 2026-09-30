@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isomer Brand</title>
+<meta name="description" content="Official Isomer logos, colors, and typography. Machine-readable manifest at brand.json.">
+<link rel="icon" type="image/svg+xml" href="logos/web/svg/isomer-logomark-color-white-bg.svg">
+<link rel="alternate" type="application/json" href="brand.json" title="Isomer brand manifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@300..800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #000441;
+    --purple: #776DEB;
+    --purple-light: #9188F5;
+    --orange: #FFA574;
+    --grey: #F8F6FF;
+
+    --bg: #FFFFFF;
+    --surface: #F8F6FF;
+    --ink: #000441;
+    --muted: #4D507A;
+    --line: #E4E1F7;
+    --chip: #EEEBFF;
+    --tile-light: #FFFFFF;
+    --tile-dark: #000441;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #04072B;
+      --surface: #0B0F3D;
+      --ink: #F2F0FF;
+      --muted: #A9ABC8;
+      --line: #1F2458;
+      --chip: #171C52;
+      --tile-light: #F8F6FF;
+      --tile-dark: #000441;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #04072B;
+    --surface: #0B0F3D;
+    --ink: #F2F0FF;
+    --muted: #A9ABC8;
+    --line: #1F2458;
+    --chip: #171C52;
+    --tile-light: #F8F6FF;
+    --tile-dark: #000441;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Fustat", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  a { color: var(--purple); }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85em; }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+  @media (min-width: 720px) { .wrap { padding: 0 32px; } }
+
+  header.top {
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 5;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+  }
+  header.top .wrap { display: flex; align-items: center; gap: 16px; height: 64px; }
+  header.top img { height: 28px; display: block; }
+  header.top nav { margin-left: auto; display: flex; gap: 18px; font-size: 14px; }
+  header.top nav a { color: var(--muted); text-decoration: none; }
+  header.top nav a:hover { color: var(--ink); }
+  @media (max-width: 640px) { header.top nav .opt { display: none; } }
+  .logo-dark-mode { display: none !important; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .logo-light-mode { display: none !important; }
+    :root:not([data-theme="light"]) .logo-dark-mode { display: block !important; }
+  }
+  :root[data-theme="dark"] .logo-light-mode { display: none !important; }
+  :root[data-theme="dark"] .logo-dark-mode { display: block !important; }
+
+  .hero { padding: 72px 0 40px; }
+  .hero h1 { font-size: clamp(36px, 6vw, 60px); line-height: 1.05; margin: 0 0 16px; font-weight: 700; letter-spacing: -0.02em; }
+  .hero h1 span { color: var(--purple); }
+  .hero p { max-width: 640px; color: var(--muted); font-size: 18px; margin: 0; }
+  .hero .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 16px; border-radius: 8px; font-weight: 600; font-size: 14px;
+    text-decoration: none; border: 1px solid var(--line); color: var(--ink); background: var(--surface);
+  }
+  .btn.primary { background: var(--purple); border-color: var(--purple); color: #fff; }
+
+  section { padding: 48px 0; border-top: 1px solid var(--line); }
+  section h2 { font-size: 28px; margin: 0 0 6px; letter-spacing: -0.01em; }
+  section .lede { color: var(--muted); margin: 0 0 28px; max-width: 680px; }
+
+  /* Colors */
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; }
+  .swatch { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--surface); cursor: pointer; text-align: left; padding: 0; font: inherit; color: inherit; }
+  .swatch .chip { height: 96px; }
+  .swatch .meta { padding: 12px 14px; font-size: 13px; color: var(--muted); }
+  .swatch .meta b { display: block; color: var(--ink); font-size: 15px; }
+  .swatch .meta .hex { font-family: ui-monospace, Menlo, monospace; color: var(--ink); }
+  .tints { margin-top: 20px; display: grid; gap: 10px; }
+  .tint-row { display: flex; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+  .tint-row button { flex: 1; min-width: 0; height: 56px; border: 0; cursor: pointer; font: 600 11px ui-monospace, Menlo, monospace; display: flex; align-items: flex-end; padding: 8px; }
+
+  /* Type */
+  .type { display: grid; gap: 24px; grid-template-columns: 1fr; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 28px; }
+  @media (min-width: 720px) { .type { grid-template-columns: 200px 1fr; } }
+  .type .aa { font-size: 120px; line-height: 1; font-weight: 500; color: var(--purple); }
+  .type .glyphs { font-size: 20px; word-break: break-all; }
+  .type .weights { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 12px; color: var(--muted); font-size: 18px; }
+
+  /* Logos */
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .filters .group { display: flex; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 4px; flex-wrap: wrap; }
+  .filters button { border: 0; background: transparent; color: var(--muted); font: 600 13px "Fustat", sans-serif; padding: 6px 10px; border-radius: 7px; cursor: pointer; }
+  .filters button[aria-pressed="true"] { background: var(--bg); color: var(--ink); box-shadow: 0 1px 2px rgba(0,4,65,.12); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+  .card { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--surface); display: flex; flex-direction: column; }
+  .card .preview { height: 160px; display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .card .preview.light { background: var(--tile-light); }
+  .card .preview.dark { background: var(--tile-dark); }
+  .card .preview img { max-width: 100%; max-height: 100%; }
+  .card .body { padding: 12px 14px 14px; border-top: 1px solid var(--line); }
+  .card .id { font: 12px ui-monospace, Menlo, monospace; word-break: break-all; margin-bottom: 10px; }
+  .card .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+  .tag { background: var(--chip); color: var(--muted); border-radius: 999px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
+  .dl { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12px; }
+  .dl span { color: var(--muted); width: 38px; }
+  .dl a { text-decoration: none; border: 1px solid var(--line); border-radius: 6px; padding: 2px 7px; font-weight: 600; background: var(--bg); }
+  .dl + .dl { margin-top: 6px; }
+
+  /* Guideline + agents */
+  .two { display: grid; gap: 20px; grid-template-columns: 1fr; }
+  @media (min-width: 860px) { .two { grid-template-columns: 1fr 1fr; } }
+  .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; min-width: 0; }
+  .panel h3 { margin: 0 0 8px; font-size: 18px; }
+  .panel p { color: var(--muted); margin: 0 0 14px; }
+  pre { background: var(--blue); color: #E9E7FF; padding: 16px; border-radius: 10px; overflow-x: auto; margin: 0 0 12px; line-height: 1.5; }
+  .files { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+  .files a { font-family: ui-monospace, Menlo, monospace; font-size: 13px; }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted); font-size: 13px; }
+
+  .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--blue); color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 13px; opacity: 0; transition: .2s; pointer-events: none; }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a href="./" aria-label="Isomer brand home">
+      <img class="logo-light-mode" src="logos/web/svg/isomer-logo-horiz-color-white-bg.svg" alt="Isomer">
+      <img class="logo-dark-mode" src="logos/web/svg/isomer-logo-horiz-color-dark-bg.svg" alt="Isomer">
+    </a>
+    <nav>
+      <a href="#colors">Colors</a>
+      <a href="#type" class="opt">Type</a>
+      <a href="#logos">Logos</a>
+      <a href="#agents">For agents</a>
+      <a href="https://github.com/isomer-ai/brand" class="opt">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Isomer <span>brand</span> assets</h1>
+    <p>Official logos, colors, and type for Isomer. Everything here is free to use when referring to Isomer. Prefer SVG, use the web files on screens, and use the print files in print.</p>
+    <div class="actions">
+      <a class="btn primary" href="guidelines/isomer-design-guideline.pdf">Design guideline (PDF)</a>
+      <a class="btn" href="brand.json">brand.json</a>
+      <a class="btn" href="tokens.css">tokens.css</a>
+      <a class="btn" href="https://github.com/isomer-ai/brand/archive/refs/heads/main.zip">Download everything (.zip)</a>
+    </div>
+  </div>
+
+  <section id="colors">
+    <h2>Colors</h2>
+    <p class="lede">Isomer Blue carries the brand, Accent Purple highlights, and Secondary Orange is used sparingly. Click any swatch to copy its hex value.</p>
+    <div class="swatches" id="swatches"></div>
+    <div class="tints" id="tints"></div>
+  </section>
+
+  <section id="type">
+    <h2>Typography</h2>
+    <p class="lede">Fustat, free from <a href="https://fonts.google.com/specimen/Fustat">Google Fonts</a>, for everything from headlines to body copy.</p>
+    <div class="type">
+      <div class="aa">Aa</div>
+      <div>
+        <div class="glyphs">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789 (!@#$%^&amp;*:;?,.)</div>
+        <div class="weights">
+          <span style="font-weight:300">Light</span>
+          <span style="font-weight:400">Regular</span>
+          <span style="font-weight:500">Medium</span>
+          <span style="font-weight:600">SemiBold</span>
+          <span style="font-weight:700">Bold</span>
+          <span style="font-weight:800">ExtraBold</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="logos">
+    <h2>Logos</h2>
+    <p class="lede">24 variants, each in SVG, PNG, PDF, and Illustrator, with RGB versions for web and CMYK-adjusted versions for print. The default is <b>horizontal · color</b>. None of the files has a filled background, so each preview shows the background that variant is meant for.</p>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="guideline">
+    <h2>Guideline</h2>
+    <p class="lede">The design guideline covers logo construction, clear space, the full palette with Pantone references, and example applications.</p>
+    <div class="two">
+      <div class="panel">
+        <h3>Clear space</h3>
+        <p>Clear space is measured in <code>A</code>, the width of the mark. Leave at least ½A around the horizontal lockup and ⅓A around the mark on its own. Don't recolor, stretch, rotate, or rearrange the logo.</p>
+        <a class="btn primary" href="guidelines/isomer-design-guideline.pdf">Open the guideline PDF</a>
+      </div>
+      <div class="panel">
+        <h3>Swatch files</h3>
+        <p>Adobe Swatch Exchange (.ase) and Illustrator palettes for loading into design tools.</p>
+        <ul class="files">
+          <li><a href="colors/rgb/isomer-colors-rgb.ase">colors/rgb/isomer-colors-rgb.ase</a></li>
+          <li><a href="colors/rgb/isomer-colors-rgb.ai">colors/rgb/isomer-colors-rgb.ai</a></li>
+          <li><a href="colors/cmyk/isomer-colors-cmyk.ase">colors/cmyk/isomer-colors-cmyk.ase</a></li>
+          <li><a href="colors/cmyk/isomer-colors-cmyk.ai">colors/cmyk/isomer-colors-cmyk.ai</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="agents">
+    <h2>For agents</h2>
+    <p class="lede">This site is also meant to be read by AI agents. Everything on this page comes from one manifest, and every file has a stable URL.</p>
+    <div class="two">
+      <div class="panel">
+        <h3>Read the manifest</h3>
+<pre><code>curl -s https://isomer-ai.github.io/brand/brand.json \
+  | jq '.logo_defaults, .colors'</code></pre>
+        <p>See also <a href="llms.txt">llms.txt</a> and the <a href="https://github.com/isomer-ai/brand#readme">README</a>.</p>
+      </div>
+      <div class="panel">
+        <h3>URL pattern</h3>
+<pre><code>https://isomer-ai.github.io/brand/logos/
+  {web|print}/{svg|png|pdf|ai}/{variant}.{ext}</code></pre>
+        <p>On a light background use <code>isomer-logo-horiz-color-white-bg</code>. On a dark background use <code>isomer-logo-horiz-color-dark-bg</code>. For a square slot use <code>isomer-logomark-color-white-bg</code>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© Isomer AI, Inc. · <a href="https://isomer.ai">isomer.ai</a> · <a href="https://github.com/isomer-ai/brand">Source on GitHub</a></div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(async () => {
+  const toast = document.getElementById("toast");
+  let t;
+  const copy = async (text) => {
+    try { await navigator.clipboard.writeText(text); toast.textContent = "Copied " + text; }
+    catch { toast.textContent = text; }
+    toast.classList.add("show"); clearTimeout(t); t = setTimeout(() => toast.classList.remove("show"), 1400);
+  };
+  const el = (tag, attrs = {}, ...kids) => {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) k === "style" ? n.style.cssText = v : n.setAttribute(k, v);
+    for (const k of kids) n.append(k);
+    return n;
+  };
+  const readable = (hex) => {
+    const [r, g, b] = [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16));
+    return (0.299 * r + 0.587 * g + 0.114 * b) > 160 ? "#000441" : "#FFFFFF";
+  };
+
+  let brand;
+  try { brand = await (await fetch("brand.json")).json(); }
+  catch { document.getElementById("grid").textContent = "Couldn't load brand.json."; return; }
+
+  const sw = document.getElementById("swatches");
+  for (const c of brand.colors) {
+    const b = el("button", { class: "swatch", type: "button", title: "Copy " + c.hex },
+      el("div", { class: "chip", style: `background:${c.hex}` }),
+      el("div", { class: "meta" },
+        el("b", {}, c.name),
+        el("div", { class: "hex" }, c.hex),
+        el("div", {}, `RGB ${c.rgb.join(", ")}`),
+        el("div", {}, `CMYK ${c.cmyk.join(", ")}`),
+        el("div", {}, `Pantone ${c.pantone}`)));
+    b.onclick = () => copy(c.hex);
+    sw.append(b);
+  }
+  const tints = document.getElementById("tints");
+  for (const [name, steps] of Object.entries(brand.tints)) {
+    const row = el("div", { class: "tint-row", "aria-label": name + " tints" });
+    for (const [pct, hex] of Object.entries(steps).sort((a, b) => b[0] - a[0])) {
+      const btn = el("button", { type: "button", title: `${name} ${pct}% · ${hex}`, style: `background:${hex};color:${readable(hex)}` }, `${pct}%`);
+      btn.onclick = () => copy(hex);
+      row.append(btn);
+    }
+    tints.append(row);
+  }
+
+  const state = { layout: "all", style: "all", use_on: "all" };
+  const groups = {
+    layout: [["all", "All layouts"], ["horizontal", "Horizontal"], ["vertical", "Vertical"], ["mark", "Mark"]],
+    style: [["all", "All styles"], ["color", "Color"], ["solid", "Solid"], ["monochrome", "Monochrome"]],
+    use_on: [["all", "Any background"], ["light", "Light bg"], ["dark", "Dark bg"]],
+  };
+  const filters = document.getElementById("filters");
+  for (const [key, opts] of Object.entries(groups)) {
+    const g = el("div", { class: "group", role: "group" });
+    for (const [val, label] of opts) {
+      const b = el("button", { type: "button", "aria-pressed": String(state[key] === val) }, label);
+      b.onclick = () => {
+        state[key] = val;
+        g.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+        render();
+      };
+      g.append(b);
+    }
+    filters.append(g);
+  }
+
+  const grid = document.getElementById("grid");
+  const render = () => {
+    grid.replaceChildren();
+    for (const v of brand.logos) {
+      if (["layout", "style", "use_on"].some(k => state[k] !== "all" && v[k] !== state[k])) continue;
+      const rel = (u) => u.replace(brand.base_url, "");
+      const rows = ["web", "print"].map(m => {
+        const f = v.files[m] || {};
+        return el("div", { class: "dl" }, el("span", {}, m),
+          ...["svg", "png", "pdf", "ai"].filter(x => f[x]).map(x => el("a", { href: rel(f[x]), download: "" }, x.toUpperCase())));
+      });
+      const tags = [v.layout, v.style, v.use_on + " bg"].concat(v.transparency ? ["transparency"] : []);
+      grid.append(el("div", { class: "card" },
+        el("div", { class: "preview " + v.use_on },
+          el("img", { src: rel(v.files.web.svg), alt: v.id, loading: "lazy" })),
+        el("div", { class: "body" },
+          el("div", { class: "id" }, v.id),
+          el("div", { class: "tags" }, ...tags.map(x => el("span", { class: "tag" }, x))),
+          ...rows)));
+    }
+    if (!grid.children.length) grid.textContent = "No variants match these filters.";
+  };
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* Isomer brand tokens. Source of truth: brand.json / guidelines/isomer-design-guideline.pdf */
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap");
+
+:root {
+  /* Core palette */
+  --isomer-blue: #000441;
+  --isomer-accent-purple: #776DEB;
+  --isomer-light-purple: #9188F5;
+  --isomer-secondary-orange: #FFA574;
+  --isomer-light-grey: #F8F6FF;
+  --isomer-white: #FFFFFF;
+
+  /* Isomer Blue tints */
+  --isomer-blue-100: #000441;
+  --isomer-blue-70: #4D507A;
+  --isomer-blue-60: #66688D;
+  --isomer-blue-50: #8082A0;
+  --isomer-blue-40: #999BB3;
+
+  /* Accent Purple tints */
+  --isomer-purple-100: #776DEB;
+  --isomer-purple-80: #9188F5;
+  --isomer-purple-60: #ADA7F3;
+  --isomer-purple-45: #C2BDF6;
+
+  /* Typography */
+  --isomer-font: "Fustat", system-ui, -apple-system, "Segoe UI", sans-serif;
+}

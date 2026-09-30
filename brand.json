@@ -1,0 +1,663 @@
+{
+  "name": "Isomer",
+  "legal_name": "Isomer AI, Inc.",
+  "website": "https://isomer.ai",
+  "tagline": "Built for insurance.",
+  "base_url": "https://isomer-ai.github.io/brand/",
+  "raw_base_url": "https://raw.githubusercontent.com/isomer-ai/brand/main/",
+  "colors": [
+    {
+      "name": "Isomer Blue",
+      "token": "isomer-blue",
+      "role": "primary",
+      "hex": "#000441",
+      "rgb": [
+        0,
+        4,
+        65
+      ],
+      "cmyk": [
+        97,
+        99,
+        38,
+        45
+      ],
+      "pantone": "2766 C"
+    },
+    {
+      "name": "Accent Purple",
+      "token": "accent-purple",
+      "role": "accent",
+      "hex": "#776DEB",
+      "rgb": [
+        119,
+        109,
+        235
+      ],
+      "cmyk": [
+        70,
+        60,
+        0,
+        0
+      ],
+      "pantone": "7456 C"
+    },
+    {
+      "name": "Light Purple",
+      "token": "light-purple",
+      "role": "accent",
+      "hex": "#9188F5",
+      "rgb": [
+        145,
+        136,
+        245
+      ],
+      "cmyk": [
+        48,
+        48,
+        0,
+        0
+      ],
+      "pantone": "7446 C"
+    },
+    {
+      "name": "Secondary Orange",
+      "token": "secondary-orange",
+      "role": "secondary",
+      "hex": "#FFA574",
+      "rgb": [
+        255,
+        165,
+        116
+      ],
+      "cmyk": [
+        0,
+        45,
+        61,
+        0
+      ],
+      "pantone": "1565 C"
+    },
+    {
+      "name": "Light Grey",
+      "token": "light-grey",
+      "role": "background",
+      "hex": "#F8F6FF",
+      "rgb": [
+        248,
+        246,
+        255
+      ],
+      "cmyk": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "pantone": "663 C"
+    },
+    {
+      "name": "White",
+      "token": "white",
+      "role": "background",
+      "hex": "#FFFFFF",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "cmyk": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pantone": "1-1 C"
+    }
+  ],
+  "tints": {
+    "isomer-blue": {
+      "100": "#000441",
+      "70": "#4D507A",
+      "60": "#66688D",
+      "50": "#8082A0",
+      "40": "#999BB3"
+    },
+    "accent-purple": {
+      "100": "#776DEB",
+      "80": "#9188F5",
+      "60": "#ADA7F3",
+      "45": "#C2BDF6"
+    }
+  },
+  "typography": {
+    "family": "Fustat",
+    "source": "Google Fonts",
+    "url": "https://fonts.google.com/specimen/Fustat",
+    "css_import": "https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap",
+    "fallback": "system-ui, -apple-system, 'Segoe UI', sans-serif"
+  },
+  "logo_defaults": {
+    "light_background": "isomer-logo-horiz-color-white-bg",
+    "dark_background": "isomer-logo-horiz-color-dark-bg",
+    "favicon_or_avatar": "isomer-logomark-color-white-bg"
+  },
+  "logos": [
+    {
+      "id": "isomer-logo-horiz-color-dark-bg",
+      "layout": "horizontal",
+      "style": "color",
+      "transparency": false,
+      "use_on": "dark",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-horiz-color-dark-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-horiz-color-dark-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-horiz-color-dark-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-horiz-color-dark-bg.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-horiz-color-dark-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-horiz-color-dark-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-horiz-color-dark-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-horiz-color-dark-bg.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-horiz-color-transp-dark-bg",
+      "layout": "horizontal",
+      "style": "color",
+      "transparency": true,
+      "use_on": "dark",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-horiz-color-transp-dark-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-horiz-color-transp-dark-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-horiz-color-transp-dark-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-horiz-color-transp-dark-bg.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-horiz-color-transp-dark-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-horiz-color-transp-dark-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-horiz-color-transp-dark-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-horiz-color-transp-dark-bg.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-horiz-color-transp-white-bg",
+      "layout": "horizontal",
+      "style": "color",
+      "transparency": true,
+      "use_on": "light",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-horiz-color-transp-white-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-horiz-color-transp-white-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-horiz-color-transp-white-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-horiz-color-transp-white-bg.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-horiz-color-transp-white-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-horiz-color-transp-white-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-horiz-color-transp-white-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-horiz-color-transp-white-bg.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-horiz-color-white-bg",
+      "layout": "horizontal",
+      "style": "color",
+      "transparency": false,
+      "use_on": "light",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-horiz-color-white-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-horiz-color-white-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-horiz-color-white-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-horiz-color-white-bg.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-horiz-color-white-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-horiz-color-white-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-horiz-color-white-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-horiz-color-white-bg.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-horiz-monochrome-dark",
+      "layout": "horizontal",
+      "style": "monochrome",
+      "transparency": true,
+      "use_on": "light",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-horiz-monochrome-dark.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-horiz-monochrome-dark.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-horiz-monochrome-dark.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-horiz-monochrome-dark.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-horiz-monochrome-dark.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-horiz-monochrome-dark.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-horiz-monochrome-dark.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-horiz-monochrome-dark.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-horiz-monochrome-light",
+      "layout": "horizontal",
+      "style": "monochrome",
+      "transparency": true,
+      "use_on": "dark",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-horiz-monochrome-light.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-horiz-monochrome-light.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-horiz-monochrome-light.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-horiz-monochrome-light.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-horiz-monochrome-light.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-horiz-monochrome-light.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-horiz-monochrome-light.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-horiz-monochrome-light.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-horiz-solid-dark",
+      "layout": "horizontal",
+      "style": "solid",
+      "transparency": false,
+      "use_on": "light",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-horiz-solid-dark.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-horiz-solid-dark.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-horiz-solid-dark.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-horiz-solid-dark.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-horiz-solid-dark.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-horiz-solid-dark.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-horiz-solid-dark.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-horiz-solid-dark.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-horiz-solid-light",
+      "layout": "horizontal",
+      "style": "solid",
+      "transparency": false,
+      "use_on": "dark",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-horiz-solid-light.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-horiz-solid-light.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-horiz-solid-light.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-horiz-solid-light.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-horiz-solid-light.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-horiz-solid-light.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-horiz-solid-light.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-horiz-solid-light.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-vert-color-dark-bg",
+      "layout": "vertical",
+      "style": "color",
+      "transparency": false,
+      "use_on": "dark",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-vert-color-dark-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-vert-color-dark-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-vert-color-dark-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-vert-color-dark-bg.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-vert-color-dark-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-vert-color-dark-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-vert-color-dark-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-vert-color-dark-bg.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-vert-color-transp-dark-bg",
+      "layout": "vertical",
+      "style": "color",
+      "transparency": true,
+      "use_on": "dark",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-vert-color-transp-dark-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-vert-color-transp-dark-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-vert-color-transp-dark-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-vert-color-transp-dark-bg.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-vert-color-transp-dark-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-vert-color-transp-dark-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-vert-color-transp-dark-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-vert-color-transp-dark-bg.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-vert-color-transp-white-bg",
+      "layout": "vertical",
+      "style": "color",
+      "transparency": true,
+      "use_on": "light",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-vert-color-transp-white-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-vert-color-transp-white-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-vert-color-transp-white-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-vert-color-transp-white-bg.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-vert-color-transp-white-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-vert-color-transp-white-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-vert-color-transp-white-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-vert-color-transp-white-bg.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-vert-color-white-bg",
+      "layout": "vertical",
+      "style": "color",
+      "transparency": false,
+      "use_on": "light",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-vert-color-white-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-vert-color-white-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-vert-color-white-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-vert-color-white-bg.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-vert-color-white-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-vert-color-white-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-vert-color-white-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-vert-color-white-bg.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-vert-monochrome-dark",
+      "layout": "vertical",
+      "style": "monochrome",
+      "transparency": true,
+      "use_on": "light",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-vert-monochrome-dark.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-vert-monochrome-dark.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-vert-monochrome-dark.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-vert-monochrome-dark.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-vert-monochrome-dark.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-vert-monochrome-dark.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-vert-monochrome-dark.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-vert-monochrome-dark.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-vert-monochrome-light",
+      "layout": "vertical",
+      "style": "monochrome",
+      "transparency": true,
+      "use_on": "dark",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-vert-monochrome-light.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-vert-monochrome-light.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-vert-monochrome-light.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-vert-monochrome-light.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-vert-monochrome-light.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-vert-monochrome-light.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-vert-monochrome-light.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-vert-monochrome-light.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-vert-solid-dark",
+      "layout": "vertical",
+      "style": "solid",
+      "transparency": false,
+      "use_on": "light",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-vert-solid-dark.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-vert-solid-dark.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-vert-solid-dark.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-vert-solid-dark.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-vert-solid-dark.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-vert-solid-dark.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-vert-solid-dark.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-vert-solid-dark.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logo-vert-solid-light",
+      "layout": "vertical",
+      "style": "solid",
+      "transparency": false,
+      "use_on": "dark",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-vert-solid-light.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logo-vert-solid-light.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logo-vert-solid-light.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logo-vert-solid-light.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logo-vert-solid-light.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logo-vert-solid-light.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logo-vert-solid-light.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logo-vert-solid-light.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logomark-color-dark-bg",
+      "layout": "mark",
+      "style": "color",
+      "transparency": false,
+      "use_on": "dark",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logomark-color-dark-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logomark-color-dark-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logomark-color-dark-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logomark-color-dark-bg.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logomark-color-dark-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logomark-color-dark-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logomark-color-dark-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logomark-color-dark-bg.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logomark-color-transp-dark-bg",
+      "layout": "mark",
+      "style": "color",
+      "transparency": true,
+      "use_on": "dark",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logomark-color-transp-dark-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logomark-color-transp-dark-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logomark-color-transp-dark-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logomark-color-transp-dark-bg.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logomark-color-transp-dark-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logomark-color-transp-dark-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logomark-color-transp-dark-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logomark-color-transp-dark-bg.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logomark-color-transp-white-bg",
+      "layout": "mark",
+      "style": "color",
+      "transparency": true,
+      "use_on": "light",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logomark-color-transp-white-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logomark-color-transp-white-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logomark-color-transp-white-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logomark-color-transp-white-bg.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logomark-color-transp-white-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logomark-color-transp-white-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logomark-color-transp-white-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logomark-color-transp-white-bg.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logomark-color-white-bg",
+      "layout": "mark",
+      "style": "color",
+      "transparency": false,
+      "use_on": "light",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logomark-color-white-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logomark-color-white-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logomark-color-white-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logomark-color-white-bg.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logomark-color-white-bg.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logomark-color-white-bg.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logomark-color-white-bg.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logomark-color-white-bg.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logomark-monochrome-dark",
+      "layout": "mark",
+      "style": "monochrome",
+      "transparency": true,
+      "use_on": "light",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logomark-monochrome-dark.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logomark-monochrome-dark.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logomark-monochrome-dark.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logomark-monochrome-dark.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logomark-monochrome-dark.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logomark-monochrome-dark.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logomark-monochrome-dark.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logomark-monochrome-dark.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logomark-monochrome-light",
+      "layout": "mark",
+      "style": "monochrome",
+      "transparency": true,
+      "use_on": "dark",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logomark-monochrome-light.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logomark-monochrome-light.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logomark-monochrome-light.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logomark-monochrome-light.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logomark-monochrome-light.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logomark-monochrome-light.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logomark-monochrome-light.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logomark-monochrome-light.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logomark-solid-dark",
+      "layout": "mark",
+      "style": "solid",
+      "transparency": false,
+      "use_on": "light",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logomark-solid-dark.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logomark-solid-dark.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logomark-solid-dark.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logomark-solid-dark.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logomark-solid-dark.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logomark-solid-dark.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logomark-solid-dark.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logomark-solid-dark.ai"
+        }
+      }
+    },
+    {
+      "id": "isomer-logomark-solid-light",
+      "layout": "mark",
+      "style": "solid",
+      "transparency": false,
+      "use_on": "dark",
+      "files": {
+        "web": {
+          "svg": "https://isomer-ai.github.io/brand/logos/web/svg/isomer-logomark-solid-light.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/web/png/isomer-logomark-solid-light.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/web/pdf/isomer-logomark-solid-light.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/web/ai/isomer-logomark-solid-light.ai"
+        },
+        "print": {
+          "svg": "https://isomer-ai.github.io/brand/logos/print/svg/isomer-logomark-solid-light.svg",
+          "png": "https://isomer-ai.github.io/brand/logos/print/png/isomer-logomark-solid-light.png",
+          "pdf": "https://isomer-ai.github.io/brand/logos/print/pdf/isomer-logomark-solid-light.pdf",
+          "ai": "https://isomer-ai.github.io/brand/logos/print/ai/isomer-logomark-solid-light.ai"
+        }
+      }
+    }
+  ],
+  "palette_files": {
+    "rgb": {
+      "ase": "https://isomer-ai.github.io/brand/colors/rgb/isomer-colors-rgb.ase",
+      "ai": "https://isomer-ai.github.io/brand/colors/rgb/isomer-colors-rgb.ai"
+    },
+    "cmyk": {
+      "ase": "https://isomer-ai.github.io/brand/colors/cmyk/isomer-colors-cmyk.ase",
+      "ai": "https://isomer-ai.github.io/brand/colors/cmyk/isomer-colors-cmyk.ai"
+    }
+  },
+  "guideline_pdf": "https://isomer-ai.github.io/brand/guidelines/isomer-design-guideline.pdf",
+  "tokens_css": "https://isomer-ai.github.io/brand/tokens.css"
+}
