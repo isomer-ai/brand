@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img"><title>Florida CRN</title><style>@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap");</style><rect width="320" height="320" fill="#F6F6F5"/><defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img"><title>Florida CRN</title><style>@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap");</style><rect width="320" height="320" fill="#F6F6F5"/><defs>
 <pattern id="ac03floridacrn-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#B4602F" stroke-width="1.2"/></pattern>
 <pattern id="ac03floridacrn-hatchv" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3F8A85" stroke-width="1.2"/></pattern>
 <pattern id="ac03floridacrn-dots" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="11.5" y="11.5" width="1" height="1" fill="#6E6E75" opacity="0.45"/></pattern>
 <pattern id="ac03floridacrn-micro" width="4" height="4" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="3" height="3" fill="#6E6E75" opacity="0.55"/></pattern>
-</defs><g shape-rendering="crispEdges"><text x="24" y="28" font-family="'Geist Mono', ui-monospace, monospace" font-size="10" fill="#141416" text-anchor="start" font-weight="500" letter-spacing="1.4">FIG. 14</text>
-<text x="84" y="28" font-family="'Geist Mono', ui-monospace, monospace" font-size="10" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="1.2">FLORIDA CRN</text>
-<text x="296" y="28" font-family="'Geist Mono', ui-monospace, monospace" font-size="10" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="1.2">AC-03</text>
+</defs><g shape-rendering="crispEdges"><text x="24" y="28" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="10" fill="#141416" text-anchor="start" font-weight="500" letter-spacing="1.4">FIG. 14</text>
+<text x="84" y="28" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="10" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="1.2">FLORIDA CRN</text>
+<text x="296" y="28" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="10" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="1.2">AC-03</text>
 <line x1="24" y1="40" x2="296" y2="40" stroke="#6E6E75" stroke-width="0.75" />
 <line x1="24" y1="40" x2="24" y2="46" stroke="#6E6E75" stroke-width="0.75" />
 <line x1="32" y1="40" x2="32" y2="43" stroke="#6E6E75" stroke-width="0.75" />
@@ -78,8 +78,8 @@
 <line x1="24" y1="40" x2="24" y2="296" stroke="#6E6E75" stroke-width="0.75" />
 <line x1="290" y1="296" x2="302" y2="296" stroke="#141416" stroke-width="0.75" />
 <line x1="296" y1="290" x2="296" y2="302" stroke="#141416" stroke-width="0.75" />
-<text x="40" y="300" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="1.4">ISOMER · COPPER VERDIGRIS</text>
-<text x="280" y="300" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="1.4">SCALE 1:1</text></g><rect x="56" y="64" width="92" height="120" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
+<text x="40" y="300" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="1.4">ISOMER · COPPER VERDIGRIS</text>
+<text x="280" y="300" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="1.4">SCALE 1:1</text></g><rect x="56" y="64" width="92" height="120" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
 <rect x="138" y="64" width="10" height="10" fill="#ECECEA" stroke="#141416" stroke-width="1" />
 <rect x="64" y="82" width="53.2" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
 <rect x="64" y="91" width="64.6" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
@@ -91,7 +91,7 @@
 <rect x="64" y="145" width="53.2" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
 <rect x="64" y="154" width="38.0" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
 <rect x="104" y="128" width="64" height="32" fill="#F2DCCB" stroke="#B4602F" stroke-width="1.25" />
-<text x="136" y="149" font-family="'Geist', system-ui, sans-serif" font-size="12" fill="#8E4720" text-anchor="middle" font-weight="600" letter-spacing="1">CRN</text>
+<text x="136" y="149" font-family="'Fustat', system-ui, sans-serif" font-size="12" fill="#8E4720" text-anchor="middle" font-weight="600" letter-spacing="1">CRN</text>
 <line x1="56" y1="232" x2="264" y2="232" stroke="#141416" stroke-width="1" />
 <line x1="56.0" y1="232" x2="56.0" y2="224" stroke="#141416" stroke-width="0.75" />
 <line x1="73.33333333333333" y1="232" x2="73.33333333333333" y2="228" stroke="#141416" stroke-width="0.75" />
@@ -108,7 +108,7 @@
 <line x1="264.0" y1="232" x2="264.0" y2="224" stroke="#141416" stroke-width="0.75" />
 <rect x="56" y="240" width="208" height="14" fill="#D3E6E4" stroke="#3F8A85" stroke-width="1" />
 <rect x="56" y="240" width="52.0" height="14" fill="#3F8A85" stroke="none" stroke-width="0" />
-<text x="56" y="272" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="500" letter-spacing="0.8">CURE PERIOD · 60d</text>
-<text x="264" y="272" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#2E6B68" text-anchor="end" font-weight="600" letter-spacing="0.8">DOI</text>
+<text x="56" y="272" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="500" letter-spacing="0.8">CURE PERIOD · 60d</text>
+<text x="264" y="272" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#2E6B68" text-anchor="end" font-weight="600" letter-spacing="0.8">DOI</text>
 <path d="M250 120 L256 126 L268 112" stroke="#3F8A85" stroke-width="2" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
 <rect x="242" y="104" width="32" height="32" fill="none" stroke="#3F8A85" stroke-width="1.25" /></svg>

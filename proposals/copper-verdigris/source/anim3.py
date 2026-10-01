@@ -45,7 +45,7 @@ def receipt(T):
         if abs(T - tk) < 0.18:
             pulse = max(pulse, 1 - abs(T - tk) / 0.18)
     c.append(fade(a, ln(PC, 86, PC, 380, VG, 1.5 + 1.5 * pulse) + sq(PC, 86, 7, VG) + sq(PC, 380, 7, VG)))
-    c.append(fade(seg(T, 0.4, 0.9), t(PC + 14, 392, "READ IN FULL · t₀", 9, VG_DEEP, weight=600)))
+    c.append(fade(seg(T, 0.4, 0.9), t(PC + 14, 392, "READ IN FULL · T0", 9, VG_DEEP, weight=600)))
     # inbound stack
     remaining = sum(1 for k in range(N) if T < T0 + k * GAP)
     for i in range(min(remaining, 4) - 1, -1, -1):

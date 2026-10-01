@@ -45,7 +45,7 @@ proposed = [("Ink", "#141416"), ("Graphite", "#3A3E3F"), ("Copper", "#B4602F"), 
 
 
 def strip(cs):
-    return '<div class="strip">' + "".join(
+    return '<div class="pal-strip">' + "".join(
         f'<div><i style="background:{h}"{" class=edge" if h in ("#FFFFFF", "#F6F6F5", "#F8F6FF", "#ECECEA") else ""}></i><b>{n}</b><code>{h}</code></div>' for n, h in cs) + "</div>"
 
 
@@ -78,7 +78,7 @@ principles = [("Figures, not illustrations", "Every plate encodes a real quantit
               ("Color is a verb", "Neutrals draw the apparatus. Copper means risk was found or time ran out. Verdigris means Isomer acted. One meaning per color."),
               ("Show the source", "Every number traces to a source. Unknowns are [BRACKETED], never invented."),
               ("One idea per plate", "One comparison or one mechanism. Two headlines means two plates.")]
-pr = "".join(f'<div class="pr"><span class="n">{i:02d}</span><h4>{a}</h4><p>{b}</p></div>' for i, (a, b) in enumerate(principles, 1))
+pr = "".join(f'<div class="pr"><h4>{a}</h4><p>{b}</p></div>' for a, b in principles)
 
 files = [("palette.json", "Every color with hex, RGB, role, use and the semantic rules"), ("tokens.css", "CSS custom properties, prefixed --cv-, plus semantic aliases"),
          ("ILLUSTRATION-GUIDE.md", "The full illustration and animation rules, written for agents"),
@@ -97,7 +97,7 @@ page = f'''<!doctype html>
 <meta name="description" content="Proposal: Copper Verdigris palette, illustration rules, sample plates and animations for Isomer.">
 <link rel="alternate" type="application/json" href="palette.json" title="Copper Verdigris palette">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="tokens.css">
 <style>
 *{{box-sizing:border-box}}
@@ -113,17 +113,26 @@ code,.mono{{font-family:var(--cv-mono)}}
 .top nav a:hover{{color:var(--cv-ink)}}
 .flag{{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--cv-copper);background:var(--cv-copper-tint);color:var(--cv-copper-dark);font:600 11px/1 var(--cv-mono);letter-spacing:1.2px;text-transform:uppercase;padding:7px 10px}}
 .flag i{{width:7px;height:7px;background:var(--cv-copper)}}
-header.hero{{padding:64px 0 40px}}
-h1{{font:600 clamp(40px,6vw,72px)/1.02 var(--cv-font);letter-spacing:-2px;margin:20px 0 20px}}
+header.hero{{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:48px;align-items:center;padding:56px 0 56px}}
+h1{{font:800 clamp(44px,6.4vw,84px)/.98 var(--cv-font);letter-spacing:-2.4px;margin:22px 0 22px;text-wrap:balance}}
 h1 em{{font-style:normal;color:var(--cv-verdigris-deep)}}
-h1 span{{color:var(--cv-copper-deep)}}
+h1 span{{color:var(--cv-copper)}}
+h1 .cu{{color:var(--cv-copper-deep)}}
+.hero-fig{{margin:0;border:1px solid var(--cv-ink);background:var(--cv-paper)}}
+.hero-fig video{{display:block;width:100%;height:auto}}
+.hero-fig figcaption{{border-top:1px solid var(--cv-ink);flex-direction:row;justify-content:space-between;gap:12px;padding:10px 12px}}
+.topruler{{height:10px;background:repeating-linear-gradient(90deg,var(--cv-muted) 0 1px,transparent 1px 8px) top left/100% 4px no-repeat,repeating-linear-gradient(90deg,var(--cv-copper) 0 1px,transparent 1px 40px) top left/100% 10px no-repeat}}
 .lede{{max-width:760px;font-size:19px;color:var(--cv-body);margin:0}}
 .links{{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}}
 .links a{{border:1px solid var(--cv-ink);padding:10px 14px;font:500 12px/1 var(--cv-mono);letter-spacing:.8px;text-decoration:none;color:var(--cv-ink);background:var(--cv-white)}}
 .links a:hover{{background:var(--cv-ink);color:var(--cv-white)}}
-section.part{{border-top:1px solid var(--cv-ink);padding:48px 0 56px}}
+section.part{{padding:0 0 56px}}
+.ruler{{position:relative;height:22px;border-top:1px solid var(--cv-ink);margin-bottom:28px;
+ background:repeating-linear-gradient(90deg,var(--cv-muted) 0 1px,transparent 1px 8px) top left/100% 4px no-repeat,
+ repeating-linear-gradient(90deg,var(--cv-ink) 0 1px,transparent 1px 40px) top left/100% 9px no-repeat}}
+.ruler span{{position:absolute;right:0;top:12px;font:500 10px/1 var(--cv-mono);letter-spacing:1.2px;color:var(--cv-muted)}}
 .part-h{{display:grid;grid-template-columns:240px minmax(0,1fr);gap:40px;margin-bottom:32px}}
-.part-h h2{{font:600 30px/1.1 var(--cv-font);letter-spacing:-.6px;margin:6px 0 0}}
+.part-h h2{{font:700 32px/1.1 var(--cv-font);letter-spacing:-.6px;margin:0;text-wrap:balance}}
 .part-h p{{margin:0;color:var(--cv-body);max-width:720px}}
 .fam{{display:grid;grid-template-columns:240px minmax(0,1fr);gap:40px;padding:28px 0;border-top:1px solid var(--cv-hairline)}}
 .fam-h h3{{font:600 17px/1.25 var(--cv-font);margin:0 0 8px}}
@@ -150,6 +159,15 @@ section.part{{border-top:1px solid var(--cv-ink);padding:48px 0 56px}}
 .card.dark{{background:var(--cv-graphite);border-color:var(--cv-graphite-deep);color:#fff}}
 .card .cap{{display:block;margin-bottom:14px}}
 .card.dark .cap{{color:var(--cv-on-graphite-muted)}}
+.scr{{position:relative;padding-top:34px}}
+.scr .scan{{position:absolute;left:0;right:0;top:0;height:14px;border-bottom:1px solid var(--cv-graphite-raised);
+ background:repeating-linear-gradient(90deg,var(--cv-on-graphite-muted) 0 1px,transparent 1px 8px) top left/100% 4px no-repeat}}
+.scr .scan::after{{content:"";position:absolute;top:0;bottom:-400px;left:28%;width:2px;background:var(--cv-verdigris-light);opacity:.55}}
+.scr{{overflow:hidden}}
+.type{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}}
+.type .card p{{margin:0}}
+.spec-d{{font:800 44px/1 var(--cv-font);letter-spacing:-1.2px}}
+.spec-m{{font:500 13px/1.6 var(--cv-mono);letter-spacing:1px;text-transform:uppercase}}
 .big{{font:600 24px/1.25 var(--cv-font);letter-spacing:-.4px;margin:0 0 16px}}
 .row{{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:14px;margin-top:8px}}
 .dots{{display:inline-flex;gap:4px}}.dots i{{width:10px;height:10px;display:block}}
@@ -158,14 +176,13 @@ section.part{{border-top:1px solid var(--cv-ink);padding:48px 0 56px}}
 .st .tag{{display:inline-flex;align-items:center;gap:6px}}.st .tag i{{width:6px;height:6px;display:block}}
 .card.dark .st{{border-color:var(--cv-graphite-raised);background:var(--cv-graphite-raised)}}
 .cmp{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}}
-.strip{{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}}
-.strip div{{display:flex;flex-direction:column;gap:2px;font-size:12px}}
-.strip i{{display:block;height:56px;margin-bottom:6px}}.strip i.edge{{border:1px solid var(--cv-hairline)}}
-.strip code{{font-size:11px;color:var(--cv-muted)}}
+.pal-strip{{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}}
+.pal-strip div{{display:flex;flex-direction:column;gap:2px;font-size:12px}}
+.pal-strip i{{display:block;height:56px;margin-bottom:6px}}.pal-strip i.edge{{border:1px solid var(--cv-hairline)}}
+.pal-strip code{{font-size:11px;color:var(--cv-muted)}}
 .prs{{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));border-left:1px solid var(--cv-hairline);border-top:1px solid var(--cv-hairline)}}
 .pr{{padding:18px 20px 22px;border-right:1px solid var(--cv-hairline);border-bottom:1px solid var(--cv-hairline);background:var(--cv-white)}}
-.pr .n{{font:500 11px/1 var(--cv-mono);color:var(--cv-muted)}}
-.pr h4{{font:600 17px/1.25 var(--cv-font);margin:8px 0 6px}}.pr p{{margin:0;font-size:14px;color:var(--cv-body)}}
+.pr h4{{font:700 17px/1.25 var(--cv-font);margin:0 0 6px}}.pr p{{margin:0;font-size:14px;color:var(--cv-body)}}
 .rules{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}}
 .rules .card h4{{font:600 11px/1 var(--cv-mono);letter-spacing:1.4px;text-transform:uppercase;margin:0 0 12px}}
 .rules ul{{margin:0;padding-left:18px;font-size:14px;color:var(--cv-body)}}.rules li{{margin:4px 0}}
@@ -200,10 +217,10 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
 .toast.on{{opacity:1;transform:translateX(-50%)}}
 @media (max-width:820px){{
  .wrap{{padding:0 16px}}
- .part-h,.fam{{grid-template-columns:1fr;gap:12px}}
- .use-grid,.cmp,.rules{{grid-template-columns:1fr}}
+ .part-h,.fam,header.hero{{grid-template-columns:1fr;gap:12px}}
+ .use-grid,.cmp,.rules,.type{{grid-template-columns:1fr}}
  .chip.lead{{grid-column:span 1}}
- .strip{{grid-template-columns:repeat(3,minmax(0,1fr))}}
+ .pal-strip{{grid-template-columns:repeat(3,minmax(0,1fr))}}
  .files li{{grid-template-columns:1fr;gap:4px}}
  .gal.cover,.gal.story{{grid-template-columns:1fr}}
  .top nav{{display:none}}
@@ -216,22 +233,29 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
 <div class="top"><span class="brand">Isomer brand</span>
 <nav aria-label="Sections"><a href="#palette">Palette</a><a href="#at-work">At work</a><a href="#illustration">Illustration</a><a href="#samples">Samples</a><a href="#animation">Animation</a><a href="#agents">For agents</a></nav></div>
 
+<div class="topruler" aria-hidden="true"></div>
 <header class="hero">
+<div>
 <span class="flag"><i></i>Proposal · not adopted · not linked from the brand site</span>
-<h1>Copper <span>signals.</span><br>Verdigris <em>acts.</em></h1>
+<h1><span class="cu">Copper</span> <span>signals.</span><br>Verdigris <em>acts.</em></h1>
 <p class="lede">A proposed replacement for Isomer's blue and purple palette. Black, white and grey carry the page. Copper marks risk and the moment something is flagged. Verdigris, the patina copper becomes, marks Isomer acting on it. Graphite is reserved for product screens; oxide red and cobalt for status.</p>
-<div class="links"><a href="palette.json">palette.json</a><a href="tokens.css">tokens.css</a><a href="ILLUSTRATION-GUIDE.md">Illustration guide</a><a href="illustrations/index.json">illustrations/index.json</a><a href="https://isomer.ai/pitch-patina">In use: isomer.ai/pitch-patina</a></div>
+<div class="links"><a href="palette.json">palette.json</a><a href="tokens.css">tokens.css</a><a href="ILLUSTRATION-GUIDE.md">Illustration guide</a><a href="illustrations/index.json">illustrations/index.json</a></div>
+</div>
+<figure class="hero-fig"><video src="animations/point-of-receipt-1x1.mp4" poster="animations/point-of-receipt-1x1-poster.png" autoplay muted loop playsinline preload="metadata" aria-label="Point of receipt animation: a buried deadline turns copper and Isomer acts"></video>
+<figcaption><span>FIG. A1 · POINT OF RECEIPT</span><span>AN-01</span></figcaption></figure>
 </header>
 
 <section class="part" id="palette" aria-labelledby="h-pal">
-<div class="part-h"><div><span class="eyebrow">01</span><h2 id="h-pal">Palette</h2></div>
+<div class="ruler" aria-hidden="true"><span>CV-PAL</span></div>
+<div class="part-h"><div><h2 id="h-pal">Palette</h2></div>
 <p>Thirty colors in four families. Click any chip to copy its hex. Each chip shows its best text pairing and the contrast grade, so you can tell at a glance which colors can carry type.</p></div>
 {fams}
 </section>
 
 <section class="part" id="at-work" aria-labelledby="h-work">
-<div class="part-h"><div><span class="eyebrow">02</span><h2 id="h-work">At work</h2></div>
-<p>Roughly how much of each appears on a page, how the pairs read on paper and on a graphite screen, and how it compares with the palette in use today. For the palette on a live page, see the <a href="https://isomer.ai/pitch-patina">isomer.ai/pitch-patina</a> minisite. It uses the colors only, not the illustration style below.</p></div>
+<div class="ruler" aria-hidden="true"><span>CV-USE</span></div>
+<div class="part-h"><div><h2 id="h-work">At work</h2></div>
+<p>Roughly how much of each appears on a page, how the pairs read on paper and on a graphite screen, and how it compares with the palette in use today.</p></div>
 <div class="ratio" role="img" aria-label="Approximate share: paper and section grey 77 percent, ink 8, graphite 8, copper 4, verdigris 3">
 <i style="flex:62;background:#F6F6F5"></i><i style="flex:15;background:#ECECEA"></i><i style="flex:8;background:#141416"></i><i style="flex:8;background:#3A3E3F"></i><i style="flex:4;background:#B4602F"></i><i style="flex:3;background:#3F8A85"></i></div>
 <div class="legend"><span><i style="background:#F6F6F5;border:1px solid #E3E3E5"></i>Paper and section grey</span><span><i style="background:#141416"></i>Ink</span><span><i style="background:#3A3E3F"></i>Graphite screens</span><span><i style="background:#B4602F"></i>Copper</span><span><i style="background:#3F8A85"></i>Verdigris</span></div>
@@ -243,7 +267,7 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
 <div class="st"><span class="tag" style="color:#8E4720;border-color:#B4602F;background:#F2DCCB"><i style="background:#B4602F"></i>Warning</span>Reserve review due on 6 claims</div>
 <div class="st"><span class="tag" style="color:#8F1B25;border-color:#B4232F;background:#F8DEE0"><i style="background:#B4232F"></i>Critical</span>EEOC response deadline in 2 days</div>
 </div>
-<div class="card dark"><span class="cap">On a graphite screen · Day 23 demand letter</span>
+<div class="card dark scr"><div class="scan" aria-hidden="true"></div><span class="cap">On a graphite screen · Day 23 demand letter</span>
 <div class="row"><span class="tag" style="color:#E09C6B;border-color:#E09C6B">Critical</span><b>Spoliation risk</b><span class="mono" style="color:#A4A9AA;font-size:12px">p. 9</span></div>
 <div class="row"><span class="tag" style="color:#8CC2BC;border-color:#8CC2BC">Act</span>Litigation hold drafted</div>
 <div class="st"><span class="tag" style="color:#8FB4E3;border-color:#8FB4E3"><i style="background:#8FB4E3"></i>OK</span>ClaimCenter sync healthy</div>
@@ -255,10 +279,15 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
 <div class="card"><span class="cap">Today · brand.json</span>{strip(current)}</div>
 <div class="card"><span class="cap">Proposed · Copper Verdigris</span>{strip(proposed)}</div>
 </div>
+<div class="type">
+<div class="card"><span class="cap">Display and values · Fustat</span><p class="spec-d">$10.0M <span style="color:var(--cv-copper)">d23</span></p><p style="margin-top:12px;color:var(--cv-body);font-size:14px">The current Isomer brand face, kept on purpose. Bold and tight for headlines; 600 for the one hero value on a plate.</p></div>
+<div class="card"><span class="cap">Annotation · IBM Plex Mono</span><p class="spec-m">Fig. 04 · Immediate · manual triage d23<br><span style="color:var(--cv-copper-dark)">TLD · ATT-3 · p.4</span> → <span style="color:var(--cv-verdigris-dark)">ACT · deadline calendared</span></p><p style="margin-top:12px;color:var(--cv-body);font-size:14px">Uppercase, tracked, small. Labels, axes, plate codes and captions. Replaces Geist Mono so the annotation layer doesn't read like other claims-AI sites.</p></div>
+</div>
 </section>
 
 <section class="part" id="illustration" aria-labelledby="h-ill">
-<div class="part-h"><div><span class="eyebrow">03</span><h2 id="h-ill">Illustration</h2></div>
+<div class="ruler" aria-hidden="true"><span>CV-ILL</span></div>
+<div class="part-h"><div><h2 id="h-ill">Illustration</h2></div>
 <p>Figures, not illustrations. Plates are drawn like instrument readouts: rectilinear, measured and labelled. The full rules, with construction specs and a pre-ship checklist, are in <a href="ILLUSTRATION-GUIDE.md">ILLUSTRATION-GUIDE.md</a>.</p></div>
 <div class="prs">{pr}</div>
 <div class="rules">
@@ -280,27 +309,30 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
 </section>
 
 <section class="part" id="samples" aria-labelledby="h-sam">
-<div class="part-h"><div><span class="eyebrow">04</span><h2 id="h-sam">Samples</h2></div>
+<div class="ruler" aria-hidden="true"><span>CV-SAM</span></div>
+<div class="part-h"><div><h2 id="h-sam">Samples</h2></div>
 <p>Thirty-two plates covering the homepage, the pitch story and every blog post. Each comes as an annotated SVG, a clean SVG for web placement and a 2x PNG. Some carry placeholder values, listed at the end of the guide.</p></div>
 {gal}
 </section>
 
 <section class="part" id="animation" aria-labelledby="h-ani">
-<div class="part-h"><div><span class="eyebrow">05</span><h2 id="h-ani">Animation</h2></div>
+<div class="ruler" aria-hidden="true"><span>CV-ANI</span></div>
+<div class="part-h"><div><h2 id="h-ani">Animation</h2></div>
 <p>The same plates rendered frame by frame. Three or four beats, each with a caption; smoothstep easing; elements fade or draw on; color changes carry the story. 8 to 10 seconds with a one-second hold. Post the MP4 on LinkedIn; use the GIF in Slack and email.</p></div>
 <div class="anims">{vids}</div>
 </section>
 
 <section class="part" id="agents" aria-labelledby="h-ag">
-<div class="part-h"><div><span class="eyebrow">06</span><h2 id="h-ag">For agents</h2></div>
+<div class="ruler" aria-hidden="true"><span>CV-AGT</span></div>
+<div class="part-h"><div><h2 id="h-ag">For agents</h2></div>
 <p>Everything on this page comes from files in this folder, each at a stable URL. Read <code>palette.json</code> for values and meaning, and the guide before drawing.</p></div>
 <ul class="files">{fl}</ul>
 <pre><span class="c"># palette values and semantics</span>
 <span class="k">curl</span> -s https://isomer-ai.github.io/brand/proposals/copper-verdigris/palette.json | jq '.families[].colors[] | {{token, hex}}'
 
 <span class="c"># regenerate plates, then animations</span>
-<span class="k">cd</span> proposals/copper-verdigris/source &amp;&amp; python3 export.py
-python3 anim2.py &amp;&amp; python3 anim3.py &amp;&amp; python3 build_page.py</pre>
+<span class="k">cd</span> proposals/copper-verdigris/source
+./render_all.sh</pre>
 </section>
 
 <footer><span class="cap">Isomer · Copper Verdigris · proposal v1 · 2026-10</span><a class="cap" href="../../">Current brand site</a></footer>

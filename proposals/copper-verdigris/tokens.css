@@ -1,5 +1,5 @@
 /* Copper Verdigris (proposal). Source: palette.json. */
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
 
 :root {
   /* Neutrals */
@@ -51,6 +51,6 @@
   --cv-screen: var(--cv-graphite);
 
   /* Type */
-  --cv-font: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --cv-mono: "Geist Mono", ui-monospace, monospace;
+  --cv-font: "Fustat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --cv-mono: "IBM Plex Mono", ui-monospace, monospace;
 }

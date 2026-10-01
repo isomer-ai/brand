@@ -18,10 +18,10 @@
   "status": 0.01
  },
  "typography": {
-  "display_and_body": "Geist",
-  "annotation": "Geist Mono",
-  "css_import": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap",
-  "note": "Open question: Geist (used on the Copper Verdigris pages) vs the current brand face, Fustat."
+  "display_and_body": "Fustat",
+  "annotation": "IBM Plex Mono",
+  "css_import": "https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+  "note": "Fustat is the current Isomer brand face, kept on purpose. Plex Mono replaces Geist Mono so the annotation layer doesn't read like other claims-AI sites."
  },
  "families": [
   {
@@ -412,5 +412,11 @@
     }
    ]
   }
+ ],
+ "distinctiveness": [
+  "Copper and verdigris carry the identity; use copper boldly in a few places (headline accent, hero plate) rather than as small accents everywhere.",
+  "Carry the plate apparatus (rulers, plate codes, scan line, hatching) into page UI so the system reads as an instrument, not clean SaaS on paper.",
+  "Avoid category-default patterns: big-number tiles over a mono caption row, dark 'extraction' text blocks, numbered section eyebrows, red/green status dots without a word.",
+  "Make time the subject: show when something was caught, not just what a file contains."
  ]
 }

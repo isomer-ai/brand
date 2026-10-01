@@ -1,58 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img"><title>Priced at 10% of target</title><style>@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap");</style><rect width="720" height="480" fill="#F6F6F5"/><defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img"><title>Priced at 10% of target</title><style>@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap");</style><rect width="720" height="480" fill="#F6F6F5"/><defs>
 <pattern id="st10pricing-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#B4602F" stroke-width="1.2"/></pattern>
 <pattern id="st10pricing-hatchv" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3F8A85" stroke-width="1.2"/></pattern>
 <pattern id="st10pricing-dots" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="11.5" y="11.5" width="1" height="1" fill="#6E6E75" opacity="0.45"/></pattern>
 <pattern id="st10pricing-micro" width="4" height="4" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="3" height="3" fill="#6E6E75" opacity="0.55"/></pattern>
 </defs><g shape-rendering="crispEdges"></g><line x1="96" y1="376.0" x2="440" y2="376.0" stroke="#E3E3E5" stroke-width="1" />
-<text x="88" y="379.0" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">0K</text>
+<text x="88" y="379.0" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">0K</text>
 <line x1="96" y1="306.0" x2="440" y2="306.0" stroke="#E3E3E5" stroke-width="1" />
-<text x="88" y="309.0" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">250K</text>
+<text x="88" y="309.0" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">250K</text>
 <line x1="96" y1="236.0" x2="440" y2="236.0" stroke="#E3E3E5" stroke-width="1" />
-<text x="88" y="239.0" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">500K</text>
+<text x="88" y="239.0" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">500K</text>
 <line x1="96" y1="166.0" x2="440" y2="166.0" stroke="#E3E3E5" stroke-width="1" />
-<text x="88" y="169.0" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">750K</text>
+<text x="88" y="169.0" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">750K</text>
 <line x1="96" y1="96.0" x2="440" y2="96.0" stroke="#E3E3E5" stroke-width="1" />
-<text x="88" y="99.0" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">$1M</text>
+<text x="88" y="99.0" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">$1M</text>
 <rect x="112" y="348.0" width="64" height="28.0" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
 <line x1="176" y1="348.0" x2="192" y2="348.0" stroke="#6E6E75" stroke-width="0.75" stroke-dasharray="2 2"/>
-<text x="112" y="394" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">ASSESS</text>
-<text x="112" y="406" font-family="'Geist Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.4">4 WK</text>
-<text x="144.0" y="342.0" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="middle" font-weight="500" letter-spacing="0.8">100K</text>
+<text x="112" y="394" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">ASSESS</text>
+<text x="112" y="406" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.4">4 WK</text>
+<text x="144.0" y="342.0" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="middle" font-weight="500" letter-spacing="0.8">100K</text>
 <rect x="192" y="320.0" width="64" height="28.0" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
 <line x1="256" y1="320.0" x2="272" y2="320.0" stroke="#6E6E75" stroke-width="0.75" stroke-dasharray="2 2"/>
-<text x="192" y="394" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">SIGN</text>
-<text x="192" y="406" font-family="'Geist Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.4">20% − CREDIT</text>
-<text x="224.0" y="314.0" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="middle" font-weight="500" letter-spacing="0.8">100K</text>
+<text x="192" y="394" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">SIGN</text>
+<text x="192" y="406" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.4">20% − CREDIT</text>
+<text x="224.0" y="314.0" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="middle" font-weight="500" letter-spacing="0.8">100K</text>
 <rect x="272" y="264.0" width="64" height="56.0" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
 <line x1="336" y1="264.0" x2="352" y2="264.0" stroke="#6E6E75" stroke-width="0.75" stroke-dasharray="2 2"/>
-<text x="272" y="394" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">PRODUCTION</text>
-<text x="272" y="406" font-family="'Geist Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.4">20%</text>
-<text x="304.0" y="258.0" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="middle" font-weight="500" letter-spacing="0.8">200K</text>
+<text x="272" y="394" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">PRODUCTION</text>
+<text x="272" y="406" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.4">20%</text>
+<text x="304.0" y="258.0" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="middle" font-weight="500" letter-spacing="0.8">200K</text>
 <rect x="352" y="96.0" width="64" height="168.0" fill="#E9F2F1" stroke="#3F8A85" stroke-width="1" stroke-dasharray="4 3"/>
-<text x="352" y="394" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">YEAR-END</text>
-<text x="352" y="406" font-family="'Geist Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.4">60% · IF YOU STAY</text>
-<text x="384.0" y="90.0" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="middle" font-weight="500" letter-spacing="0.8">600K</text>
+<text x="352" y="394" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">YEAR-END</text>
+<text x="352" y="406" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.4">60% · IF YOU STAY</text>
+<text x="384.0" y="90.0" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="middle" font-weight="500" letter-spacing="0.8">600K</text>
 <line x1="96" y1="376" x2="440" y2="376" stroke="#141416" stroke-width="1" />
-<text x="504" y="96" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#2E6B68" text-anchor="start" font-weight="600" letter-spacing="0.8">$10M TARGETED SAVINGS</text>
+<text x="504" y="96" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#2E6B68" text-anchor="start" font-weight="600" letter-spacing="0.8">$10M TARGETED SAVINGS</text>
 <rect x="504" y="112" width="160" height="22" fill="#D3E6E4" stroke="#3F8A85" stroke-width="1" />
-<text x="512" y="127" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$1M</text>
+<text x="512" y="127" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$1M</text>
 <rect x="504" y="138" width="160" height="22" fill="#D3E6E4" stroke="#3F8A85" stroke-width="1" />
-<text x="512" y="153" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$2M</text>
+<text x="512" y="153" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$2M</text>
 <rect x="504" y="164" width="160" height="22" fill="#D3E6E4" stroke="#3F8A85" stroke-width="1" />
-<text x="512" y="179" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$3M</text>
+<text x="512" y="179" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$3M</text>
 <rect x="504" y="190" width="160" height="22" fill="#D3E6E4" stroke="#3F8A85" stroke-width="1" />
-<text x="512" y="205" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$4M</text>
+<text x="512" y="205" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$4M</text>
 <rect x="504" y="216" width="160" height="22" fill="#D3E6E4" stroke="#3F8A85" stroke-width="1" />
-<text x="512" y="231" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$5M</text>
+<text x="512" y="231" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$5M</text>
 <rect x="504" y="242" width="160" height="22" fill="#D3E6E4" stroke="#3F8A85" stroke-width="1" />
-<text x="512" y="257" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$6M</text>
+<text x="512" y="257" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$6M</text>
 <rect x="504" y="268" width="160" height="22" fill="#D3E6E4" stroke="#3F8A85" stroke-width="1" />
-<text x="512" y="283" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$7M</text>
+<text x="512" y="283" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$7M</text>
 <rect x="504" y="294" width="160" height="22" fill="#D3E6E4" stroke="#3F8A85" stroke-width="1" />
-<text x="512" y="309" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$8M</text>
+<text x="512" y="309" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$8M</text>
 <rect x="504" y="320" width="160" height="22" fill="#D3E6E4" stroke="#3F8A85" stroke-width="1" />
-<text x="512" y="335" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$9M</text>
+<text x="512" y="335" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#1F4F4C" text-anchor="start" font-weight="500" letter-spacing="0.8">$9M</text>
 <rect x="504" y="346" width="160" height="22" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
-<text x="512" y="361" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="500" letter-spacing="0.8">FEE $1M</text>
+<text x="512" y="361" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="500" letter-spacing="0.8">FEE $1M</text>
 <path d="M676 112 H684 V368 H676" stroke="#3F8A85" stroke-width="1" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
-<text x="504" y="404" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#2E6B68" text-anchor="start" font-weight="600" letter-spacing="0.8">10× · 30 DAYS NOTICE, ANYTIME</text></svg>
+<text x="504" y="404" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#2E6B68" text-anchor="start" font-weight="600" letter-spacing="0.8">10× · 30 DAYS NOTICE, ANYTIME</text></svg>

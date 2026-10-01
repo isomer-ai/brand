@@ -2,8 +2,6 @@
 
 Status: proposal. Companion to [`palette.json`](palette.json) and [`tokens.css`](tokens.css).
 
-The [isomer.ai/pitch-patina](https://isomer.ai/pitch-patina) minisite shows the palette in use. It does not use this illustration style, so don't treat it as a reference for plates.
-
 Isomer plates are drawn like instrument readouts. They are rectilinear, measured and labelled. Copper marks the risk, verdigris marks Isomer acting on it, and everything else is ink on paper.
 
 ## For agents
@@ -72,8 +70,18 @@ Rules:
 
 ## Type
 
-- **Annotation: Geist Mono.** Uppercase, 7 to 10px, tracking 0.8 to 1.4. Weight 400 for description, 500 for axis and column labels, 600 for the one label that carries the point. Labels sit outside shapes, or top-left inside with a 10px inset.
-- **Hero value: Geist 600.** At most one per plate, 12 to 18px (32px only on covers), in the semantic color of what it measures. Never a sentence. Headlines live on the page, not in the plate.
+- **Annotation: IBM Plex Mono.** Uppercase, 7 to 10px, tracking 0.8 to 1.4. Weight 400 for description, 500 for axis and column labels, 600 for the one label that carries the point. Labels sit outside shapes, or top-left inside with a 10px inset.
+- **Hero value: Fustat 600.** At most one per plate, 12 to 18px (32px only on covers), in the semantic color of what it measures. Never a sentence. Headlines live on the page, not in the plate.
+
+## Staying distinct
+
+Other claims-AI brands use the same base vocabulary: off-white paper, hairlines, a grotesk with uppercase mono labels, a dark evidence panel, red and green dots. On that base alone we look like the category. What makes it ours:
+
+- **Copper and verdigris do the work.** Use copper boldly in a few places (the headline accent, the hero plate) instead of as a small accent everywhere.
+- **The apparatus travels.** Rulers, plate codes, the scan line and copper hatching appear in page UI too, not only inside plates.
+- **Time is the subject.** Prefer plates that show when something was caught (t₀, d23, the window to act) over plates that show what a file contains.
+- **Fustat, not a generic grotesk.** Keep the brand face for display and values; IBM Plex Mono for annotation.
+- **Avoid** big-number tiles over a mono caption row, dark "extraction" text panels, numbered section eyebrows (01, 02...), and status dots without a word. Show values to scale on an axis instead of as tiles.
 
 ## Formats
 
@@ -109,6 +117,7 @@ Animations are the same plates rendered frame by frame. The scene is a function 
 - Gradients, shadows, glows, glass, isometric 3D.
 - Stock metaphors (shields, locks, lightbulbs, rockets), faces or hands. Person icons are fine.
 - Third-party logos, customer names, or vendor marks.
+- Stat-tile rows (big number over a mono caption) and dark evidence-panel mockups. Put the values on an axis instead.
 - Status color as a fill or a series, or without its word. Emoji. Decorative copper or verdigris.
 
 ## Before it ships

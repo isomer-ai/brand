@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="720" viewBox="0 0 480 720" role="img"><title>Point of receipt</title><style>@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap");</style><rect width="480" height="720" fill="#F6F6F5"/><defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="720" viewBox="0 0 480 720" role="img"><title>Point of receipt</title><style>@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap");</style><rect width="480" height="720" fill="#F6F6F5"/><defs>
 <pattern id="pl01pointofreceipt-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#B4602F" stroke-width="1.2"/></pattern>
 <pattern id="pl01pointofreceipt-hatchv" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3F8A85" stroke-width="1.2"/></pattern>
 <pattern id="pl01pointofreceipt-dots" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="11.5" y="11.5" width="1" height="1" fill="#6E6E75" opacity="0.45"/></pattern>
 <pattern id="pl01pointofreceipt-micro" width="4" height="4" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="3" height="3" fill="#6E6E75" opacity="0.55"/></pattern>
-</defs><g shape-rendering="crispEdges"><text x="24" y="28" font-family="'Geist Mono', ui-monospace, monospace" font-size="10" fill="#141416" text-anchor="start" font-weight="500" letter-spacing="1.4">FIG. 01</text>
-<text x="84" y="28" font-family="'Geist Mono', ui-monospace, monospace" font-size="10" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="1.2">POINT OF RECEIPT</text>
-<text x="456" y="28" font-family="'Geist Mono', ui-monospace, monospace" font-size="10" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="1.2">PL-01</text>
+</defs><g shape-rendering="crispEdges"><text x="24" y="28" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="10" fill="#141416" text-anchor="start" font-weight="500" letter-spacing="1.4">FIG. 01</text>
+<text x="84" y="28" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="10" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="1.2">POINT OF RECEIPT</text>
+<text x="456" y="28" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="10" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="1.2">PL-01</text>
 <line x1="24" y1="40" x2="456" y2="40" stroke="#6E6E75" stroke-width="0.75" />
 <line x1="24" y1="40" x2="24" y2="46" stroke="#6E6E75" stroke-width="0.75" />
 <line x1="32" y1="40" x2="32" y2="43" stroke="#6E6E75" stroke-width="0.75" />
@@ -148,8 +148,8 @@
 <line x1="24" y1="40" x2="24" y2="696" stroke="#6E6E75" stroke-width="0.75" />
 <line x1="450" y1="696" x2="462" y2="696" stroke="#141416" stroke-width="0.75" />
 <line x1="456" y1="690" x2="456" y2="702" stroke="#141416" stroke-width="0.75" />
-<text x="40" y="700" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="1.4">ISOMER · COPPER VERDIGRIS</text>
-<text x="440" y="700" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="1.4">SCALE 1:1</text></g><rect x="128" y="116" width="120" height="150" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
+<text x="40" y="700" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="1.4">ISOMER · COPPER VERDIGRIS</text>
+<text x="440" y="700" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="1.4">SCALE 1:1</text></g><rect x="128" y="116" width="120" height="150" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
 <rect x="238" y="116" width="10" height="10" fill="#ECECEA" stroke="#141416" stroke-width="1" />
 <rect x="136" y="134" width="72.8" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
 <rect x="136" y="143" width="88.4" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
@@ -199,7 +199,7 @@
 <rect x="104" y="139" width="78.0" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
 <rect x="104" y="148" width="67.6" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
 <rect x="104" y="157" width="41.6" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
-<text x="96" y="72" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">INBOUND · 214</text>
+<text x="96" y="72" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">INBOUND · 214</text>
 <path d="M164 266 L164 352" stroke="#141416" stroke-width="1" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
 <path d="M159 344 L164 352 L169 344" stroke="#141416" stroke-width="1" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
 <rect x="48" y="360" width="384" height="44" fill="#ECECEA" stroke="#141416" stroke-width="1" />
@@ -230,8 +230,8 @@
 <line x1="40" y1="382" x2="440" y2="382" stroke="#3F8A85" stroke-width="1.5" />
 <rect x="37.0" y="379.0" width="6" height="6" fill="#3F8A85" stroke="none" stroke-width="1" />
 <rect x="437.0" y="379.0" width="6" height="6" fill="#3F8A85" stroke="none" stroke-width="1" />
-<text x="440" y="352" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#2E6B68" text-anchor="end" font-weight="400" letter-spacing="0.8">SCAN · t₀</text>
-<text x="48" y="352" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">DETECTOR PLANE · 85</text>
+<text x="440" y="352" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#2E6B68" text-anchor="end" font-weight="400" letter-spacing="0.8">SCAN · T0</text>
+<text x="48" y="352" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">DETECTOR PLANE · 85</text>
 <path d="M118 404 L118 448" stroke="#6E6E75" stroke-width="1" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
 <rect x="78" y="456" width="10" height="10" fill="#ECECEA" stroke="#6E6E75" stroke-width="0.75" />
 <rect x="92" y="456" width="10" height="10" fill="#FFFFFF" stroke="#6E6E75" stroke-width="0.75" />
@@ -271,8 +271,8 @@
 <rect x="148" y="526" width="10" height="10" fill="#FFFFFF" stroke="#6E6E75" stroke-width="0.75" />
 <rect x="78" y="547" width="34" height="16" fill="#E3ECF7" stroke="#2F5D99" stroke-width="1" />
 <rect x="83.0" y="552.0" width="6" height="6" fill="#2F5D99" stroke="none" stroke-width="1" />
-<text x="93" y="559" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#234878" text-anchor="start" font-weight="600" letter-spacing="0.8">OK</text>
-<text x="120" y="559" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#234878" text-anchor="start" font-weight="500" letter-spacing="0.8">213 CLEAR</text>
+<text x="93" y="559" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#234878" text-anchor="start" font-weight="600" letter-spacing="0.8">OK</text>
+<text x="120" y="559" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#234878" text-anchor="start" font-weight="500" letter-spacing="0.8">213 CLEAR</text>
 <line x1="294.0" y1="404" x2="294.0" y2="456" stroke="#B4602F" stroke-width="1.25" />
 <rect x="234.0" y="456" width="140" height="92" fill="#F2DCCB" stroke="#B4602F" stroke-width="1.25" />
 <rect x="246.0" y="468" width="44" height="68" fill="#FFFFFF" stroke="#9A5634" stroke-width="1" />
@@ -282,12 +282,12 @@
 <rect x="254.0" y="504" width="22.4" height="2.5" fill="#B4602F" stroke="none" stroke-width="0" />
 <rect x="254.0" y="513" width="16.8" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
 <rect x="254.0" y="522" width="19.6" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
-<text x="302.0" y="484" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#8E4720" text-anchor="start" font-weight="500" letter-spacing="0.8">SIGNAL</text>
-<text x="302.0" y="500" font-family="'Geist', system-ui, sans-serif" font-size="13" fill="#8E4720" text-anchor="start" font-weight="600" letter-spacing="0.4">TLD</text>
-<text x="302.0" y="528" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#9A5634" text-anchor="start" font-weight="400" letter-spacing="0.8">p.4 · ¶2</text>
+<text x="302.0" y="484" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#8E4720" text-anchor="start" font-weight="500" letter-spacing="0.8">SIGNAL</text>
+<text x="302.0" y="500" font-family="'Fustat', system-ui, sans-serif" font-size="13" fill="#8E4720" text-anchor="start" font-weight="600" letter-spacing="0.4">TLD</text>
+<text x="302.0" y="528" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#9A5634" text-anchor="start" font-weight="400" letter-spacing="0.8">p.4 · ¶2</text>
 <line x1="294.0" y1="548" x2="294.0" y2="604" stroke="#3F8A85" stroke-width="1.25" />
 <path d="M289.0 596 L294.0 604 L299.0 596" stroke="#3F8A85" stroke-width="1.25" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
 <rect x="234.0" y="608" width="140" height="44" fill="#E9F2F1" stroke="#3F8A85" stroke-width="1.25" />
 <path d="M248.0 630 L254.0 636 L266.0 624" stroke="#2E6B68" stroke-width="1.5" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
-<text x="276.0" y="626" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#1F4F4C" text-anchor="start" font-weight="600" letter-spacing="0.8">ACT</text>
-<text x="276.0" y="641" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#2E6B68" text-anchor="start" font-weight="400" letter-spacing="0.8">DEADLINE SET</text></svg>
+<text x="276.0" y="626" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#1F4F4C" text-anchor="start" font-weight="600" letter-spacing="0.8">ACT</text>
+<text x="276.0" y="641" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#2E6B68" text-anchor="start" font-weight="400" letter-spacing="0.8">DEADLINE SET</text></svg>

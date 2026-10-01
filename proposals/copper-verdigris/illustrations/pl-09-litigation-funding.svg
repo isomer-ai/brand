@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" role="img"><title>Litigation funding</title><style>@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap");</style><rect width="480" height="480" fill="#F6F6F5"/><defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" role="img"><title>Litigation funding</title><style>@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap");</style><rect width="480" height="480" fill="#F6F6F5"/><defs>
 <pattern id="pl09litigationfunding-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#B4602F" stroke-width="1.2"/></pattern>
 <pattern id="pl09litigationfunding-hatchv" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3F8A85" stroke-width="1.2"/></pattern>
 <pattern id="pl09litigationfunding-dots" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="11.5" y="11.5" width="1" height="1" fill="#6E6E75" opacity="0.45"/></pattern>
 <pattern id="pl09litigationfunding-micro" width="4" height="4" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="3" height="3" fill="#6E6E75" opacity="0.55"/></pattern>
-</defs><g shape-rendering="crispEdges"><text x="24" y="28" font-family="'Geist Mono', ui-monospace, monospace" font-size="10" fill="#141416" text-anchor="start" font-weight="500" letter-spacing="1.4">FIG. 09</text>
-<text x="84" y="28" font-family="'Geist Mono', ui-monospace, monospace" font-size="10" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="1.2">LITIGATION FUNDING</text>
-<text x="456" y="28" font-family="'Geist Mono', ui-monospace, monospace" font-size="10" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="1.2">PL-09</text>
+</defs><g shape-rendering="crispEdges"><text x="24" y="28" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="10" fill="#141416" text-anchor="start" font-weight="500" letter-spacing="1.4">FIG. 09</text>
+<text x="84" y="28" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="10" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="1.2">LITIGATION FUNDING</text>
+<text x="456" y="28" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="10" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="1.2">PL-09</text>
 <line x1="24" y1="40" x2="456" y2="40" stroke="#6E6E75" stroke-width="0.75" />
 <line x1="24" y1="40" x2="24" y2="46" stroke="#6E6E75" stroke-width="0.75" />
 <line x1="32" y1="40" x2="32" y2="43" stroke="#6E6E75" stroke-width="0.75" />
@@ -118,8 +118,8 @@
 <line x1="24" y1="40" x2="24" y2="456" stroke="#6E6E75" stroke-width="0.75" />
 <line x1="450" y1="456" x2="462" y2="456" stroke="#141416" stroke-width="0.75" />
 <line x1="456" y1="450" x2="456" y2="462" stroke="#141416" stroke-width="0.75" />
-<text x="40" y="460" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="1.4">ISOMER · COPPER VERDIGRIS</text>
-<text x="440" y="460" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="1.4">SCALE 1:1</text></g><rect x="72" y="96" width="26" height="26" fill="#F2DCCB" stroke="#B4602F" stroke-width="1" />
+<text x="40" y="460" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="1.4">ISOMER · COPPER VERDIGRIS</text>
+<text x="440" y="460" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="1.4">SCALE 1:1</text></g><rect x="72" y="96" width="26" height="26" fill="#F2DCCB" stroke="#B4602F" stroke-width="1" />
 <rect x="81" y="105" width="8" height="8" fill="#B4602F" stroke="none" stroke-width="0" />
 <rect x="104" y="96" width="26" height="26" fill="#F2DCCB" stroke="#B4602F" stroke-width="1" />
 <rect x="113" y="105" width="8" height="8" fill="#B4602F" stroke="none" stroke-width="0" />
@@ -220,8 +220,8 @@
 <rect x="360" y="224" width="26" height="26" fill="#F2DCCB" stroke="#B4602F" stroke-width="1" />
 <rect x="369" y="233" width="8" height="8" fill="#B4602F" stroke="none" stroke-width="0" />
 <path d="M72 262 V268 H386 V262" stroke="#6E6E75" stroke-width="1" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
-<text x="229.0" y="286" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#8E4720" text-anchor="middle" font-weight="500" letter-spacing="0.8">$50B · THIRD-PARTY LITIGATION FUNDING · 5-YR</text>
+<text x="229.0" y="286" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#8E4720" text-anchor="middle" font-weight="500" letter-spacing="0.8">$50B · THIRD-PARTY LITIGATION FUNDING · 5-YR</text>
 <rect x="72" y="380" width="26" height="26" fill="#F2DCCB" stroke="#B4602F" stroke-width="1" />
 <rect x="81" y="389" width="8" height="8" fill="#B4602F" stroke="none" stroke-width="0" />
-<text x="108" y="397" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="400" letter-spacing="0.8">= $1B</text>
-<text x="64" y="432" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">SOURCE: U.S. GAO · APCIA</text></svg>
+<text x="108" y="397" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="400" letter-spacing="0.8">= $1B</text>
+<text x="64" y="432" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">SOURCE: U.S. GAO · APCIA</text></svg>

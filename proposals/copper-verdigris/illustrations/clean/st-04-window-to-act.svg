@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img"><title>Window to act</title><style>@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap");</style><rect width="720" height="480" fill="#F6F6F5"/><defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img"><title>Window to act</title><style>@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap");</style><rect width="720" height="480" fill="#F6F6F5"/><defs>
 <pattern id="st04windowtoact-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#B4602F" stroke-width="1.2"/></pattern>
 <pattern id="st04windowtoact-hatchv" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3F8A85" stroke-width="1.2"/></pattern>
 <pattern id="st04windowtoact-dots" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="11.5" y="11.5" width="1" height="1" fill="#6E6E75" opacity="0.45"/></pattern>
 <pattern id="st04windowtoact-micro" width="4" height="4" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="3" height="3" fill="#6E6E75" opacity="0.55"/></pattern>
-</defs><g shape-rendering="crispEdges"></g><text x="72" y="116" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">TODAY</text>
-<text x="72" y="130" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="500" letter-spacing="0.8">50% IN TIME</text>
+</defs><g shape-rendering="crispEdges"></g><text x="72" y="116" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">TODAY</text>
+<text x="72" y="130" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="500" letter-spacing="0.8">50% IN TIME</text>
 <rect x="168" y="88" width="144" height="96" fill="#E9F2F1" stroke="none" stroke-width="0" />
 <rect x="512" y="88" width="152" height="96" fill="url(#st04windowtoact-hatch)" stroke="none" stroke-width="0" opacity="0.25"/>
 <line x1="168" y1="184" x2="664" y2="184" stroke="#141416" stroke-width="1" />
@@ -23,8 +23,8 @@
 <rect x="576" y="120" width="14" height="14" fill="#F2DCCB" stroke="#B4602F" stroke-width="1.25" />
 <rect x="598" y="120" width="14" height="14" fill="#F2DCCB" stroke="#B4602F" stroke-width="1.25" />
 <rect x="620" y="120" width="14" height="14" fill="#F2DCCB" stroke="#B4602F" stroke-width="1.25" />
-<text x="72" y="292" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">WITH ISOMER</text>
-<text x="72" y="306" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#2E6B68" text-anchor="start" font-weight="500" letter-spacing="0.8">70% IN TIME</text>
+<text x="72" y="292" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">WITH ISOMER</text>
+<text x="72" y="306" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#2E6B68" text-anchor="start" font-weight="500" letter-spacing="0.8">70% IN TIME</text>
 <rect x="168" y="264" width="144" height="96" fill="#E9F2F1" stroke="none" stroke-width="0" />
 <rect x="512" y="264" width="152" height="96" fill="url(#st04windowtoact-hatch)" stroke="none" stroke-width="0" opacity="0.25"/>
 <line x1="168" y1="360" x2="664" y2="360" stroke="#141416" stroke-width="1" />
@@ -43,8 +43,8 @@
 <rect x="532" y="296" width="14" height="14" fill="#F2DCCB" stroke="#B4602F" stroke-width="1.25" />
 <rect x="554" y="296" width="14" height="14" fill="#F2DCCB" stroke="#B4602F" stroke-width="1.25" />
 <rect x="576" y="296" width="14" height="14" fill="#F2DCCB" stroke="#B4602F" stroke-width="1.25" />
-<text x="176" y="72" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#2E6B68" text-anchor="start" font-weight="600" letter-spacing="0.8">FLAGGED ON ARRIVAL</text>
-<text x="320" y="72" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">FLAGGED AFTER ENTRY</text>
-<text x="520" y="72" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#8E4720" text-anchor="start" font-weight="600" letter-spacing="0.8">TOO LATE</text>
-<text x="312" y="420" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="middle" font-weight="400" letter-spacing="0.8">CLAIMS SYSTEM ENTRY · MULTI-DAY LAG</text>
-<text x="72" y="420" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">10 HIGH-RISK CLAIMS</text></svg>
+<text x="176" y="72" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#2E6B68" text-anchor="start" font-weight="600" letter-spacing="0.8">FLAGGED ON ARRIVAL</text>
+<text x="320" y="72" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">FLAGGED AFTER ENTRY</text>
+<text x="520" y="72" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#8E4720" text-anchor="start" font-weight="600" letter-spacing="0.8">TOO LATE</text>
+<text x="312" y="420" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="middle" font-weight="400" letter-spacing="0.8">CLAIMS SYSTEM ENTRY · MULTI-DAY LAG</text>
+<text x="72" y="420" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">10 HIGH-RISK CLAIMS</text></svg>

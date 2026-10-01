@@ -69,7 +69,7 @@ def scene(T):
         pulse = max(pulse, 1 - abs(T - tk) / 0.18) if abs(T - tk) < 0.18 else pulse
     sw = 1.5 + 1.5 * clamp(pulse)
     c.append(f'<g opacity="{a_in}">' + ln(PLANE_X + 20, 104, PLANE_X + 20, 466, VG, sw) + sq(PLANE_X + 20, 104, 7, VG) + sq(PLANE_X + 20, 466, 7, VG) + '</g>')
-    c.append(f'<g opacity="{seg(T, 0.4, 0.9)}">' + t(PLANE_X + 32, 480, "READ IN FULL · t₀", 9, VG_DEEP, weight=600) + '</g>')
+    c.append(f'<g opacity="{seg(T, 0.4, 0.9)}">' + t(PLANE_X + 32, 480, "READ IN FULL · T0", 9, VG_DEEP, weight=600) + '</g>')
     # inbound stack shrinks
     remaining = sum(1 for k in range(N) if T < T0 + k * GAP)
     for i in range(min(remaining, 5) - 1, -1, -1):

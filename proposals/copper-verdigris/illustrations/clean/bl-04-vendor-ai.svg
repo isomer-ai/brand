@@ -1,45 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img"><title>Your vendor's AI is yours</title><style>@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap");</style><rect width="960" height="540" fill="#F6F6F5"/><defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img"><title>Your vendor's AI is yours</title><style>@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap");</style><rect width="960" height="540" fill="#F6F6F5"/><defs>
 <pattern id="bl04vendorai-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#B4602F" stroke-width="1.2"/></pattern>
 <pattern id="bl04vendorai-hatchv" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3F8A85" stroke-width="1.2"/></pattern>
 <pattern id="bl04vendorai-dots" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="11.5" y="11.5" width="1" height="1" fill="#6E6E75" opacity="0.45"/></pattern>
 <pattern id="bl04vendorai-micro" width="4" height="4" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="3" height="3" fill="#6E6E75" opacity="0.55"/></pattern>
 </defs><g shape-rendering="crispEdges"></g><rect x="120" y="200" width="144" height="48" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
-<text x="130" y="219" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="1">CARRIER</text>
-<text x="130" y="233" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">POLICYHOLDER-FACING</text>
+<text x="130" y="219" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="1">CARRIER</text>
+<text x="130" y="233" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">POLICYHOLDER-FACING</text>
 <rect x="120" y="272" width="144" height="10" fill="#ECECEA" stroke="#E3E3E5" stroke-width="0.75" />
 <rect x="120" y="286" width="144" height="10" fill="#FFFFFF" stroke="#E3E3E5" stroke-width="0.75" />
 <rect x="120" y="300" width="144" height="10" fill="#ECECEA" stroke="#E3E3E5" stroke-width="0.75" />
 <rect x="120" y="314" width="144" height="10" fill="#FFFFFF" stroke="#E3E3E5" stroke-width="0.75" />
 <rect x="120" y="328" width="144" height="10" fill="#ECECEA" stroke="#E3E3E5" stroke-width="0.75" />
-<text x="120" y="352" font-family="'Geist Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">AUDIT LOG</text>
+<text x="120" y="352" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">AUDIT LOG</text>
 <path d="M264 224 L404 224" stroke="#141416" stroke-width="1" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
 <path d="M397 219 L404 224 L397 229" stroke="#141416" stroke-width="1" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
 <rect x="408" y="200" width="144" height="48" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
-<text x="418" y="219" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="1">VENDOR</text>
-<text x="418" y="233" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">RUNS THE WORKFLOW</text>
+<text x="418" y="219" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="1">VENDOR</text>
+<text x="418" y="233" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">RUNS THE WORKFLOW</text>
 <rect x="408" y="272" width="144" height="10" fill="#ECECEA" stroke="#E3E3E5" stroke-width="0.75" />
 <rect x="408" y="286" width="144" height="10" fill="#FFFFFF" stroke="#E3E3E5" stroke-width="0.75" />
 <rect x="408" y="300" width="144" height="10" fill="#ECECEA" stroke="#E3E3E5" stroke-width="0.75" />
 <rect x="408" y="314" width="144" height="10" fill="#FFFFFF" stroke="#E3E3E5" stroke-width="0.75" />
 <rect x="408" y="328" width="144" height="10" fill="#ECECEA" stroke="#E3E3E5" stroke-width="0.75" />
-<text x="408" y="352" font-family="'Geist Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">AUDIT LOG</text>
+<text x="408" y="352" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">AUDIT LOG</text>
 <path d="M552 224 L692 224" stroke="#141416" stroke-width="1" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
 <path d="M685 219 L692 224 L685 229" stroke="#141416" stroke-width="1" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
 <rect x="696" y="200" width="144" height="48" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
-<text x="706" y="219" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="1">MODEL</text>
-<text x="706" y="233" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">MAKES THE CALL</text>
+<text x="706" y="219" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="1">MODEL</text>
+<text x="706" y="233" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">MAKES THE CALL</text>
 <rect x="696" y="272" width="144" height="10" fill="#ECECEA" stroke="#E3E3E5" stroke-width="0.75" />
 <rect x="696" y="286" width="144" height="10" fill="#FFFFFF" stroke="#E3E3E5" stroke-width="0.75" />
 <rect x="696" y="300" width="144" height="10" fill="#ECECEA" stroke="#E3E3E5" stroke-width="0.75" />
 <rect x="696" y="314" width="144" height="10" fill="#FFFFFF" stroke="#E3E3E5" stroke-width="0.75" />
 <rect x="696" y="328" width="144" height="10" fill="#ECECEA" stroke="#E3E3E5" stroke-width="0.75" />
-<text x="696" y="352" font-family="'Geist Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">AUDIT LOG</text>
+<text x="696" y="352" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="7" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">AUDIT LOG</text>
 <rect x="120" y="104" width="720" height="32" fill="#F2DCCB" stroke="#B4602F" stroke-width="1.25" />
-<text x="130" y="124" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#8E4720" text-anchor="start" font-weight="600" letter-spacing="0.8">EXAMINER · WRITTEN PROGRAM REVIEW</text>
+<text x="130" y="124" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#8E4720" text-anchor="start" font-weight="600" letter-spacing="0.8">EXAMINER · WRITTEN PROGRAM REVIEW</text>
 <line x1="192" y1="136" x2="192" y2="200" stroke="#B4602F" stroke-width="1" stroke-dasharray="4 3"/>
 <line x1="480" y1="136" x2="480" y2="200" stroke="#B4602F" stroke-width="1" stroke-dasharray="4 3"/>
 <line x1="768" y1="136" x2="768" y2="200" stroke="#B4602F" stroke-width="1" stroke-dasharray="4 3"/>
 <line x1="194" y1="420" x2="768" y2="420" stroke="#141416" stroke-width="1.25" />
 <path d="M202 414 L194 420 L202 426" stroke="#141416" stroke-width="1.25" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
 <rect x="765.0" y="417.0" width="6" height="6" fill="#141416" stroke="none" stroke-width="1" />
-<text x="194" y="444" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">ACCOUNTABILITY RETURNS TO THE CARRIER</text></svg>
+<text x="194" y="444" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">ACCOUNTABILITY RETURNS TO THE CARRIER</text></svg>

@@ -1,6 +1,6 @@
 """Export every Copper Verdigris plate as a standalone SVG (+ 2x PNG) into ../illustrations/.
 
-    pip install cairosvg   # PNG only; needs Geist + Geist Mono installed locally for correct type
+    pip install cairosvg   # PNG only; needs Fustat + IBM Plex Mono installed locally for correct type
     python3 export.py
 """
 import os, json
@@ -44,8 +44,8 @@ PLATES = [
     ("bl-06-fnol-not-day-1", "bl_fnol", 960, 540, "cover", "FNOL is not day 1"),
     ("bl-07-decided-in-the-inbox", "bl_inbox", 960, 540, "cover", "Decided in the inbox"),
 ]
-FONT = ('<style>@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600'
-        '&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap");</style>')
+FONT = ('<style>@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700'
+        '&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap");</style>')
 
 
 def svg(fid, fn, w, h, i, title, annotations=True):

@@ -91,7 +91,7 @@ def window(T):
             c.append(t(48, y0 + 62, "IN TIME", 8, MUTED))
     # delta
     da = seg(T, 7.4, 7.9)
-    c.append(fade(da, t(48, 612, "50% → 70%", 20, VG_DEEP, weight=600, ls=0.2, family=SANS) + t(170, 610, "OF HIGH-RISK CLAIMS CAUGHT IN TIME", 9, INK, weight=500)))
+    c.append(fade(da, t(48, 612, "50% TO 70%", 20, VG_DEEP, weight=600, ls=0.2, family=SANS) + t(184, 610, "OF HIGH-RISK CLAIMS CAUGHT IN TIME", 9, INK, weight=500)))
     caption = cap(T, [(0, "10 HIGH-RISK CLAIMS"), (0.8, "TODAY · RULES FIRE AFTER ENTRY"), (4.2, "WITH ISOMER · READ ON ARRIVAL"),
                       (7.4, "+20 POINTS CAUGHT IN TIME")])
     return wrap("\n".join(c), "A2", "WINDOW TO ACT", "AN-02", T, DUR, caption), DUR

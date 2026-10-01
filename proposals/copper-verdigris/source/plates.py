@@ -13,8 +13,8 @@ CU = "#B4602F"; CU_DEEP = "#9A5634"; CU_DARK = "#8E4720"; CU_LIGHT = "#E09C6B"; 
 VG = "#3F8A85"; VG_DEEP = "#2E6B68"; VG_DARK = "#1F4F4C"; VG_LIGHT = "#8CC2BC"; VG_MIST = "#D3E6E4"; VG_TINT = "#E9F2F1"
 RED = "#B4232F"; RED_DEEP = "#8F1B25"; RED_TINT = "#F8DEE0"
 COB = "#2F5D99"; COB_DEEP = "#234878"; COB_TINT = "#E3ECF7"
-MONO = "'Geist Mono', ui-monospace, monospace"
-SANS = "'Geist', system-ui, sans-serif"
+MONO = "'IBM Plex Mono', ui-monospace, monospace"
+SANS = "'Fustat', system-ui, sans-serif"
 
 
 def t(x, y, s, size=10, fill=MUTED, anchor="start", weight=400, ls=0.8, family=MONO):
@@ -135,7 +135,7 @@ def plate_hero(pid, w, h):
         c.append(r(56 + i * 15.5, 368, 11, 28, fill, MUTED, 0.75))
     c.append(ln(40, 382, 440, 382, VG, 1.5))
     c.append(sq(40, 382, 6, VG)); c.append(sq(440, 382, 6, VG))
-    c.append(t(440, 352, "SCAN · t₀", 9, VG_DEEP, "end"))
+    c.append(t(440, 352, "SCAN · T0", 9, VG_DEEP, "end"))
     c.append(t(48, 352, "DETECTOR PLANE · 85", 9, MUTED))
     # clear lane
     c.append(jn([(118, 404), (118, 448)], MUTED, 1, junctions=False))
@@ -257,7 +257,7 @@ def plate_immediate(pid, w, h):
     X = lambda d: round(ax0 + d * px, 1)
     # y axis
     c.append(ln(ax0, 88, ax0, ay, INK, 1))
-    c.append(t(ax0 - 8, 84, "OPTIONS OPEN", 8, MUTED))
+    c.append(t(ax0 + 10, 84, "OPTIONS OPEN", 8, MUTED))
     steps = [(0, 112), (5, 140), (10, 170), (15, 200), (20, 230), (25, 260), (28, 284), (30, 304)]
     d = f"M{X(0)} {steps[0][1]}"
     for i in range(1, len(steps)):
@@ -277,14 +277,14 @@ def plate_immediate(pid, w, h):
     c.append(r(X(0), 344, X(30) - X(0), 22, f"url(#{pid}-hatch)", "none", 0, 'opacity="0.55"'))
     c.append(t(X(0), 384, "TIME-LIMITED DEMAND · 30-DAY CLOCK", 9, CU_DARK, weight=500))
     # markers
-    c.append(ln(X(0), 72, X(0), 366, VG, 1.5))
+    c.append(ln(X(0), 58, X(0), 366, VG, 1.5))
     c.append(sq(X(0), 112, 8, VG))
-    c.append(t(X(0) + 10, 76, "ISOMER · t₀", 9, VG_DEEP, weight=600))
+    c.append(t(X(0) + 10, 62, "ISOMER · T0", 9, VG_DEEP, weight=600))
     c.append(ln(X(23), 96, X(23), 366, CU, 1.25, 'stroke-dasharray="4 3"'))
     c.append(sq(X(23), 230, 8, CU))
     c.append(t(X(23) - 6, 100, "MANUAL TRIAGE · d23", 9, CU_DARK, "end", weight=600))
     c.append(path(f"M{X(0)} 412 V418 H{X(23)} V412", MUTED, 1))
-    c.append(t((X(0) + X(23)) / 2, 432, "Δ 23 DAYS", 9, INK, "middle", weight=500))
+    c.append(t((X(0) + X(23)) / 2, 432, "GAP · 23 DAYS", 9, INK, "middle", weight=500))
     return "\n".join(c), "Immediate", "PL-04"
 
 
@@ -371,7 +371,7 @@ def plate_signal(pid, w, h):
     c.append(ln(x0 - 8, th, x1, th, INK, 1.25))
     c.append(t(x1, th - 8, "INTERRUPT THRESHOLD", 8, INK, "end", weight=500))
     c.append(ln(x0, base, x1, base, INK, 1))
-    c.append(t(x0, base + 18, "RANK →", 8, MUTED))
+    c.append(t(x0, base + 18, "RANK", 8, MUTED))
     c.append(t(x1, base + 18, "214 OPEN CLAIMS", 8, MUTED, "end"))
     c.append(path(f"M{x0} 92 V84 H{x0 + 4*bw} V92", CU, 1))
     c.append(t(x0 + 4 * bw + 8, 90, "4 ESCALATED · RANKED BY P&amp;L LINE", 8, CU_DARK, weight=600))
@@ -437,7 +437,7 @@ def plate_industrial(pid, w, h):
     c.append(t(x0 + size / 2, y0 + size + 28, "100", 8, MUTED, "middle"))
     c.append(path(f"M{x0 - 8} {y0} H{x0 - 14} V{y0 + size} H{x0 - 8}", MUTED, 1))
     c.append(t(x0 - 20, y0 + size / 2 + 3, "100", 8, MUTED, "end"))
-    c.append(t(64, 424, "≈10,000 DEMAND PACKAGES / WEEK · PLAINTIFF-SIDE AI", 8, CU_DARK, weight=500))
+    c.append(t(64, 424, "~10,000 DEMAND PACKAGES / WEEK · PLAINTIFF-SIDE AI", 8, CU_DARK, weight=500))
     return "\n".join(c), "Industrialized", "PL-10"
 
 
@@ -578,7 +578,7 @@ def plate_pipeline(pid, w, h):
     c.append(t(1264, 320, "EVERY STATE CHANGE", 8, MUTED))
     # dimension band
     c.append(path(f"M72 336 V344 H652 V336", MUTED, 1)); c.append(t(362, 360, "ISOMER CORE · READ IN FULL AGAINST THE INSURANCE ONTOLOGY", 8, MUTED, "middle"))
-    c.append(path(f"M744 336 V344 H1172 V336", MUTED, 1)); c.append(t(958, 360, "SIGNALS™ → ACTIONS™", 8, MUTED, "middle"))
+    c.append(path(f"M744 336 V344 H1172 V336", MUTED, 1)); c.append(t(958, 360, "SIGNALS™ + ACTIONS™", 8, MUTED, "middle"))
     return "\n".join(c), "Receipt to record", "PL-11"
 
 
@@ -620,13 +620,13 @@ def st_lawyer(pid, w, h):
     for d in range(0, 601, 50):
         major = d % 100 == 0
         c.append(ln(X(d), 96, X(d), 352, HAIR if major else "none", 1))
-    c.append(t(x0, 92, "FIRST NOTICE → LAWSUIT · DAYS", 8, MUTED))
+    c.append(t(x0, 92, "FIRST NOTICE TO LAWSUIT · DAYS", 8, MUTED))
     c.append(t(x0 - 12, 150, "2016", 9, INK, "end", 500))
     c.append(r(X(0), 132, X(550) - X(0), 28, WHITE, INK, 1))
-    c.append(t(X(550) + 8, 150, "≈550", 9, INK, weight=500))
+    c.append(t(X(550) + 8, 150, "~550", 9, INK, weight=500))
     c.append(t(x0 - 12, 222, "NOW", 9, CU_DARK, "end", 600))
     c.append(r(X(0), 204, X(120) - X(0), 28, CU_TINT, CU, 1.25))
-    c.append(t(X(120) + 8, 222, "≈120", 9, CU_DARK, weight=600))
+    c.append(t(X(120) + 8, 222, "~120", 9, CU_DARK, weight=600))
     c.append(path(f"M{X(120)} 240 V256 H{X(550)} V168", MUTED, 1, extra='stroke-dasharray="3 3"'))
     c.append(sq(X(120), 256, 5, MUTED)); c.append(sq(X(550), 256, 5, MUTED))
     c.append(t((X(120) + X(550)) / 2, 276, "−78%", 14, CU_DARK, "middle", 600, 0.2, SANS))
@@ -704,7 +704,7 @@ def st_concentration(pid, w, h):
     # table
     tx = 440
     rows = [("GL", "LITIGATED INJURY", "14× COST"), ("WC", "ATTORNEY CLAIM", "$78K vs $16K"),
-            ("LIAB.", "3% LITIGATED", "50%+ OF PAID"), ("GL", "COUNSEL ≤ 24h", "71% OF LITIGATED")]
+            ("LIAB.", "3% LITIGATED", "50%+ OF PAID"), ("GL", "COUNSEL IN 24h", "71% OF LITIGATED")]
     c.append(ln(tx, top, 664, top, INK, 1))
     for i, (a, b, v) in enumerate(rows):
         y = top + 24 + i * 44
@@ -765,14 +765,20 @@ def st_point(pid, w, h):
     c.append(t(X(10), 100, "$10.0M = 1 POINT OF COMBINED RATIO", 9, INK, "end", 600))
     # assumptions
     c.append(t(x0, 292, "WHEN A CLAIM IS CAUGHT IN TIME", 8, MUTED))
-    cells = [("20%", "AVOID SUIT"), ("15%", "LOWER DEFENSE COST"), ("7.5%", "LOWER SETTLEMENT")]
-    cw = (x1 - x0) / 3
-    for i, (v, lab) in enumerate(cells):
-        x = x0 + i * cw
-        c.append(r(x, 304, cw, 72, WHITE, INK, 1))
-        c.append(t(x + 12, 336, v, 18, VG_DEEP, weight=600, ls=0.2, family=SANS))
-        c.append(t(x + 12, 360, lab, 8, INK, weight=500))
-    c.append(t(x0, 404, "ILLUSTRATIVE · REPLACED BY YOUR ACTUALS IN THE ASSESSMENT", 8, MUTED))
+    rows = [(20, "AVOID SUIT"), (15, "LOWER DEFENSE COST"), (7.5, "LOWER SETTLEMENT")]
+    bx = x0 + 168
+    kk = (x1 - bx) / 25
+    for i, (v, lab) in enumerate(rows):
+        y = 306 + i * 24
+        c.append(t(x0, y + 11, lab, 8, INK, weight=500))
+        c.append(r(bx, y, round(v * kk, 1), 14, VG_MIST, VG, 1.25))
+        c.append(t(round(bx + v * kk + 8, 1), y + 11, f"{v:g}%", 9, VG_DARK, weight=600))
+    c.append(ln(bx, 380, x1, 380, INK, 1))
+    for p in range(0, 26):
+        c.append(ln(round(bx + p * kk, 1), 380, round(bx + p * kk, 1), 380 + (8 if p % 5 == 0 else 4), INK, 0.75))
+        if p % 5 == 0:
+            c.append(t(round(bx + p * kk, 1), 400, f"{p}%", 8, MUTED, "middle"))
+    c.append(t(x0, 424, "ILLUSTRATIVE · REPLACED BY YOUR ACTUALS IN THE ASSESSMENT", 8, MUTED))
     return "\n".join(c), "One point", "ST-05"
 
 
@@ -783,8 +789,8 @@ def st_paths(pid, w, h):
         c.append(r(a, 96, b - a, 280, SECTION if lab == "MONTHS" else "none", HAIR, 1))
         c.append(t(a + 8, 88, lab, 8, MUTED))
     rows = [(140, "GROW THE BOOK", "+12% PREMIUM · CAPITAL"),
-            (230, "CUT CLAIMS STAFF", "≈80 ADJUSTERS"),
-            (320, "CATCH RISK IN TIME", "50% → 70% IN TIME")]
+            (230, "CUT CLAIMS STAFF", "~80 ADJUSTERS"),
+            (320, "CATCH RISK IN TIME", "50% TO 70% IN TIME")]
     for y, a, b in rows:
         c.append(t(72, y - 2, a, 9, INK if "CATCH" not in a else VG_DARK, weight=600))
         c.append(t(72, y + 12, b, 8, MUTED))
@@ -872,7 +878,7 @@ def st_thirty(pid, w, h):
     c.append(t(X(4320) + 10, 230, "CMS ENTRY", 8, INK, weight=600))
     c.append(t(X(4320) + 10, 242, "RULES FIRE", 8, MUTED))
     c.append(ln(X(1), 104, X(1), 336, VG, 1.5)); c.append(sq(X(1), 104, 6, VG))
-    c.append(t(X(1) + 8, 108, "t₀ · ARRIVES", 8, VG_DEEP, weight=600))
+    c.append(t(X(1) + 8, 108, "T0 · ARRIVES", 8, VG_DEEP, weight=600))
     c.append(ln(x0, 336, x1, 336, INK, 1))
     for m, lab in ticks:
         c.append(ln(X(m), 336, X(m), 344, INK, 0.75))
@@ -1127,7 +1133,7 @@ def bl_inbox(pid, w, h):
     c.append(t(72, 96, "ISOMER READS HERE", 8, VG_DEEP, weight=600))
     c.append(jn([(416, 216), (600, 216)], CU, 1.25, junctions=False)); c.append(arrow_r(600, 216, CU, 1.25))
     c.append(path("M424 248 V256 H600 V248", MUTED, 1))
-    c.append(t(512, 276, "Δ DAYS UNTIL ENTRY", 9, INK, "middle", 600))
+    c.append(t(512, 276, "DAYS UNTIL ENTRY", 9, INK, "middle", 600))
     c.append(r(608, 96, 40, 320, SECTION, INK, 1))
     for i in range(12):
         c.append(r(616, 104 + i * 26, 24, 18, WHITE, MUTED, 0.75))
