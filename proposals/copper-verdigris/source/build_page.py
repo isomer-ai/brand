@@ -74,7 +74,7 @@ vids = "".join(
     for n, t, r, d in anims)
 
 principles = [("Figures, not illustrations", "Every plate encodes a real quantity or a real mechanism. If it reads the same with the labels removed, it's decoration."),
-              ("Right angles, fewest bends", "Straight lines and sharp corners. Lay nodes on shared rows and columns so connectors run straight. Circles occasionally; curves only inside icons."),
+              ("Right angles, fewest bends", "Straight lines and sharp corners. Lay nodes on shared rows and columns so connectors run straight. Circles occasionally; curves only inside icons or where the figure needs them, like Sankey flows."),
               ("Color is a verb", "Neutrals draw the apparatus. Copper means risk was found or time ran out. Verdigris means Isomer acted. One meaning per color."),
               ("Show the source", "Every number traces to a source. Unknowns are [BRACKETED], never invented."),
               ("One idea per plate", "One comparison or one mechanism. Two headlines means two plates.")]
@@ -307,7 +307,7 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
 </ul></div>
 <div class="card dont"><h4>Don't</h4><ul>
 <li>Rounded corners on any box, node, bar or tag.</li>
-<li>Blobs, waves, curved connectors or curved charts.</li>
+<li>Blobs, waves, curved connectors, or curves the figure does not need.</li>
 <li>Connectors with two or more bends.</li>
 <li>Gradients, shadows, glows, isometric 3D, stock metaphors.</li>
 <li>Status color as a fill or series, or without its word.</li>

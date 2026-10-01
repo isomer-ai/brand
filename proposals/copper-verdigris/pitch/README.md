@@ -14,7 +14,7 @@ The live minisite is the original Isomer pitch page with a runtime skin that swa
 | No gradients, shadows, glows or transparency stacks | Drop shadows on panels, glowing nodes and scan line, radial glow in the claim graph, gradient progress bar | Flat fills; 1px rules; dot grid in the claim graph |
 | Graphite is for product screens | Graphite also behind the result, savings, benefits, deliverables, fee and Isomer cards | Graphite only on the inbox and the X-ray file |
 | Right angles, at most one bend; junction squares at branch points | Claim graph connectors run diagonally from the center | Trunk-and-branch routing, vertical then horizontal, 5px junction squares |
-| No curved charts | Loss chart joins its bars with an S-curve | Rectilinear stepped bands, copper hatching on the at-risk volume |
+| Curves only where the figure needs them | Loss chart is a Sankey with rounded bars and a gradient fade | Square bars, flat curved flow bands kept because the Sankey needs them, copper hatching on the at-risk volume |
 | Markers are 8px squares | Round dots on the window track, rail and adjuster grid | Squares |
 | Copper marks risk, verdigris marks Isomer acting | Verdigris on plaintiff vendor claims, funding amounts, source links and "flagged after entry" (rules and adjusters) | Copper or ink for plaintiff-side figures; neutral for rules and adjusters; verdigris only where Isomer acts or delivers |
 | Red is a labelled status tag, used rarely | Red glow on the hit row's rail marker | No red; detected severity (critical, high, medium) stays copper |

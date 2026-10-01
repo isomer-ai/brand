@@ -52,7 +52,7 @@ Rules:
 - **Dash pattern carries meaning.** 3/3 is a source trace. 6/3 is a threshold or limit. 8/4 is a boundary such as a tenant.
 - **Connectors.** Straight first. A 5px junction square marks a branch point only, never a plain bend. Square caps, miter joins.
 - **Corners.** Radius 0 on every box, node, bar and tag.
-- **Circles and curves.** Circles are allowed occasionally (a point marker, a dial). Curves are allowed only inside icons, such as the person figure for a claimant, counsel or adjuster (`person()` in `plates.py`: circle head, curved shoulders, flat base so it sits on the diagram baseline).
+- **Circles and curves.** Circles are allowed occasionally (a point marker, a dial). Curves are allowed inside icons, such as the person figure for a claimant, counsel or adjuster (`person()` in `plates.py`: circle head, curved shoulders, flat base so it sits on the diagram baseline), and where the curve is the figure: the flow bands of a Sankey, which show volume moving from one split to another. Use them only when the chart type needs them, never as decoration or to soften a connector.
 - **Fills.** White for objects, section grey for apparatus, tints for semantic fills. No gradients, shadows, glows or transparency stacks.
 
 ## Components
@@ -112,7 +112,7 @@ Animations are the same plates rendered frame by frame. The scene is a function 
 ## Don't
 
 - Rounded corners on any box, node, bar or tag.
-- Organic blobs, waves, freeform or curved connectors, curved charts.
+- Organic blobs, waves, freeform or curved connectors, or curves a figure does not need (a Sankey flow band is the exception, not a license).
 - Connectors with two or more bends, or junction squares on plain corners.
 - Gradients, shadows, glows, glass, isometric 3D.
 - Stock metaphors (shields, locks, lightbulbs, rockets), faces or hands. Person icons are fine.
@@ -123,7 +123,7 @@ Animations are the same plates rendered frame by frame. The scene is a function 
 ## Before it ships
 
 1. Does it measure something or show a real mechanism?
-2. Are all boxes square-cornered, with curves only in icons, and does every connector run straight or with one bend?
+2. Are all boxes square-cornered, with curves only in icons or where the figure needs them (Sankey flows), and does every connector run straight or with one bend?
 3. Does copper only mark risk, verdigris only Isomer acting, and status color only a labelled tag?
 4. Is every number sourced, and every unknown in [brackets]?
 5. Does it still read with annotations off?
