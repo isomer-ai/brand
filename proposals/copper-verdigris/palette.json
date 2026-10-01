@@ -1,0 +1,416 @@
+{
+ "name": "Copper Verdigris",
+ "status": "proposal",
+ "replaces": "Isomer core palette (Isomer Blue, Accent Purple, Secondary Orange)",
+ "summary": "Copper signals. Verdigris acts. Black, white and grey carry the page.",
+ "semantics": {
+  "copper": "risk found, flagged, warning, too late",
+  "verdigris": "Isomer acting on it",
+  "oxide-red": "critical or irreversible (status only)",
+  "cobalt": "OK, healthy, info (status only)",
+  "graphite": "product screens only"
+ },
+ "share": {
+  "neutrals": 0.82,
+  "ink": 0.08,
+  "copper": 0.045,
+  "verdigris": 0.045,
+  "status": 0.01
+ },
+ "typography": {
+  "display_and_body": "Geist",
+  "annotation": "Geist Mono",
+  "css_import": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap",
+  "note": "Open question: Geist (used on the Copper Verdigris pages) vs the current brand face, Fustat."
+ },
+ "families": [
+  {
+   "id": "neutrals",
+   "title": "Neutrals",
+   "description": "About 85% of any surface. Graphite has a trace of green so it sits with the verdigris.",
+   "colors": [
+    {
+     "name": "Ink",
+     "token": "ink",
+     "hex": "#141416",
+     "rgb": [
+      20,
+      20,
+      22
+     ],
+     "use": "Headlines, body type, the logo",
+     "primary": true
+    },
+    {
+     "name": "Graphite",
+     "token": "graphite",
+     "hex": "#3A3E3F",
+     "rgb": [
+      58,
+      62,
+      63
+     ],
+     "use": "Product screens: inbox, X-ray, data panels",
+     "primary": true
+    },
+    {
+     "name": "Graphite deep",
+     "token": "graphite-deep",
+     "hex": "#303435",
+     "rgb": [
+      48,
+      52,
+      53
+     ],
+     "use": "Pressed states on screens",
+     "primary": false
+    },
+    {
+     "name": "Graphite raised",
+     "token": "graphite-raised",
+     "hex": "#45494A",
+     "rgb": [
+      69,
+      73,
+      74
+     ],
+     "use": "Rows and panels inside a screen",
+     "primary": false
+    },
+    {
+     "name": "On-graphite muted",
+     "token": "on-graphite-muted",
+     "hex": "#A4A9AA",
+     "rgb": [
+      164,
+      169,
+      170
+     ],
+     "use": "Secondary text on graphite",
+     "primary": false
+    },
+    {
+     "name": "Body",
+     "token": "body",
+     "hex": "#47474D",
+     "rgb": [
+      71,
+      71,
+      77
+     ],
+     "use": "Running text",
+     "primary": false
+    },
+    {
+     "name": "Muted",
+     "token": "muted",
+     "hex": "#6E6E75",
+     "rgb": [
+      110,
+      110,
+      117
+     ],
+     "use": "Captions, sources, labels",
+     "primary": false
+    },
+    {
+     "name": "Hairline",
+     "token": "hairline",
+     "hex": "#E3E3E5",
+     "rgb": [
+      227,
+      227,
+      229
+     ],
+     "use": "Rules and card borders",
+     "primary": false
+    },
+    {
+     "name": "Section grey",
+     "token": "section-grey",
+     "hex": "#ECECEA",
+     "rgb": [
+      236,
+      236,
+      234
+     ],
+     "use": "Hero, X-ray and close sections",
+     "primary": false
+    },
+    {
+     "name": "Paper",
+     "token": "paper",
+     "hex": "#F6F6F5",
+     "rgb": [
+      246,
+      246,
+      245
+     ],
+     "use": "Page background",
+     "primary": false
+    },
+    {
+     "name": "White",
+     "token": "white",
+     "hex": "#FFFFFF",
+     "rgb": [
+      255,
+      255,
+      255
+     ],
+     "use": "Cards on paper",
+     "primary": false
+    }
+   ]
+  },
+  {
+   "id": "copper",
+   "title": "Copper \u00b7 the signal",
+   "description": "Risk flags, HIGH tags, \"too late\", headline accents. Doubles as the warning color. Never a full-bleed background.",
+   "colors": [
+    {
+     "name": "Copper",
+     "token": "copper",
+     "hex": "#B4602F",
+     "rgb": [
+      180,
+      96,
+      47
+     ],
+     "use": "Risk marks, too-late dots, the attorney flow",
+     "primary": true
+    },
+    {
+     "name": "Copper deep",
+     "token": "copper-deep",
+     "hex": "#9A5634",
+     "rgb": [
+      154,
+      86,
+      52
+     ],
+     "use": "Headline accents and eyebrows on light",
+     "primary": false
+    },
+    {
+     "name": "Copper dark",
+     "token": "copper-dark",
+     "hex": "#8E4720",
+     "rgb": [
+      142,
+      71,
+      32
+     ],
+     "use": "Risk text that needs more contrast",
+     "primary": false
+    },
+    {
+     "name": "Copper light",
+     "token": "copper-light",
+     "hex": "#E09C6B",
+     "rgb": [
+      224,
+      156,
+      107
+     ],
+     "use": "Risk tags on graphite screens",
+     "primary": false
+    },
+    {
+     "name": "Copper tint",
+     "token": "copper-tint",
+     "hex": "#F2DCCB",
+     "rgb": [
+      242,
+      220,
+      203
+     ],
+     "use": "Risk fills on paper",
+     "primary": false
+    }
+   ]
+  },
+  {
+   "id": "verdigris",
+   "title": "Verdigris \u00b7 the action",
+   "description": "ACT pills, \"flagged on arrival\", the X-ray scan line, Isomer outcomes.",
+   "colors": [
+    {
+     "name": "Verdigris",
+     "token": "verdigris",
+     "hex": "#3F8A85",
+     "rgb": [
+      63,
+      138,
+      133
+     ],
+     "use": "ACT pills and Isomer outcomes",
+     "primary": true
+    },
+    {
+     "name": "Verdigris deep",
+     "token": "verdigris-deep",
+     "hex": "#2E6B68",
+     "rgb": [
+      46,
+      107,
+      104
+     ],
+     "use": "Flagged on arrival, text accents",
+     "primary": false
+    },
+    {
+     "name": "Verdigris dark",
+     "token": "verdigris-dark",
+     "hex": "#1F4F4C",
+     "rgb": [
+      31,
+      79,
+      76
+     ],
+     "use": "Outcome text on tints",
+     "primary": false
+    },
+    {
+     "name": "Verdigris light",
+     "token": "verdigris-light",
+     "hex": "#8CC2BC",
+     "rgb": [
+      140,
+      194,
+      188
+     ],
+     "use": "Scan line and nodes on screens",
+     "primary": false
+    },
+    {
+     "name": "Verdigris mist",
+     "token": "verdigris-mist",
+     "hex": "#D3E6E4",
+     "rgb": [
+      211,
+      230,
+      228
+     ],
+     "use": "Window-to-act fills",
+     "primary": false
+    },
+    {
+     "name": "Verdigris tint",
+     "token": "verdigris-tint",
+     "hex": "#E9F2F1",
+     "rgb": [
+      233,
+      242,
+      241
+     ],
+     "use": "Lightest outcome wash",
+     "primary": false
+    }
+   ]
+  },
+  {
+   "id": "status",
+   "title": "Status \u00b7 for apps",
+   "description": "Three states, not four. Warning reuses copper. Red is reserved for critical or broken. Cobalt means healthy and doubles as info. Always pair status color with a label or icon.",
+   "colors": [
+    {
+     "name": "Oxide red",
+     "token": "oxide-red",
+     "hex": "#B4232F",
+     "rgb": [
+      180,
+      35,
+      47
+     ],
+     "use": "Critical and error states only",
+     "primary": true
+    },
+    {
+     "name": "Red deep",
+     "token": "red-deep",
+     "hex": "#8F1B25",
+     "rgb": [
+      143,
+      27,
+      37
+     ],
+     "use": "Critical text on red tint",
+     "primary": false
+    },
+    {
+     "name": "Red light",
+     "token": "red-light",
+     "hex": "#F08A92",
+     "rgb": [
+      240,
+      138,
+      146
+     ],
+     "use": "Critical on graphite screens",
+     "primary": false
+    },
+    {
+     "name": "Red tint",
+     "token": "red-tint",
+     "hex": "#F8DEE0",
+     "rgb": [
+      248,
+      222,
+      224
+     ],
+     "use": "Critical row and badge fills",
+     "primary": false
+    },
+    {
+     "name": "Cobalt",
+     "token": "cobalt",
+     "hex": "#2F5D99",
+     "rgb": [
+      47,
+      93,
+      153
+     ],
+     "use": "Healthy, all OK, and info",
+     "primary": true
+    },
+    {
+     "name": "Cobalt deep",
+     "token": "cobalt-deep",
+     "hex": "#234878",
+     "rgb": [
+      35,
+      72,
+      120
+     ],
+     "use": "OK text on cobalt tint",
+     "primary": false
+    },
+    {
+     "name": "Cobalt light",
+     "token": "cobalt-light",
+     "hex": "#8FB4E3",
+     "rgb": [
+      143,
+      180,
+      227
+     ],
+     "use": "OK on graphite screens",
+     "primary": false
+    },
+    {
+     "name": "Cobalt tint",
+     "token": "cobalt-tint",
+     "hex": "#E3ECF7",
+     "rgb": [
+      227,
+      236,
+      247
+     ],
+     "use": "OK row and badge fills",
+     "primary": false
+    }
+   ]
+  }
+ ]
+}

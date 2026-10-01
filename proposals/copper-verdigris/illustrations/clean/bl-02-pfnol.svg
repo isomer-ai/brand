@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img"><title>Do we need a PFNOL?</title><style>@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap");</style><rect width="960" height="540" fill="#F6F6F5"/><defs>
+<pattern id="bl02pfnol-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#B4602F" stroke-width="1.2"/></pattern>
+<pattern id="bl02pfnol-hatchv" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3F8A85" stroke-width="1.2"/></pattern>
+<pattern id="bl02pfnol-dots" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="11.5" y="11.5" width="1" height="1" fill="#6E6E75" opacity="0.45"/></pattern>
+<pattern id="bl02pfnol-micro" width="4" height="4" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="3" height="3" fill="#6E6E75" opacity="0.55"/></pattern>
+</defs><g shape-rendering="crispEdges"></g><rect x="120" y="392.8" width="720" height="31.200000000000003" fill="#ECECEA" stroke="none" stroke-width="0" />
+<text x="128" y="384.8" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="500" letter-spacing="0.8">NORMAL WEEK · WHAT THE WORKFLOW IS SIZED FOR</text>
+<rect x="123.0" y="400.0" width="28.3" height="24.0" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="157.3" y="397.6" width="28.3" height="26.4" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="191.6" y="402.4" width="28.3" height="21.6" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="225.9" y="400.0" width="28.3" height="24.0" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="260.1" y="398.8" width="28.3" height="25.2" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="294.4" y="401.2" width="28.3" height="22.8" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="328.7" y="400.0" width="28.3" height="24.0" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="363.0" y="400.0" width="28.3" height="24.0" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="397.3" y="136.0" width="28.3" height="288.0" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="397.3" y="136.0" width="28.3" height="256.8" fill="url(#bl02pfnol-hatch)" stroke="#B4602F" stroke-width="0.75" />
+<rect x="431.6" y="184.0" width="28.3" height="240.0" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="431.6" y="184.0" width="28.3" height="208.8" fill="url(#bl02pfnol-hatch)" stroke="#B4602F" stroke-width="0.75" />
+<rect x="465.9" y="232.0" width="28.3" height="192.0" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="465.9" y="232.0" width="28.3" height="160.8" fill="url(#bl02pfnol-hatch)" stroke="#B4602F" stroke-width="0.75" />
+<rect x="500.1" y="280.0" width="28.3" height="144.0" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="500.1" y="280.0" width="28.3" height="112.8" fill="url(#bl02pfnol-hatch)" stroke="#B4602F" stroke-width="0.75" />
+<rect x="534.4" y="316.0" width="28.3" height="108.0" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="534.4" y="316.0" width="28.3" height="76.8" fill="url(#bl02pfnol-hatch)" stroke="#B4602F" stroke-width="0.75" />
+<rect x="568.7" y="347.2" width="28.3" height="76.8" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="568.7" y="347.2" width="28.3" height="45.6" fill="url(#bl02pfnol-hatch)" stroke="#B4602F" stroke-width="0.75" />
+<rect x="603.0" y="366.4" width="28.3" height="57.6" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="603.0" y="366.4" width="28.3" height="26.4" fill="url(#bl02pfnol-hatch)" stroke="#B4602F" stroke-width="0.75" />
+<rect x="637.3" y="380.8" width="28.3" height="43.2" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="637.3" y="380.8" width="28.3" height="12.0" fill="url(#bl02pfnol-hatch)" stroke="#B4602F" stroke-width="0.75" />
+<rect x="671.6" y="390.4" width="28.3" height="33.6" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="671.6" y="390.4" width="28.3" height="2.4" fill="url(#bl02pfnol-hatch)" stroke="#B4602F" stroke-width="0.75" />
+<rect x="705.9" y="395.2" width="28.3" height="28.8" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="740.1" y="397.6" width="28.3" height="26.4" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="774.4" y="400.0" width="28.3" height="24.0" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<rect x="808.7" y="400.0" width="28.3" height="24.0" fill="#FFFFFF" stroke="#141416" stroke-width="0.75" />
+<path d="M120 424 V424.0 H154.3 V424.0 H188.6 V424.0 H222.9 V424.0 H257.1 V424.0 H291.4 V424.0 H325.7 V424.0 H360.0 V424.0 H394.3 V340.9 H428.6 V273.3 H462.9 V221.3 H497.1 V184.8 H531.4 V160.0 H565.7 V145.2 H600.0 V136.7 H634.3 V132.8 H668.6 V132.0 H702.9 V132.8 H737.1 V134.3 H771.4 V136.7 H805.7 V139.0 H840.0" stroke="#B4602F" stroke-width="1.5" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
+<text x="565.7142857142858" y="116" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#8E4720" text-anchor="start" font-weight="600" letter-spacing="0.8">QUEUE DEPTH</text>
+<line x1="120" y1="424" x2="840" y2="424" stroke="#141416" stroke-width="1" />
+<line x1="120.0" y1="424" x2="120.0" y2="432" stroke="#141416" stroke-width="0.75" />
+<text x="120.0" y="446" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="middle" font-weight="400" letter-spacing="0.8">d0</text>
+<line x1="154.28571428571428" y1="424" x2="154.28571428571428" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="188.57142857142856" y1="424" x2="188.57142857142856" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="222.85714285714286" y1="424" x2="222.85714285714286" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="257.1428571428571" y1="424" x2="257.1428571428571" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="291.42857142857144" y1="424" x2="291.42857142857144" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="325.7142857142857" y1="424" x2="325.7142857142857" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="360.0" y1="424" x2="360.0" y2="432" stroke="#141416" stroke-width="0.75" />
+<text x="360.0" y="446" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="middle" font-weight="400" letter-spacing="0.8">d7</text>
+<line x1="394.2857142857143" y1="424" x2="394.2857142857143" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="428.57142857142856" y1="424" x2="428.57142857142856" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="462.85714285714283" y1="424" x2="462.85714285714283" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="497.1428571428571" y1="424" x2="497.1428571428571" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="531.4285714285714" y1="424" x2="531.4285714285714" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="565.7142857142858" y1="424" x2="565.7142857142858" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="600.0" y1="424" x2="600.0" y2="432" stroke="#141416" stroke-width="0.75" />
+<text x="600.0" y="446" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="middle" font-weight="400" letter-spacing="0.8">d14</text>
+<line x1="634.2857142857142" y1="424" x2="634.2857142857142" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="668.5714285714286" y1="424" x2="668.5714285714286" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="702.8571428571429" y1="424" x2="702.8571428571429" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="737.1428571428571" y1="424" x2="737.1428571428571" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="771.4285714285714" y1="424" x2="771.4285714285714" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="805.7142857142857" y1="424" x2="805.7142857142857" y2="428" stroke="#141416" stroke-width="0.75" />
+<line x1="840.0" y1="424" x2="840.0" y2="432" stroke="#141416" stroke-width="0.75" />
+<text x="840.0" y="446" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="middle" font-weight="400" letter-spacing="0.8">d21</text>
+<line x1="394.2857142857143" y1="424" x2="394.2857142857143" y2="104" stroke="#B4602F" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="388.2857142857143" y="108" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#8E4720" text-anchor="end" font-weight="600" letter-spacing="0.8">LANDFALL</text></svg>

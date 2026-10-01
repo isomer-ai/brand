@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" role="img"><title>Nuclear verdicts</title><style>@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap");</style><rect width="480" height="480" fill="#F6F6F5"/><defs>
+<pattern id="pl08nuclearverdicts-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#B4602F" stroke-width="1.2"/></pattern>
+<pattern id="pl08nuclearverdicts-hatchv" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3F8A85" stroke-width="1.2"/></pattern>
+<pattern id="pl08nuclearverdicts-dots" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="11.5" y="11.5" width="1" height="1" fill="#6E6E75" opacity="0.45"/></pattern>
+<pattern id="pl08nuclearverdicts-micro" width="4" height="4" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="3" height="3" fill="#6E6E75" opacity="0.55"/></pattern>
+</defs><g shape-rendering="crispEdges"></g><line x1="96" y1="275.0" x2="400" y2="275.0" stroke="#E3E3E5" stroke-width="1" />
+<text x="88" y="278.0" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">50</text>
+<line x1="96" y1="190.0" x2="400" y2="190.0" stroke="#E3E3E5" stroke-width="1" />
+<text x="88" y="193.0" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">100</text>
+<line x1="96" y1="105.0" x2="400" y2="105.0" stroke="#E3E3E5" stroke-width="1" />
+<text x="88" y="108.0" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">150</text>
+<rect x="136" y="208.70000000000002" width="88" height="151.29999999999998" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
+<rect x="272" y="130.5" width="88" height="229.5" fill="#F2DCCB" stroke="#B4602F" stroke-width="1.25" />
+<rect x="272" y="130.5" width="88" height="229.5" fill="url(#pl08nuclearverdicts-hatch)" stroke="none" stroke-width="0" opacity="0.5"/>
+<line x1="96" y1="360" x2="400" y2="360" stroke="#141416" stroke-width="1" />
+<text x="180" y="380" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="middle" font-weight="500" letter-spacing="0.8">2023</text>
+<text x="316" y="380" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#8E4720" text-anchor="middle" font-weight="600" letter-spacing="0.8">2024</text>
+<text x="180" y="200.70000000000002" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="middle" font-weight="400" letter-spacing="0.8">n=89</text>
+<text x="316" y="122.5" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#8E4720" text-anchor="middle" font-weight="400" letter-spacing="0.8">n=135 · $31.3B</text>
+<path d="M232 208.70000000000002 H252 V130.5 H264" stroke="#B4602F" stroke-width="1" fill="none" stroke-linejoin="miter" stroke-linecap="square" stroke-dasharray="3 3"/>
+<rect x="249.5" y="206.20000000000002" width="5" height="5" fill="#B4602F" stroke="none" stroke-width="1" />
+<rect x="249.5" y="128.0" width="5" height="5" fill="#B4602F" stroke="none" stroke-width="1" />
+<text x="244" y="173.60000000000002" font-family="'Geist', system-ui, sans-serif" font-size="12" fill="#8E4720" text-anchor="end" font-weight="600" letter-spacing="0.2">+52%</text>
+<text x="64" y="420" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">NUCLEAR VERDICTS · SOURCE: MARATHON STRATEGIES</text></svg>

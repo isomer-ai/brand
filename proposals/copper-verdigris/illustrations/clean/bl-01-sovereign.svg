@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img"><title>Sovereign claims AI</title><style>@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap");</style><rect width="960" height="540" fill="#F6F6F5"/><defs>
+<pattern id="bl01sovereign-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#B4602F" stroke-width="1.2"/></pattern>
+<pattern id="bl01sovereign-hatchv" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3F8A85" stroke-width="1.2"/></pattern>
+<pattern id="bl01sovereign-dots" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="11.5" y="11.5" width="1" height="1" fill="#6E6E75" opacity="0.45"/></pattern>
+<pattern id="bl01sovereign-micro" width="4" height="4" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="3" height="3" fill="#6E6E75" opacity="0.55"/></pattern>
+</defs><g shape-rendering="crispEdges"></g><rect x="120" y="104" width="720" height="352" fill="url(#bl01sovereign-dots)" stroke="#141416" stroke-width="1.25" stroke-dasharray="8 4"/>
+<rect x="120" y="104" width="220" height="22" fill="#141416" stroke="none" stroke-width="0" />
+<text x="130" y="119" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#FFFFFF" text-anchor="start" font-weight="600" letter-spacing="0.8">INSURER · AZURE TENANT</text>
+<rect x="200" y="230" width="92" height="120" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
+<rect x="282" y="230" width="10" height="10" fill="#ECECEA" stroke="#141416" stroke-width="1" />
+<rect x="208" y="248" width="53.2" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="208" y="257" width="64.6" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="208" y="266" width="45.6" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="208" y="275" width="60.8" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="208" y="284" width="38.0" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="208" y="293" width="57.0" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="208" y="302" width="49.4" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="208" y="311" width="30.4" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="192" y="220" width="92" height="120" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
+<rect x="274" y="220" width="10" height="10" fill="#ECECEA" stroke="#141416" stroke-width="1" />
+<rect x="200" y="238" width="53.2" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="200" y="247" width="64.6" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="200" y="256" width="45.6" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="200" y="265" width="60.8" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="200" y="274" width="38.0" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="200" y="283" width="57.0" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="200" y="292" width="49.4" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="200" y="301" width="30.4" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="184" y="210" width="92" height="120" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
+<rect x="266" y="210" width="10" height="10" fill="#ECECEA" stroke="#141416" stroke-width="1" />
+<rect x="192" y="228" width="53.2" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="192" y="237" width="64.6" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="192" y="246" width="45.6" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="192" y="255" width="60.8" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="192" y="264" width="38.0" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="192" y="273" width="57.0" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="192" y="282" width="49.4" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="192" y="291" width="30.4" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="176" y="200" width="92" height="120" fill="#FFFFFF" stroke="#141416" stroke-width="1" />
+<rect x="258" y="200" width="10" height="10" fill="#ECECEA" stroke="#141416" stroke-width="1" />
+<rect x="184" y="218" width="53.2" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="184" y="227" width="64.6" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="184" y="236" width="45.6" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="184" y="245" width="60.8" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="184" y="254" width="38.0" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="184" y="263" width="57.0" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="184" y="272" width="49.4" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<rect x="184" y="281" width="30.4" height="2.5" fill="#C9C9CC" stroke="none" stroke-width="0" />
+<text x="176" y="192" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">CLAIM DATA</text>
+<path d="M300 270 L392 270" stroke="#141416" stroke-width="1" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
+<path d="M385 265 L392 270 L385 275" stroke="#141416" stroke-width="1" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
+<rect x="400" y="196" width="176" height="148" fill="#FFFFFF" stroke="#141416" stroke-width="1.5" />
+<rect x="408" y="204" width="160" height="132" fill="none" stroke="#141416" stroke-width="0.75" />
+<rect x="424" y="228" width="20" height="16" fill="#ECECEA" stroke="#6E6E75" stroke-width="0.75" />
+<rect x="424" y="258" width="20" height="16" fill="#ECECEA" stroke="#6E6E75" stroke-width="0.75" />
+<rect x="424" y="288" width="20" height="16" fill="#ECECEA" stroke="#6E6E75" stroke-width="0.75" />
+<rect x="460" y="228" width="20" height="16" fill="#ECECEA" stroke="#6E6E75" stroke-width="0.75" />
+<rect x="460" y="258" width="20" height="16" fill="#ECECEA" stroke="#6E6E75" stroke-width="0.75" />
+<rect x="460" y="288" width="20" height="16" fill="#ECECEA" stroke="#6E6E75" stroke-width="0.75" />
+<rect x="496" y="228" width="20" height="16" fill="#ECECEA" stroke="#6E6E75" stroke-width="0.75" />
+<rect x="496" y="258" width="20" height="16" fill="#F2DCCB" stroke="#B4602F" stroke-width="0.75" />
+<rect x="496" y="288" width="20" height="16" fill="#ECECEA" stroke="#6E6E75" stroke-width="0.75" />
+<rect x="532" y="228" width="20" height="16" fill="#ECECEA" stroke="#6E6E75" stroke-width="0.75" />
+<rect x="532" y="258" width="20" height="16" fill="#ECECEA" stroke="#6E6E75" stroke-width="0.75" />
+<rect x="532" y="288" width="20" height="16" fill="#ECECEA" stroke="#6E6E75" stroke-width="0.75" />
+<text x="400" y="188" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="start" font-weight="600" letter-spacing="0.8">ISOMER CORE</text>
+<path d="M576 240 L640 240" stroke="#B4602F" stroke-width="1.25" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
+<path d="M633 235 L640 240 L633 245" stroke="#B4602F" stroke-width="1.25" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
+<rect x="648" y="220" width="144" height="40" fill="#F2DCCB" stroke="#B4602F" stroke-width="1.25" />
+<text x="658" y="239" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#8E4720" text-anchor="start" font-weight="600" letter-spacing="1">SIGNALS</text>
+<path d="M576 300 L640 300" stroke="#3F8A85" stroke-width="1.25" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
+<path d="M633 295 L640 300 L633 305" stroke="#3F8A85" stroke-width="1.25" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
+<rect x="648" y="280" width="144" height="40" fill="#E9F2F1" stroke="#3F8A85" stroke-width="1.25" />
+<text x="658" y="299" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#1F4F4C" text-anchor="start" font-weight="600" letter-spacing="1">ACTIONS</text>
+<text x="120" y="488" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#141416" text-anchor="start" font-weight="500" letter-spacing="0.8">DEPLOYED IN YOUR TENANT · YOUR KEYS · YOUR BOUNDARY</text>
+<text x="840" y="488" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">AZURE MARKETPLACE</text></svg>

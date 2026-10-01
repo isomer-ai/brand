@@ -1,0 +1,56 @@
+/* Copper Verdigris (proposal). Source: palette.json. */
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap");
+
+:root {
+  /* Neutrals */
+  --cv-ink: #141416;
+  --cv-graphite: #3A3E3F;
+  --cv-graphite-deep: #303435;
+  --cv-graphite-raised: #45494A;
+  --cv-on-graphite-muted: #A4A9AA;
+  --cv-body: #47474D;
+  --cv-muted: #6E6E75;
+  --cv-hairline: #E3E3E5;
+  --cv-section-grey: #ECECEA;
+  --cv-paper: #F6F6F5;
+  --cv-white: #FFFFFF;
+
+  /* Copper · the signal */
+  --cv-copper: #B4602F;
+  --cv-copper-deep: #9A5634;
+  --cv-copper-dark: #8E4720;
+  --cv-copper-light: #E09C6B;
+  --cv-copper-tint: #F2DCCB;
+
+  /* Verdigris · the action */
+  --cv-verdigris: #3F8A85;
+  --cv-verdigris-deep: #2E6B68;
+  --cv-verdigris-dark: #1F4F4C;
+  --cv-verdigris-light: #8CC2BC;
+  --cv-verdigris-mist: #D3E6E4;
+  --cv-verdigris-tint: #E9F2F1;
+
+  /* Status · for apps */
+  --cv-oxide-red: #B4232F;
+  --cv-red-deep: #8F1B25;
+  --cv-red-light: #F08A92;
+  --cv-red-tint: #F8DEE0;
+  --cv-cobalt: #2F5D99;
+  --cv-cobalt-deep: #234878;
+  --cv-cobalt-light: #8FB4E3;
+  --cv-cobalt-tint: #E3ECF7;
+
+  /* Semantic aliases */
+  --cv-signal: var(--cv-copper);
+  --cv-action: var(--cv-verdigris);
+  --cv-warning: var(--cv-copper);
+  --cv-critical: var(--cv-oxide-red);
+  --cv-ok: var(--cv-cobalt);
+  --cv-bg: var(--cv-paper);
+  --cv-text: var(--cv-ink);
+  --cv-screen: var(--cv-graphite);
+
+  /* Type */
+  --cv-font: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --cv-mono: "Geist Mono", ui-monospace, monospace;
+}

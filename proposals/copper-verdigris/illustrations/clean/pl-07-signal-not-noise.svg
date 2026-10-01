@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" role="img"><title>Signal, not noise</title><style>@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap");</style><rect width="480" height="480" fill="#F6F6F5"/><defs>
+<pattern id="pl07signalnotnoise-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#B4602F" stroke-width="1.2"/></pattern>
+<pattern id="pl07signalnotnoise-hatchv" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3F8A85" stroke-width="1.2"/></pattern>
+<pattern id="pl07signalnotnoise-dots" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="11.5" y="11.5" width="1" height="1" fill="#6E6E75" opacity="0.45"/></pattern>
+<pattern id="pl07signalnotnoise-micro" width="4" height="4" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="3" height="3" fill="#6E6E75" opacity="0.55"/></pattern>
+</defs><g shape-rendering="crispEdges"></g><rect x="65.0" y="92.0" width="4.1" height="268.0" fill="#F2DCCB" stroke="#B4602F" stroke-width="1" />
+<rect x="71.1" y="130.7" width="4.1" height="229.3" fill="#F2DCCB" stroke="#B4602F" stroke-width="1" />
+<rect x="77.3" y="162.5" width="4.1" height="197.5" fill="#F2DCCB" stroke="#B4602F" stroke-width="1" />
+<rect x="83.4" y="188.5" width="4.1" height="171.5" fill="#F2DCCB" stroke="#B4602F" stroke-width="1" />
+<rect x="89.5" y="219.8" width="4.1" height="140.2" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="95.7" y="237.0" width="4.1" height="123.0" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="101.8" y="250.9" width="4.1" height="109.1" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="107.9" y="272.0" width="4.1" height="88.0" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="114.1" y="280.8" width="4.1" height="79.2" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="120.2" y="287.6" width="4.1" height="72.4" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="126.3" y="292.8" width="4.1" height="67.2" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="132.5" y="306.7" width="4.1" height="53.3" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="138.6" y="309.5" width="4.1" height="50.5" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="144.7" y="311.3" width="4.1" height="48.7" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="150.9" y="322.4" width="4.1" height="37.6" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="157.0" y="322.8" width="4.1" height="37.2" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="163.1" y="322.7" width="4.1" height="37.3" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="169.3" y="322.1" width="4.1" height="37.9" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="175.4" y="331.1" width="4.1" height="28.9" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="181.5" y="329.8" width="4.1" height="30.2" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="187.7" y="328.3" width="4.1" height="31.7" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="193.8" y="336.5" width="4.1" height="23.5" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="199.9" y="334.6" width="4.1" height="25.4" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="206.1" y="332.5" width="4.1" height="27.5" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="212.2" y="330.2" width="4.1" height="29.8" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="218.3" y="337.9" width="4.1" height="22.1" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="224.5" y="335.5" width="4.1" height="24.5" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="230.6" y="333.0" width="4.1" height="27.0" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="236.7" y="340.5" width="4.1" height="19.5" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="242.9" y="337.9" width="4.1" height="22.1" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="249.0" y="335.2" width="4.1" height="24.8" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="255.1" y="332.5" width="4.1" height="27.5" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="261.3" y="339.8" width="4.1" height="20.2" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="267.4" y="337.1" width="4.1" height="22.9" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="273.5" y="334.3" width="4.1" height="25.7" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="279.7" y="341.6" width="4.1" height="18.4" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="285.8" y="338.8" width="4.1" height="21.2" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="291.9" y="336.0" width="4.1" height="24.0" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="298.1" y="333.2" width="4.1" height="26.8" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="304.2" y="340.4" width="4.1" height="19.6" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="310.3" y="337.5" width="4.1" height="22.5" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="316.5" y="334.7" width="4.1" height="25.3" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="322.6" y="341.9" width="4.1" height="18.1" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="328.7" y="339.0" width="4.1" height="21.0" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="334.9" y="336.2" width="4.1" height="23.8" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="341.0" y="333.4" width="4.1" height="26.6" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="347.1" y="340.5" width="4.1" height="19.5" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="353.3" y="337.7" width="4.1" height="22.3" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="359.4" y="334.8" width="4.1" height="25.2" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="365.5" y="342.0" width="4.1" height="18.0" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="371.7" y="339.1" width="4.1" height="20.9" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="377.8" y="336.3" width="4.1" height="23.7" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="383.9" y="333.4" width="4.1" height="26.6" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="390.1" y="340.6" width="4.1" height="19.4" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="396.2" y="337.7" width="4.1" height="22.3" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="402.3" y="334.8" width="4.1" height="25.2" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="408.5" y="342.0" width="4.1" height="18.0" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="414.6" y="339.1" width="4.1" height="20.9" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="420.7" y="336.3" width="4.1" height="23.7" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<rect x="426.9" y="333.4" width="4.1" height="26.6" fill="#ECECEA" stroke="#B9B9BC" stroke-width="0.5" />
+<line x1="56" y1="200" x2="432" y2="200" stroke="#141416" stroke-width="1.25" />
+<text x="432" y="192" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#141416" text-anchor="end" font-weight="500" letter-spacing="0.8">INTERRUPT THRESHOLD</text>
+<line x1="64" y1="360" x2="432" y2="360" stroke="#141416" stroke-width="1" />
+<text x="64" y="378" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="start" font-weight="400" letter-spacing="0.8">RANK →</text>
+<text x="432" y="378" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#6E6E75" text-anchor="end" font-weight="400" letter-spacing="0.8">214 OPEN CLAIMS</text>
+<path d="M64 92 V84 H88.53333333333333 V92" stroke="#B4602F" stroke-width="1" fill="none" stroke-linejoin="miter" stroke-linecap="square" />
+<text x="96.53333333333333" y="90" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#8E4720" text-anchor="start" font-weight="600" letter-spacing="0.8">4 ESCALATED · RANKED BY P&amp;L LINE</text>
+<rect x="64" y="401" width="34" height="16" fill="#E3ECF7" stroke="#2F5D99" stroke-width="1" />
+<rect x="69.0" y="406.0" width="6" height="6" fill="#2F5D99" stroke="none" stroke-width="1" />
+<text x="79" y="413" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#234878" text-anchor="start" font-weight="600" letter-spacing="0.8">OK</text>
+<text x="106" y="413" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#234878" text-anchor="start" font-weight="500" letter-spacing="0.8">210 STAY QUIET</text></svg>
