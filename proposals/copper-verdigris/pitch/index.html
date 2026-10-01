@@ -348,14 +348,16 @@ h2 em.v{color:var(--vg-deep)}
 .ax i.vg{background:var(--vg);border-color:var(--vg)}
 .ax i.cu{background:var(--cu);border-color:var(--cu)}
 .pf-row{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:22px;margin-top:22px;align-items:stretch}
-.pf-story{background:var(--white);border:1px solid var(--rule);box-shadow:inset 0 2px 0 var(--vg);padding:26px 30px}
+.pf-story{background:var(--white);border:1px solid var(--rule);padding:26px 30px}
 .pf-story .k{font-size:11px;color:var(--vg-dark)}
 .pf-t{font-size:clamp(19px,1.9vw,23px);font-weight:600;line-height:1.4;margin-top:12px}
 .pf-f{margin-top:18px;padding-top:14px;border-top:1px solid var(--hair);font-size:16px;color:var(--body)}
 .pf-f b{color:var(--ink)}
-.pf-q{margin:0;align-self:center;padding-left:18px;border-left:2px solid var(--rule)}
+/* The handler's voice sits in its own grey box, matched to the story card beside it. */
+.pf-q{margin:0;display:flex;flex-direction:column;gap:14px;padding:26px 30px;background:var(--grey);border:1px solid var(--grey)}
+.pf-q .k{font-size:11px;color:var(--muted)}
 .pf-q p{font-size:clamp(19px,1.9vw,22px);font-weight:600;line-height:1.4}
-.pf-q cite{display:block;margin-top:10px;font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pf-q cite{display:block;margin-top:auto;padding-top:14px;border-top:1px solid var(--gr-muted);font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .pf-trust{margin-top:22px;padding:18px 22px;background:var(--paper);border:1px solid var(--rule);font-size:17px;color:var(--body)}
 .pf-trust b{color:var(--ink)}
 
@@ -990,7 +992,7 @@ h2 em.v{color:var(--vg-deep)}
 <p class="pf-t">A demand to tender the full $500,000 policy limit, due by noon, arrived as part 1 of a 16-part package on a file no one had worked yet. Isomer flagged it critical when part 1 arrived.</p>
 <p class="pf-f"><b>It is rarely on page one.</b> 18% of flags came from page 31 or deeper.</p>
 </div>
-<blockquote class="pf-q rv" style="--d:.2s"><p>&ldquo;That's the outline I need. That's the note that I put into ClaimCenter.&rdquo;</p><cite>Liability claims handler</cite></blockquote>
+<blockquote class="pf-q rv" style="--d:.2s"><p class="k">From the handler</p><p>&ldquo;That's the outline I need. That's the note that I put into ClaimCenter.&rdquo;</p><cite>Liability claims handler</cite></blockquote>
 </div>
 
 <p class="pf-trust rv"><b>Every flag cites the page it came from, and the handler decides.</b> Reviewers checked 692 runs and found 5 signal errors, false alarms and misses combined.</p>
