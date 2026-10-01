@@ -4,6 +4,8 @@ A proposed replacement for the Isomer palette, with illustration rules, sample p
 
 Page: https://isomer-ai.github.io/brand/proposals/copper-verdigris/
 
+In use: the [isomer.ai/pitch-patina](https://isomer.ai/pitch-patina) minisite applies this palette to a live page. It uses the colors only; the illustration style here is not used there.
+
 | File | What it is |
 | --- | --- |
 | `index.html` | The shareable page: palette, at-work samples, illustration rules, plates, animations |

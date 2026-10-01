@@ -2,6 +2,8 @@
 
 Status: proposal. Companion to [`palette.json`](palette.json) and [`tokens.css`](tokens.css).
 
+The [isomer.ai/pitch-patina](https://isomer.ai/pitch-patina) minisite shows the palette in use. It does not use this illustration style, so don't treat it as a reference for plates.
+
 Isomer plates are drawn like instrument readouts. They are rectilinear, measured and labelled. Copper marks the risk, verdigris marks Isomer acting on it, and everything else is ink on paper.
 
 ## For agents
