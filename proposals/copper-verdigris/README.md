@@ -10,6 +10,7 @@ Page: https://isomer-ai.github.io/brand/proposals/copper-verdigris/
 | `palette.json` | Every color with hex, RGB, role and use, plus the semantic rules |
 | `tokens.css` | CSS custom properties (`--cv-*`) and semantic aliases |
 | `ILLUSTRATION-GUIDE.md` | Full illustration and animation rules, written for agents and people |
+| `pitch/` | Reference rebuild of the isomer.ai/pitch-patina minisite, showing the palette and illustration rules on a full page: https://isomer-ai.github.io/brand/proposals/copper-verdigris/pitch/ |
 | `illustrations/` | 32 plates as annotated SVG, clean SVG (`clean/`) and 2x PNG; `index.json` lists them |
 | `animations/` | MP4 (1080 px) and GIF (720 px) loops plus poster frames |
 | `source/` | `plates.py` (primitives and every plate), `export.py`, `anim*.py`, `build_page.py` |
