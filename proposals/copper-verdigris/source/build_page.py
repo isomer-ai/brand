@@ -270,7 +270,7 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
 </div>
 <div class="type">
 <div class="card"><span class="cap">Display and values · Fustat</span><p class="spec-d">$10.0M <span style="color:var(--cv-copper)">d23</span></p><p style="margin-top:12px;color:var(--cv-body);font-size:14px">The current Isomer brand face, kept on purpose. Bold and tight for headlines; 600 for the one hero value on a plate.</p></div>
-<div class="card"><span class="cap">Annotation · IBM Plex Mono</span><p class="spec-m">Fig. 04 · Immediate · manual triage d23<br><span style="color:var(--cv-copper-dark)">TLD · ATT-3 · p.4</span> → <span style="color:var(--cv-verdigris-dark)">ACT · deadline calendared</span></p><p style="margin-top:12px;color:var(--cv-body);font-size:14px">Uppercase, tracked, small. Labels, axes, plate codes and captions. Replaces Geist Mono so the annotation layer doesn't read like other claims-AI sites.</p></div>
+<div class="card"><span class="cap">Annotation · IBM Plex Mono</span><p class="spec-m">Fig. 04 · Immediate · manual triage d23<br><span style="color:var(--cv-copper-dark)">TLD · ATT-3 · p.4</span> → <span style="color:var(--cv-verdigris-dark)">ACT · deadline calendared</span></p><p style="margin-top:12px;color:var(--cv-body);font-size:14px">Uppercase, tracked, small. Labels, axes, plate codes and captions.</p></div>
 </div>
 <div class="card inaction"><span class="cap">In action · full page</span>
 <p class="big">See the palette, the plates and the page rules working together.</p>
