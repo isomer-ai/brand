@@ -27,7 +27,7 @@ Isomer plates are drawn like instrument readouts. They are rectilinear, measured
 | Structure | Ink `#141416` | Lines, primary labels, central nodes |
 | Secondary | Muted `#6E6E75` | Ticks, rulers, secondary labels, source traces |
 | Grid | Hairline `#E3E3E5` | Grid lines, table rules |
-| Apparatus | Section grey `#ECECEA` | Detector planes, gates, bands |
+| Apparatus | Section gray `#ECECEA` | Detector planes, gates, bands |
 | Ground | Paper `#F6F6F5` | Default background |
 | Objects | White `#FFFFFF` | Documents and entities on paper |
 | Signal | Copper `#B4602F`, tint `#F2DCCB`, label `#8E4720` | Risk found, flagged, too late, plaintiff side |
@@ -53,15 +53,15 @@ Rules:
 - **Connectors.** Straight first. A 5px junction square marks a branch point only, never a plain bend. Square caps, miter joins.
 - **Corners.** Radius 0 on every box, node, bar and tag.
 - **Circles and curves.** Circles are allowed occasionally (a point marker, a dial). Curves are allowed inside icons, such as the person figure for a claimant, counsel or adjuster (`person()` in `plates.py`: circle head, curved shoulders, flat base so it sits on the diagram baseline), and where the curve is the figure: the flow bands of a Sankey, which show volume moving from one split to another. Use them only when the chart type needs them, never as decoration or to soften a connector.
-- **Fills.** White for objects, section grey for apparatus, tints for semantic fills. No gradients, shadows, glows or transparency stacks.
+- **Fills.** White for objects, section gray for apparatus, tints for semantic fills. No gradients, shadows, glows or transparency stacks.
 
 ## Components
 
 - **Entity node.** White fill, ink 1px. Title in mono 600, id below in muted.
 - **Signal node.** Copper tint fill, copper 1.25px, copper-dark label.
 - **Action node.** Verdigris tint fill, verdigris 1.25px, verdigris-dark label.
-- **Document.** White rectangle with a folded corner square and grey text strokes; one strike may be copper to show where the risk is.
-- **Apparatus and scan line.** Section-grey plane with cells; a 1.5px verdigris line with square terminals.
+- **Document.** White rectangle with a folded corner square and gray text strokes; one strike may be copper to show where the risk is.
+- **Apparatus and scan line.** Section-gray plane with cells; a 1.5px verdigris line with square terminals.
 - **Dimension bracket.** Muted 1px bracket with the measured value centered below.
 - **Threshold.** Ink 1.25px, 6/3 dash, label right-aligned above.
 - **Axis.** Ink 1px with minor and major ticks (every 5th major).
@@ -78,7 +78,7 @@ Rules:
 Other claims-AI brands use the same base vocabulary: off-white paper, hairlines, a grotesk with uppercase mono labels, a dark evidence panel, red and green dots. On that base alone we look like the category. What makes it ours:
 
 - **Copper and verdigris do the work.** Inside the work they are verbs, and their scarcity is what makes them land. As identity they appear through a few brand devices on ink or paper (the oxidation band, the short oxidation bar, the bar and pixel), never as a small accent everywhere. See [Two registers](USAGE-GUIDE.md#two-registers).
-- **The apparatus travels.** Rulers, plate codes and the scan line appear in page UI too, not only inside plates. In UI they stay quiet: grey ticks at low opacity, no copper. Copper hatching stays inside figures, where it measures something.
+- **The apparatus travels.** Rulers, plate codes and the scan line appear in page UI too, not only inside plates. In UI they stay quiet: gray ticks at low opacity, no copper. Copper hatching stays inside figures, where it measures something.
 - **Time is the subject.** Prefer plates that show when something was caught (t₀, d23, the window to act) over plates that show what a file contains.
 - **Fustat, not a generic grotesk.** Keep the brand face for display and values; IBM Plex Mono for annotation.
 - **Avoid** big-number tiles over a mono caption row, dark "extraction" text panels, numbered section eyebrows (01, 02...), and status dots without a word. Show values to scale on an axis instead of as tiles.

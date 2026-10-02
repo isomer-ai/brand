@@ -145,7 +145,7 @@ port = [("Brand accent: eyebrows, section labels, story and step numbers, index 
         ("Links, hover, focus, controls", "Verdigris deep"),
         ("High, hot, rising, overdue, a verdict, a loss", "Copper for the mark, copper dark for the text"),
         ("Pending, invited, requested, new", "An ink outline tag"),
-        ("One color per category or role", "Greys, with copper on the one series that is the risk"),
+        ("One color per category or role", "Grays, with copper on the one series that is the risk"),
         ("Live, current, healthy", "Cobalt only as a status with its word; otherwise ink"),
         ("Faint or secondary text", "Body, unless it is a date, source or footer")]
 port_rows = "".join(f"<tr><td>{e(a)}</td><td>{e(b)}</td></tr>" for a, b in port)
@@ -173,11 +173,11 @@ app_dd = dodont(
 mail_dd = dodont(
     ["Use the full stacks: <code>Fustat, Arial, Helvetica</code> and <code>'IBM Plex Mono', Menlo, Consolas, 'Courier New'</code>. Design for the fallback.",
      "Keep mono labels at 10px or more and body at 14px or more.",
-     "Set footer text on section grey in body <code>#47474D</code>.",
+     "Set footer text on section gray in body <code>#47474D</code>.",
      "Name positions in captions (“the lower part of each bar”).",
      "Draw markers as characters: <span style=\"color:#B4602F\">&#9632;</span> in copper or verdigris.",
      "Lay out one column in the app's order; ink button, verdigris-deep links."],
-    ["Courier New alone. It renders thin and grey and made labels illegible on iPhone Gmail.",
+    ["Courier New alone. It renders thin and gray and made labels illegible on iPhone Gmail.",
      "8 or 9px mono labels. They failed on phones.",
      "Captions that name a shade (“the darker part”). Gmail's dark mode inverts it anyway.",
      "Bare ↗ arrows. iOS turns them into blue emoji; append <code>&amp;#65038;</code>.",
@@ -212,7 +212,7 @@ work_more = f"""
 <div class="worktile"><div><span class="wt-l">Open demands</span><b>14</b></div><div><span class="wt-l">Past window</span><b class="risk-t">2</b></div><div><span class="wt-l">Assigned</span><b>12</b></div><a href="#at-work">Review the two</a></div>
 <ul class="plain"><li>Plates, animations, product UI, email, and any section that shows data.</li>
 <li>Copper only where something is risky; verdigris only where something is done or can be.</li>
-<li>Ink and grey carry every frame: rules, panels, tabs, chart bars, numbers, eyebrows, the ruler.</li>
+<li>Ink and gray carry every frame: rules, panels, tabs, chart bars, numbers, eyebrows, the ruler.</li>
 <li>The brand shows through form here: Fustat, mono labels, square corners, the quiet ruler, the logo.</li></ul></div>
 </div>
 
@@ -234,22 +234,22 @@ work_more = f"""
 <li>Status stays status. Oxide red for failure or critical, cobalt for healthy or info, always with the word. Warning reuses copper.</li></ul></div>
 <div class="card"><h4 class="rh">Surfaces and type</h4><ul>
 <li>Content panels are white on paper, ruled with <code>#DDDDDA</code>. Grids and table rules use hairline <code>#E3E3E5</code>.</li>
-<li>Running text in body <code>#47474D</code>; muted only for dates, sources and footers. Muted fails on section grey (4.3:1).</li>
+<li>Running text in body <code>#47474D</code>; muted only for dates, sources and footers. Muted fails on section gray (4.3:1).</li>
 <li>Headlines in Fustat 800, sentence case, tracking about −0.035em. Fustat is wide; don't bring condensed all-caps habits.</li>
-<li>Plex Mono, uppercase and tracked, for labels and counts only. The ruler stays grey and quiet.</li></ul></div>
+<li>Plex Mono, uppercase and tracked, for labels and counts only. The ruler stays gray and quiet.</li></ul></div>
 </div>
 {tok_table}
 <p class="note">Ratios are each text token against its theme's surface. Tints become graphite raised in dark: a copper tint on graphite reads muddy, and the light text carries the meaning alone.</p>
 {app_dd}
 
-<div class="sub" id="in-email"><h3>In email</h3><p>Mail clients mostly ignore web fonts and many recolor the message, so email is designed for the fallback. Below is the same story as a daily brief, set the way most clients render it, in Arial and Menlo. On the right is roughly what Gmail's dark mode does to it: the copper and verdigris markers survive, while ink-versus-grey contrast flattens.</p></div>
+<div class="sub" id="in-email"><h3>In email</h3><p>Mail clients mostly ignore web fonts and many recolor the message, so email is designed for the fallback. Below is the same story as a daily brief, set the way most clients render it, in Arial and Menlo. On the right is roughly what Gmail's dark mode does to it: the copper and verdigris markers survive, while ink-versus-gray contrast flattens.</p></div>
 <div class="use-grid mails"><figure class="mailfig">{mail_light}<figcaption><span>As sent · Arial, Menlo</span></figcaption></figure><figure class="mailfig">{mail_dark}<figcaption><span>Gmail dark mode · approximate inversion</span></figcaption></figure></div>
 <div class="tbl"><table class="toks"><thead><tr><th>Email</th><th>Value</th></tr></thead><tbody>
 <tr><td>Sans stack</td><td><code>Fustat, Arial, Helvetica, sans-serif</code></td></tr>
 <tr><td>Mono stack</td><td><code>'IBM Plex Mono', Menlo, Consolas, 'Courier New', monospace</code></td></tr>
 <tr><td>Minimum sizes</td><td>Mono labels 10px · body 14px · meta 10px</td></tr>
 <tr><td>Text</td><td>Headings ink · body and secondary <code>#47474D</code> · least important meta <code>#6E6E75</code> at 10px or more · never <code>#A4A9AA</code> on white</td></tr>
-<tr><td>Ground · card · rule</td><td>Section grey <code>#ECECEA</code> · white · <code>#DDDDDA</code>. Footer text on section grey in <code>#47474D</code></td></tr>
+<tr><td>Ground · card · rule</td><td>Section gray <code>#ECECEA</code> · white · <code>#DDDDDA</code>. Footer text on section gray in <code>#47474D</code></td></tr>
 <tr><td>Links · button</td><td>Verdigris deep <code>#2E6B68</code> · ink fill with white text</td></tr>
 <tr><td>Layout</td><td>One column, 600px max, in the app's order: main content, then the sidebar panels. Panel titles as ink mono labels with a quieter link at the right.</td></tr>
 </tbody></table></div>
@@ -499,7 +499,7 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
 <div>
 <span class="flag"><i></i>Proposal · not adopted · not linked from the brand site</span>
 <h1><span class="cu">Copper</span> <span>signals.</span><br>Verdigris <em>acts.</em></h1>
-<p class="lede">A proposed replacement for Isomer's blue and purple palette. Black, white and grey carry the page. Copper marks risk and the moment something is flagged. Verdigris, the patina copper becomes, marks Isomer acting on it. Graphite is reserved for product screens; oxide red and cobalt for status.</p>
+<p class="lede">A proposed replacement for Isomer's blue and purple palette. Black, white and gray carry the page. Copper marks risk and the moment something is flagged. Verdigris, the patina copper becomes, marks Isomer acting on it. Graphite is reserved for product screens; oxide red and cobalt for status.</p>
 <div class="links hero-cta"><a class="pri" href="../pitch-cv/">See it on a full page &rarr;</a><a href="ILLUSTRATION-GUIDE.md">Illustration guide</a><a href="USAGE-GUIDE.md">Usage guide</a></div>
 <p class="hero-files"><span>Files</span><a href="palette.json">palette.json</a><a href="tokens.css">tokens.css</a><a href="logos/">Logo board</a><a href="illustrations/index.json">illustrations/index.json</a><a href="#agents">All files &darr;</a></p>
 </div>
@@ -518,9 +518,9 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
 <div class="ruler" aria-hidden="true"><span>CV-USE</span></div>
 <div class="part-h"><div><h2 id="h-work">At work</h2></div>
 <p>Roughly how much of each appears on a page, how the pairs read on paper and on a graphite screen, and how to use them in brand moments, in an app and in email.</p></div>
-<div class="ratio" role="img" aria-label="Approximate share: paper and section grey 77 percent, ink 8, graphite 8, copper 4, verdigris 3">
+<div class="ratio" role="img" aria-label="Approximate share: paper and section gray 77 percent, ink 8, graphite 8, copper 4, verdigris 3">
 <i style="flex:62;background:#F6F6F5"></i><i style="flex:15;background:#ECECEA"></i><i style="flex:8;background:#141416"></i><i style="flex:8;background:#3A3E3F"></i><i style="flex:4;background:#B4602F"></i><i style="flex:3;background:#3F8A85"></i></div>
-<div class="legend"><span><i style="background:#F6F6F5;border:1px solid #E3E3E5"></i>Paper and section grey</span><span><i style="background:#141416"></i>Ink</span><span><i style="background:#3A3E3F"></i>Graphite screens</span><span><i style="background:#B4602F"></i>Copper</span><span><i style="background:#3F8A85"></i>Verdigris</span></div>
+<div class="legend"><span><i style="background:#F6F6F5;border:1px solid #E3E3E5"></i>Paper and section gray</span><span><i style="background:#141416"></i>Ink</span><span><i style="background:#3A3E3F"></i>Graphite screens</span><span><i style="background:#B4602F"></i>Copper</span><span><i style="background:#3F8A85"></i>Verdigris</span></div>
 <div class="use-grid">
 <div class="card"><span class="cap">On paper</span>
 <p class="big">Catching these claims in time is <span style="color:#9A5634">a point of combined ratio</span></p>

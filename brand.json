@@ -79,8 +79,8 @@
       "pantone": "1565 C"
     },
     {
-      "name": "Light Grey",
-      "token": "light-grey",
+      "name": "Light Gray",
+      "token": "light-gray",
       "role": "background",
       "hex": "#F8F6FF",
       "rgb": [

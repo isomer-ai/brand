@@ -10,7 +10,7 @@
 <style>
 /* Pitch Patina reference. Values come from ../copper-verdigris/tokens.css; rules from ../copper-verdigris/ILLUSTRATION-GUIDE.md. */
 :root{color-scheme:light;
- --ink:var(--cv-ink);--body:var(--cv-body);--muted:var(--cv-muted);--hair:var(--cv-hairline);--rule:var(--cv-hairline);--grey:var(--cv-section-grey);--paper:var(--cv-paper);--white:var(--cv-white);
+ --ink:var(--cv-ink);--body:var(--cv-body);--muted:var(--cv-muted);--hair:var(--cv-hairline);--rule:var(--cv-hairline);--gray:var(--cv-section-gray);--paper:var(--cv-paper);--white:var(--cv-white);
  --cu:var(--cv-copper);--cu-deep:var(--cv-copper-deep);--cu-dark:var(--cv-copper-dark);--cu-light:var(--cv-copper-light);--cu-tint:var(--cv-copper-tint);
  --vg:var(--cv-verdigris);--vg-deep:var(--cv-verdigris-deep);--vg-dark:var(--cv-verdigris-dark);--vg-light:var(--cv-verdigris-light);--vg-mist:var(--cv-verdigris-mist);--vg-tint:var(--cv-verdigris-tint);
  --gr:var(--cv-graphite);--gr-deep:var(--cv-graphite-deep);--gr-raised:var(--cv-graphite-raised);--gr-muted:var(--cv-on-graphite-muted);
@@ -26,7 +26,7 @@ button{font:inherit}
 section{position:relative;padding-block:112px}
 section[id]{scroll-margin-top:12px}
 .bg-white{background:var(--white)}
-.bg-grey{background:var(--grey)}
+.bg-gray{background:var(--gray)}
 :focus-visible{outline:2px solid var(--vg);outline-offset:3px}
 [hidden]{display:none!important}
 
@@ -225,7 +225,7 @@ h2 em.v{color:var(--vg-deep)}
 .hbars .bar{position:absolute;left:0;top:0;bottom:0;transform-origin:left}
 .hbars .bar.cu{background:var(--cu)}
 .hbars .bar.ct{background:var(--cu-tint);border:1.25px solid var(--cu)}
-.hbars .bar.nt{background:var(--grey);border:1px solid var(--rule)}
+.hbars .bar.nt{background:var(--gray);border:1px solid var(--rule)}
 .hbars .bar b{position:absolute;left:calc(100% + 8px);top:50%;transform:translateY(-50%);font-family:var(--mono);font-size:13px;font-weight:600;color:var(--ink);white-space:nowrap}
 .hbars .bar.cu b{color:var(--cu-dark)}
 .play .hbars .bar{animation:grow 1s ease-in-out both}
@@ -353,8 +353,8 @@ h2 em.v{color:var(--vg-deep)}
 .pf-t{font-size:clamp(19px,1.9vw,23px);font-weight:600;line-height:1.4;margin-top:12px}
 .pf-f{margin-top:18px;padding-top:14px;border-top:1px solid var(--hair);font-size:16px;color:var(--body)}
 .pf-f b{color:var(--ink)}
-/* The handler's voice sits in its own grey box, matched to the story card beside it. */
-.pf-q{margin:0;display:flex;flex-direction:column;gap:14px;padding:26px 30px;background:var(--grey);border:1px solid var(--grey)}
+/* The handler's voice sits in its own gray box, matched to the story card beside it. */
+.pf-q{margin:0;display:flex;flex-direction:column;gap:14px;padding:26px 30px;background:var(--gray);border:1px solid var(--gray)}
 .pf-q .k{font-size:11px;color:var(--muted)}
 .pf-q p{font-size:clamp(19px,1.9vw,22px);font-weight:600;line-height:1.4}
 .pf-q cite{display:block;margin-top:auto;padding-top:14px;border-top:1px solid var(--gr-muted);font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
@@ -464,8 +464,8 @@ h2 em.v{color:var(--vg-deep)}
 .wc.iso .k,.wc.iso dt{color:var(--vg-dark)}
 .wc.iso .big{color:var(--vg-deep)}
 .wc.iso .vd{color:var(--vg-dark);border-top-color:var(--vg-mist)}
-.growbar{height:12px;position:relative;background:var(--grey);border:1px solid var(--rule)}
-.growbar i{position:absolute;left:0;top:-1px;bottom:-1px;width:89.3%;background:var(--grey)}
+.growbar{height:12px;position:relative;background:var(--gray);border:1px solid var(--rule)}
+.growbar i{position:absolute;left:0;top:-1px;bottom:-1px;width:89.3%;background:var(--gray)}
 .growbar i+i{left:89.3%;width:10.7%;background:var(--ink)}
 .play .growbar i+i{animation:grow 1s ease-in-out both .4s;transform-origin:left}
 .people{display:grid;grid-template-columns:repeat(25,1fr);gap:3px}
@@ -538,7 +538,7 @@ h2 em.v{color:var(--vg-deep)}
 .ax-viz .l{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .ax-bar{display:grid;grid-template-columns:78px 1fr;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
 .ax-bar div{display:flex;align-items:center;gap:8px}
-.ax-bar i{display:block;height:12px;background:var(--grey);border:1px solid var(--rule)}
+.ax-bar i{display:block;height:12px;background:var(--gray);border:1px solid var(--rule)}
 .ax-bar i.cu{background:var(--cu);border-color:var(--cu)}
 .ax-bar i.ct{background:var(--cu-tint);border:1.25px solid var(--cu)}
 .ax-bar b{font-family:var(--mono);font-size:13px;font-weight:600;white-space:nowrap;color:var(--ink)}
@@ -845,7 +845,7 @@ h2 em.v{color:var(--vg-deep)}
 </div>
 </section>
 
-<section id="xray" class="bg-grey">
+<section id="xray" class="bg-gray">
 <div class="wrap">
 <p class="eyebrow rv" id="xE">An X-Ray For Every Claim</p>
 <h2 class="rv" style="--d:.08s">Warning signs arrive early, <em>buried in the file</em></h2>
@@ -1160,7 +1160,7 @@ h2 em.v{color:var(--vg-deep)}
 </div>
 </section>
 
-<section class="close bg-grey">
+<section class="close bg-gray">
 <div class="wrap">
 <p class="eyebrow rv">Next step</p>
 <h2 class="rv" style="--d:.08s">Which claims team would you want to <em class="v">run this with?</em></h2>

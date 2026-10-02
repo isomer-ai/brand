@@ -12,7 +12,7 @@
   --cv-muted: #6E6E75;
   --cv-rule: #DDDDDA;
   --cv-hairline: #E3E3E5;
-  --cv-section-grey: #ECECEA;
+  --cv-section-gray: #ECECEA;
   --cv-paper: #F6F6F5;
   --cv-white: #FFFFFF;
 
@@ -63,7 +63,7 @@
      and the dark theme below comes for free. */
   --cv-ui-ground: var(--cv-paper);
   --cv-ui-surface: var(--cv-white);
-  --cv-ui-surface-2: var(--cv-section-grey);
+  --cv-ui-surface-2: var(--cv-section-gray);
   --cv-ui-rule: var(--cv-rule);
   --cv-ui-grid: var(--cv-hairline);
   --cv-ui-heading: var(--cv-ink);

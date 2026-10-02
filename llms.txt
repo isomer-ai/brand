@@ -11,7 +11,7 @@ Everything is described in one manifest. Every file has a stable URL under https
 
 ## Quick answers
 
-- Primary color: Isomer Blue #000441. Accent: Purple #776DEB and Light Purple #9188F5. Secondary: Orange #FFA574. Backgrounds: Light Grey #F8F6FF and White #FFFFFF.
+- Primary color: Isomer Blue #000441. Accent: Purple #776DEB and Light Purple #9188F5. Secondary: Orange #FFA574. Backgrounds: Light Gray #F8F6FF and White #FFFFFF.
 - Font: Fustat (Google Fonts)
 - Logo on a light background: https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-horiz-color-white-bg.svg
 - Logo on a dark background: https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-horiz-color-dark-bg.svg

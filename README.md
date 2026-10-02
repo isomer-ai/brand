@@ -49,7 +49,7 @@ No file includes a filled background. The background suffix says what the logo i
 | Accent Purple | `#776DEB` | 119, 109, 235 | 70, 60, 0, 0 | 7456 C | Accent |
 | Light Purple | `#9188F5` | 145, 136, 245 | 48, 48, 0, 0 | 7446 C | Accent |
 | Secondary Orange | `#FFA574` | 255, 165, 116 | 0, 45, 61, 0 | 1565 C | Secondary |
-| Light Grey | `#F8F6FF` | 248, 246, 255 | 2, 2, 0, 0 | 663 C | Background |
+| Light Gray | `#F8F6FF` | 248, 246, 255 | 2, 2, 0, 0 | 663 C | Background |
 | White | `#FFFFFF` | 255, 255, 255 | 0, 0, 0, 0 | 1-1 C | Background |
 
 Tints:

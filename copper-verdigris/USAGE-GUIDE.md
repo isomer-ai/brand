@@ -55,7 +55,7 @@ Use the black and white logos with this palette: ink on paper, white on ink and 
 | Oxidation band | A full-width flat strip on the bottom (or top) edge: 70% copper, 20% the second copper, 10% verdigris, copper first | About 1.5 to 3% of the width: 32px on a 1920 slide, 16px on a 1200 social card | Covers, title and closing slides, social cards, the site footer, event and print |
 | Short oxidation bar | The band at mark size, same proportions | About 2.5× the headline size wide and 0.18× tall: 84 × 6 under a 34px headline | The everyday signature: under a section or document headline, beside the logo, in an email or document masthead |
 | Bar and pixel | A copper bar and one verdigris square, its side equal to the bar's height, one bar-height apart | Bar about 1.6× the headline size wide: 56 × 6 and 6 × 6 under a 34px headline | The quietest form: small sizes, slide footers, email signatures, the app icon |
-| Ruler | Grey ticks along the top edge, minor every 8px and major every 40px, about 70% opacity, no color | 8px tall on a card, 16px on a slide | Adds the instrument look to any ground; combine with any colored device |
+| Ruler | Gray ticks along the top edge, minor every 8px and major every 40px, about 70% opacity, no color | 8px tall on a card, 16px on a slide | Adds the instrument look to any ground; combine with any colored device |
 | Ruler and band | The ruler on top and the band at the base: the page framed like an instrument plate | As each part | The fullest expression. Covers and title slides only |
 
 The band's segments on ink are copper `#B4602F`, copper light `#E09C6B` and verdigris `#3F8A85`; on paper, copper deep `#9A5634`, copper `#B4602F` and verdigris deep `#2E6B68`. `tokens.css` has both as `--cv-band-on-ink` and `--cv-band-on-paper`.
@@ -74,7 +74,7 @@ The band's segments on ink are copper `#B4602F`, copper light `#E09C6B` and verd
 
 - **Copper appears only where something is risky.** If nothing on a screen is, the screen has no copper.
 - **Verdigris appears only where something is being done, or can be.** In a figure that is Isomer acting; in a product it is what the reader can do.
-- **Ink and grey carry every frame:** rules, panels, plates, tabs, chart bars, numbers, dates, eyebrows, the ruler.
+- **Ink and gray carry every frame:** rules, panels, plates, tabs, chart bars, numbers, dates, eyebrows, the ruler.
 - **The brand shows through form, not color.** Fustat, mono labels, square corners, the quiet ruler and the logo make a product screen ours. It does not need copper to look like Isomer.
 
 ## In an app
@@ -105,7 +105,7 @@ The band's segments on ink are copper `#B4602F`, copper light `#E09C6B` and verd
 
 - **Body text is body, never muted.** Muted is for meta only. Text set in muted because it "feels secondary" is the most common contrast failure.
 - **Never put `#A4A9AA` on white** (2.4:1). It exists for graphite.
-- **Muted fails on section grey** (4.3:1). Text on section grey uses body.
+- **Muted fails on section gray** (4.3:1). Text on section gray uses body.
 
 ### Type
 
@@ -133,7 +133,7 @@ Tints become graphite raised in dark. A copper tint on graphite reads muddy; the
 
 ### Apparatus
 
-The ruler works under the navigation and over the footer only when it is quiet: grey ticks, about 70% opacity, no copper. Copper ticks are one more piece of decoration.
+The ruler works under the navigation and over the footer only when it is quiet: gray ticks, about 70% opacity, no copper. Copper ticks are one more piece of decoration.
 
 ## The story pattern
 
@@ -150,10 +150,10 @@ When Isomer has already acted, the third label can read "What Isomer did". Keep 
 ## In email
 
 - **Fonts mostly don't load** (the Gmail app, Outlook). Use the stacks and design for the fallback: Fustat falls back to Arial, so check that headlines still fit at Arial's width.
-- **The mono stack needs Menlo and Consolas before Courier New.** Courier New alone renders thin and grey, and labels became illegible on iPhone Gmail.
+- **The mono stack needs Menlo and Consolas before Courier New.** Courier New alone renders thin and gray, and labels became illegible on iPhone Gmail.
 - **Minimum sizes:** mono labels 10px, body 14px, meta 10px. Labels at 8 or 9px failed on phones.
-- **Contrast:** body and secondary text in body `#47474D`. Muted only for the least important meta, at 10px or more. Never `#A4A9AA` or lighter on white. Footer text on section grey in body.
-- **Gmail's dark mode inverts colors whatever the email declares.** Name positions, not shades, in captions ("the lower part of each bar", not "the darker part"). Prefer copper and verdigris marks, which survive inversion, over ink-versus-grey distinctions.
+- **Contrast:** body and secondary text in body `#47474D`. Muted only for the least important meta, at 10px or more. Never `#A4A9AA` or lighter on white. Footer text on section gray in body.
+- **Gmail's dark mode inverts colors whatever the email declares.** Name positions, not shades, in captions ("the lower part of each bar", not "the darker part"). Prefer copper and verdigris marks, which survive inversion, over ink-versus-gray distinctions.
 - **Glyphs:** arrows such as ↗ render as blue emoji tiles on iOS. Append the text variation selector (`&#8599;&#65038;`) or use a plain character.
 - **Markers as characters.** Small sized table cells (a 7×7 square) render as tall bars in some apps. Draw a marker as `■` in copper or verdigris.
 - **Layout:** one column, at most 600px, in the same order as the app: main content first, then the sidebar panels in the sidebar's order. Panel titles are mono labels in ink, with a quieter note or link at the right. Avoid narrow side-by-side meta cells; they wrap into stacks on a phone.
@@ -163,7 +163,7 @@ When Isomer has already acted, the third label can read "What Isomer did". Keep 
 | --- | --- |
 | Sans stack | `Fustat, Arial, Helvetica, sans-serif` |
 | Mono stack | `'IBM Plex Mono', Menlo, Consolas, 'Courier New', monospace` |
-| Ground / card / rule | Section grey `#ECECEA` / white / rule `#DDDDDA` |
+| Ground / card / rule | Section gray `#ECECEA` / white / rule `#DDDDDA` |
 | Heading / text / meta | Ink / body `#47474D` / muted `#6E6E75` |
 | Link / button | Verdigris deep `#2E6B68` / ink fill, white text |
 | Minimum sizes | Mono label 10px, body 14px, meta 10px |
@@ -179,7 +179,7 @@ Swapping tokens one for one is how most of the mistakes above happened. The old 
 | Links, hover, focus, controls | Verdigris deep |
 | High, hot, rising, overdue, a verdict, a loss | Copper (mark) and copper dark (text) |
 | Pending, invited, requested, teaching, new | Ink outline tag |
-| Categorical series (one color per role or type) | Greys, with copper on the one series that is the risk |
+| Categorical series (one color per role or type) | Grays, with copper on the one series that is the risk |
 | Live, current, healthy | Cobalt only if it is a status with its word; otherwise ink |
 | "Faint" or secondary text | Body, unless it is meta |
 

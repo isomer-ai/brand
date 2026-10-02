@@ -20,7 +20,7 @@ COLORS = [
      "hex": "#9188F5", "rgb": [145, 136, 245], "cmyk": [48, 48, 0, 0], "pantone": "7446 C"},
     {"name": "Secondary Orange", "token": "secondary-orange", "role": "secondary",
      "hex": "#FFA574", "rgb": [255, 165, 116], "cmyk": [0, 45, 61, 0], "pantone": "1565 C"},
-    {"name": "Light Grey", "token": "light-grey", "role": "background",
+    {"name": "Light Gray", "token": "light-gray", "role": "background",
      "hex": "#F8F6FF", "rgb": [248, 246, 255], "cmyk": [2, 2, 0, 0], "pantone": "663 C"},
     {"name": "White", "token": "white", "role": "background",
      "hex": "#FFFFFF", "rgb": [255, 255, 255], "cmyk": [0, 0, 0, 0], "pantone": "1-1 C"},

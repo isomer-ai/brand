@@ -2,7 +2,7 @@
  "name": "Copper Verdigris",
  "status": "proposal",
  "replaces": "Isomer core palette (Isomer Blue, Accent Purple, Secondary Orange)",
- "summary": "Copper signals. Verdigris acts. Black, white and grey carry the page. Outside the work, copper and verdigris are the brand.",
+ "summary": "Copper signals. Verdigris acts. Black, white and gray carry the page. Outside the work, copper and verdigris are the brand.",
  "semantics": {
   "copper": "In the work: risk found, flagged, rising, warning, too late. In a brand moment: the metal, the larger share of every device.",
   "verdigris": "In the work: action, whoever takes it. Isomer acting in a figure; what the reader can do in a product (links, selection, focus, controls, advice). In a brand moment: a trace of patina at the end of a device, never the field.",
@@ -139,8 +139,8 @@
      "primary": false
     },
     {
-     "name": "Section grey",
-     "token": "section-grey",
+     "name": "Section gray",
+     "token": "section-gray",
      "hex": "#ECECEA",
      "rgb": [
       236,
@@ -428,7 +428,7 @@
  ],
  "distinctiveness": [
   "Copper and verdigris carry the identity through a small set of brand devices on ink or paper (the oxidation band, the short oxidation bar, the bar and pixel), and carry meaning everywhere else. Never both jobs on one surface.",
-  "Carry the plate apparatus (rulers, plate codes, scan line) into page UI in grey, low opacity. Copper ticks on a ruler are decoration.",
+  "Carry the plate apparatus (rulers, plate codes, scan line) into page UI in gray, low opacity. Copper ticks on a ruler are decoration.",
   "Avoid category-default patterns: big-number tiles over a mono caption row, dark 'extraction' text blocks, numbered section eyebrows, red/green status dots without a word.",
   "Make time the subject: show when something was caught, not just what a file contains."
  ],
@@ -544,7 +544,7 @@
     {
      "id": "ruler",
      "name": "Ruler",
-     "form": "Grey ticks along the top edge, minor every 8px, major every 40px, about 70% opacity. No color",
+     "form": "Gray ticks along the top edge, minor every 8px, major every 40px, about 70% opacity. No color",
      "size": "8px tall on a card, 16px on a slide",
      "use": "Adds the instrument look to any ground; combine with any colored device"
     },
@@ -585,7 +585,7 @@
    "rules": [
     "Copper appears only where something is risky. If nothing on the screen is, the screen has no copper.",
     "Verdigris appears only where something is being done, or can be.",
-    "Everything else is ink and grey: rules, panels, tabs, numbers, eyebrows, the ruler.",
+    "Everything else is ink and gray: rules, panels, tabs, numbers, eyebrows, the ruler.",
     "One meaning per color, one color per element."
    ]
   }
@@ -595,7 +595,7 @@
    "light": {
     "ground": "paper",
     "surface": "white",
-    "surface-2": "section-grey",
+    "surface-2": "section-gray",
     "rule": "rule",
     "grid": "hairline",
     "heading": "ink",
@@ -672,13 +672,13 @@
    "meta": 10
   },
   "colors": {
-   "ground": "section-grey",
+   "ground": "section-gray",
    "card": "white",
    "rule": "rule",
    "heading": "ink",
    "text": "body",
    "meta": "muted",
-   "footer_text_on_section_grey": "body",
+   "footer_text_on_section_gray": "body",
    "link": "verdigris-deep",
    "button": "ink",
    "button_text": "white",
