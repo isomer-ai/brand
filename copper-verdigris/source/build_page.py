@@ -103,7 +103,7 @@ tok_rows = "".join(f'<tr><td><code>--cv-ui-{k}</code><span class="trole">{ROLE[k
 tok_table = f'<div class="tbl"><table class="toks"><thead><tr><th>Token</th><th>Light</th><th>Dark</th></tr></thead><tbody>{tok_rows}</tbody></table></div>'
 
 APP = """<div class="app"{attr}>
-<div class="app-nav"><b class="app-logo">isomer</b><span class="app-tabs"><a class="on">Signals</a><a>Claims</a><a>Actions</a></span><span class="app-me">JB</span></div>
+<div class="app-nav"><span class="app-logo" role="img" aria-label="Isomer"></span><span class="app-tabs"><a class="on">Signals</a><a>Claims</a><a>Actions</a></span><span class="app-me">JB</span></div>
 <div class="app-ruler" aria-hidden="true"></div>
 <div class="app-filters"><span class="app-lab">Filter</span><span class="f on">Attorney rep</span><span class="f">Deadlines</span><span class="f">All</span></div>
 <article class="app-panel">
@@ -125,7 +125,7 @@ app_light = APP.format(attr="", bars=bars)
 app_dark = APP.format(attr=' data-cv-theme="dark"', bars=bars)
 
 MAIL = """<div class="mail"{attr}><div class="mail-card">
-<div class="mail-top"><b>isomer</b><span>Daily brief · 2 Oct</span></div>
+<div class="mail-top"><img class="mail-logo" src="logos/png/isomer-logo-horiz-ink.png" alt="Isomer" width="120" height="44"><span>Daily brief · 2 Oct</span></div>
 <div class="mail-pt"><span>Needs attention · 3</span><a href="#at-work">View all</a></div>
 <p class="mail-h">Demand letter sets a 30-day window to settle within limits</p>
 <p class="mail-l">What's happening</p>
@@ -200,8 +200,8 @@ work_more = f"""
 <div class="sub" id="registers"><h3>Two registers</h3><p>Copper and verdigris do two jobs, and they need separate surfaces. As <b>brand</b> they are identity, the patina story of copper becoming verdigris. In <b>the work</b> they are verbs. Most mistakes come from mixing the two: brand color spread into the work turns every number and label copper, and then copper no longer means risk.</p></div>
 <div class="use-grid">
 <div class="card"><span class="cap">Brand · ink and paper, with devices</span>
-<div class="bpair"><div class="bt dk"><span class="dv-ruler"></span><span class="bt-e">Title slide</span><span class="bt-h">Built for insurance.</span><span class="dv-band"></span></div>
-<div class="bt lt"><span class="bt-e">Section slide</span><span class="bt-h">Where the loss is</span><span class="dv-short"></span></div></div>
+<div class="bpair"><div class="bt dk"><span class="dv-ruler"></span><img class="bt-logo" src="logos/svg/isomer-logo-horiz-white.svg" alt="Isomer"><span class="bt-e">Title slide</span><span class="bt-h">Built for insurance.</span><span class="dv-band"></span></div>
+<div class="bt lt"><img class="bt-logo" src="logos/svg/isomer-logo-horiz-ink.svg" alt="Isomer"><span class="bt-e">Section slide</span><span class="bt-h">Where the loss is</span><span class="dv-short"></span></div></div>
 <ul class="plain"><li>Ink or paper is the field. Copper is the metal; verdigris is only the patina trace at the end.</li>
 <li>Covers, slides, mastheads, footers, social cards, event and print. Product screens carry no devices.</li>
 <li>One colored device per view, in the frame, never touching data.</li>
@@ -278,7 +278,7 @@ a{{color:var(--cv-verdigris-deep)}}a:hover{{color:var(--cv-verdigris-dark)}}
 code,.mono{{font-family:var(--cv-mono)}}
 .wrap{{max-width:1240px;margin:0 auto;padding:0 32px}}
 .top{{border-bottom:1px solid var(--cv-ink);display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0}}
-.top .brand{{font:600 15px/1 var(--cv-font);letter-spacing:-.2px}}
+.top .brand{{display:block}}.top .brand img{{display:block;height:44px;width:auto;margin:-10px 0 -10px -12px}}
 .top nav{{display:flex;gap:20px;flex-wrap:wrap}}
 .top nav a,.eyebrow,.cap{{font:500 11px/1.2 var(--cv-mono);letter-spacing:1.2px;text-transform:uppercase;color:var(--cv-muted);text-decoration:none}}
 .top nav a:hover{{color:var(--cv-ink)}}
@@ -374,6 +374,7 @@ ul.plain{{margin:16px 0 0;padding-left:18px;font-size:14px;color:var(--cv-body)}
 .bt.lt{{background:var(--cv-paper);color:var(--cv-ink);--m1:var(--cv-copper-deep);--m2:var(--cv-verdigris-deep);--band:var(--cv-band-on-paper);--tk:var(--cv-muted)}}
 .bt-e{{font:500 9.5px/1 var(--cv-mono);letter-spacing:1.1px;text-transform:uppercase;color:var(--tk);position:relative;padding-top:4px}}
 .bt-h{{font:800 22px/1.02 var(--cv-font);letter-spacing:-.6px;max-width:14ch;position:relative;margin-bottom:12px}}
+.bt-logo{{position:absolute;right:8px;top:4px;height:32px;width:auto}}
 .bt.sm .bt-h{{font-size:17px;max-width:11ch}}
 .dv-band{{position:absolute;left:0;right:0;bottom:0;height:8px;background:var(--band)}}
 .dv-short{{position:absolute;left:16px;bottom:16px;width:52px;height:4px;background:var(--band)}}
@@ -391,7 +392,7 @@ ul.plain{{margin:16px 0 0;padding-left:18px;font-size:14px;color:var(--cv-body)}
 .app{{background:var(--cv-ui-ground);color:var(--cv-ui-text);border:1px solid var(--cv-ui-rule);padding:0 18px 18px;font-size:14px;min-width:0}}
 .app .app-lab{{color:var(--cv-ui-meta)}}
 .app-nav{{display:flex;align-items:center;gap:18px;border-bottom:1px solid var(--cv-ui-rule);height:48px}}
-.app-logo{{font:800 18px/1 var(--cv-font);letter-spacing:-.6px;color:var(--cv-ui-heading)}}
+.app-logo{{display:block;width:104px;height:38px;margin-left:-10px;background:var(--cv-ui-heading);-webkit-mask:url(logos/svg/isomer-logo-horiz-ink.svg) left center/contain no-repeat;mask:url(logos/svg/isomer-logo-horiz-ink.svg) left center/contain no-repeat}}
 .app-tabs{{display:flex;gap:16px;height:100%}}.app-tabs a{{display:flex;align-items:center;color:var(--cv-ui-meta);font-weight:600;font-size:13.5px;border-bottom:2px solid transparent;text-decoration:none}}
 .app-tabs a.on{{color:var(--cv-ui-heading);border-bottom-color:var(--cv-ui-heading)}}
 .app-me{{margin-left:auto;font:500 10px/1 var(--cv-mono);letter-spacing:1px;border:1px solid var(--cv-ui-rule);padding:6px;color:var(--cv-ui-meta)}}
@@ -433,7 +434,8 @@ table.toks{{width:100%;border-collapse:collapse;background:var(--cv-white);borde
 .mailfig figcaption{{padding:8px 0 0}}
 .mail{{background:#ECECEA;padding:20px 16px;font-family:Arial,Helvetica,sans-serif}}
 .mail-card{{background:#fff;max-width:600px;margin:0 auto;padding:20px 20px 22px}}
-.mail-top{{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid #141416;padding-bottom:10px}}
+.mail-top{{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #141416;padding-bottom:10px}}
+.mailfig img.mail-logo{{display:block;width:120px;height:44px;background:none;margin:-12px 0 -12px -12px}}
 .mail-top b{{font:700 22px/1 Arial,Helvetica,sans-serif;letter-spacing:-1px;color:#141416}}
 .mail-top span,.mail-pt span,.mail-l{{font:400 10.5px/1.4 Menlo,Consolas,'Courier New',monospace;letter-spacing:.8px;text-transform:uppercase}}
 .mail-top span{{color:#6E6E75}}
@@ -487,7 +489,7 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
 </head>
 <body>
 <div class="wrap">
-<div class="top"><span class="brand">Isomer brand</span>
+<div class="top"><a class="brand" href="../" aria-label="Isomer brand site"><img src="logos/svg/isomer-logo-horiz-ink.svg" alt="Isomer" height="44"></a>
 <nav aria-label="Sections"><a href="#palette">Palette</a><a href="#at-work">At work</a><a href="#in-an-app">App &amp; email</a><a href="#illustration">Illustration</a><a href="#samples">Samples</a><a href="#animation">Animation</a><a href="#agents">For agents</a></nav></div>
 
 <div class="topruler" aria-hidden="true"></div>

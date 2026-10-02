@@ -481,6 +481,43 @@
      "use": "Section slides, documents and reports, anything with a lot of reading"
     }
    },
+   "logo": {
+    "rule": "Use the black (ink) and white logos with this palette. The current color logos are drawn in the old blue and purple and don't belong on Copper Verdigris surfaces.",
+    "on_paper": "ink",
+    "on_ink": "white",
+    "on_graphite": "white",
+    "files": {
+     "logo-horiz-ink": {
+      "svg": "https://isomer-ai.github.io/brand/copper-verdigris/logos/svg/isomer-logo-horiz-ink.svg",
+      "png": "https://isomer-ai.github.io/brand/copper-verdigris/logos/png/isomer-logo-horiz-ink.png"
+     },
+     "logo-horiz-white": {
+      "svg": "https://isomer-ai.github.io/brand/copper-verdigris/logos/svg/isomer-logo-horiz-white.svg",
+      "png": "https://isomer-ai.github.io/brand/copper-verdigris/logos/png/isomer-logo-horiz-white.png"
+     },
+     "logo-vert-ink": {
+      "svg": "https://isomer-ai.github.io/brand/copper-verdigris/logos/svg/isomer-logo-vert-ink.svg",
+      "png": "https://isomer-ai.github.io/brand/copper-verdigris/logos/png/isomer-logo-vert-ink.png"
+     },
+     "logo-vert-white": {
+      "svg": "https://isomer-ai.github.io/brand/copper-verdigris/logos/svg/isomer-logo-vert-white.svg",
+      "png": "https://isomer-ai.github.io/brand/copper-verdigris/logos/png/isomer-logo-vert-white.png"
+     },
+     "logomark-ink": {
+      "svg": "https://isomer-ai.github.io/brand/copper-verdigris/logos/svg/isomer-logomark-ink.svg",
+      "png": "https://isomer-ai.github.io/brand/copper-verdigris/logos/png/isomer-logomark-ink.png"
+     },
+     "logomark-white": {
+      "svg": "https://isomer-ai.github.io/brand/copper-verdigris/logos/svg/isomer-logomark-white.svg",
+      "png": "https://isomer-ai.github.io/brand/copper-verdigris/logos/png/isomer-logomark-white.png"
+     }
+    },
+    "notes": [
+     "The logo is not a device: it doesn't count toward one colored device per view, and it never takes copper or verdigris.",
+     "The ink files are the solid-dark logos recolored from Isomer Blue #000441 to ink #141416; shapes are unchanged. The white files are the solid-light logos.",
+     "Product screens use the logo in the heading color: ink on light, white on dark."
+    ]
+   },
    "devices": [
     {
      "id": "oxidation-band",

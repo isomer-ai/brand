@@ -33,6 +33,20 @@ The brand is a system, not one mark repeated. Two grounds and five devices, chos
 
 Ink or paper is always the field. Verdigris is never the field: a green ground makes Isomer a green brand, and the copper becomes a token.
 
+#### Logo
+
+Use the black and white logos with this palette: ink on paper, white on ink and on graphite. The color logos are drawn in the old blue and purple and don't belong on these surfaces.
+
+| Layout | Ink, for paper | White, for ink |
+| --- | --- | --- |
+| Horizontal | [SVG](logos/svg/isomer-logo-horiz-ink.svg) · [PNG](logos/png/isomer-logo-horiz-ink.png) | [SVG](logos/svg/isomer-logo-horiz-white.svg) · [PNG](logos/png/isomer-logo-horiz-white.png) |
+| Vertical | [SVG](logos/svg/isomer-logo-vert-ink.svg) · [PNG](logos/png/isomer-logo-vert-ink.png) | [SVG](logos/svg/isomer-logo-vert-white.svg) · [PNG](logos/png/isomer-logo-vert-white.png) |
+| Mark | [SVG](logos/svg/isomer-logomark-ink.svg) · [PNG](logos/png/isomer-logomark-ink.png) | [SVG](logos/svg/isomer-logomark-white.svg) · [PNG](logos/png/isomer-logomark-white.png) |
+
+- **The logo is not a device.** It doesn't count toward one colored device per view, and it never takes copper or verdigris.
+- **The ink files** are the solid-dark logos recolored from Isomer Blue `#000441` to ink `#141416`, so the logo matches the type beside it. Shapes are unchanged. The white files are the solid-light logos.
+- **In product,** the logo takes the heading color: ink on light, white on dark.
+
 #### Devices
 
 | Device | Form | Size | Use |
@@ -52,7 +66,7 @@ The band's segments on ink are copper `#B4602F`, copper light `#E09C6B` and verd
 - **Devices live in the frame.** Cover, masthead, footer, slide edge. Never inside content and never touching data: once a figure, table or product screen appears, color means something.
 - **Keep the band's order and proportions.** Copper first, about 70 / 20 / 10, flat segments. No gradients, no reversal, no verdigris-heavy versions.
 - **Pick the shade by ground.** Light shades on ink, deep shades on paper. Light copper washes out on paper; deep copper sinks into ink.
-- **Product screens carry no devices.** The logo is enough; the rest of the brand shows through form.
+- **Product screens carry no devices.** The black or white logo is enough; the rest of the brand shows through form.
 - **A hero headline word** may be copper deep when a marketing page is about risk. Only the hero, only one word or phrase, and not on the same view as a colored device.
 
 ### The work
