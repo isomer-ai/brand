@@ -43,6 +43,7 @@ Use the black and white logos with this palette: ink on paper, white on ink and 
 | Vertical | [SVG](logos/svg/isomer-logo-vert-ink.svg) · [PNG](logos/png/isomer-logo-vert-ink.png) | [SVG](logos/svg/isomer-logo-vert-white.svg) · [PNG](logos/png/isomer-logo-vert-white.png) |
 | Mark | [SVG](logos/svg/isomer-logomark-ink.svg) · [PNG](logos/png/isomer-logomark-ink.png) | [SVG](logos/svg/isomer-logomark-white.svg) · [PNG](logos/png/isomer-logomark-white.png) |
 
+- **Transparent backgrounds.** Every logo file, SVG and PNG, has a transparent background. The white files can look blank in a file preview or on a light page because they are white on transparent; place them on ink or graphite.
 - **The logo is not a device.** It doesn't count toward one colored device per view, and it never takes copper or verdigris.
 - **The ink files** are the solid-dark logos recolored from Isomer Blue `#000441` to ink `#141416`, so the logo matches the type beside it. Shapes are unchanged. The white files are the solid-light logos.
 - **In product,** the logo takes the heading color: ink on light, white on dark.

@@ -118,7 +118,7 @@ footer a{{color:var(--cv-muted)}}
 <div class="top"><a href="../" aria-label="Copper Verdigris guide"><img src="svg/isomer-logo-horiz-ink.svg" alt="Isomer"></a><a class="back" href="../#brand-devices">&larr; Copper Verdigris guide</a></div>
 <div class="ruler" aria-hidden="true"></div>
 <header class="hd"><div><span class="eb">Copper Verdigris · Logo board</span><h1>Isomer logos</h1></div>
-<p class="lede">Black and white logos for the Copper Verdigris palette, each shown on the ground it's made for. Download one file at a time: SVG for screens and anything that scales, PNG where SVG isn't accepted.</p></header>
+<p class="lede">Black and white logos for the Copper Verdigris palette, each shown on the ground it's made for. Every file has a transparent background, so the white logos can look blank until they're on a dark ground. Download one file at a time: SVG for screens and anything that scales, PNG where SVG isn't accepted.</p></header>
 {rows}
 <section class="rules"><div class="rh"><h2>Use</h2></div><div><ul>
 <li>Ink on paper or white; white on ink or graphite. Never the color logos with this palette.</li>
