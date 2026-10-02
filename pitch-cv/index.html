@@ -1,0 +1,2483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Isomer Pitch Reference</title>
+<meta name="description" content="Reference build of the isomer.ai/pitch-patina minisite, redrawn to the Copper Verdigris palette and illustration guide.">
+<link rel="stylesheet" href="../copper-verdigris/tokens.css">
+<style>
+/* Pitch Patina reference. Values come from ../copper-verdigris/tokens.css; rules from ../copper-verdigris/ILLUSTRATION-GUIDE.md. */
+:root{color-scheme:light;
+ --ink:var(--cv-ink);--body:var(--cv-body);--muted:var(--cv-muted);--hair:var(--cv-hairline);--rule:var(--cv-hairline);--grey:var(--cv-section-grey);--paper:var(--cv-paper);--white:var(--cv-white);
+ --cu:var(--cv-copper);--cu-deep:var(--cv-copper-deep);--cu-dark:var(--cv-copper-dark);--cu-light:var(--cv-copper-light);--cu-tint:var(--cv-copper-tint);
+ --vg:var(--cv-verdigris);--vg-deep:var(--cv-verdigris-deep);--vg-dark:var(--cv-verdigris-dark);--vg-light:var(--cv-verdigris-light);--vg-mist:var(--cv-verdigris-mist);--vg-tint:var(--cv-verdigris-tint);
+ --gr:var(--cv-graphite);--gr-deep:var(--cv-graphite-deep);--gr-raised:var(--cv-graphite-raised);--gr-muted:var(--cv-on-graphite-muted);
+ --font:var(--cv-font);--mono:var(--cv-mono);
+ --ruler:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='10'%3E%3Cpath d='M.5 0v10M8.5 0v4M16.5 0v4M24.5 0v4M32.5 0v4' stroke='%236E6E75' stroke-width='.75' fill='none'/%3E%3C/svg%3E")}
+*{box-sizing:border-box;border-radius:0}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased}
+p,h1,h2,h3{margin:0}
+a{color:inherit}
+button{font:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:24px}
+section{position:relative;padding-block:112px}
+section[id]{scroll-margin-top:12px}
+.bg-white{background:var(--white)}
+.bg-grey{background:var(--grey)}
+:focus-visible{outline:2px solid var(--vg);outline-offset:3px}
+[hidden]{display:none!important}
+
+/* Type. Fustat for display and values, IBM Plex Mono for annotation. */
+.eyebrow,.k,.lab,.tag,.zw,.zc,.rail-h,.inbox-h,.cg-h,.toc-h p,.tdr-h p,.bk,.wc dt,.tr.th,.legend,.plate-h,.plate-f,.ax,.mono{font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em}
+.eyebrow{font-size:12px;font-weight:500;color:var(--muted)}
+h2{font-size:clamp(34px,4.6vw,58px);font-weight:700;line-height:1.05;letter-spacing:-.035em;text-wrap:pretty;margin-top:14px}
+h2 em{font-style:normal;color:var(--cu-deep)}
+h2 em.v{color:var(--vg-deep)}
+.lede{font-size:clamp(18px,1.8vw,22px);color:var(--body);max-width:62ch;margin-top:18px}
+.src{font-size:13px;color:var(--muted);margin-top:40px;max-width:100ch}
+.src a,cite a{color:inherit;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px}
+.src a:hover,cite a:hover{text-decoration-color:currentColor}
+.val{font-family:var(--font);font-weight:600;letter-spacing:-.03em;line-height:1}
+
+/* Apparatus that travels from the plates into the page: rulers, plate codes, the scan line. */
+.ruler{height:10px;background:var(--ruler) repeat-x 0 0;opacity:.7}
+.plate{margin:0;background:var(--white);border:1px solid var(--rule)}
+.plate-h{display:flex;justify-content:space-between;gap:16px;padding:12px 16px 8px;font-size:11px;font-weight:500;color:var(--muted)}
+.plate-h b{font-weight:600;color:var(--ink)}
+.plate-b{padding:24px 28px 28px}
+.plate-f{padding:10px 16px 12px;border-top:1px solid var(--hair);font-size:10.5px;color:var(--muted);letter-spacing:.06em;text-transform:none;font-family:var(--mono)}
+
+/* Severity and stage tags: square dot, word, 1px outline. Risk is copper; Isomer acting is verdigris. */
+.tag{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;letter-spacing:.1em;padding:2px 6px;border:1px solid currentColor;white-space:nowrap;line-height:1.4;background:none}
+.tag::before{content:"";width:6px;height:6px;background:currentColor;flex:none}
+.tag.c{color:var(--cu-dark);background:var(--cu-tint);border-color:var(--cu)}
+.tag.h{color:var(--cu-dark);border-color:var(--cu)}
+.tag.m{color:var(--muted);border-color:var(--rule)}
+.tag.u{color:var(--ink);border-color:var(--ink)}
+.tag.cm{color:var(--ink)}
+.tag.cq{color:var(--muted);border-color:var(--rule)}
+.gr .tag.c{color:var(--gr);background:var(--cu-light);border-color:var(--cu-light)}
+.gr .tag.h{color:var(--cu-light);border-color:var(--cu-light)}
+.gr .tag.m{color:var(--gr-muted);border-color:var(--gr-muted)}
+.gr .tag.u{color:#FFFFFF;border-color:var(--gr-muted)}
+
+/* Reveal: fade only, smoothstep-like easing. */
+.rv.play{animation:fade .6s ease-in-out both;animation-delay:var(--d,0s)}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* Page progress is a scan line across the top. */
+.progress{position:fixed;left:0;right:0;top:0;height:calc(2px + env(safe-area-inset-top,0px));z-index:50;pointer-events:none}
+.progress i{position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--vg)}
+
+/* Contents */
+.toc{margin-top:72px;padding-top:22px;border-top:1px solid var(--ink)}
+.toc-h{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:16px}
+.toc-h p{font-size:11px;font-weight:500;color:var(--muted)}
+.mb{display:inline-flex;align-items:center;gap:7px;border:0;background:none;padding:0 0 2px;font-size:14px;font-weight:600;color:var(--ink);border-bottom:1px solid var(--ink);cursor:pointer}
+.mb:hover{color:var(--vg-deep);border-color:var(--vg-deep)}
+.toc ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));grid-auto-flow:column;gap:18px}
+.toc li a{display:block;height:100%;border-left:1px solid var(--rule);padding-left:12px;text-decoration:none}
+.toc li b:empty,.tdr li b:empty{display:none}
+.toc li span{display:block;font-size:15px;font-weight:600;line-height:1.2}
+.toc li em{display:block;margin-top:4px;font-style:normal;font-size:13px;line-height:1.35;color:var(--muted)}
+.toc li a:hover span{color:var(--vg-deep)}
+.toc-ax{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 22px;margin-top:22px;padding-top:16px;border-top:1px solid var(--rule)}
+.toc-ax p{text-transform:uppercase;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.1em;color:var(--muted)}
+.toc-ax a{font-size:14px;font-weight:600;text-decoration:none}
+.toc-ax a:hover{color:var(--vg-deep)}
+.toc-ax b,.tdr li b{font-family:var(--mono);font-weight:500;color:var(--muted);margin-right:6px}
+.tchip{position:fixed;top:12px;left:14px;z-index:50;display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid var(--ink);background:var(--paper);font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s}
+.tchip.on{opacity:1;pointer-events:auto}
+.tdr{position:fixed;top:0;left:0;bottom:0;width:min(340px,100%);z-index:60;overflow:auto;background:var(--white);border-right:1px solid var(--ink);padding:18px 24px 24px}
+.tdr-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.tdr-h p{font-size:11px;font-weight:500;color:var(--muted)}
+.tdr ol{list-style:none;margin:0;padding:0}
+.tdr li a{display:block;padding:10px 12px;margin:0 -12px;text-decoration:none;border-bottom:1px solid var(--hair)}
+.tdr li span{font-weight:600;line-height:1.25}
+.tdr li em{display:block;margin-top:2px;font-style:normal;font-size:13px;color:var(--muted)}
+.tdr li a.on{background:var(--vg-tint);box-shadow:inset 2px 0 0 var(--vg)}
+.tdr .mb{margin-top:18px}
+.tdr-ax{margin-top:18px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted)}
+.kadj{float:right;display:inline-flex;align-items:center;gap:6px;border:0;background:none;padding:0 0 1px;font:600 11px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid var(--ink);cursor:pointer}
+@media (max-width:760px){.toc ol{grid-auto-flow:row;grid-template-columns:1fr;gap:0}
+ .toc li a{border-left:0;border-top:1px solid var(--hair);padding:10px 0}
+ .toc li span{font-size:16px}
+ .toc li em{display:none}
+ .tdr{top:auto;height:78vh;width:100%;border-right:0;border-top:1px solid var(--ink)}
+ .kadj{float:none;margin-left:8px}}
+
+/* Model editor */
+.ed{position:fixed;top:0;right:0;bottom:0;width:min(400px,100%);z-index:60;background:var(--white);border-left:1px solid var(--ink);display:flex;flex-direction:column;font-size:15px}
+.ed-h{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid var(--hair)}
+.ed-h p{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted)}
+.ed-x{border:0;background:none;font-size:28px;line-height:1;cursor:pointer;color:var(--muted);padding:0 4px}
+.ed-b{flex:1;overflow:auto;padding:4px 22px 22px}
+.ed-g{margin-top:20px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted)}
+.ed-r{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--hair)}
+.ed-r>span{color:var(--body)}
+.ed-r b{display:flex;align-items:center;gap:6px;font-weight:600}
+.ed-r i{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--muted);min-width:24px}
+.ed input,.ed select{font:inherit;font-weight:600;color:var(--ink);border:1px solid var(--rule);padding:6px 8px;background:var(--paper)}
+.ed input{width:86px;text-align:right}
+.ed select{max-width:210px}
+.ed-f{display:flex;gap:10px;padding:14px 22px;border-top:1px solid var(--hair)}
+.ed-f button{flex:1;font-weight:600;padding:11px;cursor:pointer}
+.ed-p{background:var(--ink);color:#FFFFFF;border:1px solid var(--ink)}
+.ed-s{background:none;border:1px solid var(--ink);color:var(--ink)}
+@media (max-width:640px){.ed{top:auto;height:62vh;width:100%;border-left:0;border-top:1px solid var(--ink)}}
+
+/* Hero */
+.hero{padding-block:0 96px;overflow:hidden}
+.hero>.ruler{margin-bottom:26px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:72px}
+.logo{display:block;height:34px;width:auto;color:var(--ink)}
+.close .logo{height:44px;margin-top:48px}
+.topbar .tag-line{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center}
+.hero h1{font-size:clamp(42px,6vw,84px);font-weight:700;line-height:1;letter-spacing:-.045em;text-wrap:balance}
+.hero h1 span{display:block;color:var(--cu-deep)}
+.pillars{display:flex;flex-wrap:wrap;gap:8px;margin-top:34px}
+.pillars span{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.14em;padding:8px 12px;border:1px solid currentColor;display:inline-flex;align-items:center;gap:8px}
+.pillars span::before{content:"";width:7px;height:7px;background:currentColor}
+.pillars .p1{color:var(--ink)}
+.pillars .p2{color:var(--cu-dark);background:var(--cu-tint);border-color:var(--cu)}
+.pillars .p3{color:var(--vg-dark);background:var(--vg-tint);border-color:var(--vg)}
+.hero .proof{margin-top:18px;font-size:15px;color:var(--body)}
+
+/* Inbox: a product screen, so graphite. */
+.inbox{position:relative;background:var(--gr);border:1px solid var(--gr-deep);padding:14px;overflow:hidden;color:#FFFFFF}
+.inbox-h{display:flex;justify-content:space-between;font-size:11px;font-weight:500;color:var(--gr-muted);padding:2px 2px 12px}
+.inbox-h .live{color:var(--vg-light);display:flex;align-items:center;gap:8px}
+.inbox-h .live i{width:7px;height:7px;background:var(--vg-light);animation:blink 1.4s ease-in-out infinite}
+@keyframes blink{50%{opacity:.25}}
+.stack{display:flex;flex-direction:column;gap:6px;height:152px;overflow:hidden}
+.msg{position:relative;flex:none;display:grid;grid-template-columns:58px 1fr auto;align-items:center;gap:10px;height:46px;padding:0 12px;background:var(--gr-raised);border:1px solid var(--gr-raised);overflow:hidden;transition:border-color .3s}
+.msg .d,.msg .f{font-family:var(--mono);font-size:12px;color:var(--gr-muted);white-space:nowrap}
+.msg .t{font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.msg.new{animation:fade .5s ease-in-out both}
+.msg.hot{border-color:var(--cu-light)}
+.msg.hot::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--cu-light)}
+.msg .beam{position:absolute;top:0;bottom:0;left:0;width:1.5px;background:var(--vg-light);pointer-events:none;opacity:0}
+.msg.scan .beam{animation:beam .9s ease-in-out forwards}
+@keyframes beam{0%{left:0;opacity:1}99%{opacity:1}100%{left:100%;opacity:0}}
+.cg{position:relative;height:250px;margin-top:10px;background-color:var(--gr-deep);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Crect x='11.5' y='11.5' width='1.5' height='1.5' fill='%2345494A'/%3E%3C/svg%3E");border:1px solid var(--gr-deep);transition:opacity .5s}
+.cg.fade,.ticker.fade{opacity:0}
+.cg-h{position:absolute;left:12px;right:12px;top:9px;display:flex;justify-content:space-between;gap:8px;font-size:10.5px;font-weight:500;color:var(--gr-muted);z-index:1}
+.cg-h b{color:var(--vg-light);font-weight:500;font-variant-numeric:tabular-nums}
+.cg-e{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.cg-e line{stroke:var(--vg-light);stroke-width:1;vector-effect:non-scaling-stroke;stroke-linecap:square}
+.cg-e line.rk{stroke:var(--cu-light);stroke-width:1.5}
+.cg-e line.ln{stroke:#FFFFFF;stroke-width:1}
+.jn{position:absolute;width:5px;height:5px;margin:-2.5px 0 0 -2.5px;background:var(--vg-light);z-index:1}
+.nd,.cg-c{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;gap:5px;white-space:nowrap;font-family:var(--mono);font-size:10.5px;font-weight:500;z-index:2}
+.nd{padding:3px 7px 3px 6px;background:var(--gr-deep);border:1px solid var(--vg-light);color:#FFFFFF;opacity:0;transition:opacity .35s ease-in-out,border-color .3s}
+.nd i{width:6px;height:6px;background:var(--vg-light);flex:none;transition:background .3s}
+.nd.on{opacity:1}
+.nd.risk{border-color:var(--cu-light);border-width:1.25px}
+.nd.risk i{background:var(--cu-light)}
+.nd.ping{animation:ping .7s ease-in-out}
+@keyframes ping{40%{background:var(--gr-raised)}}
+.cg-c{left:50%;top:var(--cy,57%);padding:5px 10px;background:#FFFFFF;color:var(--ink);border:1px solid var(--ink);font-weight:600;letter-spacing:.04em}
+.chip{position:absolute;left:0;top:0;z-index:6;padding:3px 8px;background:var(--vg-light);color:var(--gr-deep);font-family:var(--mono);font-size:10.5px;font-weight:600;white-space:nowrap;pointer-events:none}
+.ticker{display:grid;gap:6px;margin-top:10px;transition:opacity .5s}
+.tk{display:flex;align-items:center;gap:10px;min-height:38px;padding:7px 12px;font-size:14px;line-height:1.25;min-width:0;border:1px solid var(--gr-raised)}
+.tk .lab{flex:none;width:52px;font-size:10px;font-weight:500;color:var(--gr-muted)}
+.tk .tx{min-width:0;display:flex;align-items:center;flex-wrap:wrap;gap:2px}
+.tk.idle .tx{color:var(--gr-muted)}
+.tk.kd:not(.idle){border-color:var(--cu-light)}
+.tk.kd:not(.idle) .lab{color:var(--cu-light)}
+.tk.kd .tx{font-weight:600}
+.tk.ka:not(.idle){background:var(--vg);border-color:var(--vg)}
+.tk.ka:not(.idle) .lab{color:var(--vg-tint)}
+.tk.ka:not(.idle) .tx{font-weight:600;color:#FFFFFF}
+.tk.ka:not(.idle) .tx::before{content:"\2713\00a0\00a0"}
+.tk.in{animation:fade .45s ease-in-out}
+
+/* The problem */
+.foes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:56px}
+.foe{background:var(--white);border:1px solid var(--rule);padding:26px;display:flex;flex-direction:column;gap:10px}
+.foe .k{font-size:11px;font-weight:500;color:var(--cu-dark)}
+.foe h3{font-size:21px;font-weight:600;letter-spacing:-.01em}
+.foe .big{font-size:clamp(44px,4.6vw,60px);color:var(--cu);margin-top:12px}
+.foe p.s{color:var(--body);font-size:16.5px}
+.foe .ex{margin-top:auto}
+.ex{display:flex;flex-direction:column;gap:14px;margin-top:10px;padding-top:18px;border-top:1px solid var(--hair)}
+.ex blockquote,.ex .fact{margin:0;padding-left:14px;border-left:2px solid var(--rule)}
+.ex blockquote p{font-size:16px;line-height:1.45;font-weight:600}
+.ex .fact p{font-size:16px;line-height:1.45}
+.ex .fact b{font-weight:700}
+.ex cite{display:block;margin-top:6px;font-style:normal;font-size:13px;color:var(--muted)}
+
+.verdict{margin-top:16px}
+.verdict .plate-b{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr) auto;gap:40px;align-items:center}
+.verdict h3{font-size:22px;font-weight:600;margin-top:6px}
+.verdict .sub{color:var(--body);font-size:16px;margin-top:4px}
+.verdict .sub cite{display:block;font-style:normal;font-size:12px;color:var(--muted);margin-top:6px}
+.verdict .k{font-size:11px;color:var(--muted)}
+.hbars{display:flex;flex-direction:column;gap:8px}
+.hbars .bk{font-size:10.5px;font-weight:500;color:var(--muted);margin-bottom:4px}
+.hbars .row{display:grid;grid-template-columns:96px 1fr;align-items:center;gap:12px;font-size:14px;color:var(--body)}
+.hbars .track2{position:relative;height:26px}
+.hbars .bar{position:absolute;left:0;top:0;bottom:0;transform-origin:left}
+.hbars .bar.cu{background:var(--cu)}
+.hbars .bar.ct{background:var(--cu-tint);border:1.25px solid var(--cu)}
+.hbars .bar.nt{background:var(--grey);border:1px solid var(--rule)}
+.hbars .bar b{position:absolute;left:calc(100% + 8px);top:50%;transform:translateY(-50%);font-family:var(--mono);font-size:13px;font-weight:600;color:var(--ink);white-space:nowrap}
+.hbars .bar.cu b{color:var(--cu-dark)}
+.play .hbars .bar{animation:grow 1s ease-in-out both}
+.play .hbars .row+.row .bar{animation-delay:.3s}
+.axis{position:relative;height:22px;margin-left:108px;border-top:1px solid var(--ink)}
+.axis span{position:absolute;top:0;transform:translateX(-50%);padding-top:7px;font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.axis span::before{content:"";position:absolute;left:50%;top:0;height:5px;border-left:1px solid var(--ink)}
+.axis span:first-child{transform:none}.axis span:first-child::before{left:0}
+.axis span:last-child{transform:translateX(-100%)}.axis span:last-child::before{left:auto;right:0}
+.verdict .hero-n{font-size:clamp(52px,6vw,84px);color:var(--cu);text-align:right;white-space:nowrap}
+.verdict .hero-n small{display:block;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+
+.payers{margin-top:16px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px;padding:36px;background:var(--white);border:1px solid var(--rule)}
+.payers .k{font-size:11px;color:var(--muted)}
+.payers h3{font-size:clamp(24px,2.6vw,32px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-top:10px;text-wrap:balance}
+.payers-l>p:last-child{color:var(--body);font-size:17px;margin-top:14px;max-width:46ch}
+.pay{display:grid;gap:6px;padding:16px 0;border-bottom:1px solid var(--hair)}
+.pay:first-child{padding-top:0}.pay:last-child{border-bottom:0;padding-bottom:0}
+.pay .n{font-size:38px;color:var(--cu-dark)}
+.pay p{font-size:16px;color:var(--body);line-height:1.45}
+.pay b{color:var(--ink)}
+.pay cite{display:block;font-style:normal;font-size:12px;margin-top:4px;color:var(--muted)}
+
+/* Where the loss is */
+.conc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;margin-top:56px;align-items:start}
+.sankey svg{width:100%;height:auto;display:block;overflow:visible}
+.skb{transform-box:fill-box;transform-origin:left top}
+#skBot .skb{transform-origin:left bottom}
+.skl{transition:opacity .4s ease-in-out}
+.pattern{align-self:center}
+.pattern .k{font-size:11px;color:var(--muted);margin-bottom:6px}
+.pat{display:grid;grid-template-columns:52px 104px 1fr;gap:16px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--hair)}
+.pattern .k+.pat{border-top:1px solid var(--ink)}
+.pat .ln{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted)}
+.pat .n{font-size:44px;color:var(--ink)}
+.pat p{color:var(--body);font-size:16.5px}
+.pat p b{color:var(--ink)}
+.pat.hot .n{color:var(--cu)}
+
+/* X-ray: a product screen, so graphite. */
+.xray{margin-top:48px;max-width:920px}
+.xsw{display:flex;justify-content:flex-end;gap:0;margin-bottom:8px}
+.xsw button{border:1px solid var(--rule);margin-left:-1px;background:var(--white);padding:5px 10px;font:500 11px/1.3 var(--mono);letter-spacing:.1em;color:var(--muted);cursor:pointer}
+.xsw button:hover{color:var(--ink)}
+.xsw button[aria-pressed=true]{color:#FFFFFF;background:var(--ink);border-color:var(--ink);position:relative}
+.file{position:relative;background:var(--gr);border:1px solid var(--gr-deep);padding:6px 64px 16px 20px;overflow:hidden;color:#FFFFFF;--rail:30px}
+.file-h{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 0 12px;border-bottom:1px solid var(--gr-raised)}
+.file-h p{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.1em;color:var(--gr-muted);text-transform:uppercase}
+.file-h .hint{color:var(--vg-light);text-transform:none;letter-spacing:.02em}
+.frow{position:relative;display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:9px 10px;font-size:16px;transition:background .3s,color .3s}
+.frow .d,.frow .f{font-family:var(--mono);color:var(--gr-muted);font-size:13px;align-self:center}
+.frow .t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.frow small{display:none}
+.frow.hit small{display:block;grid-column:2 / -1;font-family:var(--mono);font-size:11.5px;color:var(--gr-muted)}
+.frow.hit .t{font-weight:700}
+.file:not(.scrub) .frow.hit,.scrub .frow.hit.read{background:var(--gr-raised);box-shadow:inset 2px 0 0 var(--cu-light)}
+.scrub .frow.risk.read:not(.hit){box-shadow:inset 2px 0 0 var(--cu-light)}
+/* The scan line: 1.5px verdigris with square terminals. */
+.scanline{position:absolute;left:0;right:0;height:1.5px;top:0;background:var(--vg-light);opacity:0;pointer-events:none;transition:opacity .3s;z-index:2}
+.scanline::before,.scanline::after{content:"";position:absolute;top:-2.25px;width:6px;height:6px;background:var(--vg-light)}
+.scanline::before{left:0}.scanline::after{right:0}
+.scanline.on{opacity:1}
+.rail{position:absolute;right:33.5px;top:70px;bottom:18px;width:1px;background:var(--gr-muted)}
+.rail-h{position:absolute;right:12px;top:14px;width:44px;text-align:center;font-size:8.5px;font-weight:500;letter-spacing:.08em;line-height:1.2;color:var(--gr-muted)}
+.frow::after{content:"";position:absolute;left:calc(100% + 6px);top:50%;width:calc(var(--rail) - 6px);height:1px;background:var(--vg-light);transform-origin:left;transform:scaleX(0);transition:transform .35s ease-in-out}
+.frow::before{content:"";position:absolute;left:calc(100% + var(--rail) - 4px);top:50%;width:8px;height:8px;margin-top:-4px;background:var(--gr);border:1px solid var(--gr-muted);transition:background .3s,border-color .3s;z-index:1}
+.file:not(.scrub) .frow::after,.frow.read::after{transform:scaleX(1)}
+.file:not(.scrub) .frow::before,.frow.read::before{background:var(--vg-light);border-color:var(--vg-light)}
+.file:not(.scrub) .frow.risk::before,.frow.risk.read::before{background:var(--cu-light);border-color:var(--cu-light)}
+.file:not(.scrub) .frow.risk::after,.frow.risk.read::after{background:var(--cu-light)}
+.fx{display:flex;flex-direction:column;gap:10px;margin:4px 0 10px 84px;padding:10px 12px;border-left:2px solid var(--cu-light);background:var(--gr-raised)}
+.fx:has(.u){border-left-color:var(--gr-muted)}
+.fx .fl{display:flex;flex-direction:column;gap:7px;font-size:15px;line-height:1.35}
+.fx .fl.u{flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+.fx .fl+.fl{padding-top:10px;border-top:1px solid var(--gr)}
+.det,.act{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px}
+.lab{font-size:10px;font-weight:500;letter-spacing:.12em}
+.det>.lab{color:var(--cu-light)}
+.det b{color:#FFFFFF;font-weight:600}
+.wh,.det .wh{font-family:var(--mono);font-size:12px;color:var(--gr-muted)}
+.act{align-self:flex-start;flex-wrap:nowrap;align-items:baseline;gap:8px;padding:4px 10px;background:var(--vg);color:#FFFFFF;font-weight:600}
+.act>.lab{color:var(--vg-tint);flex:none}
+.act em{font-style:normal;min-width:0}
+.act em::before{content:"\2713\00a0\00a0"}
+/* The combined finding is a signal node: copper tint, copper outline, copper-dark label. */
+.combo{display:flex;flex-direction:column;gap:9px;margin:14px 0 2px;padding:14px 16px;background:var(--cu-tint);border:1.25px solid var(--cu);color:var(--ink);font-size:16px}
+.combo .det>.lab{color:var(--cu-dark)}
+.combo .det b{color:var(--ink)}
+.combo .wh{color:var(--body)}
+.combo .tag.c{color:#FFFFFF;background:var(--cu);border-color:var(--cu)}
+.scrub .frow{transition:background .35s,color .35s,box-shadow .35s}
+.scrub .xstep{max-height:640px;overflow:clip;overflow-clip-margin:28px;transition:max-height .45s ease-in-out,opacity .35s .1s,margin .45s,padding .45s}
+.scrub .xstep:not(.on){max-height:0;opacity:0;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;border-width:0;transition:max-height .35s ease-in-out,opacity .2s,margin .35s,padding .35s}
+
+/* In production */
+.pf-figs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px}
+.pf-fig .plate-b{padding:20px 22px 22px;display:flex;flex-direction:column;gap:14px}
+.pf-fig .val{font-size:clamp(34px,3.4vw,44px)}
+.pf-fig .val.vg{color:var(--vg-deep)}
+.pf-fig .val.cu{color:var(--cu)}
+.pf-fig p.c{font-size:15.5px;color:var(--body);line-height:1.4}
+.logax{position:relative;height:56px}
+.logax .bar{position:absolute;left:0;top:8px;height:14px;background:var(--vg);transform-origin:left}
+.logax .bar::after{content:"";position:absolute;right:-4px;top:3px;width:8px;height:8px;background:var(--vg-dark)}
+.logax .t0{position:absolute;left:0;top:26px;z-index:1;width:8px;height:8px;margin-left:-4px;background:var(--vg)}
+.logax .ln{position:absolute;left:0;right:0;top:30px;border-top:1px solid var(--ink)}
+.logax span{position:absolute;top:30px;transform:translateX(-50%);padding-top:8px;font-family:var(--mono);font-size:10px;color:var(--muted)}
+.logax span::before{content:"";position:absolute;left:50%;top:0;height:5px;border-left:1px solid var(--ink)}
+.logax span:first-of-type{transform:none}.logax span:first-of-type::before{left:0}
+.logax span:last-of-type{transform:translateX(-100%)}.logax span:last-of-type::before{left:auto;right:0}
+.play .logax .bar{animation:grow 1.1s ease-in-out both .2s}
+.cells{display:grid;gap:4px}
+.cells.c10{grid-template-columns:repeat(10,1fr)}
+.cells.c16{grid-template-columns:repeat(16,1fr);gap:3px}
+.cells i{display:block;aspect-ratio:1;background:var(--white);border:1px solid var(--ink)}
+.cells i.vg{background:var(--vg);border-color:var(--vg)}
+.cells i.cu{background:var(--cu);border-color:var(--cu)}
+.cells+.ax{font-size:10px;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap}
+.ax i{display:inline-block;width:8px;height:8px;margin-right:5px;vertical-align:0;border:1px solid var(--ink)}
+.ax i.vg{background:var(--vg);border-color:var(--vg)}
+.ax i.cu{background:var(--cu);border-color:var(--cu)}
+.pf-row{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:22px;margin-top:22px;align-items:stretch}
+.pf-story{background:var(--white);border:1px solid var(--rule);padding:26px 30px}
+.pf-story .k{font-size:11px;color:var(--vg-dark)}
+.pf-t{font-size:clamp(19px,1.9vw,23px);font-weight:600;line-height:1.4;margin-top:12px}
+.pf-f{margin-top:18px;padding-top:14px;border-top:1px solid var(--hair);font-size:16px;color:var(--body)}
+.pf-f b{color:var(--ink)}
+/* The handler's voice sits in its own grey box, matched to the story card beside it. */
+.pf-q{margin:0;display:flex;flex-direction:column;gap:14px;padding:26px 30px;background:var(--grey);border:1px solid var(--grey)}
+.pf-q .k{font-size:11px;color:var(--muted)}
+.pf-q p{font-size:clamp(19px,1.9vw,22px);font-weight:600;line-height:1.4}
+.pf-q cite{display:block;margin-top:auto;padding-top:14px;border-top:1px solid var(--gr-muted);font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pf-trust{margin-top:22px;padding:18px 22px;background:var(--paper);border:1px solid var(--rule);font-size:17px;color:var(--body)}
+.pf-trust b{color:var(--ink)}
+
+/* The value */
+.scen{display:inline-block;margin-top:14px;padding:6px 10px;background:var(--white);border:1px solid var(--rule);font-size:14px;line-height:1.4}
+.win{margin-top:56px}
+.win .plate-b{padding:28px}
+.lanes{display:grid;grid-template-columns:190px 1fr;gap:0 20px}
+.zones{display:grid;grid-template-columns:30fr 40fr 30fr}
+.zw,.zc{padding:0 12px 8px;font-size:11px;font-weight:600}
+.zw{grid-column:1 / 3;color:var(--vg-dark);border-bottom:2px solid var(--vg)}
+.zc{grid-column:3;color:var(--cu-dark);border-bottom:2px solid var(--cu)}
+.z1,.z2,.z3{padding:8px 12px;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase}
+.z1,.z2{background:var(--vg-tint);color:var(--vg-dark)}
+.z2{border-left:1px solid var(--ink);color:var(--body)}
+.z3{background:var(--cu-tint);color:var(--cu-dark);border-left:1.5px dashed var(--cu)}
+.lane-l{display:flex;flex-direction:column;justify-content:center;padding:16px 0}
+.lane-l .k{font-size:11px;color:var(--muted)}
+.lane-l .v{white-space:nowrap;font-size:34px;font-family:var(--font);font-weight:600;letter-spacing:-.03em;line-height:1.1}
+.lane-l .v span:not(.vv){font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.lane-l.iso .v{color:var(--vg-deep)}
+.track{position:relative;height:86px;container-type:inline-size}
+.track .zb{position:absolute;top:0;bottom:0}
+.track .zb1{left:0;width:30%;background:var(--vg-tint)}
+.track .zb2{left:30%;width:40%;background:var(--paper)}
+.track .zb3{left:70%;right:0;background:var(--cu-tint)}
+.track::before{content:"";position:absolute;left:0;right:0;top:50%;border-top:1px solid var(--rule);z-index:1}
+.track .div1{position:absolute;left:30%;top:0;bottom:0;border-left:1px solid var(--ink);z-index:1}
+.track .div2{position:absolute;left:70%;top:0;bottom:0;border-left:1.5px dashed var(--cu);z-index:1}
+.dot{--d:min(18px,3cqw);position:absolute;top:50%;width:var(--d);height:var(--d);margin:calc(var(--d) / -2) 0 0 calc(var(--d) / -2);background:var(--white);border:1px solid var(--ink);z-index:2;transition:left .9s ease-in-out,background .6s,border-color .6s}
+.dot.late{background:var(--cu);border-color:var(--cu)}
+.dot.iso{background:var(--vg);border-color:var(--vg)}
+.dot.after{background:var(--white);border-color:var(--ink)}
+.track .cap{position:absolute;bottom:4px;z-index:2;font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;color:var(--muted);white-space:nowrap}
+.track .cap.iso{color:var(--vg-dark);max-width:calc(30% - 12px);white-space:normal;line-height:1.2}
+@media (max-width:1100px){.track{height:104px}.track::before,.dot{top:38%}}
+.lane-sep{grid-column:2;height:14px;position:relative}
+.lane-sep::before,.lane-sep::after{content:"";position:absolute;top:0;bottom:0}
+.lane-sep::before{left:30%;border-left:1px solid var(--ink)}
+.lane-sep::after{left:70%;border-left:1.5px dashed var(--cu)}
+.legend{font-size:10.5px;color:var(--muted);text-align:right;margin-top:12px;letter-spacing:.06em}
+.segs{display:none;gap:4px;height:28px}
+.segs i{flex:1;background:var(--white);border:1px solid var(--ink);transition:background .5s}
+.segs i.iso{background:var(--vg);border-color:var(--vg)}
+.segs i.late{background:var(--cu);border-color:var(--cu)}
+.mkey{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px 18px;font-size:13px;color:var(--body);margin-top:10px}
+.mkey span{display:flex;align-items:center;gap:6px}
+.mkey i{width:10px;height:10px;border:1px solid var(--ink);background:var(--white)}
+.mkey .k1{background:var(--vg);border-color:var(--vg)}
+.mkey .k3{background:var(--cu);border-color:var(--cu)}
+.calc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:16px;margin-top:28px}
+.knobs{border:1px solid var(--rule);background:var(--paper);padding:22px 24px;display:flex;flex-direction:column;gap:18px}
+.knobs .k{font-size:11px;color:var(--muted)}
+.knob .kl{display:flex;justify-content:space-between;align-items:baseline;font-weight:600;font-size:16px}
+.knob .kl output{color:var(--vg-deep);font-size:22px}
+.meter{position:relative;height:10px;background:var(--white);border:1px solid var(--rule);margin-top:10px}
+.meter i{position:absolute;top:-1px;bottom:-1px;left:0}
+#meterBase{background:var(--cv-on-graphite-muted)}
+#meterFill{background:var(--vg)}
+.mt{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:6px}
+.assume{font-size:14px;color:var(--body);display:flex;flex-wrap:wrap;gap:6px 16px}
+.assume b{color:var(--ink)}
+.anote{font-size:14px;color:var(--muted);margin-top:-6px}
+.anote a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--ink)}
+.savings{background:var(--white);border:1px solid var(--rule);padding:22px 26px;display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+.savings .k{font-size:11px;color:var(--muted)}
+.sum{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 22px}
+.sum .fig b{display:block;font-family:var(--font);font-size:clamp(26px,2.8vw,34px);font-weight:600;letter-spacing:-.03em;line-height:1}
+.sum .fig span{font-size:14px;color:var(--body)}
+.sum .fig i{display:inline-block;width:9px;height:9px;margin-right:6px;border:1px solid var(--vg)}
+.sum .fig.d1 i{background:var(--vg-mist)}
+.sum .fig.d2 i{background:var(--vg)}
+.sum .op{font-size:26px;color:var(--muted);padding-bottom:16px}
+.sum .tot b{color:var(--vg-deep);font-size:clamp(38px,4.2vw,54px)}
+.sbar{display:flex;height:22px;background:var(--paper);border:1px solid var(--rule)}
+.sbar i{display:block;height:100%;transition:width .2s linear}
+#bDef{background:var(--vg-mist);border:1px solid var(--vg);margin:-1px 0 -1px -1px}
+#bSev{background:var(--vg);margin:-1px 0}
+.sax{position:relative;height:20px;border-top:1px solid var(--ink);margin-top:6px}
+.sax span{position:absolute;top:0;transform:translateX(-50%);padding-top:7px;font-family:var(--mono);font-size:10px;color:var(--muted)}
+.sax span::before{content:"";position:absolute;left:50%;top:0;height:5px;border-left:1px solid var(--ink)}
+.sax span:first-child{transform:none}.sax span:first-child::before{left:0}
+.sax span:last-child{transform:translateX(-100%)}.sax span:last-child::before{left:auto;right:0}
+.pts{font-size:17px;color:var(--body)}
+.pts b{color:var(--vg-dark)}
+.benefits{grid-column:1 / -1;border-top:1px solid var(--ink);padding:18px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1fr);gap:10px 32px;align-items:start}
+.benefits .k{font-size:11px;color:var(--muted);padding-top:3px}
+.benefits p{font-size:16px;color:var(--body);line-height:1.45}
+.benefits b{color:var(--ink)}
+@media (max-width:980px){.benefits{grid-template-columns:1fr}}
+
+/* Perspective */
+.worth{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:56px}
+.wc{background:var(--white);border:1px solid var(--rule);padding:26px;display:flex;flex-direction:column;gap:14px}
+.wc .k{font-size:11px;color:var(--muted)}
+.wc .big{font-size:clamp(44px,4.6vw,60px)}
+.wc .s{color:var(--body);font-size:16px;min-height:48px}
+.wc dl{margin:6px 0 0;display:flex;flex-direction:column;gap:12px}
+.wc dt{font-size:10.5px;color:var(--muted)}
+.wc dd{margin:2px 0 0;font-size:16px}
+.wc .vd{margin-top:auto;padding-top:14px;border-top:1px solid var(--hair);font-size:15px;font-weight:600;color:var(--cu-dark)}
+/* Isomer's path is an action node: verdigris tint, verdigris outline, verdigris-dark label. */
+.wc.iso{background:var(--vg-tint);border:1.25px solid var(--vg)}
+.wc.iso .k,.wc.iso dt{color:var(--vg-dark)}
+.wc.iso .big{color:var(--vg-deep)}
+.wc.iso .vd{color:var(--vg-dark);border-top-color:var(--vg-mist)}
+.growbar{height:12px;position:relative;background:var(--grey);border:1px solid var(--rule)}
+.growbar i{position:absolute;left:0;top:-1px;bottom:-1px;width:89.3%;background:var(--grey)}
+.growbar i+i{left:89.3%;width:10.7%;background:var(--ink)}
+.play .growbar i+i{animation:grow 1s ease-in-out both .4s;transform-origin:left}
+.people{display:grid;grid-template-columns:repeat(25,1fr);gap:3px}
+.people i{aspect-ratio:1;background:var(--ink);transition:background .4s ease-in-out,box-shadow .4s}
+.people i.cut{background:var(--white);box-shadow:inset 0 0 0 1px var(--cu)}
+
+/* Assessment */
+.ask{font-size:clamp(18px,1.8vw,22px);color:var(--body);margin-top:16px;max-width:70ch}
+.tbl-wrap{overflow-x:auto;margin-top:48px}
+.tbl{min-width:760px;display:flex;flex-direction:column}
+.tr{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.95fr) minmax(0,1.55fr) minmax(0,1.1fr);column-gap:32px;align-items:center;padding:22px 20px;border-bottom:1px solid var(--hair)}
+.tr.th{padding-block:0 12px;border-bottom:1px solid var(--ink);font-size:11px;font-weight:500;color:var(--muted)}
+.tr.th div:last-child{color:var(--vg-dark)}
+.tr .in{font-size:21px;font-weight:600}
+.tr .as{font-family:var(--mono);font-size:20px;font-weight:500;color:var(--muted);white-space:nowrap}
+.tr .as.nas{font-size:15px}
+.tr .how{color:var(--body);font-size:16px}
+.slot{font-family:var(--mono);font-size:20px;font-weight:600;color:var(--vg-dark);white-space:nowrap;font-variant-numeric:tabular-nums}
+.slot.spin{color:var(--vg)}
+/* Unknowns are written as bracketed placeholders, never invented. */
+.bl{display:inline-block;color:var(--vg)}
+.bl::before{content:"[\2009\2009\2009]"}
+.deliv{margin-top:32px;border-top:1px solid var(--ink);padding-top:18px}
+.deliv .k{font-size:11px;color:var(--muted)}
+.deliv .items{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:14px}
+.deliv .it{padding:14px 16px;background:var(--vg-tint);border:1.25px solid var(--vg)}
+.deliv .it b{display:block;font-size:17px;line-height:1.3;color:var(--ink)}
+.deliv .it span{font-size:14px;color:var(--vg-dark)}
+
+/* Pricing */
+.fee{margin-top:48px;padding:22px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px 36px;align-items:center}
+.fee .k{font-size:11px;color:var(--muted)}
+.fee .f{font-size:clamp(26px,3.2vw,40px);font-weight:700;letter-spacing:-.03em;line-height:1.1}
+.fee .f span{color:var(--vg-deep)}
+.fee .ex{display:block;border-top:0;padding-top:0;font-size:17px;color:var(--body);margin-top:10px}
+.fee .ex b{color:var(--ink)}
+.fee .c{font-size:15px;font-weight:600;max-width:18ch;text-align:right}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:24px}
+.step{background:var(--white);border:1px solid var(--rule);padding:22px;display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+.step .k{font-size:11px;color:var(--muted)}
+.step .f{font-size:clamp(20px,1.9vw,24px);font-weight:700;letter-spacing:-.02em;line-height:1.2;margin-top:10px}
+.step .d{font-size:15px;color:var(--body);margin-top:8px}
+.step .ex{padding-top:14px;border-top:1px solid var(--hair);gap:8px}
+.step .ex b{display:block;font-family:var(--font);font-size:clamp(28px,2.8vw,36px);font-weight:600;letter-spacing:-.03em;line-height:1.05;color:var(--ink)}
+.step .ex span{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.pay-bar{position:relative;height:10px;background:var(--paper);border:1px solid var(--rule)}
+.pay-bar i{position:absolute;left:-1px;top:-1px;bottom:-1px;background:var(--ink);transition:width .3s ease-in-out}
+.pay-bar+span{display:block}
+.pay-key{margin-top:10px;font-size:10.5px;color:var(--muted);text-align:right}
+
+/* Close */
+.close h2{font-size:clamp(38px,5.4vw,72px)}
+.trust{display:flex;flex-wrap:wrap;gap:8px;margin-top:40px}
+.trust span{font-size:14px;font-weight:600;padding:8px 12px;border:1px solid var(--ink)}
+.mail{margin-top:28px;font-size:clamp(18px,1.8vw,22px);color:var(--body)}
+.mail a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--ink)}
+.mail a:hover{color:var(--vg-deep);border-bottom-color:var(--vg-deep)}
+.sources{margin-top:72px;padding-top:24px;border-top:1px solid var(--rule);font-size:13px;color:var(--muted);line-height:1.7}
+
+/* Appendix */
+.ax-h{padding-block:72px 0}
+.ax-h h2{font-size:clamp(30px,3.6vw,44px)}
+.ax-sec{padding-block:64px}
+.ax-sec h2{font-size:clamp(28px,3.4vw,42px)}
+.ax-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.ax-card{background:var(--white);border:1px solid var(--rule);padding:20px 22px 22px;display:flex;flex-direction:column;gap:12px}
+.ax-card .tag{align-self:flex-start}
+.ax-q{font-size:18px;font-weight:600;line-height:1.3;min-height:47px}
+.ax-viz{display:flex;flex-direction:column;gap:6px;min-height:74px;justify-content:center}
+.ax-viz .l{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ax-bar{display:grid;grid-template-columns:78px 1fr;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
+.ax-bar div{display:flex;align-items:center;gap:8px}
+.ax-bar i{display:block;height:12px;background:var(--grey);border:1px solid var(--rule)}
+.ax-bar i.cu{background:var(--cu);border-color:var(--cu)}
+.ax-bar i.ct{background:var(--cu-tint);border:1.25px solid var(--cu)}
+.ax-bar b{font-family:var(--mono);font-size:13px;font-weight:600;white-space:nowrap;color:var(--ink)}
+.ax-bar b.cu{color:var(--cu-dark)}
+.ax-big{font-family:var(--font);font-size:36px;font-weight:600;letter-spacing:-.03em;line-height:1}
+.ax-big+p{font-size:14px;font-weight:600}
+.ax-st{display:flex;gap:6px;align-items:center}
+.ax-st span{font-family:var(--mono);font-size:15px;font-weight:600;border:1px solid var(--ink);padding:6px 9px}
+.ax-st p{font-size:14px;font-weight:600;margin-left:6px}
+.ax-n{font-size:15px;color:var(--body);line-height:1.45}
+.ax-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.ax-col{background:var(--white);border:1px solid var(--rule);padding:22px 24px}
+.ax-col .k{font-size:11px;color:var(--cu-dark)}
+.ax-col .ax-big{font-size:48px;margin-top:12px;color:var(--ink)}
+.ax-col .w{font-size:16px;font-weight:600;margin-top:6px}
+.ax-col cite,.ax-li cite{display:block;font-style:normal;font-size:13px;color:var(--muted);margin-top:3px}
+.ax-col ul{list-style:none;margin:16px 0 0;padding:16px 0 0;border-top:1px solid var(--hair);display:flex;flex-direction:column;gap:14px}
+.ax-li{font-size:15px;color:var(--body)}
+.ax-li b{color:var(--ink)}
+.ax-sum{font-size:18px;color:var(--body);margin-top:14px;max-width:70ch}
+.ax-sum b{color:var(--ink)}
+.share{margin:28px 0 0}
+.share .ax{display:flex;justify-content:space-between;font-size:10.5px;color:var(--muted);margin-bottom:8px}
+.share .ax b{color:var(--cu-dark);font-weight:600}
+.share .cells{grid-template-columns:repeat(50,1fr);gap:2px}
+.share .cells i{border-width:1px}
+.ax-tbl{margin-top:32px;border-top:1px solid var(--ink)}
+.ax-row{display:grid;grid-template-columns:150px minmax(0,1fr) 130px minmax(0,.9fr);gap:24px;align-items:center;padding:16px 0;border-bottom:1px solid var(--hair)}
+.ax-row.th{padding:10px 0;text-transform:uppercase;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.1em;color:var(--muted)}
+.ax-row .co{font-size:22px;font-weight:700;letter-spacing:-.01em}
+.ax-row .wd b,.ax-row .rd b{display:block;font-size:16px;font-weight:600}
+.ax-row .wd span,.ax-row .rd span{font-size:14px;color:var(--body)}
+.ax-row .rs b{display:block;font-family:var(--font);font-size:28px;font-weight:600;letter-spacing:-.03em;color:var(--cu-dark);line-height:1}
+.ax-row .rs span{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--muted)}
+
+@media (max-width:980px){.hero-grid,.conc,.xray,.calc,.pf-row{grid-template-columns:1fr}
+ .foes,.worth,.ax-grid,.ax-cols,.pf-figs{grid-template-columns:1fr}
+ .verdict .plate-b{grid-template-columns:1fr}
+ .verdict .hero-n{text-align:left;order:1}
+ .verdict .hbars{order:2}
+ .payers{grid-template-columns:1fr;padding:26px 22px;gap:24px}
+ .ax-q,.ax-viz{min-height:0}
+ .deliv .items{grid-template-columns:1fr 1fr}
+ .fee{grid-template-columns:1fr}
+ .fee .c{text-align:left;max-width:none}
+ .steps{grid-template-columns:1fr 1fr}
+ .tbl{min-width:0;gap:12px}
+ .tr.th{display:none}
+ .tr{grid-template-columns:minmax(0,1fr);grid-template-areas:"in" "how" "as" "slot";gap:8px;padding:18px;background:var(--white);border:1px solid var(--rule)}
+ .tr .in{grid-area:in;font-size:19px}
+ .tr .how{grid-area:how;font-size:15px;padding-bottom:6px}
+ .tr .as,.tr .slot{display:block;text-align:right;white-space:nowrap;font-size:18px;line-height:1.3;padding-top:8px;border-top:1px solid var(--hair)}
+ .tr .as{grid-area:as}.tr .slot{grid-area:slot}
+ .tr .as::before,.tr .slot::before{float:left;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;line-height:24px}
+ .tr .as::before{content:"ASSUMPTION";color:var(--muted)}
+ .tr .slot::before{content:"YOUR NUMBER";color:var(--vg-dark)}}
+@media (max-width:760px){.ax-row{grid-template-columns:1fr auto;gap:4px 16px}
+ .ax-row.th{display:none}
+ .ax-row .co{grid-column:1}
+ .ax-row .rs{grid-column:2;grid-row:1 / span 2;text-align:right}
+ .ax-row .wd,.ax-row .rd{grid-column:1}
+ .share .cells{grid-template-columns:repeat(25,1fr)}}
+@media (max-width:640px){section{padding-block:80px}
+ .wrap{padding-inline:16px}
+ .topbar{flex-direction:column;align-items:flex-start;gap:18px;padding-bottom:44px}
+ .lanes{grid-template-columns:1fr}
+ .lane-l{flex-direction:row;align-items:baseline;gap:12px;padding:4px 0 8px}
+ .lane-l .v{font-size:28px}
+ .zones,.track,.legend,.lane-l:empty{display:none}
+ .segs{display:flex}
+ .lane-sep{grid-column:1 / -1;height:18px}
+ .lane-sep::before,.lane-sep::after{display:none}
+ .pat{grid-template-columns:44px 80px 1fr;gap:12px}
+ .pat .n{font-size:34px}
+ .inbox-h{font-size:10px}
+ .nd{font-size:9.5px;padding:2px 5px;gap:4px}
+ .tk.kd{min-height:50px}
+ .tk{font-size:13px}
+ .file{padding:4px 46px 12px 12px;--rail:24px}
+ .rail{right:24.5px}
+ .rail-h{right:2px;width:40px;font-size:7.5px}
+ .frow{grid-template-columns:56px 1fr auto;gap:8px;padding:8px 6px;font-size:15px}
+ .frow .d{white-space:nowrap}
+ .fx{margin-left:8px}
+ .fx .fl,.act{font-size:14px}
+ .combo{font-size:15px}
+ .win .plate-b,.plate-b{padding:18px 16px}
+ .knobs,.savings{padding:18px}
+ .sum{gap:8px 12px}
+ .sum .op{display:none}
+ .sum .fig{flex:1 1 40%}
+ .sum .tot{flex-basis:100%}
+ .deliv .items,.steps{grid-template-columns:1fr}
+ .axis{margin-left:0}
+ .hbars .row{grid-template-columns:80px 1fr}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><i id="prog"></i></div>
+
+<button class="tchip" id="tchip" aria-expanded="false" aria-controls="tdr"><span id="tchipT">Contents</span></button>
+
+<aside class="tdr" id="tdr" hidden aria-label="Contents">
+<div class="tdr-h"><p>Contents</p><button class="ed-x" id="tdrX" aria-label="Close">&times;</button></div>
+<ol id="tdrList"></ol>
+<p id="tdrKeys" style="margin-top:18px;font:500 11px/1.4 var(--mono);letter-spacing:.06em;color:var(--muted)"></p>
+<button class="mb" data-model>Model your book</button>
+</aside>
+
+<aside class="ed" id="ed" hidden aria-label="Model your book">
+<div class="ed-h"><p>MODEL YOUR BOOK</p><button class="ed-x" id="edX" aria-label="Close">&times;</button></div>
+<div class="ed-b" id="edB"></div>
+<div class="ed-f"><button class="ed-p" id="edCopy">Copy link</button><button class="ed-s" id="edReset">Reset</button></div>
+</aside>
+
+<section class="hero" id="top">
+<div class="ruler" aria-hidden="true"></div>
+<div class="wrap">
+<div class="topbar">
+<svg class="logo" viewBox="204 204 1792 391" role="img" aria-label="Isomer" fill="currentColor"><g> <path d="M1856.83,350.91h54.17v29.02h1.93c2.32-6.19,5.81-11.61,10.45-16.25,3.87-4.13,9.03-7.87,15.48-11.22,6.45-3.61,14.58-5.42,24.38-5.42h26.54v52.24h-32.35c-14.7,0-26.18,4-34.44,12-8,8-12,18.83-12,32.5v104.47h-54.17v-197.34Z"/> <path d="M1721.35,554.06c-14.96,0-29.02-2.71-42.18-8.13-12.9-5.42-24.12-12.77-33.66-22.06-9.55-9.54-17.02-20.64-22.44-33.28-5.42-12.9-8.13-26.57-8.13-41.02s2.71-27.99,8.13-40.63c5.42-12.9,12.9-23.99,22.44-33.28,9.55-9.54,20.77-17.03,33.66-22.44,13.16-5.42,27.21-8.13,42.18-8.13s29.54,2.71,42.18,8.13c12.9,5.42,23.99,12.9,33.28,22.44,9.29,9.54,16.38,20.64,21.28,33.28,5.16,12.64,7.74,26.18,7.74,40.63v11.61h-154.78c1.03,6.19,2.97,12.12,5.81,17.8,3.1,5.68,6.84,10.71,11.22,15.09,4.64,4.13,9.8,7.48,15.48,10.06,5.67,2.32,11.61,3.48,17.8,3.48,8.77,0,15.86-1.16,21.28-3.48,5.67-2.58,10.32-5.29,13.93-8.13,3.87-3.35,6.97-7.22,9.29-11.61h58.04c-4.13,12.9-10.58,24.51-19.35,34.82-3.87,4.39-8.38,8.64-13.54,12.77-5.16,4.13-11.09,7.87-17.8,11.22-6.71,3.35-14.44,5.93-23.22,7.74-8.51,2.06-18.06,3.1-28.63,3.1ZM1767.79,428.3c-1.03-4.9-2.84-9.54-5.42-13.93-2.58-4.39-5.93-8.25-10.06-11.61-3.87-3.35-8.51-6.06-13.93-8.13-5.16-2.06-10.83-3.1-17.02-3.1-12.64,0-23.22,3.74-31.73,11.22-8.25,7.22-13.8,15.74-16.64,25.54h94.8Z"/> <path d="M1266.67,350.91h54.17v27.09h1.93c3.35-6.19,7.74-11.61,13.16-16.25,4.64-4.13,10.58-7.87,17.8-11.22,7.22-3.61,16.25-5.42,27.09-5.42,12.64,0,23.09,1.93,31.34,5.8,8.51,3.87,15.35,8.13,20.51,12.77,5.93,5.42,10.58,11.48,13.93,18.19h1.94c3.35-6.71,8-12.77,13.93-18.19,5.16-4.64,11.61-8.9,19.35-12.77,8-3.87,18.19-5.8,30.57-5.8,23.47,0,41.92,7.09,55.33,21.28,13.41,13.93,20.12,34.57,20.12,61.91v119.95h-54.17v-114.15c0-14.7-3.23-25.41-9.67-32.12-6.45-6.97-15.48-10.45-27.09-10.45s-21.67,4.51-30.18,13.54c-8.25,9.03-12.38,21.28-12.38,36.76v106.41h-54.17v-114.15c0-14.7-3.22-25.41-9.67-32.12-6.45-6.97-15.48-10.45-27.09-10.45s-21.67,4.51-30.18,13.54c-8.25,9.03-12.38,21.28-12.38,36.76v106.41h-54.17v-197.34Z"/> <path d="M1128.96,554.06c-15.48,0-29.92-2.71-43.34-8.13-13.15-5.42-24.63-12.77-34.44-22.06-9.54-9.54-17.02-20.64-22.44-33.28-5.42-12.9-8.13-26.57-8.13-41.02s2.71-27.99,8.13-40.63c5.42-12.9,12.9-23.99,22.44-33.28,9.8-9.54,21.28-17.03,34.44-22.44,13.41-5.42,27.86-8.13,43.34-8.13s29.8,2.71,42.95,8.13c13.15,5.42,24.51,12.9,34.05,22.44,9.8,9.29,17.41,20.38,22.83,33.28,5.67,12.64,8.51,26.18,8.51,40.63s-2.84,28.12-8.51,41.02c-5.42,12.64-13.03,23.73-22.83,33.28-9.54,9.29-20.9,16.64-34.05,22.06-13.16,5.42-27.47,8.13-42.95,8.13ZM1128.96,507.62c7.22,0,13.93-1.42,20.12-4.26,6.45-2.84,12-6.71,16.64-11.61,4.9-5.16,8.64-11.22,11.22-18.19,2.84-7.22,4.26-15.22,4.26-23.99s-1.42-16.64-4.26-23.6c-2.58-7.22-6.32-13.28-11.22-18.19-4.64-5.16-10.19-9.16-16.64-12-6.19-2.84-12.9-4.26-20.12-4.26s-14.06,1.42-20.51,4.26c-6.19,2.84-11.74,6.84-16.64,12-4.64,4.9-8.38,10.96-11.22,18.19-2.58,6.96-3.87,14.83-3.87,23.6s1.29,16.77,3.87,23.99c2.84,6.97,6.58,13.03,11.22,18.19,4.9,4.9,10.45,8.77,16.64,11.61,6.45,2.84,13.29,4.26,20.51,4.26Z"/> <path d="M913.91,554.06c-10.58,0-20.12-1.03-28.63-3.1-8.51-1.81-16.12-4.39-22.83-7.74-6.45-3.35-12.25-7.09-17.41-11.22-4.9-4.13-9.03-8.38-12.38-12.77-8.25-10.32-14.06-21.93-17.41-34.82h56.11c2.06,4.9,4.9,9.16,8.51,12.77,3.1,3.1,7.35,5.93,12.77,8.51,5.42,2.58,12.51,3.87,21.28,3.87,12.64,0,21.28-1.68,25.93-5.03,4.64-3.61,6.96-8.38,6.96-14.32,0-5.16-3.1-9.03-9.29-11.61-5.93-2.58-13.41-4.9-22.44-6.97-9.03-2.06-18.83-4.26-29.41-6.58-10.32-2.32-19.99-5.8-29.02-10.45-9.03-4.64-16.64-10.83-22.83-18.57-5.93-7.74-8.9-18.06-8.9-30.96,0-7.74,1.81-15.22,5.42-22.44,3.61-7.22,8.9-13.54,15.86-18.96,6.97-5.68,15.61-10.19,25.92-13.54,10.32-3.35,22.31-5.03,35.99-5.03,10.32,0,19.6.9,27.86,2.71,8.25,1.81,15.48,4.26,21.67,7.35,6.45,3.1,12,6.58,16.64,10.45,4.64,3.87,8.51,7.74,11.61,11.61,7.48,9.29,12.51,19.86,15.09,31.73h-54.17c-1.55-3.61-3.87-6.84-6.96-9.67-2.84-2.32-6.84-4.51-12-6.58-4.9-2.06-11.48-3.1-19.73-3.1-9.8,0-16.77,1.68-20.89,5.03-4.13,3.1-6.19,6.58-6.19,10.45,0,5.16,2.97,9.03,8.9,11.61,6.19,2.58,13.8,4.9,22.83,6.96,9.03,2.06,18.7,4.26,29.02,6.58,10.58,2.32,20.38,5.8,29.41,10.45,9.03,4.64,16.51,10.83,22.44,18.57,6.19,7.74,9.29,18.06,9.29,30.95,0,8.25-1.93,16.25-5.8,23.99-3.87,7.48-9.54,14.19-17.03,20.12-7.48,5.93-16.77,10.71-27.86,14.32-11.09,3.61-23.86,5.42-38.31,5.42Z"/> <path d="M733.78,350.91h54.17v197.34h-54.17v-197.34Z"/> </g> <g> <g> <path d="M447.22,382.05c2.16-2.91,4.38-5.8,6.64-8.67v-98.45h-69.33v110.85c-22.27-29.76-49.69-57.78-82.15-83.66l-43.22,54.21c28.39,22.64,52.16,47.04,71.13,72.86-37.39-9.75-79.26-8.55-120.08,4.37l20.9,66.1c43.51-13.76,87.49-8.78,117.65,13.32,13.96,10.23,24,23.59,29.92,39.46,6.55-60.63,29.52-117.8,68.54-170.37Z"/> <path d="M521.5,426.38c-1.99,2.55-3.95,5.11-5.85,7.69-23.91,32.54-39.8,67.01-47.56,102.97,5.75-9.26,13.23-17.35,22.42-24.08,30.17-22.1,74.15-27.07,117.65-13.32l20.9-66.1c-36.33-11.49-73.48-13.69-107.57-7.16Z"/> <path d="M453.86,386.98c-45.33,61.08-68.88,129.49-68.88,202.06h69.33c0-56.74,18.67-110.84,54.68-159.86,18.96-25.81,42.73-50.22,71.13-72.86l-43.22-54.21c-32.89,26.22-60.62,54.65-83.04,84.86Z"/> </g> <circle cx="536.51" cy="253.85" r="43.63"/> </g> </svg>
+<p class="tag-line">For commercial claims leaders</p>
+</div>
+
+<div class="hero-grid">
+<div>
+<h1>Find the claims that become the loss, <span>the moment they arrive.</span></h1>
+<div class="pillars"><span class="p1">UNDERSTAND</span><span class="p2">DETECT</span><span class="p3">ACT</span></div>
+<p class="proof">In production with P&amp;C carriers and TPAs</p>
+</div>
+
+<div class="inbox gr" id="inbox" aria-label="Claim messages arriving, read by Isomer, and added to the claim graph">
+<div class="inbox-h"><span>Inbox · EPL-4471</span><span class="live"><i></i>Isomer reading</span></div>
+<div class="stack" id="stack"></div>
+<div class="cg" id="cg">
+<p class="cg-h"><span>Claim graph</span><b id="cgn">0 facts · 0 risks</b></p>
+<svg class="cg-e" id="cgE" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+<p class="cg-c" id="cgc">New claim</p>
+</div>
+<div class="ticker" id="ticker">
+<p class="tk kd idle"><span class="lab">DETECT</span><span class="tx">Watching every message</span></p>
+<p class="tk ka idle"><span class="lab">ACT</span><span class="tx">Nothing to act on yet</span></p>
+</div>
+</div>
+</div>
+
+<nav class="toc" aria-label="Contents">
+<div class="toc-h"><p>Contents</p><button class="mb" data-model>Model your book</button></div>
+<ol id="tocList">
+<li><a href="#other-side"><b></b><span>The problem</span><em>The other side has capital, AI, and a playbook</em></a></li>
+<li><a href="#concentration"><b></b><span>Where the loss is</span><em>A few claims become most of the loss</em></a></li>
+<li><a href="#xray"><b></b><span>X-ray</span><em>Warning signs arrive early, buried in the file</em></a></li>
+<li><a href="#proof"><b></b><span>In production</span><em>Deadlines and severity to the handler in 30 minutes</em></a></li>
+<li><a href="#window"><b></b><span>The value</span><em data-m="valueToc">Catching them in time is a point of combined ratio</em></a></li>
+<li><a href="#point"><b></b><span>Perspective</span><em data-m="worthTitle">What one point is worth</em></a></li>
+<li><a href="#assessment"><b></b><span>The assessment</span><em>See which claims will drive your loss, in 4 weeks</em></a></li>
+<li><a href="#pricing"><b></b><span>Pricing</span><em>10% of the savings we target</em></a></li>
+</ol>
+<div class="toc-ax"><p>Appendix</p><a data-ax href="#apx-fears"><b>A</b><span>Six concerns, checked</span></a><a data-ax href="#apx-vendors"><b>B</b><span>What plaintiff AI promises</span></a><a data-ax href="#apx-funding"><b>C</b><span>Who is funding it</span></a></div>
+</nav>
+</div>
+</section>
+
+<section id="other-side" class="bg-white">
+<div class="wrap">
+<p class="eyebrow rv">The problem</p>
+<h2 class="rv" style="--d:.08s">The other side has <em>capital, AI, and a playbook</em></h2>
+<p class="lede rv" style="--d:.16s">Social inflation is not an accident. It is a well-funded industry, and it is getting faster.</p>
+
+<div class="foes">
+<div class="foe rv" style="--d:.1s">
+<p class="k">Capital</p>
+<h3>Litigation funding</h3>
+<p class="big val" data-count="16.5" data-dec="1" data-pre="$" data-suf="B">$16.5B</p>
+<p class="s">in commercial litigation funds. Expected cost to insurers: $15.6B over five years.</p>
+<div class="ex">
+<blockquote><p>&ldquo;What social purpose does litigation funding really serve?&rdquo;</p>
+<cite>Evan Greenberg, CEO, Chubb · <a href="https://www.insurancejournal.com/news/national/2023/05/04/719511.htm" target="_blank" rel="noopener noreferrer">Insurance Journal, May 2023</a></cite></blockquote>
+<div class="fact"><p><b>Fortress Investment Group</b> has $6.8B committed to legal assets, including law firms in the Roundup and talc mass torts.</p>
+<cite><a href="https://www.insurancejournal.com/news/national/2025/01/30/810160.htm" target="_blank" rel="noopener noreferrer">Insurance Journal, Jan 2025</a></cite></div>
+</div>
+</div>
+
+<div class="foe rv" style="--d:.2s">
+<p class="k">AI</p>
+<h3>Plaintiff AI platforms</h3>
+<p class="big val" data-count="10000" data-dec="0" data-pre="" data-suf="">10,000</p>
+<p class="s">cases a week on one plaintiff AI platform, now valued at over $2B.</p>
+<div class="ex">
+<blockquote><p>&ldquo;In the last six months alone, case volume on our platform nearly doubled to 10,000 cases per week.&rdquo;</p>
+<cite>Rami Karabibar, CEO, EvenUp · <a href="https://www.businesswire.com/news/home/20251007138957/en/" target="_blank" rel="noopener noreferrer">Business Wire, Oct 2025</a></cite></blockquote>
+<div class="fact"><p><b>71%</b> of disclosed legal AI funding has gone to plaintiff-side companies.</p>
+<cite><a href="https://news.crunchbase.com/ai/defense-legal-tech-venture-funding-ip-theo/" target="_blank" rel="noopener noreferrer">Crunchbase News, Jun 2026</a></cite></div>
+</div>
+</div>
+
+<div class="foe rv" style="--d:.3s">
+<p class="k">Playbook</p>
+<h3>Recruiting claimants at scale</h3>
+<p class="big val" data-count="2.6" data-dec="1" data-pre="$" data-suf="B">$2.6B</p>
+<p class="s">on 27 million legal services ads in 2024, up 39% since 2020.</p>
+<div class="ex">
+<div class="fact"><p><b>Morgan &amp; Morgan</b> spent $218.2M on legal ads in 2024, 8% of all legal services ads in the country.</p>
+<cite><a href="https://www.atra.org/wp-content/uploads/2025/03/Legal-Services-Advertising-Report-%E2%80%93-2017-2024.pdf" target="_blank" rel="noopener noreferrer">ATRA, Mar 2025</a></cite></div>
+<div class="fact"><p><b>Billboards and out-of-home</b> legal ad spending is up more than 260% since 2017, with Los Angeles the top market for legal ads overall at $164.9M.</p>
+<cite><a href="https://www.atra.org/wp-content/uploads/2025/03/Legal-Services-Advertising-Report-%E2%80%93-2017-2024.pdf" target="_blank" rel="noopener noreferrer">ATRA, Mar 2025</a></cite></div>
+</div>
+</div>
+</div>
+
+<figure class="plate verdict rv" style="--d:.15s">
+<div class="plate-h"><span><b>The result</b> · legal system abuse, booked losses</span><span></span></div>
+<div class="ruler" aria-hidden="true"></div>
+<div class="plate-b">
+<div><p class="k">Commercial auto and GL</p>
+<h3>2015 to 2024</h3>
+<p class="sub">Share of booked losses from legal system abuse, beyond what inflation explains <cite><a href="https://www.iii.org/press-release/legal-system-abuse-not-just-economic-inflation-drives-liability-insurance-losses-by-more-than-230-billion-over-past-10-years-new-triple-i-casualty-actuary-society-analysis-shows-103025" target="_blank" rel="noopener noreferrer">Triple-I and CAS, Oct 2025</a></cite></p>
+</div>
+<div class="hbars" role="img" aria-label="Severity growth a year: settlements 12.6 percent, verdicts 3.7 percent">
+<p class="bk">Where it lands · severity growth a year</p>
+<div class="row"><span>Settlements</span><div class="track2"><div class="bar cu" style="width:84%"><b>+12.6%</b></div></div></div>
+<div class="row"><span>Verdicts</span><div class="track2"><div class="bar ct" style="width:24.7%"><b>+3.7%</b></div></div></div>
+<div class="axis" aria-hidden="true"><span style="left:0">0%</span><span style="left:33.33%">5%</span><span style="left:66.67%">10%</span><span style="left:100%">15%</span></div>
+<p class="sub" style="margin-top:6px"><cite style="margin-top:0">Bodily injury in Sedgwick's own book, last five years · <a href="https://www.sedgwick.com/commentary-paper/liability-litigation-observations-and-trends-summer-2026/" target="_blank" rel="noopener noreferrer">Sedgwick, Summer 2026</a></cite></p>
+</div>
+<p class="hero-n val">23&ndash;34%<small>of booked losses</small></p>
+</div>
+</figure>
+
+<div class="payers rv" style="--d:.1s">
+<div class="payers-l">
+<p class="k">Who pays</p>
+<h3>Insurance should take care of people on their worst day.</h3>
+<p>Unnecessarily escalated claims cost claimants, policyholders, and the industry.</p>
+</div>
+<div class="payers-r">
+<div class="pay"><p class="n val">$4,200+</p>
+<p><b>per U.S. household</b> in tort system costs in 2022, passed through in prices and premiums <cite><a href="https://instituteforlegalreform.com/research/tort-costs-in-america-an-empirical-analysis-of-costs-and-compensation-in-the-u-s-tort-system-third-edition/" target="_blank" rel="noopener noreferrer">U.S. Chamber ILR, Nov 2024</a></cite></p></div>
+<div class="pay"><p class="n val">47%</p>
+<p>of every tort dollar <b>goes to litigation and overhead</b>, not the injured person <cite><a href="https://instituteforlegalreform.com/blog/us-tort-system-costs-443-billion/" target="_blank" rel="noopener noreferrer">U.S. Chamber ILR, 2020 data</a></cite></p></div>
+<div class="pay"><p class="n val">14 years</p>
+<p><b>straight of underwriting losses</b> in commercial auto, and businesses pay for it in their premiums <cite><a href="https://www.insurancejournal.com/news/national/2025/09/22/840105.htm" target="_blank" rel="noopener noreferrer">AM Best via Insurance Journal, Sept 2025</a></cite></p></div>
+</div>
+</div>
+
+<p class="src">Sources: EY via Insurance Journal (Oct 2025); EvenUp (Oct 2025); Crunchbase News (Jun 2026); ATRA (Mar 2025); Triple-I and CAS (Oct 2025); Sedgwick (Summer 2026). ATRA and ILR are tort-reform advocates.</p>
+</div>
+</section>
+
+<section id="concentration">
+<div class="wrap">
+<p class="eyebrow rv">Where the loss is · commercial lines</p>
+<h2 class="rv" style="--d:.08s">A few claims become <em>most of the loss</em></h2>
+
+<div class="conc">
+<figure class="plate sankey" id="sankey">
+<div class="plate-h"><span><b>Where the loss is</b> · commercial auto</span><span>ST-03</span></div>
+<div class="ruler" aria-hidden="true"></div>
+<div class="plate-b">
+<svg viewBox="-4 -52 608 840" role="img" aria-label="Commercial auto: 30 percent of claims have an attorney and carry 87 percent of loss and LAE">
+<defs>
+<pattern id="skHatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#B4602F" stroke-width="1.25"/></pattern>
+<mask id="skClip" maskUnits="userSpaceOnUse" x="-10" y="120" width="620" height="500"><rect id="skClipR" x="-10" y="128" width="620" height="476" fill="#FFFFFF"/></mask>
+</defs>
+<g font-family="'IBM Plex Mono', ui-monospace, monospace">
+<text x="0" y="-18" font-size="17" font-weight="500" letter-spacing="2" fill="#6E6E75">CLAIMS</text>
+<g id="skTop">
+<rect class="skb" x="0" y="0" width="180" height="128" fill="#B4602F"/>
+<rect class="skb" x="186" y="0" width="414" height="128" fill="#FFFFFF" stroke="#141416" stroke-width="1"/>
+</g>
+<g mask="url(#skClip)">
+<path d="M0 134 H180 C180 366 522 366 522 598 H0 Z" fill="#F2DCCB"/>
+<path d="M0 134 H180 C180 366 522 366 522 598 H0 Z" fill="url(#skHatch)" stroke="#B4602F" stroke-width="1.25"/>
+<path d="M186 134 H600 V598 H528 C528 366 186 366 186 134 Z" fill="#FFFFFF" stroke="#6E6E75" stroke-width="1"/>
+</g>
+<g id="skBot">
+<rect class="skb" x="0" y="604" width="522" height="128" fill="#B4602F"/>
+<rect class="skb" x="528" y="604" width="72" height="128" fill="#FFFFFF" stroke="#141416" stroke-width="1"/>
+</g>
+<text class="skl l1" x="20" y="80" font-size="34" font-weight="600" fill="#FFFFFF">30%</text>
+<text class="skl l1" x="206" y="80" font-size="34" font-weight="500" fill="#47474D">70%</text>
+<text class="skl l2" x="20" y="400" font-size="17" font-weight="600" letter-spacing="2" fill="#8E4720"><tspan x="20" dy="0">WITH AN</tspan><tspan x="20" dy="24">ATTORNEY</tspan></text>
+<text class="skl l2" x="400" y="260" font-size="17" font-weight="500" letter-spacing="2" fill="#6E6E75">WITHOUT</text>
+<text class="skl l3" x="20" y="696" font-family="Fustat, ui-sans-serif, system-ui, sans-serif" font-size="64" font-weight="600" letter-spacing="-2" fill="#FFFFFF">87%</text>
+<text class="skl l3" x="564" y="680" text-anchor="middle" font-size="20" font-weight="500" fill="#47474D">13%</text>
+<text x="0" y="772" font-size="17" font-weight="500" letter-spacing="2" fill="#6E6E75">LOSS + LAE</text>
+</g>
+</svg>
+</div>
+<figcaption class="plate-f">Hatching marks the at-risk volume: claims with an attorney.</figcaption>
+</figure>
+
+<div class="pattern">
+<p class="k rv">The same pattern across the book</p>
+<div class="pat rv" style="--d:.1s"><span class="ln">GL</span><p class="n val" data-count="14" data-dec="0" data-suf="x">14x</p><p><b>General liability.</b> A litigated injury claim costs 14x one that is not.</p></div>
+<div class="pat rv" style="--d:.2s"><span class="ln">WC</span><p class="n val" data-count="5" data-dec="0" data-suf="x">5x</p><p><b>Workers' comp.</b> A claim with an attorney costs $78K vs. $16K.</p></div>
+<div class="pat rv" style="--d:.3s"><span class="ln">LIAB.</span><p class="n val" data-count="3" data-dec="0" data-suf="%">3%</p><p>of liability claims are litigated, and they drive <b>half or more of paid dollars.</b></p></div>
+<div class="pat hot rv" style="--d:.4s"><span class="ln">GL</span><p class="n val" data-count="71" data-dec="0" data-suf="%">71%</p><p>of litigated GL claims have a lawyer <b>within 24 hours of notice.</b></p></div>
+</div>
+</div>
+
+<p class="src">Sources: APCIA and Milliman (2022, claims closed 2019); Sedgwick State of the Line (Mar 2026); CLARA Analytics (lost-time claims, 2007 to 2017).</p>
+</div>
+</section>
+
+<section id="xray" class="bg-grey">
+<div class="wrap">
+<p class="eyebrow rv" id="xE">An X-Ray For Every Claim</p>
+<h2 class="rv" style="--d:.08s">Warning signs arrive early, <em>buried in the file</em></h2>
+<p class="lede rv" style="--d:.16s" id="xL"></p>
+<div class="xray">
+<p class="xsw" role="group" aria-label="X-ray by line"><button data-x="epl">EPL</button><button data-x="gl">GL</button><button data-x="ca">Auto</button><button data-x="wc">WC</button></p>
+<div class="file gr" id="file">
+<div class="file-h"><p id="xH"></p><p class="hint" id="xhint">Claim graph: <span class="graphcount">0</span> messages · <span class="graphcount">0</span> risks</p></div>
+<div class="rail" aria-hidden="true"></div>
+<p class="rail-h" aria-hidden="true">CLAIM GRAPH</p>
+<div id="frows"></div>
+<div class="scanline" id="scanline" aria-hidden="true"></div>
+</div>
+</div>
+</div>
+</section>
+
+<template id="xr-epl" data-e="An X-Ray For Every Claim" data-l="Twelve messages and 29 files over five weeks, read in whatever order someone gets to them. Isomer reads each one the moment it lands, and the risk builds across the file." data-h="What shows up · 12 messages · 29 files">
+<div class="frow "><span class="d">Day 1</span><span class="t">Notice of claim</span><span class="f">2 files</span></div>
+<div class="xstep fx"><div class="fl u"><span class="tag u">UNDERSTAND</span><b>Employment practices claim</b><span class="wh">claimant, insured, and allegations captured</span></div></div>
+<div class="frow "><span class="d">Day 2</span><span class="t">Policy and endorsements</span><span class="f">3 files</span></div>
+<div class="frow "><span class="d">Day 5</span><span class="t">Personnel file</span><span class="f">6 files</span></div>
+<div class="frow risk"><span class="d">Day 9</span><span class="t">EEOC charge</span><span class="f">1 file</span></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag h">High</span><b>Agency charge filed</b><span class="wh">retaliation alleged</span></div><div class="act"><span class="lab">Act</span><em>Response deadline diaried</em></div></div></div>
+<div class="frow "><span class="d">Day 12</span><span class="t">Internal timeline</span><span class="f">1 file</span></div>
+<div class="frow "><span class="d">Day 16</span><span class="t">Broker status check</span><span class="f">none</span></div>
+<div class="frow risk"><span class="d">Day 19</span><span class="t">Emails and texts</span><span class="f">10 files</span></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag h">High</span><b>Deleted messages referenced</b><span class="wh">text thread, 3 of 10</span></div><div class="act"><span class="lab">Act</span><em>Preservation notice drafted</em></div></div></div>
+<div class="frow risk hit" id="hitrow"><span class="d">Day 23</span><span class="t">Demand letter</span><span class="f">3 files</span><small>Scanned PDF, 11 pages</small></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag c">Critical</span><b>Spoliation risk</b><span class="wh">p. 9</span></div><div class="act"><span class="lab">Act</span><em>Litigation hold drafted</em></div></div><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag h">High</span><b>Punitive damages</b><span class="wh">p. 5</span></div><div class="act"><span class="lab">Act</span><em>Coverage review queued</em></div></div><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag h">High</span><b>Attorney representation</b><span class="wh">p. 1</span></div><div class="act"><span class="lab">Act</span><em>Adjuster alerted to stop direct contact</em></div></div></div>
+<div class="frow "><span class="d">Day 26</span><span class="t">Defense conflict check</span><span class="f">none</span></div>
+<div class="frow risk"><span class="d">Day 29</span><span class="t">Witness list</span><span class="f">1 file</span></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag m">Medium</span><b>Former supervisor named</b><span class="wh">on the witness list</span></div><div class="act"><span class="lab">Act</span><em>Linked to personnel file</em></div></div></div>
+<div class="frow "><span class="d">Day 33</span><span class="t">Scheduling request</span><span class="f">2 files</span></div>
+<div class="frow "><span class="d">Day 36</span><span class="t">Renewal question</span><span class="f">none</span></div>
+<div class="xstep combo"><div class="det"><span class="lab">Detect</span><span class="tag c">Critical</span><b>Combined litigation risk</b><span class="wh">across 4 messages, connected in the claim graph</span></div><div class="act"><span class="lab">Act</span><em>Adjuster and litigation team alerted</em></div></div>
+</template>
+<template id="xr-gl" data-e="An X-Ray For Every Claim" data-l="Nine messages and 28 files over five weeks. The demand that starts the clock arrives as a 44-page scan, with the deadline on page 31." data-h="What shows up · 9 messages · 28 files">
+<div class="frow "><span class="d">Day 1</span><span class="t">Incident report</span><span class="f">2 files</span></div>
+<div class="xstep fx"><div class="fl u"><span class="tag u">UNDERSTAND</span><b>Premises liability claim</b><span class="wh">claimant, store, and fall captured</span></div></div>
+<div class="frow "><span class="d">Day 2</span><span class="t">Policy and endorsements</span><span class="f">3 files</span></div>
+<div class="frow "><span class="d">Day 4</span><span class="t">Store video request</span><span class="f">none</span></div>
+<div class="frow risk"><span class="d">Day 8</span><span class="t">Letter of representation</span><span class="f">1 file</span></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag h">High</span><b>Attorney representation</b><span class="wh">p. 1</span></div><div class="act"><span class="lab">Act</span><em>Adjuster alerted to stop direct contact</em></div></div></div>
+<div class="frow risk"><span class="d">Day 9</span><span class="t">Preservation letter</span><span class="f">1 file</span></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag c">Critical</span><b>Evidence preservation demand</b><span class="wh">store video and sweep logs</span></div><div class="act"><span class="lab">Act</span><em>Preservation hold drafted</em></div></div></div>
+<div class="frow "><span class="d">Day 15</span><span class="t">Medical records</span><span class="f">14 files</span></div>
+<div class="frow risk"><span class="d">Day 22</span><span class="t">Surgical consult</span><span class="f">3 files</span></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag h">High</span><b>Surgery recommended</b><span class="wh">lumbar fusion, p. 12</span></div><div class="act"><span class="lab">Act</span><em>Reserve review flagged</em></div></div></div>
+<div class="frow risk hit" id="hitrow"><span class="d">Day 27</span><span class="t">Settlement demand</span><span class="f">4 files</span><small>Scanned PDF, 44 pages</small></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag c">Critical</span><b>Time-limited demand</b><span class="wh">policy limits, due in 30 days, p. 31</span></div><div class="act"><span class="lab">Act</span><em>Deadline diaried, adjuster alerted</em></div></div><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag h">High</span><b>Prior falls at this store</b><span class="wh">p. 36</span></div><div class="act"><span class="lab">Act</span><em>Linked to two earlier claims</em></div></div></div>
+<div class="frow "><span class="d">Day 34</span><span class="t">Broker status check</span><span class="f">none</span></div>
+<div class="xstep combo"><div class="det"><span class="lab">Detect</span><span class="tag c">Critical</span><b>Combined litigation risk</b><span class="wh">across 4 messages, connected in the claim graph</span></div><div class="act"><span class="lab">Act</span><em>Adjuster and litigation team alerted</em></div></div>
+</template>
+<template id="xr-ca" data-e="An X-Ray For Every Claim" data-l="Fourteen messages and 40 files over five weeks. The demand that starts the clock arrives as a 46-page scan, with punitive damages on page 6 and the deadline on page 38." data-h="What shows up · 14 messages · 40 files">
+<div class="frow "><span class="d">Day 1</span><span class="t">First notice from driver</span><span class="f">3 files</span></div>
+<div class="xstep fx"><div class="fl u"><span class="tag u">UNDERSTAND</span><b>Commercial auto claim</b><span class="wh">tractor-trailer rear-end, driver and claimant captured</span></div></div>
+<div class="frow "><span class="d">Day 2</span><span class="t">Police report</span><span class="f">1 file</span></div>
+<div class="frow "><span class="d">Day 3</span><span class="t">Tow and storage invoice</span><span class="f">1 file</span></div>
+<div class="frow "><span class="d">Day 4</span><span class="t">Dashcam and ELD data</span><span class="f">2 files</span></div>
+<div class="frow risk"><span class="d">Day 6</span><span class="t">Letter of representation</span><span class="f">1 file</span></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag h">High</span><b>Attorney representation</b><span class="wh">p. 1</span></div><div class="act"><span class="lab">Act</span><em>Adjuster alerted to stop direct contact</em></div></div></div>
+<div class="frow risk"><span class="d">Day 7</span><span class="t">Spoliation letter</span><span class="f">1 file</span></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag c">Critical</span><b>Preservation demand</b><span class="wh">ECM, dashcam, and driver logs</span></div><div class="act"><span class="lab">Act</span><em>Preservation hold drafted</em></div></div></div>
+<div class="frow "><span class="d">Day 10</span><span class="t">Claimant photos</span><span class="f">6 files</span></div>
+<div class="frow risk"><span class="d">Day 12</span><span class="t">Driver qualification file</span><span class="f">7 files</span></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag h">High</span><b>Hours-of-service gap</b><span class="wh">log entries, p. 22</span></div><div class="act"><span class="lab">Act</span><em>Linked to the crash timeline</em></div></div></div>
+<div class="frow "><span class="d">Day 15</span><span class="t">Rental car request</span><span class="f">none</span></div>
+<div class="frow "><span class="d">Day 17</span><span class="t">Medical records</span><span class="f">12 files</span></div>
+<div class="frow risk hit" id="hitrow"><span class="d">Day 21</span><span class="t">Settlement demand</span><span class="f">4 files</span><small>Scanned PDF, 46 pages</small></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag c">Critical</span><b>Time-limited demand</b><span class="wh">policy limits, due in 21 days, p. 38</span></div><div class="act"><span class="lab">Act</span><em>Deadline diaried, adjuster alerted</em></div></div><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag h">High</span><b>Punitive damages</b><span class="wh">p. 6</span></div><div class="act"><span class="lab">Act</span><em>Coverage review queued</em></div></div></div>
+<div class="frow "><span class="d">Day 25</span><span class="t">Excess carrier inquiry</span><span class="f">none</span></div>
+<div class="frow "><span class="d">Day 29</span><span class="t">Repair estimate</span><span class="f">2 files</span></div>
+<div class="frow "><span class="d">Day 32</span><span class="t">Counsel follow-up</span><span class="f">none</span></div>
+<div class="xstep combo"><div class="det"><span class="lab">Detect</span><span class="tag c">Critical</span><b>Combined litigation risk</b><span class="wh">across 4 messages, connected in the claim graph</span></div><div class="act"><span class="lab">Act</span><em>Adjuster and litigation team alerted</em></div></div>
+</template>
+<template id="xr-wc" data-e="An X-Ray For Every Claim" data-l="Eleven messages and 27 files over five weeks. The claim looks routine until the employer&#x27;s own emails and a hearing notice land in the same month." data-h="What shows up · 11 messages · 27 files">
+<div class="frow "><span class="d">Day 1</span><span class="t">First report of injury</span><span class="f">2 files</span></div>
+<div class="xstep fx"><div class="fl u"><span class="tag u">UNDERSTAND</span><b>Workers' comp claim</b><span class="wh">warehouse worker, back injury, employer captured</span></div></div>
+<div class="frow "><span class="d">Day 3</span><span class="t">Wage statement</span><span class="f">2 files</span></div>
+<div class="frow "><span class="d">Day 6</span><span class="t">Treating physician notes</span><span class="f">5 files</span></div>
+<div class="frow risk"><span class="d">Day 9</span><span class="t">Letter of representation</span><span class="f">1 file</span></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag h">High</span><b>Attorney representation</b><span class="wh">p. 1</span></div><div class="act"><span class="lab">Act</span><em>Adjuster alerted to stop direct contact</em></div></div></div>
+<div class="frow "><span class="d">Day 12</span><span class="t">Pharmacy bills</span><span class="f">2 files</span></div>
+<div class="frow risk"><span class="d">Day 14</span><span class="t">Employer emails</span><span class="f">6 files</span></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag h">High</span><b>Termination discussed after injury</b><span class="wh">retaliation risk, p. 4</span></div><div class="act"><span class="lab">Act</span><em>Employment counsel flagged</em></div></div></div>
+<div class="frow risk"><span class="d">Day 19</span><span class="t">MRI and surgical referral</span><span class="f">3 files</span></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag h">High</span><b>Surgery recommended</b><span class="wh">p. 2</span></div><div class="act"><span class="lab">Act</span><em>Reserve review flagged</em></div></div></div>
+<div class="frow risk hit" id="hitrow"><span class="d">Day 23</span><span class="t">State board notice</span><span class="f">1 file</span><small>Scanned PDF, 9 pages</small></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag c">Critical</span><b>Hearing set</b><span class="wh">answer due in 20 days, p. 2</span></div><div class="act"><span class="lab">Act</span><em>Deadline diaried, adjuster alerted</em></div></div></div>
+<div class="frow "><span class="d">Day 27</span><span class="t">Nurse case manager update</span><span class="f">1 file</span></div>
+<div class="frow risk"><span class="d">Day 31</span><span class="t">Equipment vendor contract</span><span class="f">4 files</span></div>
+<div class="xstep fx"><div class="fl"><div class="det"><span class="lab">Detect</span><span class="tag m">Medium</span><b>Third-party liability</b><span class="wh">forklift vendor, p. 11</span></div><div class="act"><span class="lab">Act</span><em>Subrogation review queued</em></div></div></div>
+<div class="frow "><span class="d">Day 35</span><span class="t">Return-to-work question</span><span class="f">none</span></div>
+<div class="xstep combo"><div class="det"><span class="lab">Detect</span><span class="tag c">Critical</span><b>Combined claim risk</b><span class="wh">across 4 messages, connected in the claim graph</span></div><div class="act"><span class="lab">Act</span><em>Adjuster and supervisor alerted</em></div></div>
+</template>
+
+<section id="proof" class="bg-white">
+<div class="wrap">
+<p class="eyebrow rv">In production · a large commercial carrier</p>
+<h2 class="rv" style="--d:.08s">The flag lands <em class="v">before the suit</em></h2>
+<p class="lede rv" style="--d:.16s">In time means the handler knows while the deadline can still be met and before a suit is filed. For seven weeks at a large commercial carrier, Isomer read every new claim on arrival, about 3,000 of them. Here is what that looked like.</p>
+
+<div class="pf-figs">
+<figure class="plate pf-fig rv" style="--d:.1s">
+<div class="plate-h"><span><b>To the handler</b></span><span>ST-08</span></div>
+<div class="ruler" aria-hidden="true"></div>
+<div class="plate-b">
+<p class="val vg">30 min</p>
+<div class="logax" role="img" aria-label="Median 30 minutes from an email arriving to the handler's alert, on a log scale from 1 minute to 30 days">
+<i class="t0"></i><div class="bar" style="width:31.9%"></div><i class="ln"></i>
+<span style="left:0">1m</span><span style="left:21.6%">10m</span><span style="left:38.4%">1h</span><span style="left:68.1%">1d</span><span style="left:86.3%">7d</span><span style="left:100%">30d</span>
+</div>
+<p class="c">median from an email arriving to the handler's alert</p>
+</div>
+</figure>
+
+<figure class="plate pf-fig rv" style="--d:.15s">
+<div class="plate-h"><span><b>Before the suit</b></span><span></span></div>
+<div class="ruler" aria-hidden="true"></div>
+<div class="plate-b">
+<p class="val vg">7 in 10</p>
+<div class="cells c10" role="img" aria-label="7 of 10 claims flagged critical or high had no suit filed yet"><i class="vg"></i><i class="vg"></i><i class="vg"></i><i class="vg"></i><i class="vg"></i><i class="vg"></i><i class="vg"></i><i></i><i></i><i></i></div>
+<p class="ax"><span><i class="vg"></i>No suit yet</span><span><i></i>Suit already filed</span></p>
+<p class="c">of claims flagged critical or high had no suit filed yet</p>
+</div>
+</figure>
+
+<figure class="plate pf-fig rv" style="--d:.2s">
+<div class="plate-h"><span><b>Critical deadlines</b></span><span></span></div>
+<div class="ruler" aria-hidden="true"></div>
+<div class="plate-b">
+<p class="val cu">1 in 16</p>
+<div class="cells c16" role="img" aria-label="1 of 16 new liability claims carried a critical deadline"><i class="cu"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<p class="ax"><span><i class="cu"></i>Critical deadline</span><span><i></i>None</span></p>
+<p class="c">new liability claims carried a critical deadline</p>
+</div>
+</figure>
+</div>
+
+<div class="pf-row">
+<div class="pf-story rv" style="--d:.1s">
+<p class="k">What in time looks like</p>
+<p class="pf-t">A demand to tender the full $500,000 policy limit, due by noon, arrived as part 1 of a 16-part package on a file no one had worked yet. Isomer flagged it critical when part 1 arrived.</p>
+<p class="pf-f"><b>It is rarely on page one.</b> 18% of flags came from page 31 or deeper.</p>
+</div>
+<blockquote class="pf-q rv" style="--d:.2s"><p class="k">From the handler</p><p>&ldquo;That's the outline I need. That's the note that I put into ClaimCenter.&rdquo;</p><cite>Liability claims handler</cite></blockquote>
+</div>
+
+<p class="pf-trust rv"><b>Every flag cites the page it came from, and the handler decides.</b> Reviewers checked 692 runs and found 5 signal errors, false alarms and misses combined.</p>
+<p class="src">Production claims at a large commercial carrier, Aug to Sept 2026, all lines. Pre-suit share, page depth, and error count from a June review.</p>
+</div>
+</section>
+
+<section id="window">
+<div class="wrap">
+<p class="eyebrow rv">The value · <span data-m="book">$1B commercial book</span></p>
+<p class="scen rv" data-m="label" hidden></p>
+<h2 class="rv" style="--d:.08s">Catching these claims in time is <em class="v" data-m="headline">a point of combined ratio</em></h2>
+<p class="lede rv" style="--d:.16s">Most flags today come from rules and adjusters working on claims system data, so they fire after the claim is keyed in. Isomer is not another prediction from the same data. It is the same inputs, days sooner.</p>
+
+<figure class="plate win rv" style="--d:.1s" id="win">
+<div class="plate-h"><span><b>Window to act</b> · where high-risk claims are first flagged</span><span>ST-04</span></div>
+<div class="ruler" aria-hidden="true"></div>
+<div class="plate-b">
+<div class="lanes">
+<div></div>
+<div class="zones"><p class="zw">Window to act</p><p class="zc">Window closes</p><p class="z1">Communication arrives</p><p class="z2">Entered into claims system</p><p class="z3">Too late to act</p></div>
+
+<div class="lane-l"><p class="k">Today</p><p class="v"><span data-m="base" class="vv">50%</span> <span>in time</span></p></div>
+<div class="track" id="trackA"><i class="zb zb1"></i><i class="zb zb2"></i><i class="zb zb3"></i><i class="div1"></i><i class="div2"></i><span class="cap" style="left:32%">rules and adjusters, on system data</span></div>
+<div class="segs" id="segA" aria-hidden="true"></div>
+<div class="lane-sep"></div>
+<div class="lane-l iso"><p class="k">With Isomer</p><p class="v"><output id="isoPct">70%</output> <span>in time</span></p></div>
+<div class="track" id="trackB"><i class="zb zb1"></i><i class="zb zb2"></i><i class="zb zb3"></i><i class="div1"></i><i class="div2"></i><span class="cap iso" style="left:1.5%">every document, read on arrival</span></div>
+<div class="segs" id="segB" aria-hidden="true"></div>
+</div>
+<p class="legend">Each square is 10% of high-risk claims, placed where first flagged</p>
+<div class="mkey" aria-hidden="true"><span><i class="k1"></i>Flagged by Isomer on arrival</span><span><i class="k2"></i>Flagged after entry, in time</span><span><i class="k3"></i>Too late</span></div>
+
+<div class="calc">
+<div class="knobs">
+<p class="k">The scenario <button class="kadj" data-model>Model your book</button></p>
+<div class="knob"><p class="kl">Caught in time with Isomer <output id="tOut">70%</output></p>
+<div class="meter" aria-hidden="true"><i id="meterBase"></i><i id="meterFill"></i></div>
+<p class="mt"><span><span data-m="base">50%</span> today</span><span><span data-m="t">70%</span> with Isomer</span></p></div>
+<div class="knob"><p class="kl"><span data-m="knob">Commercial book, earned premium</span> <output data-m="bookSize">$1B</output></p></div>
+<p class="k" style="margin-top:4px">When a claim is caught in time</p>
+<p class="assume"><span><b data-m="suit">20%</b> avoid a suit</span><span><b data-m="dc">15%</b> cheaper to defend</span><span><b data-m="sev">7.5%</b> lower settlements</span></p>
+<p class="anote">Our assumptions, until the assessment measures yours. <a href="#assessment" data-j>How</a></p>
+</div>
+
+<div class="savings" aria-live="polite">
+<p class="k">Savings on one year of claims · ST-05</p>
+<div class="sum">
+<div class="fig d1"><b id="sDef">$3.9M</b><span><i></i>lower defense cost</span></div>
+<div class="op">+</div>
+<div class="fig d2"><b id="sSev">$6.1M</b><span><i></i>lower settlements</span></div>
+<div class="op">=</div>
+<div class="fig tot"><b id="sTot">$10.0M</b><span>as those claims close</span></div>
+</div>
+<div><div class="sbar" aria-hidden="true"><i id="bDef"></i><i id="bSev"></i></div><div class="sax" id="sAx" aria-hidden="true"></div></div>
+<p class="pts">That is <b id="sPts">1 point</b><span data-m="ptsTail"> off the combined ratio</span>.</p>
+</div>
+
+<div class="benefits">
+<p class="k">More benefits · not in the math</p>
+<p><b>Reserve accuracy.</b> Reserves move with the warning, not months later, so fewer surprises in prior-year development.</p>
+<p><b>Fewer blowups.</b> Tail claims caught while there is still time to act, before they become verdicts.</p>
+</div>
+</div>
+</div>
+</figure>
+
+<p class="src" style="max-width:none"><span data-m="assume">Assumes a 68% loss ratio, defense cost at 10% of loss, and high-risk claims carrying 60% of loss and 90% of defense cost.</span> An illustrative scenario, not a guarantee.</p>
+</div>
+</section>
+
+<section id="point" class="bg-white" data-carrier>
+<div class="wrap">
+<p class="eyebrow rv">Perspective · per <span data-m="bookSize">$1B</span> of premium</p>
+<h2 class="rv" style="--d:.08s">What <em class="v" data-m="worthPts">one point</em> of combined ratio <span data-m="worthVerb">is</span> worth</h2>
+<p class="lede rv" style="--d:.16s" data-m="worthLede">One point on a $1B book is $10M a year. The usual ways to get one are slow or painful.</p>
+
+<div class="worth">
+<div class="wc rv" style="--d:.1s">
+<p class="k">Grow the book</p>
+<p class="big val" data-count="12" data-dec="0" data-pre="+" data-suf="%" data-m="gTxt">+12%</p>
+<p class="s">premium growth, <span data-m="newBiz">$120M</span> of new business at <span data-m="marginAn">an</span> <span data-m="margin">8%</span> margin</p>
+<div class="growbar" aria-hidden="true"><i></i><i></i></div>
+<dl><div><dt>How long</dt><dd>Years of new distribution, underwriters, and capital</dd></div>
+<div><dt>The trade-off</dt><dd>New business usually runs a worse loss ratio</dd></div></dl>
+<p class="vd">Slow, and it needs capital most books don't have</p>
+</div>
+
+<div class="wc rv" style="--d:.2s">
+<p class="k">Cut claims staff</p>
+<p class="big val" data-m="adjTxt">About 80</p>
+<p class="s" data-m="adjS">fewer adjusters, a third to half of the 150 to 250 a $1B book typically runs</p>
+<div class="people" id="people" aria-label="200 adjusters, 80 of them cut" data-m-aria="people"></div>
+<dl><div><dt>How long</dt><dd>Months to execute, years to rebuild</dd></div>
+<div><dt>The trade-off</dt><dd>Heavier desks mean slower contact, more leakage, more suits</dd></div></dl>
+<p class="vd">Painful, and few claims leaders will cut this deep</p>
+</div>
+
+<div class="wc iso rv" style="--d:.3s">
+<p class="k">Catch risk in time</p>
+<div class="ptsdial"><p class="big val" data-count="1" data-dec="0" data-suf=" point" id="isoPts">1 point</p></div>
+<p class="s" data-m="isoS">you can book, by catching 70% of high-risk claims in time, not 50%</p>
+<dl><div><dt>How long</dt><dd>Results in 4 weeks, defense savings within a year</dd></div>
+<div><dt>The trade-off</dt><dd>Same book, same team. Earlier reserves and fewer blowups as upside</dd></div></dl>
+<p class="vd">Fast, with nothing to unwind</p>
+</div>
+</div>
+
+<p class="src" data-m="worthSrc">Assumes an 8% operating margin (1 point = 12% growth) and $125K per adjuster, fully loaded. Adjuster counts are an Isomer estimate.</p>
+</div>
+</section>
+
+<section id="assessment">
+<div class="wrap">
+<p class="eyebrow rv">The 4-week assessment · on your own claims</p>
+<h2 class="rv" style="--d:.08s">In 4 weeks, <em class="v">see which claims will drive your loss</em></h2>
+<p class="ask rv" style="--d:.16s">We do the work alongside your team, and your actuals replace our assumptions. You provide read-only access, loss runs, and a few adjuster hours.</p>
+
+<div class="tbl-wrap rv" style="--d:.2s" id="tbl">
+<div class="tbl">
+<div class="tr th"><div>The input</div><div>Assumption</div><div>How we measure it</div><div>Your number</div></div>
+<div class="tr"><div class="in">Caught in time today</div><div class="as" data-m="base">50%</div><div class="how">Closed litigated claims, 12 to 24 months back: when the warning arrived vs. when you acted</div><div class="slot" data-final="#%"><span class="bl" role="img" aria-label="to be measured"></span>%</div></div>
+<div class="tr"><div class="in">Caught in time with Isomer</div><div class="as" data-m="t">70%</div><div class="how">The same claims run through Isomer: what it would have flagged, and how many days earlier</div><div class="slot" data-final="#% · # days"><span class="bl" role="img" aria-label="to be measured"></span>% · <span class="bl" role="img" aria-label="to be measured"></span> days</div></div>
+<div class="tr"><div class="in">What in time is worth</div><div class="as" data-m="assumeTrio">20 · 15 · 7.5%</div><div class="how">Suit rate, defense cost, and settlements: claims caught in time vs. caught late</div><div class="slot" data-final="# · # · #%"><span class="bl" role="img" aria-label="to be measured"></span> · <span class="bl" role="img" aria-label="to be measured"></span> · <span class="bl" role="img" aria-label="to be measured"></span>%</div></div>
+<div class="tr"><div class="in">Reserve lag</div><div class="as nas">Not assumed</div><div class="how">From your reserve history: days from the first warning to the reserve change</div><div class="slot" data-final="# days"><span class="bl" role="img" aria-label="to be measured"></span> days</div></div>
+</div>
+</div>
+
+<div class="deliv rv" style="--d:.1s">
+<p class="k">End deliverables</p>
+<div class="items">
+<div class="it"><b>Flags on your live claims</b><span>Starting in week one</span></div>
+<div class="it"><b>Your caught-in-time rate</b><span>A baseline few carriers have</span></div>
+<div class="it"><b>Reserve lag, by claim</b><span>For finance and your actuary</span></div>
+<div class="it"><b>Your business case</b><span>In dollars and points</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="pricing" class="bg-white">
+<div class="wrap">
+<p class="eyebrow rv">Pricing · example for <span data-m="bookA">a $1B commercial book</span></p>
+<h2 class="rv" style="--d:.08s">Priced at <em class="v">10% of the savings we target</em></h2>
+<p class="lede rv" style="--d:.16s">The assessment sets the target from your claims. Run the same math for your own book.</p>
+
+<div class="fee rv" style="--d:.1s">
+<p class="k">The annual fee</p>
+<div><p class="f">10% of <span>targeted hard savings</span></p>
+<p class="ex"><span data-m="feeEx">$10M × 10% = </span><b data-m="feeEx2">$1M a year</b><span data-m="feeEx3">, a 10x return</span></p></div>
+<p class="c">Cancel anytime with 30 days' notice</p>
+</div>
+
+<div class="steps">
+<div class="step rv" style="--d:.1s"><div><p class="k">1 · Assessment</p><p class="f" data-m="assessRate">$50K per $500M of premium</p><p class="d">4 weeks. Your risks, business case, and our proposal</p></div>
+<div class="ex"><b data-m="assessK">$100K</b><div class="pay-bar" aria-hidden="true"><i></i></div><span data-m="assessMath">$1B ÷ $500M × $50K</span></div></div>
+<div class="step rv" style="--d:.15s"><div><p class="k">2 · Signing</p><p class="f">20% of fee, less assessment</p><p class="d">The assessment is credited, not paid twice</p></div>
+<div class="ex"><b data-m="s0">$100K</b><div class="pay-bar" aria-hidden="true"><i></i></div><span data-m="s0m">$200K − $100K credit</span></div></div>
+<div class="step rv" style="--d:.2s"><div><p class="k">3 · Production</p><p class="f">20% of fee</p><p class="d">When Signals run on your live claims</p></div>
+<div class="ex"><b data-m="s1">$200K</b><div class="pay-bar" aria-hidden="true"><i></i></div><span data-m="s1m">20% × $1M</span></div></div>
+<div class="step rv" style="--d:.25s"><div><p class="k">4 · Year end</p><p class="f">60% of fee</p><p class="d">Paid only if you continue after a year of results</p></div>
+<div class="ex"><b data-m="s2">$600K</b><div class="pay-bar" aria-hidden="true"><i></i></div><span data-m="s2m">60% × $1M</span></div></div>
+</div>
+<p class="pay-key mono">Bars to scale · full width is the annual fee · ST-10</p>
+</div>
+</section>
+
+<section class="close bg-grey">
+<div class="wrap">
+<p class="eyebrow rv">Next step</p>
+<h2 class="rv" style="--d:.08s">Which claims team would you want to <em class="v">run this with?</em></h2>
+<div class="trust rv" style="--d:.16s"><span>SOC 2 Type II</span><span>HIPAA</span><span>ISO 27001 in progress</span><span>Sovereign in your cloud or a dedicated tenant in ours</span><span>Private models available</span></div>
+<svg class="logo rv" style="--d:.24s" viewBox="204 204 1792 391" role="img" aria-label="Isomer" fill="currentColor"><g> <path d="M1856.83,350.91h54.17v29.02h1.93c2.32-6.19,5.81-11.61,10.45-16.25,3.87-4.13,9.03-7.87,15.48-11.22,6.45-3.61,14.58-5.42,24.38-5.42h26.54v52.24h-32.35c-14.7,0-26.18,4-34.44,12-8,8-12,18.83-12,32.5v104.47h-54.17v-197.34Z"/> <path d="M1721.35,554.06c-14.96,0-29.02-2.71-42.18-8.13-12.9-5.42-24.12-12.77-33.66-22.06-9.55-9.54-17.02-20.64-22.44-33.28-5.42-12.9-8.13-26.57-8.13-41.02s2.71-27.99,8.13-40.63c5.42-12.9,12.9-23.99,22.44-33.28,9.55-9.54,20.77-17.03,33.66-22.44,13.16-5.42,27.21-8.13,42.18-8.13s29.54,2.71,42.18,8.13c12.9,5.42,23.99,12.9,33.28,22.44,9.29,9.54,16.38,20.64,21.28,33.28,5.16,12.64,7.74,26.18,7.74,40.63v11.61h-154.78c1.03,6.19,2.97,12.12,5.81,17.8,3.1,5.68,6.84,10.71,11.22,15.09,4.64,4.13,9.8,7.48,15.48,10.06,5.67,2.32,11.61,3.48,17.8,3.48,8.77,0,15.86-1.16,21.28-3.48,5.67-2.58,10.32-5.29,13.93-8.13,3.87-3.35,6.97-7.22,9.29-11.61h58.04c-4.13,12.9-10.58,24.51-19.35,34.82-3.87,4.39-8.38,8.64-13.54,12.77-5.16,4.13-11.09,7.87-17.8,11.22-6.71,3.35-14.44,5.93-23.22,7.74-8.51,2.06-18.06,3.1-28.63,3.1ZM1767.79,428.3c-1.03-4.9-2.84-9.54-5.42-13.93-2.58-4.39-5.93-8.25-10.06-11.61-3.87-3.35-8.51-6.06-13.93-8.13-5.16-2.06-10.83-3.1-17.02-3.1-12.64,0-23.22,3.74-31.73,11.22-8.25,7.22-13.8,15.74-16.64,25.54h94.8Z"/> <path d="M1266.67,350.91h54.17v27.09h1.93c3.35-6.19,7.74-11.61,13.16-16.25,4.64-4.13,10.58-7.87,17.8-11.22,7.22-3.61,16.25-5.42,27.09-5.42,12.64,0,23.09,1.93,31.34,5.8,8.51,3.87,15.35,8.13,20.51,12.77,5.93,5.42,10.58,11.48,13.93,18.19h1.94c3.35-6.71,8-12.77,13.93-18.19,5.16-4.64,11.61-8.9,19.35-12.77,8-3.87,18.19-5.8,30.57-5.8,23.47,0,41.92,7.09,55.33,21.28,13.41,13.93,20.12,34.57,20.12,61.91v119.95h-54.17v-114.15c0-14.7-3.23-25.41-9.67-32.12-6.45-6.97-15.48-10.45-27.09-10.45s-21.67,4.51-30.18,13.54c-8.25,9.03-12.38,21.28-12.38,36.76v106.41h-54.17v-114.15c0-14.7-3.22-25.41-9.67-32.12-6.45-6.97-15.48-10.45-27.09-10.45s-21.67,4.51-30.18,13.54c-8.25,9.03-12.38,21.28-12.38,36.76v106.41h-54.17v-197.34Z"/> <path d="M1128.96,554.06c-15.48,0-29.92-2.71-43.34-8.13-13.15-5.42-24.63-12.77-34.44-22.06-9.54-9.54-17.02-20.64-22.44-33.28-5.42-12.9-8.13-26.57-8.13-41.02s2.71-27.99,8.13-40.63c5.42-12.9,12.9-23.99,22.44-33.28,9.8-9.54,21.28-17.03,34.44-22.44,13.41-5.42,27.86-8.13,43.34-8.13s29.8,2.71,42.95,8.13c13.15,5.42,24.51,12.9,34.05,22.44,9.8,9.29,17.41,20.38,22.83,33.28,5.67,12.64,8.51,26.18,8.51,40.63s-2.84,28.12-8.51,41.02c-5.42,12.64-13.03,23.73-22.83,33.28-9.54,9.29-20.9,16.64-34.05,22.06-13.16,5.42-27.47,8.13-42.95,8.13ZM1128.96,507.62c7.22,0,13.93-1.42,20.12-4.26,6.45-2.84,12-6.71,16.64-11.61,4.9-5.16,8.64-11.22,11.22-18.19,2.84-7.22,4.26-15.22,4.26-23.99s-1.42-16.64-4.26-23.6c-2.58-7.22-6.32-13.28-11.22-18.19-4.64-5.16-10.19-9.16-16.64-12-6.19-2.84-12.9-4.26-20.12-4.26s-14.06,1.42-20.51,4.26c-6.19,2.84-11.74,6.84-16.64,12-4.64,4.9-8.38,10.96-11.22,18.19-2.58,6.96-3.87,14.83-3.87,23.6s1.29,16.77,3.87,23.99c2.84,6.97,6.58,13.03,11.22,18.19,4.9,4.9,10.45,8.77,16.64,11.61,6.45,2.84,13.29,4.26,20.51,4.26Z"/> <path d="M913.91,554.06c-10.58,0-20.12-1.03-28.63-3.1-8.51-1.81-16.12-4.39-22.83-7.74-6.45-3.35-12.25-7.09-17.41-11.22-4.9-4.13-9.03-8.38-12.38-12.77-8.25-10.32-14.06-21.93-17.41-34.82h56.11c2.06,4.9,4.9,9.16,8.51,12.77,3.1,3.1,7.35,5.93,12.77,8.51,5.42,2.58,12.51,3.87,21.28,3.87,12.64,0,21.28-1.68,25.93-5.03,4.64-3.61,6.96-8.38,6.96-14.32,0-5.16-3.1-9.03-9.29-11.61-5.93-2.58-13.41-4.9-22.44-6.97-9.03-2.06-18.83-4.26-29.41-6.58-10.32-2.32-19.99-5.8-29.02-10.45-9.03-4.64-16.64-10.83-22.83-18.57-5.93-7.74-8.9-18.06-8.9-30.96,0-7.74,1.81-15.22,5.42-22.44,3.61-7.22,8.9-13.54,15.86-18.96,6.97-5.68,15.61-10.19,25.92-13.54,10.32-3.35,22.31-5.03,35.99-5.03,10.32,0,19.6.9,27.86,2.71,8.25,1.81,15.48,4.26,21.67,7.35,6.45,3.1,12,6.58,16.64,10.45,4.64,3.87,8.51,7.74,11.61,11.61,7.48,9.29,12.51,19.86,15.09,31.73h-54.17c-1.55-3.61-3.87-6.84-6.96-9.67-2.84-2.32-6.84-4.51-12-6.58-4.9-2.06-11.48-3.1-19.73-3.1-9.8,0-16.77,1.68-20.89,5.03-4.13,3.1-6.19,6.58-6.19,10.45,0,5.16,2.97,9.03,8.9,11.61,6.19,2.58,13.8,4.9,22.83,6.96,9.03,2.06,18.7,4.26,29.02,6.58,10.58,2.32,20.38,5.8,29.41,10.45,9.03,4.64,16.51,10.83,22.44,18.57,6.19,7.74,9.29,18.06,9.29,30.95,0,8.25-1.93,16.25-5.8,23.99-3.87,7.48-9.54,14.19-17.03,20.12-7.48,5.93-16.77,10.71-27.86,14.32-11.09,3.61-23.86,5.42-38.31,5.42Z"/> <path d="M733.78,350.91h54.17v197.34h-54.17v-197.34Z"/> </g> <g> <g> <path d="M447.22,382.05c2.16-2.91,4.38-5.8,6.64-8.67v-98.45h-69.33v110.85c-22.27-29.76-49.69-57.78-82.15-83.66l-43.22,54.21c28.39,22.64,52.16,47.04,71.13,72.86-37.39-9.75-79.26-8.55-120.08,4.37l20.9,66.1c43.51-13.76,87.49-8.78,117.65,13.32,13.96,10.23,24,23.59,29.92,39.46,6.55-60.63,29.52-117.8,68.54-170.37Z"/> <path d="M521.5,426.38c-1.99,2.55-3.95,5.11-5.85,7.69-23.91,32.54-39.8,67.01-47.56,102.97,5.75-9.26,13.23-17.35,22.42-24.08,30.17-22.1,74.15-27.07,117.65-13.32l20.9-66.1c-36.33-11.49-73.48-13.69-107.57-7.16Z"/> <path d="M453.86,386.98c-45.33,61.08-68.88,129.49-68.88,202.06h69.33c0-56.74,18.67-110.84,54.68-159.86,18.96-25.81,42.73-50.22,71.13-72.86l-43.22-54.21c-32.89,26.22-60.62,54.65-83.04,84.86Z"/> </g> <circle cx="536.51" cy="253.85" r="43.63"/> </g> </svg>
+<p class="mail rv" style="--d:.3s"><a href="https://calendar.app.google/XZvanY3vNsMxg7AW9" target="_blank" rel="noopener noreferrer">Book a time</a> or email <a href="mailto:sean@isomer.ai">sean@isomer.ai</a> to start the conversation.</p>
+<p class="sources">Sources: APCIA and Milliman closed claim study (2022); Sedgwick State of the Line (Mar 2026); CLARA Analytics (2007 to 2017); EY via Insurance Journal (Oct 2025); EvenUp (Oct 2025); ATRA (Mar 2025); Triple-I and CAS (Oct 2025); Sedgwick (Summer 2026). The EPL X-ray is a real production finding, anonymized. The other X-rays and the message stream are representative. Savings figures are an illustrative scenario for <span data-m="bookA">a $1B commercial book</span>.</p>
+</div>
+</section>
+
+<section class="ax-h" id="appendix">
+<div class="wrap">
+<p class="eyebrow">Appendix</p>
+<h2>The concerns, the vendors, and <em>the money behind them</em></h2>
+<p class="lede">Backup for the story above: which concerns hold up against the data, what plaintiff AI promises law firms, and who is funding it.</p>
+</div>
+</section>
+
+<section class="ax-sec" id="apx-fears">
+<div class="wrap">
+<p class="eyebrow">Appendix A · Every defense AI pitch plays on concerns, ours included</p>
+<h2>Six concerns, <em>checked against the data</em></h2>
+<div class="ax-grid">
+<div class="ax-card"><span class="tag c">Well founded</span>
+<p class="ax-q">&ldquo;Every claim will have a lawyer before you call.&rdquo;</p>
+<div class="ax-viz"><p class="l">First notice to lawsuit</p>
+<div class="ax-bar"><span>2016</span><div><i style="width:100%"></i><b>~550 days</b></div></div>
+<div class="ax-bar"><span>Now</span><div><i class="cu" style="width:22%"></i><b class="cu">~120 days</b></div></div></div>
+<p class="ax-n">70% of GL injury claims have a lawyer within 14 days.</p></div>
+
+<div class="ax-card"><span class="tag c">Well founded</span>
+<p class="ax-q">&ldquo;You will miss a buried deadline and open the policy.&rdquo;</p>
+<div class="ax-viz"><div class="ax-st"><span>GA</span><span>CA</span><span>FL</span><p>legislated against deadline setups</p></div></div>
+<p class="ax-n">Our pilot found one in a third attachment. No one publishes miss rates.</p></div>
+
+<div class="ax-card"><span class="tag c">Well founded</span>
+<p class="ax-q">&ldquo;A nuclear verdict is coming for you.&rdquo;</p>
+<div class="ax-viz"><p class="l">Severity growth a year</p>
+<div class="ax-bar"><span>Settlements</span><div><i class="cu" style="width:100%"></i><b class="cu">+12.6%</b></div></div>
+<div class="ax-bar"><span>Verdicts</span><div><i class="ct" style="width:29%"></i><b>+3.7%</b></div></div></div>
+<p class="ax-n">Corporate nuclear verdicts up 41% in 2025 to $25.6B, and settlements are growing even faster.</p></div>
+
+<div class="ax-card"><span class="tag h">Coming</span>
+<p class="ax-q">&ldquo;Plaintiff AI will out-demand you.&rdquo;</p>
+<div class="ax-viz"><p class="ax-big">80 &rarr; 2.7</p><p>days to send a demand, per a vendor</p></div>
+<p class="ax-n">$775M+ raised. Vendor claims, no independent studies yet.</p></div>
+
+<div class="ax-card"><span class="tag h">Coming</span>
+<p class="ax-q">&ldquo;AI will bury adjusters in paper and hide tricks in it.&rdquo;</p>
+<div class="ax-viz"><p class="l">Federal suits filed without a lawyer</p>
+<div class="ax-bar"><span>Before AI</span><div><i style="width:65%"></i><b>11%</b></div></div>
+<div class="ax-bar"><span>After</span><div><i class="cu" style="width:100%"></i><b class="cu">17%</b></div></div></div>
+<p class="ax-n">Plus adjuster anecdotes and a few filings with hidden AI instructions.</p></div>
+
+<div class="ax-card"><span class="tag m">Coming?</span>
+<p class="ax-q">&ldquo;AI will flood you with new claims.&rdquo;</p>
+<div class="ax-viz"><p class="ax-big" style="color:var(--muted)">&minus;5%</p><p>commercial auto claims in 2025</p></div>
+<p class="ax-n">Not in the counts yet, but vendors pitch 2 to 3x cases per attorney.</p></div>
+</div>
+<p class="src">Sources: Sedgwick (Mar 2026; Summer 2026); Hunton (Jul 2024); Marathon Strategies (Aug 2026); vendor announcements; Miami Law and AI Lab; Verisk (Apr 2026).</p>
+</div>
+</section>
+
+<section class="ax-sec bg-white" id="apx-vendors">
+<div class="wrap">
+<p class="eyebrow">Appendix B · Plaintiff AI, in the vendors' own words</p>
+<h2>Plaintiff AI promises <em>speed, scale, and value</em></h2>
+<div class="ax-cols">
+<div class="ax-col"><p class="k">Speed</p><p class="ax-big">80 &rarr; 2.7</p><p class="w">days to send a demand</p><cite>EvenUp, citing MAXOUT Injury Lawyers</cite>
+<ul><li class="ax-li"><b>Minutes, not days,</b> for demand packages<cite>Supio</cite></li>
+<li class="ax-li"><b>15% faster</b> case resolution<cite>Eve, citing Earley Law Firm</cite></li>
+<li class="ax-li"><b>80% less time</b> drafting complaints<cite>Eve, citing Smith Clinesmith</cite></li></ul></div>
+<div class="ax-col"><p class="k">Scale</p><p class="ax-big">2&ndash;3x</p><p class="w">cases per attorney</p><cite>Eve, citing Mike Morse Law Firm</cite>
+<ul><li class="ax-li"><b>Up to 62%</b> more caseload capacity<cite>Supio</cite></li>
+<li class="ax-li"><b>10,000 cases a week,</b> doubled in six months<cite>EvenUp CEO, Oct 2025</cite></li>
+<li class="ax-li"><b>2,000+ firms,</b> incl. a fifth of the top 100 PI firms<cite>EvenUp, Oct 2025</cite></li></ul></div>
+<div class="ax-col"><p class="k">Value</p><p class="ax-big">69%</p><p class="w">more likely to reach policy limits</p><cite>EvenUp, no method disclosed</cite>
+<ul><li class="ax-li"><b>Thousands of dollars</b> more per claim<cite>EvenUp</cite></li>
+<li class="ax-li"><b>~$30K more revenue</b> per 10 cases<cite>EvenUp, citing MAXOUT Injury Lawyers</cite></li>
+<li class="ax-li"><b>A $495M verdict</b> credited in part to its platform<cite>Supio, citing TorHoerman Law</cite></li></ul></div>
+</div>
+<p class="src">Sources: EvenUp, Eve, and Supio announcements, case studies, and marketing, 2025 to 2026. Vendor claims, not independent studies.</p>
+</div>
+</section>
+
+<section class="ax-sec" id="apx-funding">
+<div class="wrap">
+<p class="eyebrow">Appendix C · Who is building plaintiff AI</p>
+<h2>$775M+ is betting on <em>plaintiff AI</em></h2>
+<p class="ax-sum">$775M+ across six startups, two of them unicorns. <b>About 71% of disclosed litigation AI money has gone to the plaintiff side.</b></p>
+<figure class="share" role="img" aria-label="71 of 100 cells: share of disclosed litigation AI funding that went to the plaintiff side">
+<p class="ax"><span><b>Plaintiff side · 71%</b></span><span>Defense and other · 29%</span></p>
+<div class="cells"><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i class="cu"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</figure>
+<div class="ax-tbl">
+<div class="ax-row th"><span>Company</span><span>What it does</span><span>Raised</span><span>Latest round · backers</span></div>
+<div class="ax-row"><p class="co">EvenUp</p><p class="wd"><b>Demand letters and case prep</b><span>2,000+ firms, incl. a fifth of the top 100 PI firms</span></p><p class="rs"><b>$385M</b><span>VALUED $2B+</span></p><p class="rd"><b>Series E, Oct 2025</b><span>Bessemer, Lightspeed, RELX (LexisNexis)</span></p></div>
+<div class="ax-row"><p class="co">Eve</p><p class="wd"><b>AI platform for plaintiff firms</b><span>1,400+ firms, 200,000+ active matters</span></p><p class="rs"><b>$164M</b><span>VALUED $1B+</span></p><p class="rd"><b>Series B, Sept 2025</b><span>Spark Capital, Andreessen Horowitz</span></p></div>
+<div class="ax-row"><p class="co">Supio</p><p class="wd"><b>Case prep and demand packages</b><span>Resold to injury firms by Thomson Reuters</span></p><p class="rs"><b>$91M</b></p><p class="rd"><b>Series B, May 2025</b><span>Sapphire, Thomson Reuters Ventures</span></p></div>
+<div class="ax-row"><p class="co">Darrow</p><p class="wd"><b>Finds class action cases</b><span>Scans for corporate violations to bring to firms</span></p><p class="rs"><b>$60M+</b></p><p class="rd"><b>Series B, Sept 2023</b><span>Georgian, NFX, Y Combinator</span></p></div>
+<div class="ax-row"><p class="co">Justpoint</p><p class="wd"><b>AI-native mass tort law firm</b><span>Reports a $355K average settlement per claimant</span></p><p class="rs"><b>$55M</b></p><p class="rd"><b>Series A, Feb 2025</b><span>SignalFire, plus a $50M credit line</span></p></div>
+<div class="ax-row"><p class="co">Finch</p><p class="wd"><b>AI-run pre-litigation staff</b><span>Claims its firms tripled case volume</span></p><p class="rs"><b>$20M+</b></p><p class="rd"><b>Series A, Oct 2025</b><span>Redpoint, Sequoia</span></p></div>
+</div>
+<p class="src">Sources: company announcements, 2023 to 2026; Crunchbase News (Jun 2026). Equity raised as last announced; later rounds may exist.</p>
+</div>
+</section>
+
+<script>
+!function(e,t){"object"==typeof module&&module.exports?module.exports=t():e.IsomerModel=t()}(this,function(){var e={ln:"comm",p:1e3,lr:68,dcc:10,hl:60,hd:90,base:50,t:70,suit:20,dc:15,sev:7.5,g:12,ac:125},t={p:[50,2e4],lr:[30,120],dcc:[2,40],hl:[20,95],hd:[30,100],base:[0,95],t:[0,100],suit:[0,50],dc:[0,40],sev:[0,20],g:[5,25],ac:[60,250]},o=["ln","p","lr","dcc","hl","hd","base","t","suit","dc","sev","g","ac"],n={comm:{book:"commercial book",knob:"Commercial book, earned premium"},ca:{
+book:"commercial auto book",knob:"Commercial auto, earned premium"},gl:{book:"general liability book",knob:"General liability, earned premium"},wc:{book:"workers' comp book",knob:"Workers' comp, earned premium"},tpa:{book:"of client losses",knob:"Client losses handled per year",tpa:!0}},r={"comm-1b":{},"comm-500":{p:500},"ca-1b":{ln:"ca",lr:68,dcc:10},"gl-1b":{ln:"gl",lr:62,dcc:20},"wc-500":{ln:"wc",p:500,lr:58,dcc:8},"tpa-1b":{ln:"tpa",p:1e3,lr:100}},s=[.2,.2,.6];function a(e){var t={}
+;for(var o in e)Object.prototype.hasOwnProperty.call(e,o)&&(t[o]=e[o]);return t}function i(e){var t={};return String(e||"").replace(/^[?#]/,"").split("&").forEach(function(e){if(e){var o=e.indexOf("="),n=o<0?e:e.slice(0,o),r=o<0?"":e.slice(o+1);try{n=decodeURIComponent(n),r=decodeURIComponent(r.replace(/\+/g," "))}catch(e){return}t[n]=r}}),t}function u(e){return"number"==typeof e?e:/^\s*-?\d+(\.\d+)?\s*$/.test(String(e))?parseFloat(e):NaN}function c(r){var s=a(e);return o.forEach(function(e){
+if(e in r)if("ln"!==e){var o=u(r[e]);isFinite(o)&&(s[e]=Math.min(t[e][1],Math.max(t[e][0],o)))}else n[r.ln]&&(s.ln=r.ln)}),s.t<s.base&&(s.t=s.base),s.t>s.base+40&&(s.t=s.base+40),s}function l(e,t){o.forEach(function(o){if(o in t)if("ln"!==o){var r=u(t[o]);isFinite(r)&&(e[o]=r)}else n[t.ln]&&(e.ln=t.ln)})}function h(e,t){return(+e.toFixed(t)).toString()}function d(e){return h(e,1)+"%"}function p(e){return/^(8|11|18)(\D|$)|^8\d|^80?0?\D/.test(String(e).replace("$",""))?"an":"a"}function f(e){
+return e>=1e3?"$"+h(e/1e3,2)+"B":"$"+h(e,0)+"M"}function m(e){var t=n[e.ln];return f(e.p)+" "+t.book}function b(e){return e>=1e3?"$"+(e/1e3).toFixed(2)+"B":"$"+e.toFixed(1)+"M"}function g(e){return e>=1e3?"$"+h(e/1e3,2)+"B":"$"+h(e,1)+"M"}function v(e){return e<=0?"$0":e>=1e3?"$"+h(e/1e3,2)+"M":"$"+Math.round(e).toLocaleString("en-US")+"K"}function M(t,r,s){if(function(t){return o.every(function(o){return t[o]===e[o]})}(t))return"";if(!s)return"Scenario · "+m(t);var a=n[t.ln].tpa,i=[m(t)],u=e
+;return t.lr!==(a?100:u.lr)&&i.push(d(t.lr)+" loss ratio"),t.dcc!==u.dcc&&i.push("defense cost at "+d(t.dcc)+" of loss"),t.hl!==u.hl&&i.push(d(t.hl)+" of loss in high-risk claims"),t.hd!==u.hd&&i.push(d(t.hd)+" of defense cost in high-risk claims"),t.base!==u.base&&i.push(d(t.base)+" caught in time today"),t.t!==u.t&&i.push(d(t.t)+" caught in time with Isomer"),t.suit!==u.suit&&i.push(d(t.suit)+" avoid a suit"),t.dc!==u.dc&&i.push(d(t.dc)+" cheaper to defend"),
+t.sev!==u.sev&&i.push(d(t.sev)+" lower settlements"),t.g!==u.g&&i.push(d(t.g)+" growth per point"),t.ac!==u.ac&&i.push("$"+h(t.ac,0)+"K per adjuster"),(a?"Your business · ":"Your book · ")+i.join(", ")}function k(e,t){null==t&&(t=e.t);var o=(t-e.base)/100,n=e.p*e.lr/100,r=n*e.dcc/100*e.hd/100*o*(e.suit/100+(1-e.suit/100)*e.dc/100),s=n*e.hl/100*o*e.sev/100,a=r+s;return{def:r,sev:s,tot:a,pts:a/e.p*100}}function x(e,t){var o=Math.abs(e-Math.round(e))<.005&&Math.round(e)>0,n=Math.round(e)
+;return t?(o?n:e.toFixed(2))+"% of client losses":o?1===n?"1 point":n+" points":e.toFixed(2)+" points"}var w=["zero","one","two","three","four","five","six","seven","eight","nine","ten"];var S=[[1/4,"a quarter"],[1/3,"a third"],[.5,"half"],[2/3,"two-thirds"],[3/4,"three-quarters"]];function y(e){for(var t=0;t<S.length;t++)if(Math.abs(e-S[t][0])<.04)return S[t][1];return null}return{VERSION:"1",DEFAULTS:e,RANGES:t,PRESETS:r,LINES:n,parse:function(t){
+var o=i((t=t||{}).search),n=i(t.hash),s=a(e),u=null,h=!1;if(o.s&&Object.prototype.hasOwnProperty.call(r,o.s)&&(u=o.s,l(s,r[o.s])),"1"===n.v){var d=JSON.stringify(c(s));l(s,n),h=JSON.stringify(c(s))!==d}var p=c(s);return{inputs:p,preset:u,custom:h,label:M(p,u,h)}},clean:c,savings:k,compute:function(e){var t,o,r,a,i=n[e.ln],u=!!i.tpa,c=k(e),l=function(e,t){var o=5*Math.round(50*e.p/500/5),n=parseFloat(t.toFixed(1)),r=Math.round(1e3*n*.1),a=o,i=[];return s.forEach(function(e,t){
+var o=Math.round(r*e),n=Math.min(a,o);a-=n;var s=Math.round(100*e)+"% × "+v(r);i.push({gross:o,credit:n,amount:o-n,math:n>0?v(o)+" − "+v(n)+" credit":s})}),{assess:o,fee:r,steps:i,multiple:r>0?Math.round(1e3*n/r):0}}(e,c.tot),M=e.p/100,S=(t=c.pts,o=Math.round(t),{whole:r=Math.abs(t-o)<.005&&o>0,n:r?o:+t.toFixed(2),text:r?(o<=10?w[o]:String(o))+(1===o?" point":" points"):t.toFixed(2)+" points"
+}),$=S.n,F=M*$*1e3/e.ac,j=S.whole||F<20?Math.round(F):5*Math.round(F/5),E=200*e.p/1e3,N=Math.min(200,Math.round(j/E*200)),T=m(e),A=u?"losses handled":"premium",C={tpa:u,book:T,bookA:u?T:p(T)+" "+T,bookSize:f(e.p),knob:i.knob,base:d(e.base),t:d(e.t),baseN:e.base,tN:e.t,suit:d(e.suit),dc:d(e.dc),sev:d(e.sev),assumeTrio:h(e.suit,1)+" · "+h(e.dc,1)+" · "+d(e.sev),def:b(c.def),sevM:b(c.sev),tot:b(c.tot),ptsN:c.pts,pts:x(c.pts,u),ptsTail:u?"":" off the combined ratio",
+headline:u?x(c.pts,u):"one point"===S.text?"a point of combined ratio":S.text+" of combined ratio",worthPts:S.text,worthVerb:"one point"===S.text?"is":"are",assume:(u?"Assumes "+f(e.p)+" of client losses a year"+(100!==e.lr?" at "+p(d(e.lr))+" "+d(e.lr)+" loss ratio":""):"Assumes "+p(d(e.lr))+" "+d(e.lr)+" loss ratio")+", defense cost at "+d(e.dcc)+" of loss, and high-risk claims carrying "+d(e.hl)+" of loss and "+d(e.hd)+" of defense cost.",pointM:g(M),worthM:g(M*$),g:e.g,
+gN:+(e.g*$).toFixed(1),gTxt:"+"+h(e.g*$,1)+"%",newBiz:g(M*e.g*$),margin:Math.round(100/e.g)+"%",adj:j,adjTxt:"About "+j.toLocaleString("en-US"),teamLo:5*Math.round(30*e.p/1e3),teamHi:5*Math.round(50*e.p/1e3),team:Math.round(E),cut:N,ac:"$"+h(e.ac,0)+"K",assessRate:"$50K per $500M of "+A,assessK:v(l.assess),assessMath:f(e.p)+" ÷ $500M × $50K",fee:v(l.fee),totTrim:g(parseFloat(c.tot.toFixed(1))),multiple:l.multiple+"x",steps:l.steps.map(function(e){return{amount:v(e.amount),math:e.math,n:e.amount}}),
+feeK:l.fee,assessN:l.assess},I=C.teamLo+" to "+C.teamHi+" "+p(C.bookSize)+" "+C.bookSize+" book typically runs",L=y(j/C.teamHi),O=y(j/C.teamLo);return C.adjS=j>C.teamHi?"fewer adjusters, more than the "+I:L&&O?"fewer adjusters, "+(L===O?"about "+L:L+" to "+O)+" of the "+I:"fewer adjusters, out of the "+I,C.worthTitle="What "+S.text+" "+("one point"===S.text?"is":"are")+" worth",
+C.worthLede=(a=S.text).charAt(0).toUpperCase()+a.slice(1)+" on "+p(C.bookSize)+" "+C.bookSize+" book "+("one point"===S.text?"is ":"are worth ")+C.worthM+" a year. The usual ways to get "+("one point"===S.text?"one":"there")+" are slow or painful.",C.valueToc="Catching them in time is "+C.headline,C.worthSrc="Assumes "+p(C.margin)+" "+C.margin+" operating margin (1 point = "+h(e.g,1)+"% growth) and "+C.ac+" per adjuster, fully loaded. Adjuster counts are an Isomer estimate.",
+C.isoS="you can book, by catching "+C.t+" of high-risk claims in time, not "+C.base,C.feeEx=C.totTrim+" × 10% = ",C.feeEx2=C.fee+" a year",C.feeEx3=u?", "+C.multiple+" the fee in client savings":", a "+C.multiple+" return",C},toHash:function(t){var n=["v=1"];return o.forEach(function(o){t[o]!==e[o]&&n.push(o+"="+encodeURIComponent(t[o]))}),"#"+n.join("&")},ptsText:x,moneyM:b}});
+</script>
+<script>
+!(function () {
+  var t,
+    e,
+    n,
+    i,
+    a,
+    o =
+      window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    r = function (t, e) {
+      return (e || document).querySelector(t);
+    },
+    s = function (t, e) {
+      return Array.prototype.slice.call((e || document).querySelectorAll(t));
+    },
+    c = window.IsomerModel,
+    l = [];
+  function d(i) {
+    ((t = c.parse(i)),
+      (e = t.inputs),
+      ((n = c.compute(e)).label = t.label),
+      t.custom &&
+        ((n.book = n.tpa ? "Your business" : "Your book"),
+        (n.bookA = n.tpa ? "your business" : "your book")),
+      (n.bookAn =
+        /^an /.test(n.bookA) || /^\$(8|11|18)/.test(n.bookSize) ? "an" : "a"),
+      (n.marginAn = /^(8|11|18)/.test(n.margin) ? "an" : "a"),
+      n.steps.forEach(function (t, e) {
+        ((n["s" + e] = t.amount), (n["s" + e + "m"] = t.math));
+      }),
+      s("[data-m]").forEach(function (t) {
+        var e = n[t.getAttribute("data-m")];
+        null != e && (t.textContent = String(e));
+      }),
+      (r(".scen").hidden = !t.label),
+      s("[data-carrier]").forEach(function (t) {
+        t.hidden = n.tpa;
+      }),
+      // Payment bars, to scale against the annual fee.
+      s(".step").forEach(function (t, i) {
+        var b = t.querySelector(".pay-bar i");
+        if (b) {
+          var v = 0 === i ? n.assessN : n.steps[i - 1].n;
+          b.style.width = (n.feeK > 0 ? Math.min(100, (v / n.feeK) * 100) : 0) + "%";
+        }
+      }));
+    var o = r('[data-m="gTxt"]'),
+      d = r("#isoPts");
+    ((o.dataset.count = n.gN), (o.dataset.dec = n.gN % 1 ? 1 : 0));
+    var f = s(".growbar i"),
+      h = ((100 / (100 + n.gN)) * 100).toFixed(1);
+    ((f[0].style.width = h + "%"),
+      (f[1].style.left = h + "%"),
+      (f[1].style.width = (100 - h).toFixed(1) + "%"));
+    var m = n.ptsN,
+      p = Math.abs(m - Math.round(m)) < 0.005 && Math.round(m) > 0;
+    ((d.dataset.count = p ? Math.round(m) : m.toFixed(2)),
+      (d.dataset.dec = p ? 0 : 2),
+      (d.dataset.suf = p && 1 === Math.round(m) ? " point" : " points"),
+      (d.textContent = n.pts),
+      u(
+        a ||
+          (/[?&#]x=(\w+)/.exec((i.search || "") + (i.hash || "")) || [])[1] ||
+          { ca: "ca", gl: "gl", wc: "wc" }[e.ln] ||
+          "epl",
+      ),
+      l.forEach(function (t) {
+        t();
+      }));
+  }
+  function u(t) {
+    var e = r("#xr-" + t) || r("#xr-epl");
+    e &&
+      e !== i &&
+      ((i = e),
+      (r("#frows").innerHTML = e.innerHTML),
+      (r("#xE").textContent = e.dataset.e),
+      (r("#xL").textContent = e.dataset.l),
+      (r("#xH").textContent = e.dataset.h),
+      s(".xsw button").forEach(function (t) {
+        t.setAttribute("aria-pressed", "xr-" + t.dataset.x === e.id);
+      }));
+  }
+  (s(".xsw button").forEach(function (t) {
+    t.addEventListener("click", function () {
+      (u((a = t.dataset.x)), window.dispatchEvent(new Event("scroll")));
+    });
+  }),
+    d(window.location));
+  var f = r("#prog"),
+    h = r("#top"),
+    m = r("#tchip"),
+    p = r("#tchipT"),
+    v = r("#tdr");
+  (s("#tocList a").forEach(function (t) {
+      document.getElementById(t.getAttribute("href").slice(1)) ||
+        t.parentNode.remove();
+    }),
+    (r("#tdrList").innerHTML = r("#tocList").innerHTML));
+  var y = s("[data-ax]");
+  y.length &&
+    r("#tdrList").insertAdjacentHTML(
+      "afterend",
+      '<p class="tdr-ax">APPENDIX</p><ol id="tdrApx">' +
+        y
+          .map(function (t) {
+            return "<li>" + t.outerHTML + "</li>";
+          })
+          .join("") +
+        "</ol>",
+    );
+  var x = s("#tocList a, .toc-ax a"),
+    E = s("#tdrList a, #tdrApx a");
+  function w(t) {
+    return document.getElementById(t.getAttribute("href").slice(1));
+  }
+  function b() {
+    var t = document.documentElement,
+      e = t.scrollHeight - t.clientHeight;
+    ((f.style.width = (e > 0 ? (t.scrollTop / e) * 100 : 0) + "%"),
+      m.classList.toggle("on", h.getBoundingClientRect().bottom < 40));
+    var n = 0.35 * window.innerHeight,
+      i = -1,
+      a = 0;
+    if (
+      (x.forEach(function (t, e) {
+        var o = w(t),
+          r = o.hidden;
+        if (((t.parentNode.hidden = r), (E[e].parentNode.hidden = r), !r))
+          o.getBoundingClientRect().top < n && (i = e);
+      }),
+      E.forEach(function (t, e) {
+        (t.classList.toggle("on", e === i),
+          e === i
+            ? t.setAttribute("aria-current", "true")
+            : t.removeAttribute("aria-current"));
+      }),
+      (p.innerHTML = ""),
+      i < 0)
+    )
+      p.textContent = "Contents";
+    else p.textContent = E[i].querySelector("span").textContent;
+  }
+  function C(t) {
+    ((v.hidden = !t),
+      m.setAttribute("aria-expanded", t),
+      t &&
+        (
+          E.filter(function (t) {
+            return t.classList.contains("on");
+          })[0] || E[0]
+        ).focus({ preventScroll: !0 }));
+  }
+  (m.addEventListener("click", function () {
+    C(v.hidden);
+  }),
+    r("#tdrX").addEventListener("click", function () {
+      (C(!1), m.focus());
+    }));
+  var L = x.concat(E);
+  (document.addEventListener(
+    "click",
+    function (t) {
+      var e = t.target.closest && t.target.closest("a");
+      !e ||
+        (L.indexOf(e) < 0 && !e.hasAttribute("data-j")) ||
+        (t.preventDefault(),
+        t.stopPropagation(),
+        C(!1),
+        w(e).scrollIntoView({ behavior: o ? "auto" : "smooth" }));
+    },
+    !0,
+  ),
+    document.addEventListener("keydown", function (t) {
+      "Escape" !== t.key || v.hidden || (C(!1), m.focus());
+    }));
+  var k = /Mac|iP(hone|ad|od)/.test(navigator.platform || navigator.userAgent);
+  function M(t) {
+    (C(!1), t.scrollIntoView({ behavior: o ? "auto" : "smooth" }));
+  }
+  function A(t) {
+    var e = parseFloat(t.dataset.count),
+      n = +t.dataset.dec || 0,
+      i = t.dataset.pre || "",
+      a = t.dataset.suf || "",
+      o = t.querySelector("small"),
+      r = o ? o.outerHTML : "",
+      s = null;
+    requestAnimationFrame(function o(c) {
+      s || (s = c);
+      var l = Math.min((c - s) / 1400, 1),
+        d = 1 - Math.pow(1 - l, 3);
+      ((t.innerHTML =
+        i +
+        (function (t, e) {
+          return e > 0 ? t.toFixed(e) : Math.round(t).toLocaleString("en-US");
+        })(e * d, n) +
+        a +
+        r),
+        l < 1 && requestAnimationFrame(o));
+    });
+  }
+  ((r("#tdrKeys").hidden =
+    window.matchMedia && matchMedia("(hover:none)").matches),
+    (r("#tdrKeys").textContent =
+      (k ? "⌘K" : "Ctrl K") + " contents · ← → sections"),
+    document.addEventListener("keydown", function (t) {
+      if (
+        (t.metaKey || t.ctrlKey) &&
+        !t.altKey &&
+        !t.shiftKey &&
+        ("k" === t.key || "K" === t.key)
+      )
+        return (
+          t.preventDefault(),
+          C(v.hidden),
+          void (v.hidden && m.focus({ preventScroll: !0 }))
+        );
+      if (!(
+        t.metaKey ||
+        t.ctrlKey ||
+        t.altKey ||
+        t.shiftKey ||
+        ((e = document.activeElement),
+        e &&
+          (e.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(e.tagName)))
+      )) {
+        var e,
+          n = r("#ed");
+        if (!n || n.hidden) {
+          if (!v.hidden) {
+            if ("ArrowDown" !== t.key && "ArrowUp" !== t.key) return;
+            var i = E.filter(function (t) {
+                return !t.parentNode.hidden;
+              }),
+              a = i.indexOf(document.activeElement);
+            return (
+              t.preventDefault(),
+              void i[
+                Math.max(
+                  0,
+                  Math.min(i.length - 1, a + ("ArrowDown" === t.key ? 1 : -1)),
+                )
+              ].focus()
+            );
+          }
+          if ("ArrowRight" === t.key || "ArrowLeft" === t.key) {
+            var s = x
+                .map(w)
+                .filter(function (t) {
+                  return t && !t.hidden;
+                })
+                .sort(function (t, e) {
+                  return (
+                    t.getBoundingClientRect().top -
+                    e.getBoundingClientRect().top
+                  );
+                }),
+              c = 0.35 * window.innerHeight,
+              l = -1;
+            (s.forEach(function (t, e) {
+              t.getBoundingClientRect().top < c && (l = e);
+            }),
+              t.preventDefault(),
+              "ArrowRight" !== t.key
+                ? l < 0 ||
+                  (s[l].getBoundingClientRect().top < -40
+                    ? M(s[l])
+                    : l > 0
+                      ? M(s[l - 1])
+                      : window.scrollTo({
+                          top: 0,
+                          behavior: o ? "auto" : "smooth",
+                        }))
+                : l + 1 < s.length && M(s[l + 1]));
+          }
+        }
+      }
+    }),
+    window.addEventListener("scroll", b, { passive: !0 }),
+    l.push(b),
+    b(),
+    (function () {
+      var n = r("#ed"),
+        i = r("#edB"),
+        a = null,
+        o = c.RANGES,
+        u = [
+          ["comm", "Commercial"],
+          ["ca", "Commercial auto"],
+          ["gl", "General liability"],
+          ["wc", "Workers' comp"],
+          ["tpa", "TPA (client losses)"],
+        ];
+      function f(t) {
+        return t
+          .map(function (t) {
+            return '<option value="' + t[0] + '">' + t[1] + "</option>";
+          })
+          .join("");
+      }
+      i.innerHTML =
+        '<label class="ed-r"><span>Start from</span><select id="edPre"><option value="">Custom</option>' +
+        f([
+          ["comm-1b", "$1B commercial"],
+          ["comm-500", "$500M commercial"],
+          ["ca-1b", "$1B commercial auto"],
+          ["gl-1b", "$1B general liability"],
+          ["wc-500", "$500M workers' comp"],
+          ["tpa-1b", "TPA, $1B of losses"],
+        ]) +
+        "</select></label>" +
+        [
+          ["THE BOOK"],
+          ["ln", "Line of business"],
+          ["p", "Premium", "$M"],
+          ["lr", "Loss ratio", "%"],
+          ["dcc", "Defense cost, share of loss", "%"],
+          ["hl", "Loss in high-risk claims", "%"],
+          ["hd", "Defense cost in high-risk claims", "%"],
+          ["CAUGHT IN TIME"],
+          ["base", "Today", "%"],
+          ["t", "With Isomer", "%"],
+          ["WHEN A CLAIM IS CAUGHT IN TIME"],
+          ["suit", "Avoid a suit", "%"],
+          ["dc", "Cheaper to defend", "%"],
+          ["sev", "Lower settlements", "%"],
+          ["PERSPECTIVE"],
+          ["g", "Premium growth per point", "%"],
+          ["ac", "Adjuster cost, fully loaded", "$K"],
+        ]
+          .map(function (t) {
+            if (1 === t.length) return '<p class="ed-g">' + t[0] + "</p>";
+            if ("ln" === t[0])
+              return (
+                '<label class="ed-r"><span>' +
+                t[1] +
+                '</span><select data-k="ln">' +
+                f(u) +
+                "</select></label>"
+              );
+            var e = o[t[0]];
+            return (
+              '<label class="ed-r"><span data-l="' +
+              t[0] +
+              '">' +
+              t[1] +
+              '</span><b><input type="number" inputmode="decimal" data-k="' +
+              t[0] +
+              '" min="' +
+              e[0] +
+              '" max="' +
+              e[1] +
+              '" step="any"><i>' +
+              t[2] +
+              "</i></b></label>"
+            );
+          })
+          .join("");
+      var h = r("#edPre"),
+        m = s("[data-k]", i);
+      function p(n) {
+        (m.forEach(function (t) {
+          (n || t !== document.activeElement) && (t.value = e[t.dataset.k]);
+        }),
+          (h.value =
+            t.preset && !t.custom ? t.preset : t.label ? "" : "comm-1b"),
+          (r('[data-l="p"]', i).textContent =
+            "tpa" === e.ln ? "Client losses handled" : "Premium"));
+      }
+      function v(t, e) {
+        var n = { search: t, hash: e };
+        (history.replaceState(null, "", location.pathname + t + e), d(n));
+      }
+      function g() {
+        var t = {};
+        m.forEach(function (e) {
+          t[e.dataset.k] = e.value;
+        });
+        var e = c.toHash(c.clean(t));
+        v("", "#v=1" === e ? "" : e);
+      }
+      var y = {
+        comm: [68, 10],
+        ca: [68, 10],
+        gl: [62, 20],
+        wc: [58, 8],
+        tpa: [100, 10],
+      };
+      function x(t) {
+        ((n.hidden = !t), t ? (C(!1), p(!0), h.focus()) : a && a.focus());
+      }
+      (r('[data-k="ln"]', i).addEventListener("change", function () {
+        var t = y[this.value];
+        ((r('[data-k="lr"]', i).value = t[0]),
+          (r('[data-k="dcc"]', i).value = t[1]));
+      }),
+        m.forEach(function (t) {
+          (t.addEventListener("input", g),
+            t.addEventListener("change", function () {
+              (g(), p(!0));
+            }));
+        }),
+        h.addEventListener("change", function () {
+          (h.value && v("comm-1b" === h.value ? "" : "?s=" + h.value, ""),
+            p(!0));
+        }),
+        s("[data-model]").forEach(function (t) {
+          t.addEventListener("click", function () {
+            ((a = t), x(!0));
+          });
+        }),
+        r("#edX").addEventListener("click", function () {
+          x(!1);
+        }),
+        document.addEventListener("keydown", function (t) {
+          "Escape" !== t.key || n.hidden || x(!1);
+        }),
+        r("#edReset").addEventListener("click", function () {
+          (v("", ""), p(!0));
+        }),
+        r("#edCopy").addEventListener("click", function () {
+          var t = this;
+          navigator.clipboard
+            ? navigator.clipboard.writeText(location.href).then(
+                function () {
+                  ((t.textContent = "Copied"),
+                    setTimeout(function () {
+                      t.textContent = "Copy link";
+                    }, 1600));
+                },
+                function () {
+                  prompt("Copy this link", location.href);
+                },
+              )
+            : prompt("Copy this link", location.href);
+        }),
+        l.push(function () {
+          n.hidden || p();
+        }));
+    })());
+  var T = r("#people"),
+    B = [],
+    H = [];
+  function D() {
+    var t = T.children;
+    B = H.slice(0, n.cut);
+    for (var e = 0; e < t.length; e++) t[e].classList.remove("cut");
+    (B.forEach(function (e) {
+      t[e].classList.add("cut");
+    }),
+      T.setAttribute(
+        "aria-label",
+        n.team + " adjusters, " + n.adj + " of them cut",
+      ));
+  }
+  (!(function () {
+    n.cut;
+    for (var t = 7, e = 0; e < 200; e++) {
+      var i = document.createElement("i");
+      T.appendChild(i);
+    }
+    for (var a = [], o = 0; o < 200; o++) a.push(o);
+    for (var r = 199; r > 0; r--) {
+      t = (9301 * t + 49297) % 233280;
+      var s = Math.floor((t / 233280) * (r + 1)),
+        c = a[r];
+      ((a[r] = a[s]), (a[s] = c));
+    }
+    ((H = a), D());
+  })(),
+    l.push(D));
+  var N = {
+    tbl: function () {
+      s(".slot").forEach(function (t, e) {
+        var n = t.dataset.final,
+          i = 0;
+        t.classList.add("spin");
+        var a = setInterval(function () {
+          ((t.textContent = n.replace(/#/g, function () {
+            return String(Math.floor(90 * Math.random()) + 10);
+          })),
+            ++i > 14 + 5 * e &&
+              (clearInterval(a),
+              (t.innerHTML = n.replace(
+                /#/g,
+                '<span class="bl" role="img" aria-label="to be measured"></span>',
+              )),
+              t.classList.remove("spin")));
+        }, 70);
+      });
+    },
+    "people-card": function () {
+      var t = T.children;
+      (B.forEach(function (e) {
+        t[e].classList.remove("cut");
+      }),
+        B.forEach(function (e, n) {
+          setTimeout(
+            function () {
+              t[e].classList.add("cut");
+            },
+            500 + 22 * n,
+          );
+        }));
+    },
+  };
+  if (
+    ((T.closest(".wc").id = "people-card"),
+    !o && "IntersectionObserver" in window)
+  ) {
+    var I = new IntersectionObserver(
+      function (t) {
+        t.forEach(function (t) {
+          if (t.isIntersecting) {
+            var e = t.target;
+            (I.unobserve(e),
+              e.classList.add("play"),
+              s("[data-count]", e).forEach(A),
+              e.dataset && e.dataset.count && A(e),
+              N[e.id] && setTimeout(N[e.id], 400),
+              e.id,
+              "win" === e.id && j(S, !0));
+          }
+        });
+      },
+      { rootMargin: "0px 0px 8% 0px", threshold: 0.12 },
+    );
+    s(".rv").forEach(function (t) {
+      t.getBoundingClientRect().top < 0.9 * window.innerHeight || I.observe(t);
+    });
+  }
+  (!(function () {
+    var t = 57,
+      e = {
+        Claimant: [12, 20],
+        Texts: [37.5, 20],
+        Counsel: [62.5, 20],
+        Insured: [88, 20],
+        EEOC: [18, 45],
+        Policy: [82, 45],
+        Manager: [18, 70],
+        Witness: [50, 70],
+        Broker: [82, 70],
+        Timeline: [18, 92],
+        Defense: [50, 92],
+        Deposition: [82, 92],
+      };
+    function n() {
+      ((t = 45),
+        r("#cg").style.setProperty("--cy", t + "%"),
+        i.forEach(function (t) {
+          t.n.forEach(function (t) {
+            t.w || (t.w = [t[1], t[2]]);
+            var n = e[t[0]];
+            ((t[1] = n[0]), (t[2] = n[1]));
+          });
+        }));
+    }
+    var i = [
+        {
+          d: "Day 1",
+          t: "Notice of claim",
+          f: "2 files",
+          n: [
+            ["Claimant", 14, 27],
+            ["Insured", 86, 27],
+          ],
+          u: 1,
+        },
+        {
+          d: "Day 2",
+          t: "Policy and endorsements",
+          f: "3 files",
+          n: [["Policy", 69, 57]],
+        },
+        {
+          d: "Day 5",
+          t: "Personnel file",
+          f: "6 files",
+          n: [["Manager", 14, 57]],
+        },
+        {
+          d: "Day 9",
+          t: "EEOC charge",
+          f: "1 file",
+          n: [["EEOC", 31, 57]],
+          r: ["h", "High", "Agency charge filed", "Response deadline diaried"],
+        },
+        {
+          d: "Day 12",
+          t: "Internal timeline",
+          f: "1 file",
+          n: [["Timeline", 14, 87]],
+        },
+        {
+          d: "Day 16",
+          t: "Broker status check",
+          f: "no files",
+          n: [["Broker", 86, 57]],
+        },
+        {
+          d: "Day 19",
+          t: "Emails and texts",
+          f: "10 files",
+          n: [["Texts", 38, 27]],
+          r: [
+            "h",
+            "High",
+            "Deleted messages referenced",
+            "Preservation notice drafted",
+          ],
+        },
+        {
+          d: "Day 23",
+          t: "Demand letter",
+          f: "3 files",
+          n: [["Counsel", 62, 27]],
+          r: [
+            "c",
+            "Critical",
+            "Spoliation risk · p. 9 · +2 more",
+            "Litigation hold drafted",
+          ],
+          hot: 1,
+        },
+        {
+          d: "Day 26",
+          t: "Defense conflict check",
+          f: "no files",
+          n: [["Defense", 62, 87]],
+        },
+        {
+          d: "Day 29",
+          t: "Witness list",
+          f: "1 file",
+          n: [["Witness", 38, 87]],
+          r: [
+            "m",
+            "Medium",
+            "Former supervisor named",
+            "Linked to the personnel file",
+          ],
+          link: ["Witness", "Manager"],
+          combo: 1,
+        },
+        {
+          d: "Day 33",
+          t: "Scheduling request",
+          f: "2 files",
+          n: [["Deposition", 86, 87]],
+        },
+        {
+          d: "Day 36",
+          t: "Renewal question",
+          f: "no files",
+          n: [],
+          ping: "Policy",
+        },
+      ],
+      a = [
+        ["EEOC", "Texts"],
+        ["Texts", "Counsel"],
+        ["EEOC", "Witness"],
+      ],
+      c = r("#inbox"),
+      l = r("#stack"),
+      d = r("#cg"),
+      u = r("#cgE"),
+      f = r("#cgn"),
+      h = r("#cgc"),
+      m = r("#ticker .kd"),
+      p = r("#ticker .ka"),
+      v = r("#ticker"),
+      g = {},
+      y = 0,
+      x = 0,
+      E = !0;
+    function w(t) {
+      var e = document.createElement("div");
+      return (
+        (e.className = "msg"),
+        (e.innerHTML =
+          '<span class="d">' +
+          t.d +
+          '</span><span class="t">' +
+          t.t +
+          '</span><span class="f">' +
+          t.f +
+          '</span><i class="beam"></i>'),
+        e
+      );
+    }
+    // Connectors are orthogonal: vertical first, then horizontal, one bend at
+    // most. Each segment draws on from source to target with smoothstep easing.
+    function seg(t, e, n, i, a, o, c) {
+      var r = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      if (
+        (r.setAttribute("x1", t),
+        r.setAttribute("y1", e),
+        r.setAttribute("x2", o ? n : t),
+        r.setAttribute("y2", o ? i : e),
+        a && r.setAttribute("class", a),
+        u.appendChild(r),
+        o)
+      )
+        return (c && c(), r);
+      var s = null;
+      return (
+        (function a(o) {
+          s || (s = o);
+          var l = Math.min(1, (o - s) / 260),
+            d = l * l * (3 - 2 * l);
+          (r.setAttribute("x2", t + (n - t) * d),
+            r.setAttribute("y2", e + (i - e) * d),
+            l < 1 ? requestAnimationFrame(a) : c && c());
+        })(performance.now()),
+        r
+      );
+    }
+    function jn(t, e) {
+      var n = t + "," + e;
+      if (!d.querySelector('[data-j="' + n + '"]')) {
+        var i = document.createElement("i");
+        ((i.className = "jn"),
+          i.setAttribute("data-j", n),
+          (i.style.left = t + "%"),
+          (i.style.top = e + "%"),
+          d.appendChild(i));
+      }
+    }
+    function b(t, e, n, i, a, o) {
+      if (t === n || e === i) return seg(t, e, n, i, a, o);
+      // A junction square marks a branch off the trunk, never a plain bend.
+      a || jn(t, i);
+      seg(t, e, t, i, a, o, function () {
+        seg(t, i, n, i, a, o);
+      });
+    }
+    function C(e, n, i, a) {
+      var o = document.createElement("p");
+      ((o.className = "nd"),
+        (o.style.left = n + "%"),
+        (o.style.top = i + "%"),
+        (o.innerHTML = "<i></i>" + e),
+        d.appendChild(o),
+        (g[e] = { el: o, x: n, y: i }),
+        b(50, t, n, i, "", a),
+        a
+          ? o.classList.add("on")
+          : (o.getBoundingClientRect(),
+            requestAnimationFrame(function () {
+              o.classList.add("on");
+            })),
+        y++,
+        L());
+    }
+    function L() {
+      f.textContent =
+        y +
+        (1 === y ? " fact" : " facts") +
+        " · " +
+        x +
+        (1 === x ? " risk" : " risks");
+    }
+    function k(t, e, n) {
+      (t.classList.remove("idle", "in"),
+        t.offsetWidth,
+        t.classList.add("in"),
+        (t.querySelector(".tx").innerHTML =
+          (n
+            ? '<span class="tag ' + n[0] + '">' + n[1] + "</span>&nbsp; "
+            : "") + e));
+    }
+    function M(t) {
+      var e = g[t];
+      e &&
+        !e.el.classList.contains("risk") &&
+        (e.el.classList.add("risk"), x++, L());
+    }
+    function A(t) {
+      var e = g[t];
+      e &&
+        (e.el.classList.remove("ping"),
+        e.el.offsetWidth,
+        e.el.classList.add("ping"));
+    }
+    function T() {
+      (a.forEach(function (t) {
+        var e = g[t[0]],
+          n = g[t[1]];
+        e && n && b(e.x, e.y, n.x, n.y, "rk");
+      }),
+        Object.keys(g).forEach(function (t) {
+          g[t].el.classList.contains("risk") && A(t);
+        }),
+        k(m, "Combined litigation risk", ["c", "Critical"]),
+        setTimeout(function () {
+          k(p, "Litigation team alerted");
+        }, 700));
+    }
+    if ((n(), o))
+      return (
+        i.slice(-3).forEach(function (t) {
+          var e = w(t);
+          (t.r && e.classList.add("hot"), l.insertBefore(e, l.firstChild));
+        }),
+        (h.textContent = "EPL claim"),
+        i.forEach(function (t) {
+          (t.n.forEach(function (t) {
+            C(t[0], t[1], t[2], !0);
+          }),
+            t.r && M(t.n[0][0]));
+        }),
+        b(g.Witness.x, g.Witness.y, g.Manager.x, g.Manager.y, "ln", !0),
+        a.forEach(function (t) {
+          b(g[t[0]].x, g[t[0]].y, g[t[1]].x, g[t[1]].y, "rk", !0);
+        }),
+        k(m, "Combined litigation risk", ["c", "Critical"]),
+        void k(p, "Litigation team alerted")
+      );
+    var B = 0;
+    function H(t, e) {
+      var n = t;
+      !(function t() {
+        if (!E || document.hidden) return setTimeout(t, 400);
+        var i = Math.min(n, 200);
+        if ((n -= i) <= 0) return setTimeout(e, i);
+        setTimeout(t, i);
+      })();
+    }
+    ("IntersectionObserver" in window &&
+      new IntersectionObserver(function (t) {
+        E = t[0].isIntersecting;
+      }).observe(c),
+      H(700, function e() {
+        if (B >= i.length)
+          return (
+            d.classList.add("fade"),
+            v.classList.add("fade"),
+            H(700, function () {
+              ((l.innerHTML = ""),
+                (u.innerHTML = ""),
+                s("#cg .nd, #cg .jn").forEach(function (t) {
+                  t.remove();
+                }),
+                (g = {}),
+                (y = 0),
+                (x = 0),
+                L(),
+                (h.textContent = "New claim"),
+                (m.className = "tk kd idle"),
+                (m.querySelector(".tx").textContent = "Watching every message"),
+                (p.className = "tk ka idle"),
+                (p.querySelector(".tx").textContent = "Nothing to act on yet"),
+                n(),
+                d.classList.remove("fade"),
+                v.classList.remove("fade"),
+                (B = 0),
+                H(500, e));
+            })
+          );
+        var a = i[B++],
+          o = w(a);
+        for (
+          o.classList.add("new"), l.insertBefore(o, l.firstChild);
+          l.children.length > 4;
+        )
+          l.removeChild(l.lastChild);
+        (requestAnimationFrame(function () {
+          o.classList.add("scan");
+        }),
+          a.n.forEach(function (t, e) {
+            setTimeout(
+              function () {
+                !(function (t, e, n, i, a) {
+                  var o = c.getBoundingClientRect(),
+                    r = t.getBoundingClientRect(),
+                    s = d.getBoundingClientRect(),
+                    l = document.createElement("span");
+                  ((l.className = "chip"),
+                    (l.textContent = "+ " + e),
+                    c.appendChild(l));
+                  var u = l.offsetWidth,
+                    f = l.offsetHeight,
+                    h = r.left - o.left + 72,
+                    m = r.top - o.top + r.height / 2 - f / 2,
+                    p = s.left - o.left + (s.width * n) / 100 - u / 2,
+                    v = s.top - o.top + (s.height * i) / 100 - f / 2;
+                  l.animate(
+                    [
+                      {
+                        transform:
+                          "translate(" + h + "px," + m + "px)",
+                        opacity: 0,
+                      },
+                      {
+                        transform:
+                          "translate(" + h + "px," + m + "px)",
+                        opacity: 1,
+                        offset: 0.18,
+                      },
+                      {
+                        transform:
+                          "translate(" + p + "px," + v + "px)",
+                        opacity: 0.9,
+                      },
+                    ],
+                    {
+                      duration: 760,
+                      easing: "ease-in-out",
+                      fill: "forwards",
+                    },
+                  ).onfinish = function () {
+                    (l.remove(), a());
+                  };
+                })(o, t[0], t[1], t[2], function () {
+                  (C(t[0], t[1], t[2]),
+                    a.u &&
+                      e === a.n.length - 1 &&
+                      (h.textContent = "EPL claim"));
+                });
+              },
+              420 + 160 * e,
+            );
+          }),
+          a.ping &&
+            setTimeout(function () {
+              (A(a.ping), b(50, t, g[a.ping].x, g[a.ping].y, ""));
+            }, 700),
+          a.link &&
+            setTimeout(function () {
+              var t = g[a.link[0]],
+                e = g[a.link[1]];
+              (b(t.x, t.y, e.x, e.y, "ln"), A(a.link[1]));
+            }, 1350),
+          a.r &&
+            setTimeout(function () {
+              (o.classList.add("hot"),
+                M(a.n[0][0]),
+                (function (t) {
+                  (k(m, t.r[2], [t.r[0], t.r[1]]),
+                    setTimeout(function () {
+                      k(p, t.r[3]);
+                    }, 700));
+                })(a));
+            }, 1300),
+          a.combo && setTimeout(T, 3300),
+          H(a.combo ? 5600 : a.hot ? 3400 : a.r ? 3e3 : 1500, e));
+      }));
+  })(),
+    (function () {
+      var t = r("#file"),
+        e = r("#scanline");
+      if (!o && t) {
+        t.classList.add("scrub");
+        var n = !1;
+        (window.addEventListener("scroll", a, { passive: !0 }),
+          window.addEventListener("resize", a),
+          i());
+      }
+      function i() {
+        n = !1;
+        var i = t.getBoundingClientRect(),
+          a = s("#frows .frow, #frows .xstep"),
+          o = 0.55 * window.innerHeight - i.top,
+          c = a[0].getBoundingClientRect().top - i.top,
+          l = o > c - 20 && o < i.height - 8;
+        (e.classList.toggle("on", l),
+          (e.style.top = Math.max(c, Math.min(o, i.height - 8)) + "px"),
+          a.forEach(function (t) {
+            var e = t.classList.contains("xstep"),
+              n = t.getBoundingClientRect(),
+              a = n.top - i.top + (e ? 0 : 0.5 * n.height),
+              r = o >= a;
+            t.classList.toggle(e ? "on" : "read", r);
+          }));
+        var d = s("#frows .frow.read").length,
+          u = s("#frows .fx.on .fl:not(.u)").length;
+        r("#xhint").innerHTML =
+          'Claim graph: <span class="graphcount">' +
+          d +
+          " of " +
+          s("#frows .frow").length +
+          '</span> messages · <span class="graphcount">' +
+          u +
+          "</span> risks";
+      }
+      function a() {
+        n || ((n = !0), requestAnimationFrame(i));
+      }
+    })(),
+    (function () {
+      var t = r("#sankey"),
+        e = r("#skClipR"),
+        i = s("#skTop .skb"),
+        a = s("#skBot .skb"),
+        c = s(".skl.l1"),
+        l = s(".skl.l2"),
+        d = s(".skl.l3");
+      function u(t, e, n) {
+        return Math.max(0, Math.min(1, (t - e) / (n - e)));
+      }
+      function f(t) {
+        return t * t * (3 - 2 * t);
+      }
+      function h(t) {
+        var o = f(u(t, 0, 500)),
+          r = f(u(t, 350, 1650)),
+          s = f(u(t, 1500, 2100)),
+          h = 476 * r;
+        (i.forEach(function (t) {
+          t.style.transform = "scaleY(" + o + ")";
+        }),
+          e.setAttribute("height", h.toFixed(1)),
+          a.forEach(function (t) {
+            t.style.transform = "scaleY(" + s + ")";
+          }),
+          c.forEach(function (t) {
+            t.style.opacity = o > 0.9 ? 1 : 0;
+          }),
+          l.forEach(function (t) {
+            t.style.opacity = r > 0.5 ? 1 : 0;
+          }),
+          d.forEach(function (t) {
+            t.style.opacity = s > 0.9 ? 1 : 0;
+          }));
+      }
+      if (o) h(1e4);
+      else {
+        var m = 0,
+          p = 0;
+        (h(0),
+          window.addEventListener("scroll", g, { passive: !0 }),
+          window.addEventListener("resize", g),
+          g());
+      }
+      function v(t) {
+        1 === m &&
+          (p || (p = t), h(t - p), t - p < 2200 && requestAnimationFrame(v));
+      }
+      function g() {
+        var e = t.getBoundingClientRect(),
+          n = window.innerHeight;
+        0 === m && e.top < 0.6 * n
+          ? ((m = 1), (p = 0), requestAnimationFrame(v))
+          : 1 === m && e.top > n && ((m = 0), h(0));
+      }
+    })());
+  var P = r("#trackA"),
+    R = r("#trackB"),
+    F = r("#win"),
+    S = -1,
+    q = Math.round(e.base / 10);
+  function K(t, e, n) {
+    var i = [];
+    function a(t, e, n, a) {
+      for (var o = Math.min(5.2, n / Math.max(t, 1)), r = 0; r < t; r++)
+        i.push({ x: e + o * (r + 0.5), c: a });
+    }
+    return (a(t, 2, 26, "iso"), a(e, 32, 36, "after"), a(n, 72, 26, "late"), i);
+  }
+  function O(t, e, n) {
+    var i = (function (t) {
+      for (var e = s(".dot", t); e.length < 10;) {
+        var n = document.createElement("i");
+        ((n.className = "dot"),
+          (n.style.left = "-4%"),
+          t.appendChild(n),
+          e.push(n));
+      }
+      return e;
+    })(t);
+    i.forEach(function (t, i) {
+      var a = e[i];
+      ((t.className = "dot " + a.c),
+        (t.dataset.x = a.x),
+        n
+          ? ((t.style.transition = "none"),
+            (t.style.left = "-3%"),
+            t.offsetWidth,
+            (t.style.transition = ""),
+            setTimeout(
+              function () {
+                t.style.left = t.dataset.x + "%";
+              },
+              60 + 70 * i,
+            ))
+          : (t.style.left = a.x + "%"));
+    });
+  }
+  function W(t, e) {
+    for (; t.children.length < 10;) t.appendChild(document.createElement("i"));
+    Array.prototype.forEach.call(t.children, function (t, n) {
+      t.className = e[n];
+    });
+  }
+  function $(t) {
+    var e = Math.min(t, q);
+    return K(e, t - e, 10 - t);
+  }
+  function j(t, e) {
+    var n = Math.min(1, q),
+      i = K(n, q - n, 10 - q);
+    (O(P, i, e && !o),
+      O(R, $(t), e && !o),
+      W(
+        r("#segA"),
+        i.map(function (t) {
+          return t.c;
+        }),
+      ),
+      W(
+        r("#segB"),
+        $(t).map(function (t) {
+          return t.c;
+        }),
+      ),
+      (S = t));
+  }
+  function z(t) {
+    return t >= 1e3
+      ? "$" + (t / 1e3).toFixed(2) + "B"
+      : "$" + t.toFixed(1) + "M";
+  }
+  // Savings axis: fixed for the scenario, so the bar grows against a still scale.
+  var AX = null;
+  function axMax() {
+    if (AX && AX.k === JSON.stringify(e)) return AX.m;
+    // Four equal steps of 1, 2, 2.5 or 5 times a power of ten.
+    var t = c.savings(e, Math.min(100, e.base + 40)).tot / 4 - 1e-9,
+      i = Math.pow(10, Math.floor(Math.log10(Math.max(t, 0.001)))),
+      a = 4 * [1, 2, 2.5, 5, 10].map(function (t) {
+        return t * i;
+      }).filter(function (e) {
+        return e >= t;
+      })[0];
+    AX = { k: JSON.stringify(e), m: a };
+    r("#sAx").innerHTML = [0, 1, 2, 3, 4]
+      .map(function (t) {
+        return '<span style="left:' + 25 * t + '%">' + z((a * t) / 4).replace(".0M", "M") + "</span>";
+      })
+      .join("");
+    return a;
+  }
+  function U() {
+    var t = F.getBoundingClientRect(),
+      i = window.innerHeight,
+      a = Math.max(0, Math.min(1, (0.85 * i - t.top) / (0.55 * i))),
+      s = o ? e.t : e.base + (e.t - e.base) * a;
+    !(function (t) {
+      var i = c.savings(e, t),
+        a = i.def,
+        o = i.sev,
+        s = i.tot,
+        l = Math.round(t);
+      ((r("#tOut").textContent = l + "%"),
+        (r("#isoPct").textContent = l + "%"),
+        (r("#meterBase").style.width = e.base + "%"),
+        (r("#meterFill").style.left = e.base + "%"),
+        (r("#meterFill").style.width = Math.max(0, l - e.base) + "%"));
+      var d = axMax();
+      ((r("#bDef").style.width = ((a / d) * 100).toFixed(2) + "%"),
+        (r("#bSev").style.width = ((o / d) * 100).toFixed(2) + "%"),
+        (r("#sDef").textContent = z(a)),
+        (r("#sSev").textContent = z(o)),
+        (r("#sTot").textContent = z(s)),
+        (r("#sPts").textContent = c.ptsText(i.pts, n.tpa)));
+    })(s);
+    var l = Math.round(s / 10);
+    l !== S && j(l, !1);
+  }
+  l.push(function () {
+    ((q = Math.round(e.base / 10)), (S = -1), U());
+  });
+  var G = !1;
+  (window.addEventListener(
+    "scroll",
+    function () {
+      G ||
+        ((G = !0),
+        requestAnimationFrame(function () {
+          ((G = !1), U());
+        }));
+    },
+    { passive: !0 },
+  ),
+    window.addEventListener("resize", U),
+    U());
+})();
+
+</script>
+</body>
+</html>

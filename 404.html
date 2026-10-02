@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Not found</title>
+<script>
+  // Forward deep links from paths that moved. Pages has no server redirects, so this runs in the browser.
+  (function () {
+    var moves = [
+      ["/brand/proposals/copper-verdigris/pitch/", "/brand/pitch-cv/"],
+      ["/brand/proposals/copper-verdigris/", "/brand/copper-verdigris/"]
+    ];
+    var p = location.pathname;
+    for (var i = 0; i < moves.length; i++) {
+      var from = moves[i][0];
+      if (p === from.slice(0, -1) || p.indexOf(from) === 0) {
+        location.replace(moves[i][1] + p.slice(from.length) + location.search + location.hash);
+        return;
+      }
+    }
+  })();
+</script>
+<style>
+  body { margin: 0; background: #FFFFFF; color: #000441; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 560px; margin: 0 auto; padding: 96px 16px; }
+  h1 { font-size: 32px; margin: 0 0 12px; }
+  p { color: #4D507A; margin: 0 0 20px; }
+  a { color: #776DEB; font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #04072B; color: #F2F0FF; }
+    p { color: #A9ABC8; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Page not found</h1>
+  <p>There's nothing at this address. The brand assets are on the home page.</p>
+  <a href="/brand/">Isomer brand assets</a>
+</main>
+</body>
+</html>

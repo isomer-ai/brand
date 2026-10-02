@@ -1,6 +1,6 @@
 # Copper Verdigris illustration guide
 
-Status: proposal. Companion to [`palette.json`](palette.json) and [`tokens.css`](tokens.css).
+Status: proposal. Companion to [`palette.json`](palette.json), [`tokens.css`](tokens.css) and the [usage guide](USAGE-GUIDE.md), which covers brand moments, product UI and email.
 
 Isomer plates are drawn like instrument readouts. They are rectilinear, measured and labelled. Copper marks the risk, verdigris marks Isomer acting on it, and everything else is ink on paper.
 
@@ -37,7 +37,7 @@ Isomer plates are drawn like instrument readouts. They are rectilinear, measured
 
 Rules:
 
-- Copper and verdigris never sit on the same element and never appear as a decorative pair.
+- Copper and verdigris never sit on the same element and never appear as a decorative pair. Plates are the work, not a brand moment; the pair as identity belongs on covers and title slides (see the [usage guide](USAGE-GUIDE.md#two-registers)).
 - Copper is the only color that may be hatched. Hatching means excess, unreviewed or at-risk volume.
 - Red and cobalt work as they do in the app: status, sparingly. They appear only as a tag (square dot + the word OK or CRITICAL + a label), never as a fill area or chart series. At most one of each per plate; most plates have none.
 - Warning stays copper. Don't put red on problem-statement plates (verdicts, funding); that's risk, which is copper's job.
@@ -77,8 +77,8 @@ Rules:
 
 Other claims-AI brands use the same base vocabulary: off-white paper, hairlines, a grotesk with uppercase mono labels, a dark evidence panel, red and green dots. On that base alone we look like the category. What makes it ours:
 
-- **Copper and verdigris do the work.** Use copper boldly in a few places (the headline accent, the hero plate) instead of as a small accent everywhere.
-- **The apparatus travels.** Rulers, plate codes, the scan line and copper hatching appear in page UI too, not only inside plates.
+- **Copper and verdigris do the work.** Inside the work they are verbs, and their scarcity is what makes them land. As identity they appear boldly in a few brand moments (logo, covers, title slides, one hero moment per page), never as a small accent everywhere. See [Two registers](USAGE-GUIDE.md#two-registers).
+- **The apparatus travels.** Rulers, plate codes and the scan line appear in page UI too, not only inside plates. In UI they stay quiet: grey ticks at low opacity, no copper. Copper hatching stays inside figures, where it measures something.
 - **Time is the subject.** Prefer plates that show when something was caught (t₀, d23, the window to act) over plates that show what a file contains.
 - **Fustat, not a generic grotesk.** Keep the brand face for display and values; IBM Plex Mono for annotation.
 - **Avoid** big-number tiles over a mono caption row, dark "extraction" text panels, numbered section eyebrows (01, 02...), and status dots without a word. Show values to scale on an axis instead of as tiles.

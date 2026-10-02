@@ -2,13 +2,14 @@
  "name": "Copper Verdigris",
  "status": "proposal",
  "replaces": "Isomer core palette (Isomer Blue, Accent Purple, Secondary Orange)",
- "summary": "Copper signals. Verdigris acts. Black, white and grey carry the page.",
+ "summary": "Copper signals. Verdigris acts. Black, white and grey carry the page. Outside the work, copper and verdigris are the brand.",
  "semantics": {
-  "copper": "risk found, flagged, warning, too late",
-  "verdigris": "Isomer acting on it",
-  "oxide-red": "critical or irreversible (status only)",
-  "cobalt": "OK, healthy, info (status only)",
-  "graphite": "product screens only"
+  "copper": "In the work: risk found, flagged, rising, warning, too late. In a brand moment: the metal, the mark.",
+  "verdigris": "In the work: action, whoever takes it. Isomer acting in a figure; what the reader can do in a product (links, selection, focus, controls, advice). In a brand moment: the patina, the field.",
+  "oxide-red": "critical or irreversible (status only, always with its word)",
+  "cobalt": "OK, healthy, info (status only, always with its word)",
+  "graphite": "screens of data, and the dark product theme",
+  "neutrals": "every frame: rules, panels, tabs, chart bars, numbers, dates, labels, the ruler"
  },
  "share": {
   "neutrals": 0.82,
@@ -50,7 +51,7 @@
       62,
       63
      ],
-     "use": "Product screens: inbox, X-ray, data panels",
+     "use": "Product screens, and the dark theme's surfaces",
      "primary": true
     },
     {
@@ -62,7 +63,7 @@
       52,
       53
      ],
-     "use": "Pressed states on screens",
+     "use": "Dark theme ground; pressed states on screens",
      "primary": false
     },
     {
@@ -74,7 +75,7 @@
       73,
       74
      ],
-     "use": "Rows and panels inside a screen",
+     "use": "Rules and raised rows on graphite",
      "primary": false
     },
     {
@@ -86,7 +87,7 @@
       169,
       170
      ],
-     "use": "Secondary text on graphite",
+     "use": "Secondary text on graphite. Never on white (2.4:1)",
      "primary": false
     },
     {
@@ -98,7 +99,7 @@
       71,
       77
      ],
-     "use": "Running text",
+     "use": "Running and secondary text, in product and email",
      "primary": false
     },
     {
@@ -110,7 +111,19 @@
       110,
       117
      ],
-     "use": "Captions, sources, labels",
+     "use": "Meta only: dates, sources, captions, footers. Never running text; 10px minimum",
+     "primary": false
+    },
+    {
+     "name": "Rule",
+     "token": "rule",
+     "hex": "#DDDDDA",
+     "rgb": [
+      221,
+      221,
+      218
+     ],
+     "use": "Panel borders in product and email; a step firmer than hairline so it holds on white",
      "primary": false
     },
     {
@@ -122,7 +135,7 @@
       227,
       229
      ],
-     "use": "Rules and card borders",
+     "use": "Grid lines, table rules, chips",
      "primary": false
     },
     {
@@ -165,8 +178,8 @@
   },
   {
    "id": "copper",
-   "title": "Copper \u00b7 the signal",
-   "description": "Risk flags, HIGH tags, \"too late\", headline accents. Doubles as the warning color. Never a full-bleed background.",
+   "title": "Copper · the signal",
+   "description": "In the work: risk flags, HIGH tags, \"too late\", rising. Doubles as the warning color. As brand: the metal in the mark, a cover, one hero word. Never on eyebrows, labels or numbers that aren't risky. Never a full-bleed background.",
    "colors": [
     {
      "name": "Copper",
@@ -177,7 +190,7 @@
       96,
       47
      ],
-     "use": "Risk marks, too-late dots, the attorney flow",
+     "use": "Risk marks, too-late dots, the 8px 'why it matters' square",
      "primary": true
     },
     {
@@ -189,7 +202,7 @@
       86,
       52
      ],
-     "use": "Headline accents and eyebrows on light",
+     "use": "Brand moments on light grounds: the mark, a cover, one hero word. Not eyebrows or labels",
      "primary": false
     },
     {
@@ -201,7 +214,7 @@
       71,
       32
      ],
-     "use": "Risk text that needs more contrast",
+     "use": "Risk text and labels on light grounds (6.8:1 on white)",
      "primary": false
     },
     {
@@ -213,7 +226,7 @@
       156,
       107
      ],
-     "use": "Risk tags on graphite screens",
+     "use": "Risk on graphite and in the dark theme; the metal on dark brand fields",
      "primary": false
     },
     {
@@ -232,8 +245,8 @@
   },
   {
    "id": "verdigris",
-   "title": "Verdigris \u00b7 the action",
-   "description": "ACT pills, \"flagged on arrival\", the X-ray scan line, Isomer outcomes.",
+   "title": "Verdigris · the action",
+   "description": "In the work: action, whoever takes it. ACT pills, the X-ray scan line and Isomer outcomes in figures; links, selection, controls and focus in a product. As brand: the patina field.",
    "colors": [
     {
      "name": "Verdigris",
@@ -244,7 +257,7 @@
       138,
       133
      ],
-     "use": "ACT pills and Isomer outcomes",
+     "use": "Action marks, ACT pills, the 8px 'what you can do' square. Not text on white (4.0:1)",
      "primary": true
     },
     {
@@ -256,7 +269,7 @@
       107,
       104
      ],
-     "use": "Flagged on arrival, text accents",
+     "use": "Links, selected state, focus rings, action text on light (6.1:1 on white)",
      "primary": false
     },
     {
@@ -280,7 +293,7 @@
       194,
       188
      ],
-     "use": "Scan line and nodes on screens",
+     "use": "Action on graphite and in the dark theme; scan line on screens",
      "primary": false
     },
     {
@@ -311,7 +324,7 @@
   },
   {
    "id": "status",
-   "title": "Status \u00b7 for apps",
+   "title": "Status · for apps",
    "description": "Three states, not four. Warning reuses copper. Red is reserved for critical or broken. Cobalt means healthy and doubles as info. Always pair status color with a label or icon.",
    "colors": [
     {
@@ -414,9 +427,138 @@
   }
  ],
  "distinctiveness": [
-  "Copper and verdigris carry the identity; use copper boldly in a few places (headline accent, hero plate) rather than as small accents everywhere.",
-  "Carry the plate apparatus (rulers, plate codes, scan line, hatching) into page UI so the system reads as an instrument, not clean SaaS on paper.",
+  "Copper and verdigris carry the identity in brand moments (logo, covers, title slides, one hero moment) and carry meaning everywhere else. Never both jobs on one surface.",
+  "Carry the plate apparatus (rulers, plate codes, scan line) into page UI in grey, low opacity. Copper ticks on a ruler are decoration.",
   "Avoid category-default patterns: big-number tiles over a mono caption row, dark 'extraction' text blocks, numbered section eyebrows, red/green status dots without a word.",
   "Make time the subject: show when something was caught, not just what a file contains."
- ]
+ ],
+ "registers": {
+  "brand": {
+   "what": "Copper and verdigris as identity: the patina story, copper becoming verdigris.",
+   "where": [
+    "The logo and app icon",
+    "Covers: decks, reports, blog headers, social cards",
+    "Title, section and closing slides",
+    "Event, print and merchandise",
+    "One hero moment per marketing page: a headline word or the hero field"
+   ],
+   "rules": [
+    "At most one brand moment per screen or page view.",
+    "A brand moment carries no data. Once a figure, table or product screen appears, color means something.",
+    "The pair may sit together here, and only here: verdigris as the field, copper as the smaller, brighter metal.",
+    "On light grounds use copper deep and verdigris deep; on ink or verdigris-dark fields use copper light and verdigris light."
+   ]
+  },
+  "signal": {
+   "what": "Copper and verdigris as verbs, inside the work: figures, product screens, email, charts, tables.",
+   "where": [
+    "Plates and animations",
+    "Product UI",
+    "Email",
+    "Any page section that shows data or claims"
+   ],
+   "rules": [
+    "Copper appears only where something is risky. If nothing on the screen is, the screen has no copper.",
+    "Verdigris appears only where something is being done, or can be.",
+    "Everything else is ink and grey: rules, panels, tabs, numbers, eyebrows, the ruler.",
+    "One meaning per color, one color per element."
+   ]
+  }
+ },
+ "product": {
+  "themes": {
+   "light": {
+    "ground": "paper",
+    "surface": "white",
+    "surface-2": "section-grey",
+    "rule": "rule",
+    "grid": "hairline",
+    "heading": "ink",
+    "text": "body",
+    "meta": "muted",
+    "signal": "copper",
+    "signal-text": "copper-dark",
+    "signal-tint": "copper-tint",
+    "action": "verdigris",
+    "action-text": "verdigris-deep",
+    "action-tint": "verdigris-tint",
+    "critical": "oxide-red",
+    "critical-tint": "red-tint",
+    "ok": "cobalt",
+    "ok-tint": "cobalt-tint",
+    "focus": "verdigris-deep"
+   },
+   "dark": {
+    "ground": "graphite-deep",
+    "surface": "graphite",
+    "surface-2": "graphite-raised",
+    "rule": "graphite-raised",
+    "grid": "graphite-raised",
+    "heading": "white",
+    "text": "paper",
+    "meta": "on-graphite-muted",
+    "signal": "copper-light",
+    "signal-text": "copper-light",
+    "signal-tint": "graphite-raised",
+    "action": "verdigris-light",
+    "action-text": "verdigris-light",
+    "action-tint": "graphite-raised",
+    "critical": "red-light",
+    "critical-tint": "graphite-raised",
+    "ok": "cobalt-light",
+    "ok-tint": "graphite-raised",
+    "focus": "verdigris-light"
+   }
+  },
+  "story_pattern": [
+   {
+    "label": "What's happening",
+    "label_color": "muted",
+    "marker": null,
+    "holds": "The facts, neutrally"
+   },
+   {
+    "label": "Why it matters",
+    "label_color": "copper-dark",
+    "marker": "8px square, copper",
+    "holds": "The risk and its size"
+   },
+   {
+    "label": "What you can do",
+    "label_color": "verdigris-deep",
+    "marker": "8px square, verdigris",
+    "holds": "The action, or what Isomer did"
+   }
+  ],
+  "type": {
+   "headline": "Fustat 800, sentence case, tracking -0.035em",
+   "label": "IBM Plex Mono, uppercase, tracked 0.06 to 0.1em, labels and counts only",
+   "body": "Fustat 400 in body (#47474D), 15 to 16px"
+  }
+ },
+ "email": {
+  "font_stacks": {
+   "sans": "Fustat, Arial, Helvetica, sans-serif",
+   "mono": "'IBM Plex Mono', Menlo, Consolas, 'Courier New', monospace"
+  },
+  "min_size_px": {
+   "mono_label": 10,
+   "body": 14,
+   "meta": 10
+  },
+  "colors": {
+   "ground": "section-grey",
+   "card": "white",
+   "rule": "rule",
+   "heading": "ink",
+   "text": "body",
+   "meta": "muted",
+   "footer_text_on_section_grey": "body",
+   "link": "verdigris-deep",
+   "button": "ink",
+   "button_text": "white",
+   "risk_marker": "copper"
+  },
+  "max_width_px": 600
+ }
 }
