@@ -72,6 +72,7 @@ pr = "".join(f'<div class="pr"><h4>{a}</h4><p>{b}</p></div>' for a, b in princip
 files = [("palette.json", "Every color with hex, RGB, role, use and the semantic rules"), ("tokens.css", "CSS custom properties, prefixed --cv-, plus semantic aliases"),
          ("USAGE-GUIDE.md", "Brand moments vs the work, product UI in light and dark, email, porting an app"),
          ("ILLUSTRATION-GUIDE.md", "The full illustration and animation rules, written for agents"),
+         ("logos/", "Logo board: black and white logos in SVG and PNG, one download at a time"),
          ("illustrations/index.json", "Every plate: id, title, family, size, and SVG / clean SVG / PNG paths"),
          ("../pitch-cv/", "Reference page: the palette and illustration rules applied to the full pitch; its README.md lists every change"),
          ("source/plates.py", "Drawing primitives and every plate as a function; export.py writes the SVGs"),
@@ -205,7 +206,8 @@ work_more = f"""
 <ul class="plain"><li>Ink or paper is the field. Copper is the metal; verdigris is only the patina trace at the end.</li>
 <li>Covers, slides, mastheads, footers, social cards, event and print. Product screens carry no devices.</li>
 <li>One colored device per view, in the frame, never touching data.</li>
-<li>Light shades on ink, deep shades on paper.</li></ul></div>
+<li>Light shades on ink, deep shades on paper.</li>
+<li>Logos: ink on paper, white on ink. Download them one at a time from the <a href="logos/">logo board</a>.</li></ul></div>
 <div class="card"><span class="cap">The work · verbs, sparingly</span>
 <div class="worktile"><div><span class="wt-l">Open demands</span><b>14</b></div><div><span class="wt-l">Past window</span><b class="risk-t">2</b></div><div><span class="wt-l">Assigned</span><b>12</b></div><a href="#at-work">Review the two</a></div>
 <ul class="plain"><li>Plates, animations, product UI, email, and any section that shows data.</li>
@@ -499,7 +501,7 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
 <h1><span class="cu">Copper</span> <span>signals.</span><br>Verdigris <em>acts.</em></h1>
 <p class="lede">A proposed replacement for Isomer's blue and purple palette. Black, white and grey carry the page. Copper marks risk and the moment something is flagged. Verdigris, the patina copper becomes, marks Isomer acting on it. Graphite is reserved for product screens; oxide red and cobalt for status.</p>
 <div class="links hero-cta"><a class="pri" href="../pitch-cv/">See it on a full page &rarr;</a><a href="ILLUSTRATION-GUIDE.md">Illustration guide</a><a href="USAGE-GUIDE.md">Usage guide</a></div>
-<p class="hero-files"><span>Files</span><a href="palette.json">palette.json</a><a href="tokens.css">tokens.css</a><a href="illustrations/index.json">illustrations/index.json</a><a href="#agents">All files &darr;</a></p>
+<p class="hero-files"><span>Files</span><a href="palette.json">palette.json</a><a href="tokens.css">tokens.css</a><a href="logos/">Logo board</a><a href="illustrations/index.json">illustrations/index.json</a><a href="#agents">All files &darr;</a></p>
 </div>
 <figure class="hero-fig"><video src="animations/point-of-receipt-1x1.mp4" poster="animations/point-of-receipt-1x1-poster.png" autoplay muted loop playsinline preload="metadata" aria-label="Point of receipt animation: a buried deadline turns copper and Isomer acts"></video>
 <figcaption><span>FIG. A1 · POINT OF RECEIPT</span><span>AN-01</span></figcaption></figure>

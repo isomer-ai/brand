@@ -35,7 +35,7 @@ Ink or paper is always the field. Verdigris is never the field: a green ground m
 
 #### Logo
 
-Use the black and white logos with this palette: ink on paper, white on ink and on graphite. The color logos are drawn in the old blue and purple and don't belong on these surfaces.
+Use the black and white logos with this palette: ink on paper, white on ink and on graphite. The color logos are drawn in the old blue and purple and don't belong on these surfaces. To browse and download them one at a time, use the [logo board](https://isomer-ai.github.io/brand/copper-verdigris/logos/).
 
 | Layout | Ink, for paper | White, for ink |
 | --- | --- | --- |
