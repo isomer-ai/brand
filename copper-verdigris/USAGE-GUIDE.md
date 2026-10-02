@@ -17,16 +17,43 @@ Copper and verdigris do two jobs. Keep them on separate surfaces.
 
 | Register | What the colors are | Where |
 | --- | --- | --- |
-| Brand | Identity. The patina story: copper becoming verdigris. | Logo and app icon, covers (decks, reports, blog headers, social cards), title and closing slides, event and print, one hero moment per marketing page |
-| Signal | Verbs. Copper is risk; verdigris is action. | Plates, animations, product UI, email, and any page section that shows data or claims |
+| Brand | Identity. The patina story: copper becoming verdigris, told by a few flat devices on ink or paper. | Logo and app icon, covers (decks, reports, blog headers, social cards), title, section and closing slides, mastheads and footers, event and print |
+| Signal | Verbs. Copper is risk; verdigris is action. | Plates, animations, product UI, email content, and any page section that shows data or claims |
 
 ### Brand moments
 
-- **One per view.** A page, screen or slide gets at most one brand moment. Two compete, and the second one reads as decoration.
-- **No data inside.** Once a figure, table or product screen appears, color means something, and the brand moment ends.
-- **The pair lives here, and only here.** In a brand moment copper and verdigris may sit together: verdigris as the field, copper as the smaller, brighter metal. It is the one place the "never a decorative pair" rule does not apply, because here the pair *is* the subject.
-- **Pick the shade by ground.** On paper or white use copper deep `#9A5634` and verdigris deep `#2E6B68`. On ink or verdigris dark `#1F4F4C` fields use copper light `#E09C6B` and verdigris light `#8CC2BC`.
-- **A hero headline word** may be copper deep when the page is about risk, or verdigris deep when it is about acting. Only the hero, only one word or phrase.
+The brand is a system, not one mark repeated. Two grounds and five devices, chosen with discretion for the context.
+
+#### Grounds
+
+| Ground | Field | Type | Metal (copper) | Patina (verdigris) | Use |
+| --- | --- | --- | --- | --- | --- |
+| Dark | Ink `#141416` | White; eyebrows `#A4A9AA` | Copper light `#E09C6B` | Verdigris light `#8CC2BC` | Covers, title and closing slides, social cards, event |
+| Light | Paper `#F6F6F5` | Ink; eyebrows muted `#6E6E75` | Copper deep `#9A5634` | Verdigris deep `#2E6B68` | Section slides, documents and reports, anything with a lot of reading |
+
+Ink or paper is always the field. Verdigris is never the field: a green ground makes Isomer a green brand, and the copper becomes a token.
+
+#### Devices
+
+| Device | Form | Size | Use |
+| --- | --- | --- | --- |
+| Oxidation band | A full-width flat strip on the bottom (or top) edge: 70% copper, 20% the second copper, 10% verdigris, copper first | About 1.5 to 3% of the width: 32px on a 1920 slide, 16px on a 1200 social card | Covers, title and closing slides, social cards, the site footer, event and print |
+| Short oxidation bar | The band at mark size, same proportions | About 2.5× the headline size wide and 0.18× tall: 84 × 6 under a 34px headline | The everyday signature: under a section or document headline, beside the logo, in an email or document masthead |
+| Bar and pixel | A copper bar and one verdigris square, its side equal to the bar's height, one bar-height apart | Bar about 1.6× the headline size wide: 56 × 6 and 6 × 6 under a 34px headline | The quietest form: small sizes, slide footers, email signatures, the app icon |
+| Ruler | Grey ticks along the top edge, minor every 8px and major every 40px, about 70% opacity, no color | 8px tall on a card, 16px on a slide | Adds the instrument look to any ground; combine with any colored device |
+| Ruler and band | The ruler on top and the band at the base: the page framed like an instrument plate | As each part | The fullest expression. Covers and title slides only |
+
+The band's segments on ink are copper `#B4602F`, copper light `#E09C6B` and verdigris `#3F8A85`; on paper, copper deep `#9A5634`, copper `#B4602F` and verdigris deep `#2E6B68`. `tokens.css` has both as `--cv-band-on-ink` and `--cv-band-on-paper`.
+
+#### Rules
+
+- **Pick by context.** A title slide can take the ruler and band; the section slide after it, the short bar; the email footer, the bar and pixel. Same system, different volume.
+- **One colored device per view.** Two compete, and the second reads as decoration. The ruler is neutral and doesn't count.
+- **Devices live in the frame.** Cover, masthead, footer, slide edge. Never inside content and never touching data: once a figure, table or product screen appears, color means something.
+- **Keep the band's order and proportions.** Copper first, about 70 / 20 / 10, flat segments. No gradients, no reversal, no verdigris-heavy versions.
+- **Pick the shade by ground.** Light shades on ink, deep shades on paper. Light copper washes out on paper; deep copper sinks into ink.
+- **Product screens carry no devices.** The logo is enough; the rest of the brand shows through form.
+- **A hero headline word** may be copper deep when a marketing page is about risk. Only the hero, only one word or phrase, and not on the same view as a colored device.
 
 ### The work
 
@@ -146,7 +173,7 @@ After the port, count: if the copper token is used more than a few times as ofte
 ## Do
 
 - Decide the register before choosing a color.
-- Keep one brand moment per view, and keep data out of it.
+- Pick the brand device by context, one colored device per view, in the frame and away from data.
 - Use `--cv-ui-*` tokens in product code so the dark theme works.
 - Use copper dark and verdigris deep for text on light grounds; keep the base colors for marks.
 - Label analysis with What's happening, Why it matters and What you can do.
@@ -164,12 +191,13 @@ After the port, count: if the copper token is used more than a few times as ofte
 - Dark blocks behind prose.
 - Running text in muted `#6E6E75`, or `#A4A9AA` anywhere on white.
 - Status colors as categories or chart series.
-- Copper and verdigris side by side outside a brand moment.
+- Copper and verdigris side by side outside a brand device.
+- A verdigris field, a gradient band, or a band with verdigris first or larger than a trace.
 - In email: Courier New alone, labels under 10px, body under 14px, captions that name a shade, bare ↗ arrows, or sized empty cells as markers.
 
 ## Before it ships
 
-1. Which register is each surface in, and is there at most one brand moment per view?
+1. Which register is each surface in? Is there at most one colored brand device per view, on ink or paper, in the frame?
 2. Does every copper element mark something risky? Would the screen still make sense if you removed the ones that don't?
 3. Does every verdigris element mark something done or doable?
 4. Is all running text body or darker, and all meta at least 10px?

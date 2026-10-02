@@ -4,8 +4,8 @@
  "replaces": "Isomer core palette (Isomer Blue, Accent Purple, Secondary Orange)",
  "summary": "Copper signals. Verdigris acts. Black, white and grey carry the page. Outside the work, copper and verdigris are the brand.",
  "semantics": {
-  "copper": "In the work: risk found, flagged, rising, warning, too late. In a brand moment: the metal, the mark.",
-  "verdigris": "In the work: action, whoever takes it. Isomer acting in a figure; what the reader can do in a product (links, selection, focus, controls, advice). In a brand moment: the patina, the field.",
+  "copper": "In the work: risk found, flagged, rising, warning, too late. In a brand moment: the metal, the larger share of every device.",
+  "verdigris": "In the work: action, whoever takes it. Isomer acting in a figure; what the reader can do in a product (links, selection, focus, controls, advice). In a brand moment: a trace of patina at the end of a device, never the field.",
   "oxide-red": "critical or irreversible (status only, always with its word)",
   "cobalt": "OK, healthy, info (status only, always with its word)",
   "graphite": "screens of data, and the dark product theme",
@@ -202,7 +202,7 @@
       86,
       52
      ],
-     "use": "Brand moments on light grounds: the mark, a cover, one hero word. Not eyebrows or labels",
+     "use": "Brand devices on paper (the bar, the band), one hero word. Not eyebrows or labels",
      "primary": false
     },
     {
@@ -226,7 +226,7 @@
       156,
       107
      ],
-     "use": "Risk on graphite and in the dark theme; the metal on dark brand fields",
+     "use": "Risk on graphite and in the dark theme; brand devices on ink",
      "primary": false
     },
     {
@@ -246,7 +246,7 @@
   {
    "id": "verdigris",
    "title": "Verdigris · the action",
-   "description": "In the work: action, whoever takes it. ACT pills, the X-ray scan line and Isomer outcomes in figures; links, selection, controls and focus in a product. As brand: the patina field.",
+   "description": "In the work: action, whoever takes it. ACT pills, the X-ray scan line and Isomer outcomes in figures; links, selection, controls and focus in a product. As brand: a trace of patina at the end of a device, never a field.",
    "colors": [
     {
      "name": "Verdigris",
@@ -269,7 +269,7 @@
       107,
       104
      ],
-     "use": "Links, selected state, focus rings, action text on light (6.1:1 on white)",
+     "use": "Links, selected state, focus rings, action text on light (6.1:1 on white); the patina trace in devices on paper",
      "primary": false
     },
     {
@@ -293,7 +293,7 @@
       194,
       188
      ],
-     "use": "Action on graphite and in the dark theme; scan line on screens",
+     "use": "Action on graphite and in the dark theme; scan line on screens; the patina trace in devices on ink",
      "primary": false
     },
     {
@@ -427,26 +427,113 @@
   }
  ],
  "distinctiveness": [
-  "Copper and verdigris carry the identity in brand moments (logo, covers, title slides, one hero moment) and carry meaning everywhere else. Never both jobs on one surface.",
+  "Copper and verdigris carry the identity through a small set of brand devices on ink or paper (the oxidation band, the short oxidation bar, the bar and pixel), and carry meaning everywhere else. Never both jobs on one surface.",
   "Carry the plate apparatus (rulers, plate codes, scan line) into page UI in grey, low opacity. Copper ticks on a ruler are decoration.",
   "Avoid category-default patterns: big-number tiles over a mono caption row, dark 'extraction' text blocks, numbered section eyebrows, red/green status dots without a word.",
   "Make time the subject: show when something was caught, not just what a file contains."
  ],
  "registers": {
   "brand": {
-   "what": "Copper and verdigris as identity: the patina story, copper becoming verdigris.",
+   "what": "Copper and verdigris as identity: the patina story, copper becoming verdigris, told by a few flat devices on an ink or paper ground.",
+   "grounds": {
+    "dark": {
+     "ground": "ink",
+     "type": "white",
+     "eyebrow": "on-graphite-muted",
+     "metal": "copper-light",
+     "patina": "verdigris-light",
+     "band": [
+      {
+       "color": "copper",
+       "share": 0.7
+      },
+      {
+       "color": "copper-light",
+       "share": 0.2
+      },
+      {
+       "color": "verdigris",
+       "share": 0.1
+      }
+     ],
+     "use": "Covers, title and closing slides, social cards, event"
+    },
+    "light": {
+     "ground": "paper",
+     "type": "ink",
+     "eyebrow": "muted",
+     "metal": "copper-deep",
+     "patina": "verdigris-deep",
+     "band": [
+      {
+       "color": "copper-deep",
+       "share": 0.7
+      },
+      {
+       "color": "copper",
+       "share": 0.2
+      },
+      {
+       "color": "verdigris-deep",
+       "share": 0.1
+      }
+     ],
+     "use": "Section slides, documents and reports, anything with a lot of reading"
+    }
+   },
+   "devices": [
+    {
+     "id": "oxidation-band",
+     "name": "Oxidation band",
+     "form": "A full-width flat strip on the bottom (or top) edge: 70% copper, 20% the second copper, 10% verdigris, copper first",
+     "size": "About 1.5 to 3% of the width: 32px on a 1920 slide, 16px on a 1200 social card",
+     "use": "Covers, title and closing slides, social cards, the site footer, event and print"
+    },
+    {
+     "id": "short-oxidation-bar",
+     "name": "Short oxidation bar",
+     "form": "The band at mark size, same proportions",
+     "size": "About 2.5x the headline size wide and 0.18x tall: 84 x 6 under a 34px headline, 160 x 12 under a 64px one",
+     "use": "The everyday signature: under a section-slide or document headline, beside the logo, in an email or document masthead"
+    },
+    {
+     "id": "bar-and-pixel",
+     "name": "Bar and pixel",
+     "form": "A copper bar and one verdigris square, its side equal to the bar's height, one bar-height apart",
+     "size": "Bar about 1.6x the headline size wide; 56 x 6 plus 6 x 6 under a 34px headline",
+     "use": "The quietest form: small sizes, slide footers, email signatures, the app icon"
+    },
+    {
+     "id": "ruler",
+     "name": "Ruler",
+     "form": "Grey ticks along the top edge, minor every 8px, major every 40px, about 70% opacity. No color",
+     "size": "8px tall on a card, 16px on a slide",
+     "use": "Adds the instrument look to any ground; combine with any colored device"
+    },
+    {
+     "id": "ruler-and-band",
+     "name": "Ruler and band",
+     "form": "The ruler on top and the oxidation band at the base: the page framed like an instrument plate",
+     "size": "As each part",
+     "use": "The fullest expression. Covers and title slides only"
+    }
+   ],
    "where": [
-    "The logo and app icon",
+    "Logo and app icon",
     "Covers: decks, reports, blog headers, social cards",
     "Title, section and closing slides",
-    "Event, print and merchandise",
-    "One hero moment per marketing page: a headline word or the hero field"
+    "Mastheads and footers of the site, documents and email",
+    "Event, print and merchandise"
    ],
    "rules": [
-    "At most one brand moment per screen or page view.",
-    "A brand moment carries no data. Once a figure, table or product screen appears, color means something.",
-    "The pair may sit together here, and only here: verdigris as the field, copper as the smaller, brighter metal.",
-    "On light grounds use copper deep and verdigris deep; on ink or verdigris-dark fields use copper light and verdigris light."
+    "Choose the device by context; they are one system, used with discretion, not one mark repeated everywhere.",
+    "One colored device per view. The ruler is neutral and doesn't count.",
+    "Devices sit in the frame (cover, masthead, footer, slide edge), never inside content and never touching data.",
+    "Ink or paper is the field. Verdigris is never the field and never more than the patina trace.",
+    "Keep the band's order and proportions: copper first, about 70 / 20 / 10. Flat segments, no gradients, no reversal.",
+    "On ink use copper light and verdigris light; on paper use copper deep and verdigris deep.",
+    "Dark for covers, title and closing slides; light for section slides, documents and reading.",
+    "Product screens carry no devices. The logo is enough."
    ]
   },
   "signal": {

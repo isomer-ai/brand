@@ -183,15 +183,29 @@ mail_dd = dodont(
      "Small sized table cells as markers. Some apps stretch them into tall bars.",
      "Narrow side-by-side meta cells. They wrap into stacks on a phone."])
 
+DEV_MARK = {"oxidation-band": '<span class="dv-band"></span>', "short-oxidation-bar": '<span class="dv-short"></span>',
+            "bar-and-pixel": '<span class="dv-bar"></span><span class="dv-px"></span>', "ruler": '<span class="dv-ruler"></span>',
+            "ruler-and-band": '<span class="dv-ruler"></span><span class="dv-band"></span>'}
+
+
+def dev_card(d):
+    tiles = "".join(f'<div class="bt sm {g}">{DEV_MARK[d["id"]]}<span class="bt-e">Report</span><span class="bt-h">Built for insurance.</span></div>' for g in ("dk", "lt"))
+    return (f'<figure class="dev"><div class="bpair">{tiles}</div><figcaption><b>{e(d["name"])}</b>'
+            f'<p>{e(d["use"])}</p><span>{e(d["size"])}</span></figcaption></figure>')
+
+
+devs = "".join(dev_card(d) for d in pal["registers"]["brand"]["devices"])
+
 work_more = f"""
 <div class="sub" id="registers"><h3>Two registers</h3><p>Copper and verdigris do two jobs, and they need separate surfaces. As <b>brand</b> they are identity, the patina story of copper becoming verdigris. In <b>the work</b> they are verbs. Most mistakes come from mixing the two: brand color spread into the work turns every number and label copper, and then copper no longer means risk.</p></div>
 <div class="use-grid">
-<div class="card"><span class="cap">Brand · a few moments, boldly</span>
-<div class="brandtile"><span class="bt-e">Report · Q4 2026</span><span class="bt-h">Built for insurance.</span><span class="bt-m" aria-hidden="true"></span></div>
-<ul class="plain"><li>Logo and app icon, covers, title and closing slides, event and print, one hero moment per marketing page.</li>
-<li>At most one brand moment per view, and no data inside it.</li>
-<li>The pair may sit together here, and only here: verdigris as the field, copper as the smaller, brighter metal.</li>
-<li>Copper deep and verdigris deep on light grounds; copper light and verdigris light on ink or verdigris-dark fields.</li></ul></div>
+<div class="card"><span class="cap">Brand · ink and paper, with devices</span>
+<div class="bpair"><div class="bt dk"><span class="dv-ruler"></span><span class="bt-e">Title slide</span><span class="bt-h">Built for insurance.</span><span class="dv-band"></span></div>
+<div class="bt lt"><span class="bt-e">Section slide</span><span class="bt-h">Where the loss is</span><span class="dv-short"></span></div></div>
+<ul class="plain"><li>Ink or paper is the field. Copper is the metal; verdigris is only the patina trace at the end.</li>
+<li>Covers, slides, mastheads, footers, social cards, event and print. Product screens carry no devices.</li>
+<li>One colored device per view, in the frame, never touching data.</li>
+<li>Light shades on ink, deep shades on paper.</li></ul></div>
 <div class="card"><span class="cap">The work · verbs, sparingly</span>
 <div class="worktile"><div><span class="wt-l">Open demands</span><b>14</b></div><div><span class="wt-l">Past window</span><b class="risk-t">2</b></div><div><span class="wt-l">Assigned</span><b>12</b></div><a href="#at-work">Review the two</a></div>
 <ul class="plain"><li>Plates, animations, product UI, email, and any section that shows data.</li>
@@ -200,6 +214,8 @@ work_more = f"""
 <li>The brand shows through form here: Fustat, mono labels, square corners, the quiet ruler, the logo.</li></ul></div>
 </div>
 
+<div class="sub" id="brand-devices"><h3>Brand devices</h3><p>One system, used with discretion. Pick the device by context: the full ruler and band on a title slide, the short bar on the section slide after it, the bar and pixel in an email signature. Every band runs copper first, about 70 / 20 / 10, in flat segments. Sizes and rules are in <code>palette.json</code> under <code>registers.brand</code> and in the <a href="USAGE-GUIDE.md#brand-moments">usage guide</a>.</p></div>
+<div class="devs">{devs}</div>
 <div class="sub" id="in-an-app"><h3>In an app</h3><p>The same fragment on the light and dark themes. Nothing on it is copper except the risk: the impact tag, the deadline and the rising weeks. Verdigris marks what the reader can do: the selected filter, the link, Follow. Every color comes from a <code>--cv-ui-*</code> token, so the dark version is the same markup with <code>data-cv-theme="dark"</code>.</p></div>
 <div class="use-grid">{app_light}{app_dark}</div>
 <div class="story-key">
@@ -352,10 +368,20 @@ section.part{{padding:0 0 56px}}
 .sub h3{{font:700 22px/1.2 var(--cv-font);letter-spacing:-.4px;margin:0}}.sub p{{margin:0;color:var(--cv-body);max-width:720px}}
 .note{{font-size:13.5px;color:var(--cv-body);margin:12px 0 0}}
 ul.plain{{margin:16px 0 0;padding-left:18px;font-size:14px;color:var(--cv-body)}}ul.plain li{{margin:4px 0}}
-.brandtile{{background:var(--cv-verdigris-dark);color:#fff;padding:22px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;position:relative}}
-.bt-e{{font:500 10.5px/1 var(--cv-mono);letter-spacing:1.2px;text-transform:uppercase;color:var(--cv-verdigris-light)}}
-.bt-h{{font:800 30px/1.05 var(--cv-font);letter-spacing:-1px;max-width:12ch}}
-.bt-m{{position:absolute;right:22px;bottom:22px;width:28px;height:28px;background:var(--cv-copper-light)}}
+.bpair{{display:grid;grid-template-columns:1fr 1fr;gap:8px}}
+.bt{{position:relative;aspect-ratio:16/10;padding:16px 16px 22px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;border:1px solid var(--cv-rule)}}
+.bt.dk{{background:var(--cv-ink);border-color:var(--cv-ink);color:#fff;--m1:var(--cv-copper-light);--m2:var(--cv-verdigris-light);--band:var(--cv-band-on-ink);--tk:var(--cv-on-graphite-muted)}}
+.bt.lt{{background:var(--cv-paper);color:var(--cv-ink);--m1:var(--cv-copper-deep);--m2:var(--cv-verdigris-deep);--band:var(--cv-band-on-paper);--tk:var(--cv-muted)}}
+.bt-e{{font:500 9.5px/1 var(--cv-mono);letter-spacing:1.1px;text-transform:uppercase;color:var(--tk);position:relative;padding-top:4px}}
+.bt-h{{font:800 22px/1.02 var(--cv-font);letter-spacing:-.6px;max-width:14ch;position:relative;margin-bottom:12px}}
+.bt.sm .bt-h{{font-size:17px;max-width:11ch}}
+.dv-band{{position:absolute;left:0;right:0;bottom:0;height:8px;background:var(--band)}}
+.dv-short{{position:absolute;left:16px;bottom:16px;width:52px;height:4px;background:var(--band)}}
+.dv-bar{{position:absolute;left:16px;bottom:16px;width:34px;height:4px;background:var(--m1)}}
+.dv-px{{position:absolute;left:54px;bottom:16px;width:4px;height:4px;background:var(--m2)}}
+.dv-ruler{{position:absolute;left:0;right:0;top:0;height:6px;opacity:.7;background:repeating-linear-gradient(90deg,var(--tk) 0 1px,transparent 1px 8px) top left/100% 3px no-repeat,repeating-linear-gradient(90deg,var(--tk) 0 1px,transparent 1px 40px) top left/100% 6px no-repeat}}
+.devs{{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}}
+.dev{{padding:12px}}.dev figcaption{{padding:12px 2px 2px}}
 .worktile{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--cv-rule);background:var(--cv-white)}}
 .worktile>div{{padding:14px;border-right:1px solid var(--cv-hairline)}}.worktile>div:nth-child(3){{border-right:0}}
 .worktile b{{display:block;font:800 28px/1.1 var(--cv-font);letter-spacing:-.8px;margin-top:6px}}
@@ -449,6 +475,7 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
  .wrap{{padding:0 16px}}
  .part-h,.fam,header.hero{{grid-template-columns:1fr;gap:12px}}
  .use-grid,.rules,.type,.story-key,.sub{{grid-template-columns:1fr}}
+ .devs{{grid-template-columns:1fr}}
  .sub{{gap:8px}}
  .chip.lead{{grid-column:span 1}}
  .files li{{grid-template-columns:1fr;gap:4px}}

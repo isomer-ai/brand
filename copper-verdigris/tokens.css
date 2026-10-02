@@ -106,3 +106,9 @@
   --cv-ui-ok-tint: var(--cv-graphite-raised);
   --cv-ui-focus: var(--cv-verdigris-light);
 }
+
+/* Brand devices. Flat segments: copper first, about 70 / 20 / 10. */
+:root {
+  --cv-band-on-ink: linear-gradient(90deg, var(--cv-copper) 0 70%, var(--cv-copper-light) 70% 90%, var(--cv-verdigris) 90% 100%);
+  --cv-band-on-paper: linear-gradient(90deg, var(--cv-copper-deep) 0 70%, var(--cv-copper) 70% 90%, var(--cv-verdigris-deep) 90% 100%);
+}
