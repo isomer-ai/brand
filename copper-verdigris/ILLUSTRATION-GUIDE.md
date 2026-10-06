@@ -72,7 +72,7 @@ Rules:
 ## Type
 
 - **Annotation: IBM Plex Mono.** Uppercase, 7 to 10px, tracking 0.8 to 1.4. Weight 400 for description, 500 for axis and column labels, 600 for the one label that carries the point. Labels sit outside shapes, or top-left inside with a 10px inset.
-- **Hero value: Fustat 600.** At most one per plate, 12 to 18px (32px only on covers), in the semantic color of what it measures. Never a sentence. Headlines live on the page, not in the plate.
+- **Hero value: Fustat 600.** At most one per plate, 12 to 18px (32px only on covers), in the semantic color of what it measures. Never a sentence. Headlines live on the page, not in the plate, set in Fustat with body text in Inter (see Type in the [usage guide](USAGE-GUIDE.md)).
 
 ## Staying distinct
 
@@ -81,7 +81,7 @@ Other claims-AI brands use the same base vocabulary: off-white paper, hairlines,
 - **Copper and verdigris do the work.** Inside the work they are verbs, and their scarcity is what makes them land. As identity they appear through a few brand devices on ink or paper (the oxidation band, the short oxidation bar, the bar and pixel), never as a small accent everywhere. See [Two registers](USAGE-GUIDE.md#two-registers).
 - **The apparatus travels.** Rulers, plate codes and the scan line appear in page UI too, not only inside plates. In UI they stay quiet: gray ticks at low opacity, no copper. Copper hatching stays inside figures, where it measures something.
 - **Time is the subject.** Prefer plates that show when something was caught (t₀, d23, the window to act) over plates that show what a file contains.
-- **Fustat, not a generic grotesk.** Keep the brand face for display and values; IBM Plex Mono for annotation.
+- **Fustat, not a generic grotesk.** Keep the brand face for titles and values, Inter for body text, IBM Plex Mono for annotation.
 - **Avoid** big-number tiles over a mono caption row, dark "extraction" text panels, numbered section eyebrows (01, 02...), and status dots without a word. Show values to scale on an axis instead of as tiles.
 
 ## Formats

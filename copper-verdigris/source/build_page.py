@@ -171,7 +171,7 @@ app_dd = dodont(
      "Running text in muted <code>#6E6E75</code>, or <code>#A4A9AA</code> anywhere on white.",
      "Status color as a category or chart series."])
 mail_dd = dodont(
-    ["Use the full stacks: <code>Fustat, Arial, Helvetica</code> and <code>'IBM Plex Mono', Menlo, Consolas, 'Courier New'</code>. Design for the fallback.",
+    ["Use the full stacks: <code>Fustat, Arial, Helvetica</code> for titles, <code>Inter, Arial, Helvetica</code> for body and <code>'IBM Plex Mono', Menlo, Consolas, 'Courier New'</code> for labels. Design for the fallback.",
      "Keep mono labels at 10px or more and body at 14px or more.",
      "Set footer text on section gray in body <code>#47474D</code>.",
      "Name positions in captions (“the lower part of each bar”).",
@@ -213,7 +213,7 @@ work_more = f"""
 <ul class="plain"><li>Plates, animations, product UI, email, and any section that shows data.</li>
 <li>Copper only where something is risky; verdigris only where something is done or can be.</li>
 <li>Ink and gray carry every frame: rules, panels, tabs, chart bars, numbers, eyebrows, the ruler.</li>
-<li>The brand shows through form here: Fustat, mono labels, square corners, the quiet ruler, the logo.</li></ul></div>
+<li>The brand shows through form here: Fustat titles, Inter text, mono labels, square corners, the quiet ruler, the logo.</li></ul></div>
 </div>
 
 <div class="sub" id="brand-devices"><h3>Brand devices</h3><p>One system, used with discretion. Pick the device by context: the full ruler and band on a title slide, the short bar on the section slide after it, the bar and pixel in an email signature. Every band runs copper first, about 70 / 20 / 10, in flat segments. Sizes and rules are in <code>palette.json</code> under <code>registers.brand</code> and in the <a href="USAGE-GUIDE.md#brand-moments">usage guide</a>.</p></div>
@@ -235,7 +235,7 @@ work_more = f"""
 <div class="card"><h4 class="rh">Surfaces and type</h4><ul>
 <li>Content panels are white on paper, ruled with <code>#DDDDDA</code>. Grids and table rules use hairline <code>#E3E3E5</code>.</li>
 <li>Running text in body <code>#47474D</code>; muted only for dates, sources and footers. Muted fails on section gray (4.3:1).</li>
-<li>Headlines in Fustat 800, sentence case, tracking about −0.035em. Fustat is wide; don't bring condensed all-caps habits.</li>
+<li>Titles in Fustat, body text in Inter. Headlines in Fustat 800, sentence case, tracking about −0.035em. Fustat is wide; don't bring condensed all-caps habits.</li>
 <li>Plex Mono, uppercase and tracked, for labels and counts only. The ruler stays gray and quiet.</li>
 <li>Groups of boxes form one rectangle on a modular grid: shared outer edges, rows at one height, near-equal sizes made equal.</li></ul></div>
 </div>
@@ -246,7 +246,8 @@ work_more = f"""
 <div class="sub" id="in-email"><h3>In email</h3><p>Mail clients mostly ignore web fonts and many recolor the message, so email is designed for the fallback. Below is the same story as a daily brief, set the way most clients render it, in Arial and Menlo. On the right is roughly what Gmail's dark mode does to it: the copper and verdigris markers survive, while ink-versus-gray contrast flattens.</p></div>
 <div class="use-grid mails"><figure class="mailfig">{mail_light}<figcaption><span>As sent · Arial, Menlo</span></figcaption></figure><figure class="mailfig">{mail_dark}<figcaption><span>Gmail dark mode · approximate inversion</span></figcaption></figure></div>
 <div class="tbl"><table class="toks"><thead><tr><th>Email</th><th>Value</th></tr></thead><tbody>
-<tr><td>Sans stack</td><td><code>Fustat, Arial, Helvetica, sans-serif</code></td></tr>
+<tr><td>Display stack</td><td><code>Fustat, Arial, Helvetica, sans-serif</code></td></tr>
+<tr><td>Sans stack</td><td><code>Inter, Arial, Helvetica, sans-serif</code></td></tr>
 <tr><td>Mono stack</td><td><code>'IBM Plex Mono', Menlo, Consolas, 'Courier New', monospace</code></td></tr>
 <tr><td>Minimum sizes</td><td>Mono labels 10px · body 14px · meta 10px</td></tr>
 <tr><td>Text</td><td>Headings ink · body and secondary <code>#47474D</code> · least important meta <code>#6E6E75</code> at 10px or more · never <code>#A4A9AA</code> on white</td></tr>
@@ -271,7 +272,7 @@ page = f'''<!doctype html>
 <meta name="description" content="Proposal: Copper Verdigris palette, illustration rules, sample plates and animations for Isomer.">
 <link rel="alternate" type="application/json" href="palette.json" title="Copper Verdigris palette">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="tokens.css">
 <style>
 *{{box-sizing:border-box}}
@@ -288,7 +289,7 @@ code,.mono{{font-family:var(--cv-mono)}}
 .flag{{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--cv-ink);background:var(--cv-white);color:var(--cv-ink);font:600 11px/1 var(--cv-mono);letter-spacing:1.2px;text-transform:uppercase;padding:7px 10px}}
 .flag i{{width:7px;height:7px;background:var(--cv-ink)}}
 header.hero{{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:48px;align-items:center;padding:56px 0 56px}}
-h1{{font:800 clamp(44px,6.4vw,84px)/.98 var(--cv-font);letter-spacing:-2.4px;margin:22px 0 22px;text-wrap:balance}}
+h1{{font:800 clamp(44px,6.4vw,84px)/.98 var(--cv-font-display);letter-spacing:-2.4px;margin:22px 0 22px;text-wrap:balance}}
 h1 em{{font-style:normal;color:var(--cv-verdigris-deep)}}
 h1 span{{color:var(--cv-copper)}}
 h1 .cu{{color:var(--cv-copper-deep)}}
@@ -312,10 +313,10 @@ section.part{{padding:0 0 56px}}
  repeating-linear-gradient(90deg,var(--cv-ink) 0 1px,transparent 1px 40px) top left/100% 9px no-repeat}}
 .ruler span{{position:absolute;right:0;top:12px;font:500 10px/1 var(--cv-mono);letter-spacing:1.2px;color:var(--cv-muted)}}
 .part-h{{display:grid;grid-template-columns:240px minmax(0,1fr);gap:40px;margin-bottom:32px}}
-.part-h h2{{font:700 32px/1.1 var(--cv-font);letter-spacing:-.6px;margin:0;text-wrap:balance}}
+.part-h h2{{font:700 32px/1.1 var(--cv-font-display);letter-spacing:-.6px;margin:0;text-wrap:balance}}
 .part-h p{{margin:0;color:var(--cv-body);max-width:720px}}
 .fam{{display:grid;grid-template-columns:240px minmax(0,1fr);gap:40px;padding:28px 0;border-top:1px solid var(--cv-hairline)}}
-.fam-h h3{{font:600 17px/1.25 var(--cv-font);margin:0 0 8px}}
+.fam-h h3{{font:600 17px/1.25 var(--cv-font-display);margin:0 0 8px}}
 .fam-h p{{margin:0;font-size:14px;color:var(--cv-muted)}}
 .chips{{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:12px}}
 .chip{{all:unset;cursor:pointer;display:flex;flex-direction:column;background:var(--cv-white);border:1px solid var(--cv-hairline);text-align:left}}
@@ -344,11 +345,12 @@ section.part{{padding:0 0 56px}}
  background:repeating-linear-gradient(90deg,var(--cv-on-graphite-muted) 0 1px,transparent 1px 8px) top left/100% 4px no-repeat}}
 .scr .scan::after{{content:"";position:absolute;top:0;bottom:-400px;left:28%;width:2px;background:var(--cv-verdigris-light);opacity:.55}}
 .scr{{overflow:hidden}}
-.type{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}}
+.type{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:16px}}
 .type .card p{{margin:0}}
-.spec-d{{font:800 44px/1 var(--cv-font);letter-spacing:-1.2px}}
+.spec-b{{font:400 17px/1.5 var(--cv-font-body);color:var(--cv-ink);margin:0}}
+.spec-d{{font:800 44px/1 var(--cv-font-display);letter-spacing:-1.2px}}
 .spec-m{{font:500 13px/1.6 var(--cv-mono);letter-spacing:1px;text-transform:uppercase}}
-.big{{font:600 24px/1.25 var(--cv-font);letter-spacing:-.4px;margin:0 0 16px}}
+.big{{font:600 24px/1.25 var(--cv-font-display);letter-spacing:-.4px;margin:0 0 16px}}
 .row{{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:14px;margin-top:8px}}
 .dots{{display:inline-flex;gap:4px}}.dots i{{width:10px;height:10px;display:block}}
 .tag{{font:600 10px/1 var(--cv-mono);letter-spacing:1px;text-transform:uppercase;padding:5px 7px;border:1px solid}}
@@ -359,7 +361,7 @@ section.part{{padding:0 0 56px}}
 .inaction .links{{margin-top:18px}}
 .prs{{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));border-left:1px solid var(--cv-hairline);border-top:1px solid var(--cv-hairline)}}
 .pr{{padding:18px 20px 22px;border-right:1px solid var(--cv-hairline);border-bottom:1px solid var(--cv-hairline);background:var(--cv-white)}}
-.pr h4{{font:700 17px/1.25 var(--cv-font);margin:0 0 6px}}.pr p{{margin:0;font-size:14px;color:var(--cv-body)}}
+.pr h4{{font:700 17px/1.25 var(--cv-font-display);margin:0 0 6px}}.pr p{{margin:0;font-size:14px;color:var(--cv-body)}}
 .rules{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}}
 .rules .card h4{{font:600 11px/1 var(--cv-mono);letter-spacing:1.4px;text-transform:uppercase;margin:0 0 12px}}
 .rules ul{{margin:0;padding-left:18px;font-size:14px;color:var(--cv-body)}}.rules li{{margin:4px 0}}
@@ -368,7 +370,7 @@ section.part{{padding:0 0 56px}}
 .dont h4{{color:var(--cv-copper-dark)}}.dont h4 i{{background:var(--cv-copper)}}
 .rules h4.rh{{color:var(--cv-ink)}}
 .sub{{display:grid;grid-template-columns:240px minmax(0,1fr);gap:40px;margin:56px 0 20px;padding-top:28px;border-top:1px solid var(--cv-hairline)}}
-.sub h3{{font:700 22px/1.2 var(--cv-font);letter-spacing:-.4px;margin:0}}.sub p{{margin:0;color:var(--cv-body);max-width:720px}}
+.sub h3{{font:700 22px/1.2 var(--cv-font-display);letter-spacing:-.4px;margin:0}}.sub p{{margin:0;color:var(--cv-body);max-width:720px}}
 .note{{font-size:13.5px;color:var(--cv-body);margin:12px 0 0}}
 ul.plain{{margin:16px 0 0;padding-left:18px;font-size:14px;color:var(--cv-body)}}ul.plain li{{margin:4px 0}}
 .bpair{{display:grid;grid-template-columns:1fr 1fr;gap:8px}}
@@ -376,7 +378,7 @@ ul.plain{{margin:16px 0 0;padding-left:18px;font-size:14px;color:var(--cv-body)}
 .bt.dk{{background:var(--cv-ink);border-color:var(--cv-ink);color:#fff;--m1:var(--cv-copper-light);--m2:var(--cv-verdigris-light);--band:var(--cv-band-on-ink);--tk:var(--cv-on-graphite-muted)}}
 .bt.lt{{background:var(--cv-paper);color:var(--cv-ink);--m1:var(--cv-copper-deep);--m2:var(--cv-verdigris-deep);--band:var(--cv-band-on-paper);--tk:var(--cv-muted)}}
 .bt-e{{font:500 9.5px/1 var(--cv-mono);letter-spacing:1.1px;text-transform:uppercase;color:var(--tk);position:relative;padding-top:4px}}
-.bt-h{{font:800 22px/1.02 var(--cv-font);letter-spacing:-.6px;max-width:14ch;position:relative;margin-bottom:12px}}
+.bt-h{{font:800 22px/1.02 var(--cv-font-display);letter-spacing:-.6px;max-width:14ch;position:relative;margin-bottom:12px}}
 .bt-logo{{position:absolute;right:8px;top:4px;height:32px;width:auto}}
 .bt.sm .bt-h{{font-size:17px;max-width:11ch}}
 .dv-band{{position:absolute;left:0;right:0;bottom:0;height:8px;background:var(--band)}}
@@ -388,7 +390,7 @@ ul.plain{{margin:16px 0 0;padding-left:18px;font-size:14px;color:var(--cv-body)}
 .dev{{padding:12px}}.dev figcaption{{padding:12px 2px 2px}}
 .worktile{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--cv-rule);background:var(--cv-white)}}
 .worktile>div{{padding:14px;border-right:1px solid var(--cv-hairline)}}.worktile>div:nth-child(3){{border-right:0}}
-.worktile b{{display:block;font:800 28px/1.1 var(--cv-font);letter-spacing:-.8px;margin-top:6px}}
+.worktile b{{display:block;font:800 28px/1.1 var(--cv-font-display);letter-spacing:-.8px;margin-top:6px}}
 .worktile a{{grid-column:1/-1;border-top:1px solid var(--cv-hairline);padding:10px 14px;font-size:14px;font-weight:600}}
 .wt-l,.app-lab{{font:500 10px/1.2 var(--cv-mono);letter-spacing:1px;text-transform:uppercase;color:var(--cv-muted)}}
 .risk-t{{color:var(--cv-ui-signal-text)!important}}
@@ -409,7 +411,7 @@ ul.plain{{margin:16px 0 0;padding-left:18px;font-size:14px;color:var(--cv-body)}
 .app-tag i{{width:6px;height:6px;display:block}}
 .app-tag.risk{{color:var(--cv-ui-signal-text);border-color:var(--cv-ui-signal);background:var(--cv-ui-signal-tint)}}.app-tag.risk i{{background:var(--cv-ui-signal)}}
 .app-tag.ok{{color:var(--cv-ui-ok);border-color:var(--cv-ui-ok);background:var(--cv-ui-ok-tint)}}.app-tag.ok i{{background:var(--cv-ui-ok)}}
-.app-h{{font:800 19px/1.2 var(--cv-font);letter-spacing:-.035em;color:var(--cv-ui-heading);margin:10px 0 14px}}
+.app-h{{font:800 19px/1.2 var(--cv-font-display);letter-spacing:-.035em;color:var(--cv-ui-heading);margin:10px 0 14px}}
 .story3{{display:grid;gap:12px}}.story3 p,.story-key p{{margin:4px 0 0;color:var(--cv-ui-text)}}
 .lab{{display:inline-flex;align-items:center;gap:7px;font:500 10.5px/1 var(--cv-mono);letter-spacing:1px;text-transform:uppercase;color:var(--cv-ui-meta)}}
 .lab i{{width:8px;height:8px;display:block}}
@@ -450,7 +452,7 @@ table.toks{{width:100%;border-collapse:collapse;background:var(--cv-white);borde
 .mail-btn{{display:inline-block;margin-top:16px;background:#141416;color:#fff;font:700 14px/1 Arial,Helvetica,sans-serif;padding:12px 16px}}
 .mail-foot{{max-width:600px;margin:12px auto 0;font:400 12px/1.5 Arial,Helvetica,sans-serif;color:#47474D}}.mail-foot a{{color:#47474D}}
 .gal-h{{display:flex;align-items:baseline;gap:16px;margin:40px 0 16px;flex-wrap:wrap}}
-.gal-h h3{{font:600 20px/1.2 var(--cv-font);margin:0}}.gal-h p{{margin:0;color:var(--cv-muted);font-size:14px}}
+.gal-h h3{{font:600 20px/1.2 var(--cv-font-display);margin:0}}.gal-h p{{margin:0;color:var(--cv-muted);font-size:14px}}
 .gal{{display:grid;gap:16px}}
 .gal.plate{{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}}
 .gal.strip{{grid-template-columns:1fr}}
@@ -539,7 +541,8 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
 </div>
 </div>
 <div class="type">
-<div class="card"><span class="cap">Display and values · Fustat</span><p class="spec-d">$10.0M <span style="color:var(--cv-copper)">d23</span></p><p style="margin-top:12px;color:var(--cv-body);font-size:14px">The current Isomer brand face, kept on purpose. Bold and tight for headlines; 600 for the one hero value on a plate.</p></div>
+<div class="card"><span class="cap">Titles and values · Fustat</span><p class="spec-d">$10.0M <span style="color:var(--cv-copper)">d23</span></p><p style="margin-top:12px;color:var(--cv-body);font-size:14px">The Isomer brand face, for titles, headlines and display values. 800 and tight for headlines; 600 for the one hero value on a plate.</p></div>
+<div class="card"><span class="cap">Body · Inter</span><p class="spec-b">Isomer reads every page the moment it lands and quotes the deadline from the document.</p><p style="margin-top:12px;color:var(--cv-body);font-size:14px">Body text, UI, buttons, tables and captions. 400 for running text, 500 or 600 for emphasis. Never set running text in Fustat.</p></div>
 <div class="card"><span class="cap">Annotation · IBM Plex Mono</span><p class="spec-m">Fig. 04 · Immediate · manual triage d23<br><span style="color:var(--cv-copper-dark)">TLD · ATT-3 · p.4</span> → <span style="color:var(--cv-verdigris-dark)">ACT · deadline calendared</span></p><p style="margin-top:12px;color:var(--cv-body);font-size:14px">Uppercase, tracked, small. Labels, axes, plate codes and captions.</p></div>
 </div>
 {work_more}

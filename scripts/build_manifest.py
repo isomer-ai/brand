@@ -32,11 +32,24 @@ TINTS = {
 }
 
 TYPOGRAPHY = {
-    "family": "Fustat",
-    "source": "Google Fonts",
-    "url": "https://fonts.google.com/specimen/Fustat",
-    "css_import": "https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap",
-    "fallback": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+    "rule": "Titles and headlines in Fustat; body text in Inter.",
+    "titles": {
+        "family": "Fustat",
+        "use": "Titles, headlines and display numbers",
+        "source": "Google Fonts",
+        "url": "https://fonts.google.com/specimen/Fustat",
+        "css_import": "https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap",
+        "fallback": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+    },
+    "body": {
+        "family": "Inter",
+        "use": "Body text, UI, buttons, tables and captions",
+        "source": "Google Fonts",
+        "url": "https://fonts.google.com/specimen/Inter",
+        "css_import": "https://fonts.googleapis.com/css2?family=Inter:wght@300..800&display=swap",
+        "fallback": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+    },
+    "css_import": "https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Inter:wght@300..800&display=swap",
 }
 
 NAME = re.compile(r"isomer-(logo-horiz|logo-vert|logomark)-(color|solid|monochrome)-(.+)")

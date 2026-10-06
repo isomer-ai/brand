@@ -1,5 +1,5 @@
 /* Isomer brand tokens. Source of truth: brand.json / guidelines/isomer-design-guideline.pdf */
-@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Inter:wght@300..800&display=swap");
 
 :root {
   /* Core palette */
@@ -24,5 +24,7 @@
   --isomer-purple-45: #C2BDF6;
 
   /* Typography */
-  --isomer-font: "Fustat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --isomer-font-display: "Fustat", system-ui, -apple-system, "Segoe UI", sans-serif; /* titles and headlines */
+  --isomer-font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;   /* body text */
+  --isomer-font: var(--isomer-font-body);
 }

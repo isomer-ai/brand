@@ -1,5 +1,5 @@
 /* Copper Verdigris (proposal). Source: palette.json. */
-@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
 
 :root {
   /* Neutrals */
@@ -52,11 +52,14 @@
   --cv-screen: var(--cv-graphite);
 
   /* Type */
-  --cv-font: "Fustat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --cv-font-display: "Fustat", system-ui, -apple-system, "Segoe UI", sans-serif; /* titles, headlines and display values */
+  --cv-font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;   /* body text, UI and captions */
+  --cv-font: var(--cv-font-body);
   --cv-mono: "IBM Plex Mono", ui-monospace, monospace;
 
   /* Email. Web fonts mostly don't load in mail; design for the fallback. */
-  --cv-email-sans: Fustat, Arial, Helvetica, sans-serif;
+  --cv-email-display: Fustat, Arial, Helvetica, sans-serif;
+  --cv-email-sans: Inter, Arial, Helvetica, sans-serif;
   --cv-email-mono: "IBM Plex Mono", Menlo, Consolas, "Courier New", monospace;
 
   /* Product UI, light theme. Build app styles on these, not on the raw colors,

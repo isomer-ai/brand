@@ -9,7 +9,7 @@
 <link rel="alternate" type="application/json" href="brand.json" title="Isomer brand manifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Inter:wght@300..800&display=swap" rel="stylesheet">
 <style>
   :root {
     --blue: #000441;
@@ -59,11 +59,12 @@
     margin: 0;
     background: var(--bg);
     color: var(--ink);
-    font-family: "Fustat", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
     font-size: 16px;
     line-height: 1.55;
   }
   a { color: var(--purple); }
+  h1, h2, h3, .type .aa.display { font-family: "Fustat", system-ui, -apple-system, "Segoe UI", sans-serif; }
   code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85em; }
 
   .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
@@ -117,7 +118,8 @@
   .tint-row button { flex: 1; min-width: 0; height: 56px; border: 0; cursor: pointer; font: 600 11px ui-monospace, Menlo, monospace; display: flex; align-items: flex-end; padding: 8px; }
 
   /* Type */
-  .type { display: grid; gap: 24px; grid-template-columns: 1fr; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 28px; }
+  .type { display: grid; gap: 24px; grid-template-columns: 1fr; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 28px; margin-top: 16px; }
+  .type .role { display: block; font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
   @media (min-width: 720px) { .type { grid-template-columns: 200px 1fr; } }
   .type .aa { font-size: 120px; line-height: 1; font-weight: 500; color: var(--purple); }
   .type .glyphs { font-size: 20px; word-break: break-all; }
@@ -126,7 +128,7 @@
   /* Logos */
   .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
   .filters .group { display: flex; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 4px; flex-wrap: wrap; }
-  .filters button { border: 0; background: transparent; color: var(--muted); font: 600 13px "Fustat", sans-serif; padding: 6px 10px; border-radius: 7px; cursor: pointer; }
+  .filters button { border: 0; background: transparent; color: var(--muted); font: 600 13px "Inter", sans-serif; padding: 6px 10px; border-radius: 7px; cursor: pointer; }
   .filters button[aria-pressed="true"] { background: var(--bg); color: var(--ink); box-shadow: 0 1px 2px rgba(0,4,65,.12); }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
   .card { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--surface); display: flex; flex-direction: column; }
@@ -196,18 +198,32 @@
 
   <section id="type">
     <h2>Typography</h2>
-    <p class="lede">Fustat, free from <a href="https://fonts.google.com/specimen/Fustat">Google Fonts</a>, for everything from headlines to body copy.</p>
+    <p class="lede">Titles and headlines in <a href="https://fonts.google.com/specimen/Fustat">Fustat</a>; body text in <a href="https://fonts.google.com/specimen/Inter">Inter</a>. Both are free from Google Fonts.</p>
     <div class="type">
-      <div class="aa">Aa</div>
+      <div class="aa display">Aa</div>
       <div>
-        <div class="glyphs">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789 (!@#$%^&amp;*:;?,.)</div>
-        <div class="weights">
+        <span class="role">Titles · Fustat</span>
+        <div class="glyphs" style="font-family:'Fustat', sans-serif">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789 (!@#$%^&amp;*:;?,.)</div>
+        <div class="weights" style="font-family:'Fustat', sans-serif">
           <span style="font-weight:300">Light</span>
           <span style="font-weight:400">Regular</span>
           <span style="font-weight:500">Medium</span>
           <span style="font-weight:600">SemiBold</span>
           <span style="font-weight:700">Bold</span>
           <span style="font-weight:800">ExtraBold</span>
+        </div>
+      </div>
+    </div>
+    <div class="type">
+      <div class="aa" style="font-family:'Inter', sans-serif">Aa</div>
+      <div>
+        <span class="role">Body · Inter</span>
+        <div class="glyphs" style="font-family:'Inter', sans-serif">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789 (!@#$%^&amp;*:;?,.)</div>
+        <div class="weights" style="font-family:'Inter', sans-serif">
+          <span style="font-weight:400">Regular</span>
+          <span style="font-weight:500">Medium</span>
+          <span style="font-weight:600">SemiBold</span>
+          <span style="font-weight:700">Bold</span>
         </div>
       </div>
     </div>

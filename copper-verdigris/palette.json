@@ -19,10 +19,11 @@
   "status": 0.01
  },
  "typography": {
-  "display_and_body": "Fustat",
+  "display": "Fustat",
+  "body": "Inter",
   "annotation": "IBM Plex Mono",
-  "css_import": "https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
-  "note": "Fustat is the current Isomer brand face, kept on purpose. Plex Mono replaces Geist Mono so the annotation layer doesn't read like other claims-AI sites."
+  "css_import": "https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
+  "note": "Titles, headlines and display values are Fustat, the Isomer brand face. Body text, UI and captions are Inter. IBM Plex Mono is for labels and counts only."
  },
  "families": [
   {
@@ -658,12 +659,13 @@
   "type": {
    "headline": "Fustat 800, sentence case, tracking -0.035em",
    "label": "IBM Plex Mono, uppercase, tracked 0.06 to 0.1em, labels and counts only",
-   "body": "Fustat 400 in body (#47474D), 15 to 16px"
+   "body": "Inter 400 in body (#47474D), 15 to 16px"
   }
  },
  "email": {
   "font_stacks": {
-   "sans": "Fustat, Arial, Helvetica, sans-serif",
+   "display": "Fustat, Arial, Helvetica, sans-serif",
+   "sans": "Inter, Arial, Helvetica, sans-serif",
    "mono": "'IBM Plex Mono', Menlo, Consolas, 'Courier New', monospace"
   },
   "min_size_px": {

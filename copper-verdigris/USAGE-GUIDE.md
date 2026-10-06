@@ -75,7 +75,7 @@ The band's segments on ink are copper `#B4602F`, copper light `#E09C6B` and verd
 - **Copper appears only where something is risky.** If nothing on a screen is, the screen has no copper.
 - **Verdigris appears only where something is being done, or can be.** In a figure that is Isomer acting; in a product it is what the reader can do.
 - **Ink and gray carry every frame:** rules, panels, plates, tabs, chart bars, numbers, dates, eyebrows, the ruler.
-- **The brand shows through form, not color.** Fustat, mono labels, square corners, the quiet ruler and the logo make a product screen ours. It does not need copper to look like Isomer.
+- **The brand shows through form, not color.** Fustat titles, Inter text, mono labels, square corners, the quiet ruler and the logo make a product screen ours. It does not need copper to look like Isomer.
 
 ## Layout
 
@@ -119,7 +119,9 @@ These rules hold on every surface: slides, pages, documents, product screens, em
 
 ### Type
 
+- **Titles in Fustat; everything else in Inter.** Fustat sets titles, headlines and display values: slide and page titles, section and card headings, hero numbers. Inter sets body text, UI, buttons, tables and captions.
 - **Headlines in Fustat 800, sentence case, tracking about -0.035em.** Fustat is wide; condensed, all-caps headline habits from other faces don't carry over.
+- **Body in Inter 400,** with 500 or 600 for emphasis inside text. Never set running text in Fustat.
 - **IBM Plex Mono, uppercase and tracked, for labels and counts only.** Never for sentences.
 
 ### Dark theme
@@ -159,7 +161,7 @@ When Isomer has already acted, the third label can read "What Isomer did". Keep 
 
 ## In email
 
-- **Fonts mostly don't load** (the Gmail app, Outlook). Use the stacks and design for the fallback: Fustat falls back to Arial, so check that headlines still fit at Arial's width.
+- **Fonts mostly don't load** (the Gmail app, Outlook). Use the stacks and design for the fallback: Fustat and Inter both fall back to Arial, so check that headlines still fit at Arial's width.
 - **The mono stack needs Menlo and Consolas before Courier New.** Courier New alone renders thin and gray, and labels became illegible on iPhone Gmail.
 - **Minimum sizes:** mono labels 10px, body 14px, meta 10px. Labels at 8 or 9px failed on phones.
 - **Contrast:** body and secondary text in body `#47474D`. Muted only for the least important meta, at 10px or more. Never `#A4A9AA` or lighter on white. Footer text on section gray in body.
@@ -171,7 +173,8 @@ When Isomer has already acted, the third label can read "What Isomer did". Keep 
 
 | Email token | Value |
 | --- | --- |
-| Sans stack | `Fustat, Arial, Helvetica, sans-serif` |
+| Display stack (titles) | `Fustat, Arial, Helvetica, sans-serif` |
+| Sans stack (body) | `Inter, Arial, Helvetica, sans-serif` |
 | Mono stack | `'IBM Plex Mono', Menlo, Consolas, 'Courier New', monospace` |
 | Ground / card / rule | Section gray `#ECECEA` / white / rule `#DDDDDA` |
 | Heading / text / meta | Ink / body `#47474D` / muted `#6E6E75` |
@@ -203,6 +206,7 @@ After the port, count: if the copper token is used more than a few times as ofte
 - Use copper dark and verdigris deep for text on light grounds; keep the base colors for marks.
 - Label analysis with What's happening, Why it matters and What you can do.
 - Write status with its word, every time.
+- Set titles in Fustat and body text in Inter.
 - Rule panels with `#DDDDDA`; grid with `#E3E3E5`.
 - Arrange each group of boxes as one rectangle on a modular grid, with near-equal sizes made equal.
 - In email, use the full font stacks and the minimum sizes, and check on an iPhone in the Gmail app.
@@ -227,7 +231,7 @@ After the port, count: if the copper token is used more than a few times as ofte
 1. Which register is each surface in? Is there at most one colored brand device per view, on ink or paper, in the frame?
 2. Does every copper element mark something risky? Would the screen still make sense if you removed the ones that don't?
 3. Does every verdigris element mark something done or doable?
-4. Is all running text body or darker, and all meta at least 10px?
+4. Are titles Fustat and body text Inter? Is all running text body color or darker, and all meta at least 10px?
 5. Does the dark theme come from `--cv-ui-*` tokens, with light copper and light verdigris?
 6. In email: fallback fonts checked, minimum sizes met, nothing that depends on a shade surviving inversion?
 7. Does each group of boxes form one rectangle on a modular grid, with no near-equal sizes?

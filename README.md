@@ -61,11 +61,13 @@ Adobe swatch files (`.ase`) and Illustrator palettes are in [`colors/`](colors/)
 
 ## Typography
 
-[Fustat](https://fonts.google.com/specimen/Fustat), free from Google Fonts.
+Titles and headlines are set in [Fustat](https://fonts.google.com/specimen/Fustat). Body text, UI, tables and captions are set in [Inter](https://fonts.google.com/specimen/Inter). Both are free from Google Fonts.
 
 ```html
-<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Inter:wght@300..800&display=swap" rel="stylesheet">
 ```
+
+In CSS, use `--isomer-font-display` for titles and `--isomer-font-body` for text, both in [`tokens.css`](tokens.css).
 
 ## Clear Space
 

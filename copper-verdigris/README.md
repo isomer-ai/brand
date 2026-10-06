@@ -26,4 +26,4 @@ python3 anim.py && python3 anim2.py && python3 anim3.py   # animations/
 python3 build_page.py         # index.html
 ```
 
-If the team adopts it, the next steps are to fold `palette.json` into `scripts/build_manifest.py`, replace `tokens.css` at the root, adopt IBM Plex Mono as the annotation face, and decide whether the logo gets a Copper Verdigris version. Until then, use the black and white logos in `logos/`.
+If the team adopts it, the next steps are to fold `palette.json` into `scripts/build_manifest.py`, replace `tokens.css` at the root, adopt Inter for body text and IBM Plex Mono as the annotation face, and decide whether the logo gets a Copper Verdigris version. Until then, use the black and white logos in `logos/`.

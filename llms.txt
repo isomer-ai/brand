@@ -5,14 +5,14 @@
 Everything is described in one manifest. Every file has a stable URL under https://isomer-ai.github.io/brand/.
 
 - [brand.json](https://isomer-ai.github.io/brand/brand.json): colors (hex, RGB, CMYK, Pantone), tints, typography, and all 24 logo variants with URLs for each format
-- [tokens.css](https://isomer-ai.github.io/brand/tokens.css): the same colors and font as CSS custom properties
+- [tokens.css](https://isomer-ai.github.io/brand/tokens.css): the same colors and fonts as CSS custom properties
 - [README](https://github.com/isomer-ai/brand#readme): variant naming and usage rules
 - [Design guideline PDF](https://isomer-ai.github.io/brand/guidelines/isomer-design-guideline.pdf): construction, clear space, palette, and example applications
 
 ## Quick answers
 
 - Primary color: Isomer Blue #000441. Accent: Purple #776DEB and Light Purple #9188F5. Secondary: Orange #FFA574. Backgrounds: Light Gray #F8F6FF and White #FFFFFF.
-- Font: Fustat (Google Fonts)
+- Fonts: Fustat for titles and headlines, Inter for body text (both Google Fonts)
 - Logo on a light background: https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-horiz-color-white-bg.svg
 - Logo on a dark background: https://isomer-ai.github.io/brand/logos/web/svg/isomer-logo-horiz-color-dark-bg.svg
 - Square mark (favicon or avatar): https://isomer-ai.github.io/brand/logos/web/svg/isomer-logomark-color-white-bg.svg

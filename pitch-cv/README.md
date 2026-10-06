@@ -61,7 +61,7 @@ How the page applies the illustration guide, compared with the live minisite.
 | No stock metaphors | Building, robot and megaphone icons on the problem cards | Removed |
 | Unknowns as `[BRACKETED]` placeholders | Dashed rounded blanks | `[ ]` in verdigris |
 | Animation: smoothstep, fade or draw on, nothing bounces or scales | Overshoot easing, scale-in nodes, bump and ping scales | Fades and draw-on only |
-| Fustat for display and values, IBM Plex Mono for annotation | Geist and Geist Mono (the skin swaps Fustat out) | Fustat and IBM Plex Mono, from [`tokens.css`](../copper-verdigris/tokens.css) |
+| Fustat for titles and values, Inter for body text, IBM Plex Mono for annotation | Geist and Geist Mono (the skin swaps Fustat out) | Fustat titles and values, Inter body text and IBM Plex Mono labels, from [`tokens.css`](../copper-verdigris/tokens.css) |
 
 Headline accents follow the same split: copper where the phrase names risk ("buried in the file", "most of the loss"), verdigris where it names Isomer's outcome ("before the suit", "a point of combined ratio").
 
