@@ -236,7 +236,8 @@ work_more = f"""
 <li>Content panels are white on paper, ruled with <code>#DDDDDA</code>. Grids and table rules use hairline <code>#E3E3E5</code>.</li>
 <li>Running text in body <code>#47474D</code>; muted only for dates, sources and footers. Muted fails on section gray (4.3:1).</li>
 <li>Headlines in Fustat 800, sentence case, tracking about −0.035em. Fustat is wide; don't bring condensed all-caps habits.</li>
-<li>Plex Mono, uppercase and tracked, for labels and counts only. The ruler stays gray and quiet.</li></ul></div>
+<li>Plex Mono, uppercase and tracked, for labels and counts only. The ruler stays gray and quiet.</li>
+<li>Groups of boxes form one rectangle on a modular grid: shared outer edges, rows at one height, near-equal sizes made equal.</li></ul></div>
 </div>
 {tok_table}
 <p class="note">Ratios are each text token against its theme's surface. Tints become graphite raised in dark: a copper tint on graphite reads muddy, and the light text carries the meaning alone.</p>
@@ -568,6 +569,7 @@ footer{{border-top:1px solid var(--cv-ink);padding:20px 0 48px;display:flex;just
 <li>Use real vocabulary: TLD, CRN, CMS entry, d23, p.4.</li>
 <li>Use red and cobalt the way the app does: one labelled status tag, rarely.</li>
 <li>Use person icons (circle head, curved shoulders) for claimants, counsel and adjusters.</li>
+<li>Arrange boxes as one rectangle on a modular grid; make near-equal sizes equal.</li>
 </ul></div>
 <div class="card dont"><h4>Don't</h4><ul>
 <li>Rounded corners on any box, node, bar or tag.</li>

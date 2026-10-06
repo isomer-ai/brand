@@ -52,6 +52,7 @@ Rules:
 - **Dash pattern carries meaning.** 3/3 is a source trace. 6/3 is a threshold or limit. 8/4 is a boundary such as a tenant.
 - **Connectors.** Straight first. A 5px junction square marks a branch point only, never a plain bend. Square caps, miter joins.
 - **Corners.** Radius 0 on every box, node, bar and tag.
+- **Arrangement.** Boxes that sit together form one rectangle: shared outer edges, each row at one height, each column at one width, gutters on the 8px grid. When two boxes are close in size, make them identical, and use as few sizes as possible. The same rule holds on slides and pages; see Layout in the [usage guide](USAGE-GUIDE.md).
 - **Circles and curves.** Circles are allowed occasionally (a point marker, a dial). Curves are allowed inside icons, such as the person figure for a claimant, counsel or adjuster (`person()` in `plates.py`: circle head, curved shoulders, flat base so it sits on the diagram baseline), and where the curve is the figure: the flow bands of a Sankey, which show volume moving from one split to another. Use them only when the chart type needs them, never as decoration or to soften a connector.
 - **Fills.** White for objects, section gray for apparatus, tints for semantic fills. No gradients, shadows, glows or transparency stacks.
 
@@ -128,6 +129,7 @@ Animations are the same plates rendered frame by frame. The scene is a function 
 4. Is every number sourced, and every unknown in [brackets]?
 5. Does it still read with annotations off?
 6. Is there exactly one idea?
+7. Does each group of boxes form one rectangle, with no near-equal sizes?
 
 ## Known placeholders in the samples
 

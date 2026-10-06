@@ -77,6 +77,16 @@ The band's segments on ink are copper `#B4602F`, copper light `#E09C6B` and verd
 - **Ink and gray carry every frame:** rules, panels, plates, tabs, chart bars, numbers, dates, eyebrows, the ruler.
 - **The brand shows through form, not color.** Fustat, mono labels, square corners, the quiet ruler and the logo make a product screen ours. It does not need copper to look like Isomer.
 
+## Layout
+
+These rules hold on every surface: slides, pages, documents, product screens, email and plates.
+
+- **A group of boxes forms one rectangle.** Cards, panels, tiles and figures that sit together share their outer edges, so the group reads as a single rectangle or square with no ragged ends. Stretch the boxes in a row to one height and give each column one width. A bento grid that fills its area is the model.
+- **Build on a modular grid.** Columns and rows of one unit, with gutters in multiples of 8px. Every box spans whole units: 1×1, 2×1, 2×2.
+- **Near-equal sizes become equal.** When two boxes are close in size, make them identical. A box a little wider or taller than its neighbor reads as a mistake, not a choice.
+- **Use as few sizes as possible.** Two or three box sizes in one arrangement. Past that, the grid stops being visible.
+- **Fit content to the grid, not the grid to one box.** When one box's content doesn't fit, change the whole row or column, or split the content. Don't grow one box past its neighbors.
+
 ## In an app
 
 ### Color
@@ -194,6 +204,7 @@ After the port, count: if the copper token is used more than a few times as ofte
 - Label analysis with What's happening, Why it matters and What you can do.
 - Write status with its word, every time.
 - Rule panels with `#DDDDDA`; grid with `#E3E3E5`.
+- Arrange each group of boxes as one rectangle on a modular grid, with near-equal sizes made equal.
 - In email, use the full font stacks and the minimum sizes, and check on an iPhone in the Gmail app.
 
 ## Don't
@@ -204,6 +215,7 @@ After the port, count: if the copper token is used more than a few times as ofte
 - A 1px ink border on content panels.
 - Left-border or top-border accent cards.
 - Dark blocks behind prose.
+- Ragged groups of boxes, or boxes that differ in size by only a little.
 - Running text in muted `#6E6E75`, or `#A4A9AA` anywhere on white.
 - Status colors as categories or chart series.
 - Copper and verdigris side by side outside a brand device.
@@ -218,3 +230,4 @@ After the port, count: if the copper token is used more than a few times as ofte
 4. Is all running text body or darker, and all meta at least 10px?
 5. Does the dark theme come from `--cv-ui-*` tokens, with light copper and light verdigris?
 6. In email: fallback fonts checked, minimum sizes met, nothing that depends on a shade surviving inversion?
+7. Does each group of boxes form one rectangle on a modular grid, with no near-equal sizes?
