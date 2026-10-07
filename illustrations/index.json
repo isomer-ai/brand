@@ -1,0 +1,1087 @@
+{
+  "name": "Isomer illustrations",
+  "base_url": "https://isomer-ai.github.io/brand/illustrations/",
+  "source": {
+    "repo": "www-isomer",
+    "path": "client/src/assets",
+    "commit": "b4e003d"
+  },
+  "synced": "2026-10-07",
+  "groups": [
+    {
+      "id": "illustrations",
+      "title": "Illustrations",
+      "description": "Spot and hero illustrations from isomer.ai.",
+      "folder": "svg"
+    },
+    {
+      "id": "icons",
+      "title": "Icons",
+      "description": "Signal category and capability icons, drawn on a 24px grid.",
+      "folder": "icons"
+    },
+    {
+      "id": "patterns",
+      "title": "Patterns",
+      "description": "Cross patterns that frame page heroes and sections.",
+      "folder": "patterns"
+    }
+  ],
+  "count": 69,
+  "items": [
+    {
+      "id": "40-percentage-of-adjuser-time",
+      "group": "illustrations",
+      "title": "40% of adjuster time",
+      "width": 240,
+      "height": 240,
+      "size_class": "Feature \u00b7 240",
+      "used_on": [],
+      "dark_preview": false,
+      "path": "svg/40-percentage-of-adjuser-time.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/40-percentage-of-adjuser-time.svg"
+    },
+    {
+      "id": "404",
+      "group": "illustrations",
+      "title": "404 page",
+      "width": 480,
+      "height": 480,
+      "size_class": "Hero \u00b7 480",
+      "used_on": [
+        "not-found"
+      ],
+      "dark_preview": false,
+      "path": "svg/404.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/404.svg"
+    },
+    {
+      "id": "agentic-process-hero",
+      "group": "illustrations",
+      "title": "Agentic process hero",
+      "width": 480,
+      "height": 480,
+      "size_class": "Hero \u00b7 480",
+      "used_on": [
+        "platform/agentic-process-automation",
+        "products"
+      ],
+      "dark_preview": false,
+      "path": "svg/agentic-process-hero.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/agentic-process-hero.svg"
+    },
+    {
+      "id": "agentic-task-automation",
+      "group": "illustrations",
+      "title": "Agentic task automation",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "careers"
+      ],
+      "dark_preview": false,
+      "path": "svg/agentic-task-automation.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/agentic-task-automation.svg"
+    },
+    {
+      "id": "audit-learning",
+      "group": "illustrations",
+      "title": "Audit learning",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "solutions/invoice-validation"
+      ],
+      "dark_preview": false,
+      "path": "svg/audit-learning.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/audit-learning.svg"
+    },
+    {
+      "id": "audit-trail",
+      "group": "illustrations",
+      "title": "Audit trail",
+      "width": 80,
+      "height": 80,
+      "size_class": "Small \u00b7 80",
+      "used_on": [],
+      "dark_preview": false,
+      "path": "svg/audit-trail.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/audit-trail.svg"
+    },
+    {
+      "id": "automated-execution",
+      "group": "illustrations",
+      "title": "Automated execution",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "solutions/fnol-intake",
+        "solutions/workers-comp-intake"
+      ],
+      "dark_preview": false,
+      "path": "svg/automated-execution.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/automated-execution.svg"
+    },
+    {
+      "id": "automated-routine-checks",
+      "group": "illustrations",
+      "title": "Automated routine checks",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "solutions/invoice-validation"
+      ],
+      "dark_preview": false,
+      "path": "svg/automated-routine-checks.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/automated-routine-checks.svg"
+    },
+    {
+      "id": "automating-claims-workflows",
+      "group": "illustrations",
+      "title": "Automating claims workflows",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "careers"
+      ],
+      "dark_preview": false,
+      "path": "svg/automating-claims-workflows.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/automating-claims-workflows.svg"
+    },
+    {
+      "id": "benefit-calculation",
+      "group": "illustrations",
+      "title": "Benefit calculation",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "solutions/policy-servicing",
+        "solutions/policy-validation",
+        "solutions/post-bind-review"
+      ],
+      "dark_preview": false,
+      "path": "svg/benefit-calculation.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/benefit-calculation.svg"
+    },
+    {
+      "id": "build-maintenance",
+      "group": "illustrations",
+      "title": "Build maintenance",
+      "width": 80,
+      "height": 80,
+      "size_class": "Small \u00b7 80",
+      "used_on": [
+        "sovereign",
+        "support"
+      ],
+      "dark_preview": false,
+      "path": "svg/build-maintenance.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/build-maintenance.svg"
+    },
+    {
+      "id": "career-cta",
+      "group": "illustrations",
+      "title": "Career cta",
+      "width": 480,
+      "height": 480,
+      "size_class": "Hero \u00b7 480",
+      "used_on": [
+        "careers",
+        "careers/job-detail"
+      ],
+      "dark_preview": false,
+      "path": "svg/career-cta.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/career-cta.svg"
+    },
+    {
+      "id": "claim-history-analysis",
+      "group": "illustrations",
+      "title": "Claim history analysis",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "solutions/policy-servicing",
+        "solutions/policy-validation",
+        "solutions/post-bind-review"
+      ],
+      "dark_preview": false,
+      "path": "svg/claim-history-analysis.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/claim-history-analysis.svg"
+    },
+    {
+      "id": "coverage-verification",
+      "group": "illustrations",
+      "title": "Coverage verification",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "solutions/policy-servicing",
+        "solutions/policy-validation",
+        "solutions/post-bind-review"
+      ],
+      "dark_preview": false,
+      "path": "svg/coverage-verification.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/coverage-verification.svg"
+    },
+    {
+      "id": "data-driven-insights",
+      "group": "illustrations",
+      "title": "Data driven insights",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "careers"
+      ],
+      "dark_preview": false,
+      "path": "svg/data-driven-insights.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/data-driven-insights.svg"
+    },
+    {
+      "id": "data-reconciliation",
+      "group": "illustrations",
+      "title": "Data reconciliation",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "solutions/policy-servicing",
+        "solutions/policy-validation",
+        "solutions/post-bind-review"
+      ],
+      "dark_preview": false,
+      "path": "svg/data-reconciliation.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/data-reconciliation.svg"
+    },
+    {
+      "id": "dedicated-specialists",
+      "group": "illustrations",
+      "title": "Dedicated specialists",
+      "width": 80,
+      "height": 80,
+      "size_class": "Small \u00b7 80",
+      "used_on": [
+        "support"
+      ],
+      "dark_preview": false,
+      "path": "svg/dedicated-specialists.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/dedicated-specialists.svg"
+    },
+    {
+      "id": "direct-communication",
+      "group": "illustrations",
+      "title": "Direct communication",
+      "width": 80,
+      "height": 80,
+      "size_class": "Small \u00b7 80",
+      "used_on": [
+        "support"
+      ],
+      "dark_preview": false,
+      "path": "svg/direct-communication.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/direct-communication.svg"
+    },
+    {
+      "id": "early-intervention",
+      "group": "illustrations",
+      "title": "Early intervention",
+      "width": 241,
+      "height": 240,
+      "size_class": "Feature \u00b7 240",
+      "used_on": [
+        "home"
+      ],
+      "dark_preview": false,
+      "path": "svg/early-intervention.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/early-intervention.svg"
+    },
+    {
+      "id": "evidence-cross-check",
+      "group": "illustrations",
+      "title": "Evidence cross check",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "solutions/invoice-validation"
+      ],
+      "dark_preview": false,
+      "path": "svg/evidence-cross-check.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/evidence-cross-check.svg"
+    },
+    {
+      "id": "exposure-prevention",
+      "group": "illustrations",
+      "title": "Exposure prevention",
+      "width": 240,
+      "height": 242,
+      "size_class": "Feature \u00b7 240",
+      "used_on": [
+        "home"
+      ],
+      "dark_preview": false,
+      "path": "svg/exposure-prevention.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/exposure-prevention.svg"
+    },
+    {
+      "id": "extraction-validation",
+      "group": "illustrations",
+      "title": "Extraction validation",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "solutions/fnol-intake",
+        "solutions/workers-comp-intake"
+      ],
+      "dark_preview": false,
+      "path": "svg/extraction-validation.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/extraction-validation.svg"
+    },
+    {
+      "id": "fail-safe-exception-handling",
+      "group": "illustrations",
+      "title": "Fail safe exception handling",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "platform",
+        "products",
+        "solutions/fnol-intake",
+        "solutions/workers-comp-intake"
+      ],
+      "dark_preview": false,
+      "path": "svg/fail-safe-exception-handling.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/fail-safe-exception-handling.svg"
+    },
+    {
+      "id": "financial-leakage-icon",
+      "group": "illustrations",
+      "title": "Financial leakage",
+      "width": 241,
+      "height": 241,
+      "size_class": "Feature \u00b7 240",
+      "used_on": [
+        "home"
+      ],
+      "dark_preview": false,
+      "path": "svg/financial-leakage-icon.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/financial-leakage-icon.svg"
+    },
+    {
+      "id": "getting-started",
+      "group": "illustrations",
+      "title": "Getting started",
+      "width": 480,
+      "height": 480,
+      "size_class": "Hero \u00b7 480",
+      "used_on": [
+        "platform/agentic-process-automation",
+        "solutions/invoice-validation"
+      ],
+      "dark_preview": false,
+      "path": "svg/getting-started.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/getting-started.svg"
+    },
+    {
+      "id": "hidden-escalation-signal-icon",
+      "group": "illustrations",
+      "title": "Hidden escalation signal",
+      "width": 162,
+      "height": 162,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "home"
+      ],
+      "dark_preview": false,
+      "path": "svg/hidden-escalation-signal-icon.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/hidden-escalation-signal-icon.svg"
+    },
+    {
+      "id": "inbox-labelling",
+      "group": "illustrations",
+      "title": "Inbox labelling",
+      "width": 242,
+      "height": 240,
+      "size_class": "Feature \u00b7 240",
+      "used_on": [
+        "home",
+        "platform"
+      ],
+      "dark_preview": false,
+      "path": "svg/inbox-labelling.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/inbox-labelling.svg"
+    },
+    {
+      "id": "indemnity-leakage",
+      "group": "illustrations",
+      "title": "Indemnity leakage",
+      "width": 163,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [],
+      "dark_preview": false,
+      "path": "svg/indemnity-leakage.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/indemnity-leakage.svg"
+    },
+    {
+      "id": "intelligent-underwriting-assistance",
+      "group": "illustrations",
+      "title": "Intelligent underwriting assistance",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "careers"
+      ],
+      "dark_preview": false,
+      "path": "svg/intelligent-underwriting-assistance.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/intelligent-underwriting-assistance.svg"
+    },
+    {
+      "id": "isomer-approach-1",
+      "group": "illustrations",
+      "title": "Isomer approach 1",
+      "width": 240,
+      "height": 240,
+      "size_class": "Feature \u00b7 240",
+      "used_on": [
+        "platform/agentic-process-automation"
+      ],
+      "dark_preview": false,
+      "path": "svg/isomer-approach-1.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/isomer-approach-1.svg"
+    },
+    {
+      "id": "isomer-approach-2",
+      "group": "illustrations",
+      "title": "Isomer approach 2",
+      "width": 240,
+      "height": 240,
+      "size_class": "Feature \u00b7 240",
+      "used_on": [
+        "platform/agentic-process-automation",
+        "sovereign"
+      ],
+      "dark_preview": false,
+      "path": "svg/isomer-approach-2.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/isomer-approach-2.svg"
+    },
+    {
+      "id": "isomer-approach-3",
+      "group": "illustrations",
+      "title": "Isomer approach 3",
+      "width": 240,
+      "height": 240,
+      "size_class": "Feature \u00b7 240",
+      "used_on": [
+        "platform/agentic-process-automation"
+      ],
+      "dark_preview": false,
+      "path": "svg/isomer-approach-3.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/isomer-approach-3.svg"
+    },
+    {
+      "id": "isomer-is-different",
+      "group": "illustrations",
+      "title": "Isomer is different",
+      "width": 165,
+      "height": 164,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "home",
+        "products"
+      ],
+      "dark_preview": false,
+      "path": "svg/isomer-is-different.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/isomer-is-different.svg"
+    },
+    {
+      "id": "leakage-manual-risk",
+      "group": "illustrations",
+      "title": "Leakage manual risk",
+      "width": 163,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "solutions/invoice-validation"
+      ],
+      "dark_preview": false,
+      "path": "svg/leakage-manual-risk.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/leakage-manual-risk.svg"
+    },
+    {
+      "id": "manual-bottleneck",
+      "group": "illustrations",
+      "title": "Manual bottleneck",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "solutions/fnol-intake",
+        "solutions/workers-comp-intake"
+      ],
+      "dark_preview": false,
+      "path": "svg/manual-bottleneck.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/manual-bottleneck.svg"
+    },
+    {
+      "id": "manual-interpretation",
+      "group": "illustrations",
+      "title": "Manual interpretation",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "solutions/policy-servicing",
+        "solutions/policy-validation",
+        "solutions/post-bind-review"
+      ],
+      "dark_preview": false,
+      "path": "svg/manual-interpretation.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/manual-interpretation.svg"
+    },
+    {
+      "id": "missed-obligations-icon",
+      "group": "illustrations",
+      "title": "Missed obligations",
+      "width": 162,
+      "height": 162,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "home",
+        "solutions/fnol-intake",
+        "solutions/workers-comp-intake"
+      ],
+      "dark_preview": false,
+      "path": "svg/missed-obligations-icon.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/missed-obligations-icon.svg"
+    },
+    {
+      "id": "no-ai-training",
+      "group": "illustrations",
+      "title": "No AI training",
+      "width": 80,
+      "height": 80,
+      "size_class": "Small \u00b7 80",
+      "used_on": [
+        "sovereign"
+      ],
+      "dark_preview": false,
+      "path": "svg/no-ai-training.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/no-ai-training.svg"
+    },
+    {
+      "id": "not-another-workflow-automation-icon",
+      "group": "illustrations",
+      "title": "Not another workflow automation",
+      "width": 480,
+      "height": 480,
+      "size_class": "Hero \u00b7 480",
+      "used_on": [
+        "home",
+        "support"
+      ],
+      "dark_preview": false,
+      "path": "svg/not-another-workflow-automation-icon.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/not-another-workflow-automation-icon.svg"
+    },
+    {
+      "id": "operational-assurance",
+      "group": "illustrations",
+      "title": "Operational assurance",
+      "width": 242,
+      "height": 240,
+      "size_class": "Feature \u00b7 240",
+      "used_on": [
+        "home",
+        "platform",
+        "products",
+        "sovereign",
+        "trust"
+      ],
+      "dark_preview": false,
+      "path": "svg/operational-assurance.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/operational-assurance.svg"
+    },
+    {
+      "id": "prefooter",
+      "group": "illustrations",
+      "title": "Prefooter",
+      "width": 320,
+      "height": 320,
+      "size_class": "Band \u00b7 320",
+      "used_on": [
+        "home",
+        "platform",
+        "products"
+      ],
+      "dark_preview": false,
+      "path": "svg/prefooter.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/prefooter.svg"
+    },
+    {
+      "id": "response-automation",
+      "group": "illustrations",
+      "title": "Response automation",
+      "width": 242,
+      "height": 240,
+      "size_class": "Feature \u00b7 240",
+      "used_on": [
+        "home"
+      ],
+      "dark_preview": false,
+      "path": "svg/response-automation.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/response-automation.svg"
+    },
+    {
+      "id": "rising-loss",
+      "group": "illustrations",
+      "title": "Rising loss",
+      "width": 163,
+      "height": 161,
+      "size_class": "Card \u00b7 160",
+      "used_on": [],
+      "dark_preview": false,
+      "path": "svg/rising-loss.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/rising-loss.svg"
+    },
+    {
+      "id": "seamless-compliance-reporting",
+      "group": "illustrations",
+      "title": "Seamless compliance reporting",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "careers",
+        "products",
+        "sovereign"
+      ],
+      "dark_preview": false,
+      "path": "svg/seamless-compliance-reporting.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/seamless-compliance-reporting.svg"
+    },
+    {
+      "id": "signal-not-noise",
+      "group": "illustrations",
+      "title": "Signal not noise",
+      "width": 240,
+      "height": 240,
+      "size_class": "Feature \u00b7 240",
+      "used_on": [
+        "home"
+      ],
+      "dark_preview": false,
+      "path": "svg/signal-not-noise.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/signal-not-noise.svg"
+    },
+    {
+      "id": "signals-clock",
+      "group": "illustrations",
+      "title": "Signals clock",
+      "width": 480,
+      "height": 480,
+      "size_class": "Hero \u00b7 480",
+      "used_on": [
+        "solutions/fnol-intake",
+        "solutions/policy-servicing",
+        "solutions/policy-validation",
+        "solutions/post-bind-review",
+        "solutions/signals",
+        "solutions/workers-comp-intake"
+      ],
+      "dark_preview": false,
+      "path": "svg/signals-clock.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/signals-clock.svg"
+    },
+    {
+      "id": "single-tenant",
+      "group": "illustrations",
+      "title": "Single tenant",
+      "width": 80,
+      "height": 80,
+      "size_class": "Small \u00b7 80",
+      "used_on": [
+        "platform",
+        "products",
+        "sovereign",
+        "trust"
+      ],
+      "dark_preview": false,
+      "path": "svg/single-tenant.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/single-tenant.svg"
+    },
+    {
+      "id": "smart-notification",
+      "group": "illustrations",
+      "title": "Smart notification",
+      "width": 240,
+      "height": 242,
+      "size_class": "Feature \u00b7 240",
+      "used_on": [
+        "home"
+      ],
+      "dark_preview": false,
+      "path": "svg/smart-notification.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/smart-notification.svg"
+    },
+    {
+      "id": "smart-triage",
+      "group": "illustrations",
+      "title": "Smart triage",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "platform",
+        "solutions/invoice-validation",
+        "sovereign"
+      ],
+      "dark_preview": false,
+      "path": "svg/smart-triage.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/smart-triage.svg"
+    },
+    {
+      "id": "soc-2",
+      "group": "illustrations",
+      "title": "SOC 2",
+      "width": 80,
+      "height": 82,
+      "size_class": "Small \u00b7 80",
+      "used_on": [
+        "platform",
+        "products",
+        "trust"
+      ],
+      "dark_preview": false,
+      "path": "svg/soc-2.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/soc-2.svg"
+    },
+    {
+      "id": "solutions-hero",
+      "group": "illustrations",
+      "title": "Solutions hero",
+      "width": 480,
+      "height": 480,
+      "size_class": "Hero \u00b7 480",
+      "used_on": [
+        "solutions/signals"
+      ],
+      "dark_preview": false,
+      "path": "svg/solutions-hero.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/solutions-hero.svg"
+    },
+    {
+      "id": "solutions-signals-cases",
+      "group": "illustrations",
+      "title": "Solutions signals cases",
+      "width": 160,
+      "height": 160,
+      "size_class": "Card \u00b7 160",
+      "used_on": [
+        "solutions/signals"
+      ],
+      "dark_preview": false,
+      "path": "svg/solutions-signals-cases.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/solutions-signals-cases.svg"
+    },
+    {
+      "id": "workflow-triggers",
+      "group": "illustrations",
+      "title": "Workflow triggers",
+      "width": 241,
+      "height": 242,
+      "size_class": "Feature \u00b7 240",
+      "used_on": [
+        "home"
+      ],
+      "dark_preview": false,
+      "path": "svg/workflow-triggers.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/svg/workflow-triggers.svg"
+    },
+    {
+      "id": "complex-and-emerging",
+      "group": "icons",
+      "title": "Complex and emerging",
+      "width": 24,
+      "height": 24,
+      "size_class": null,
+      "used_on": [
+        "solutions/signals"
+      ],
+      "dark_preview": false,
+      "path": "icons/complex-and-emerging.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/icons/complex-and-emerging.svg"
+    },
+    {
+      "id": "compliance",
+      "group": "icons",
+      "title": "Compliance",
+      "width": 24,
+      "height": 24,
+      "size_class": null,
+      "used_on": [
+        "solutions/signals"
+      ],
+      "dark_preview": false,
+      "path": "icons/compliance.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/icons/compliance.svg"
+    },
+    {
+      "id": "financial-and-coverage",
+      "group": "icons",
+      "title": "Financial and coverage",
+      "width": 24,
+      "height": 24,
+      "size_class": null,
+      "used_on": [
+        "solutions/signals"
+      ],
+      "dark_preview": false,
+      "path": "icons/financial-and-coverage.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/icons/financial-and-coverage.svg"
+    },
+    {
+      "id": "fraud-and-abuse",
+      "group": "icons",
+      "title": "Fraud and abuse",
+      "width": 24,
+      "height": 24,
+      "size_class": null,
+      "used_on": [
+        "platform/agentic-process-automation",
+        "solutions/signals"
+      ],
+      "dark_preview": false,
+      "path": "icons/fraud-and-abuse.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/icons/fraud-and-abuse.svg"
+    },
+    {
+      "id": "invoice-validation",
+      "group": "icons",
+      "title": "Invoice validation",
+      "width": 24,
+      "height": 24,
+      "size_class": null,
+      "used_on": [
+        "platform/agentic-process-automation"
+      ],
+      "dark_preview": false,
+      "path": "icons/invoice-validation.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/icons/invoice-validation.svg"
+    },
+    {
+      "id": "legal-bad-faith",
+      "group": "icons",
+      "title": "Legal bad faith",
+      "width": 24,
+      "height": 24,
+      "size_class": null,
+      "used_on": [
+        "solutions/signals"
+      ],
+      "dark_preview": false,
+      "path": "icons/legal-bad-faith.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/icons/legal-bad-faith.svg"
+    },
+    {
+      "id": "medical-and-injury",
+      "group": "icons",
+      "title": "Medical and injury",
+      "width": 24,
+      "height": 24,
+      "size_class": null,
+      "used_on": [
+        "solutions/signals"
+      ],
+      "dark_preview": false,
+      "path": "icons/medical-and-injury.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/icons/medical-and-injury.svg"
+    },
+    {
+      "id": "policy-coverage",
+      "group": "icons",
+      "title": "Policy coverage",
+      "width": 24,
+      "height": 24,
+      "size_class": null,
+      "used_on": [
+        "platform/agentic-process-automation"
+      ],
+      "dark_preview": false,
+      "path": "icons/policy-coverage.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/icons/policy-coverage.svg"
+    },
+    {
+      "id": "left-cross-pattern-1",
+      "group": "patterns",
+      "title": "Left cross pattern 1",
+      "width": 216,
+      "height": 348,
+      "size_class": null,
+      "used_on": [
+        "about",
+        "careers",
+        "home",
+        "ias-2026",
+        "platform",
+        "products",
+        "solutions",
+        "sovereign",
+        "support",
+        "trust"
+      ],
+      "dark_preview": false,
+      "path": "patterns/left-cross-pattern-1.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/patterns/left-cross-pattern-1.svg"
+    },
+    {
+      "id": "left-cross-pattern-2",
+      "group": "patterns",
+      "title": "Left cross pattern 2",
+      "width": 239,
+      "height": 222,
+      "size_class": null,
+      "used_on": [
+        "careers",
+        "home",
+        "platform",
+        "platform/agentic-process-automation",
+        "products",
+        "solutions/fnol-intake",
+        "solutions/invoice-validation",
+        "solutions/policy-servicing",
+        "solutions/policy-validation",
+        "solutions/post-bind-review",
+        "solutions/workers-comp-intake",
+        "support"
+      ],
+      "dark_preview": false,
+      "path": "patterns/left-cross-pattern-2.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/patterns/left-cross-pattern-2.svg"
+    },
+    {
+      "id": "left-cross-pattern-3",
+      "group": "patterns",
+      "title": "Left cross pattern 3",
+      "width": 256,
+      "height": 569,
+      "size_class": null,
+      "used_on": [
+        "solutions"
+      ],
+      "dark_preview": false,
+      "path": "patterns/left-cross-pattern-3.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/patterns/left-cross-pattern-3.svg"
+    },
+    {
+      "id": "right-cross-pattern-1",
+      "group": "patterns",
+      "title": "Right cross pattern 1",
+      "width": 247,
+      "height": 512,
+      "size_class": null,
+      "used_on": [
+        "about",
+        "careers",
+        "home",
+        "ias-2026",
+        "platform",
+        "products",
+        "solutions/fnol-intake",
+        "solutions/invoice-validation",
+        "solutions/policy-servicing",
+        "solutions/policy-validation",
+        "solutions/post-bind-review",
+        "solutions/workers-comp-intake",
+        "sovereign",
+        "support",
+        "trust"
+      ],
+      "dark_preview": false,
+      "path": "patterns/right-cross-pattern-1.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/patterns/right-cross-pattern-1.svg"
+    },
+    {
+      "id": "right-cross-pattern-2",
+      "group": "patterns",
+      "title": "Right cross pattern 2",
+      "width": 247,
+      "height": 222,
+      "size_class": null,
+      "used_on": [
+        "careers",
+        "home",
+        "platform",
+        "products",
+        "support"
+      ],
+      "dark_preview": false,
+      "path": "patterns/right-cross-pattern-2.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/patterns/right-cross-pattern-2.svg"
+    },
+    {
+      "id": "right-cross-pattern-3",
+      "group": "patterns",
+      "title": "Right cross pattern 3",
+      "width": 250,
+      "height": 727,
+      "size_class": null,
+      "used_on": [
+        "platform/agentic-process-automation",
+        "solutions",
+        "solutions/fnol-intake",
+        "solutions/invoice-validation",
+        "solutions/policy-servicing",
+        "solutions/policy-validation",
+        "solutions/post-bind-review",
+        "solutions/workers-comp-intake"
+      ],
+      "dark_preview": false,
+      "path": "patterns/right-cross-pattern-3.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/patterns/right-cross-pattern-3.svg"
+    },
+    {
+      "id": "right-cross-pattern-light",
+      "group": "patterns",
+      "title": "Right cross pattern light",
+      "width": 400,
+      "height": 400,
+      "size_class": null,
+      "used_on": [
+        "home",
+        "platform",
+        "platform/agentic-process-automation",
+        "products",
+        "trust"
+      ],
+      "dark_preview": true,
+      "path": "patterns/right-cross-pattern-light.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/patterns/right-cross-pattern-light.svg"
+    },
+    {
+      "id": "right-pattern-4",
+      "group": "patterns",
+      "title": "Right pattern 4",
+      "width": 1,
+      "height": 230,
+      "size_class": null,
+      "used_on": [
+        "solutions"
+      ],
+      "dark_preview": false,
+      "path": "patterns/right-pattern-4.svg",
+      "url": "https://isomer-ai.github.io/brand/illustrations/patterns/right-pattern-4.svg"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M87 82.5527H52.5V177.053H87V82.5527Z" fill="#E8ECFF" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M121.5 108.053H87V231.053H121.5V108.053Z" fill="white" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M156 39.0527H121.5V177.053H156V39.0527Z" fill="#CFCBFF" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M190.5 108.053H156V202.553H190.5V108.053Z" fill="white" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M138.344 65.3028C154.051 65.3028 166.784 52.5698 166.784 36.8628C166.784 21.1558 154.051 8.42285 138.344 8.42285C122.637 8.42285 109.904 21.1558 109.904 36.8628C109.904 52.5698 122.637 65.3028 138.344 65.3028Z" fill="#9188FF" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M138.344 18.1875V44.0325" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M138.344 55.1465C140.001 55.1465 141.344 53.8033 141.344 52.1465C141.344 50.4896 140.001 49.1465 138.344 49.1465C136.687 49.1465 135.344 50.4896 135.344 52.1465C135.344 53.8033 136.687 55.1465 138.344 55.1465Z" fill="#1D232D"/>
+<path d="M197.13 184.012C201.72 189.067 204.51 195.772 204.51 203.137C204.51 218.842 191.775 231.577 176.07 231.577C160.365 231.577 147.63 218.842 147.63 203.137C147.63 187.432 160.365 174.697 176.07 174.697C181.965 174.697 187.425 176.482 191.97 179.557" fill="#9188FF"/>
+<path d="M197.13 184.012C201.72 189.067 204.51 195.772 204.51 203.137C204.51 218.842 191.775 231.577 176.07 231.577C160.365 231.577 147.63 218.842 147.63 203.137C147.63 187.432 160.365 174.697 176.07 174.697C181.965 174.697 187.425 176.482 191.97 179.557" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M162.045 198.501L175.065 213.411L203.025 177.156" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0 140.303H240" stroke="#1D232D" stroke-width="2" stroke-linejoin="round" stroke-dasharray="10.5 10.5"/>
+<path d="M25.5 122.168V158.438L51.1349 140.303L25.5 122.168Z" fill="white" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M217.5 158.438V122.168L191.865 140.303L217.5 158.438Z" fill="white" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+</svg>

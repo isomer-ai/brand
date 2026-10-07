@@ -1,0 +1,15 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M58 55.0349H35V118.035H58V55.0349Z" fill="#E8ECFF" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M81 72.0349H58V154.035H81V72.0349Z" fill="white" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M104 26.0349H81V118.035H104V26.0349Z" fill="#CFCBFF" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M127 72.0349H104V135.035H127V72.0349Z" fill="white" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M92.2295 43.535C102.701 43.535 111.189 35.0463 111.189 24.575C111.189 14.1036 102.701 5.61499 92.2295 5.61499C81.7582 5.61499 73.2695 14.1036 73.2695 24.575C73.2695 35.0463 81.7582 43.535 92.2295 43.535Z" fill="#9188FF" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M92.2295 12.1248V29.3547" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M92.2295 36.7644C93.3341 36.7644 94.2295 35.869 94.2295 34.7644C94.2295 33.6598 93.3341 32.7644 92.2295 32.7644C91.1249 32.7644 90.2295 33.6598 90.2295 34.7644C90.2295 35.869 91.1249 36.7644 92.2295 36.7644Z" fill="#1D232D"/>
+<path d="M131.42 122.675C134.48 126.045 136.34 130.515 136.34 135.425C136.34 145.895 127.85 154.385 117.38 154.385C106.91 154.385 98.4199 145.895 98.4199 135.425C98.4199 124.955 106.91 116.465 117.38 116.465C121.31 116.465 124.95 117.655 127.98 119.705" fill="#9188FF"/>
+<path d="M131.42 122.675C134.48 126.045 136.34 130.515 136.34 135.425C136.34 145.895 127.85 154.385 117.38 154.385C106.91 154.385 98.4199 145.895 98.4199 135.425C98.4199 124.955 106.91 116.465 117.38 116.465C121.31 116.465 124.95 117.655 127.98 119.705" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M108.03 132.334L116.71 142.274L135.35 118.104" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0 93.5349H160" stroke="#1D232D" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 7"/>
+<path d="M17 81.4449V105.625L34.09 93.535L17 81.4449Z" fill="white" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M145 105.625V81.4451L127.91 93.5351L145 105.625Z" fill="white" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+</svg>

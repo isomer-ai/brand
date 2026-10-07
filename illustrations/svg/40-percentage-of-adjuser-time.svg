@@ -1,0 +1,30 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M87.5 113.46L154.52 30.6901C179.47 50.9001 194 81.3501 194 113.46C194 171.88 145.92 219.96 87.5 219.96V113.46Z" fill="#FFE0D4"/>
+<path d="M87.5 193.96C131.959 193.96 168 157.919 168 113.46C168 69.0012 131.959 32.9601 87.5 32.9601C43.0411 32.9601 7 69.0012 7 113.46C7 157.919 43.0411 193.96 87.5 193.96Z" fill="#FFE0D4"/>
+<path d="M87.5 113.46L138.16 50.9C157.02 66.17 168 89.19 168 113.46C168 157.62 131.66 193.96 87.5 193.96V113.46Z" fill="white"/>
+<path d="M87.5 193.96C131.959 193.96 168 157.919 168 113.46C168 69.0012 131.959 32.9601 87.5 32.9601C43.0411 32.9601 7 69.0012 7 113.46C7 157.919 43.0411 193.96 87.5 193.96Z" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M87.5 113.46L154.52 30.6901C179.47 50.9001 194 81.3501 194 113.46C194 171.88 145.92 219.96 87.5 219.96V113.46Z" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M220 108.96H174V50.9601H210L220 60.9601V108.96Z" fill="white" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M183.71 64.37H210.28" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M183.71 75.1698H210.28" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M183.71 85.9601H210.28" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M177 212.96H136V163.99H170C172.73 166.72 174.27 168.26 177 170.99V212.96Z" fill="white" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M233 156.87H195V108.96H226C228.73 111.69 230.27 113.23 233 115.96V156.87Z" fill="white" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M203.4 120.73H224.6" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M203.4 129.34H224.6" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M203.4 137.96H224.6" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M145.9 175.73H167.1" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M145.9 184.34H167.1" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M145.9 192.96H167.1" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M158.23 47.46C168.701 47.46 177.19 38.9713 177.19 28.5C177.19 18.0287 168.701 9.54004 158.23 9.54004C147.758 9.54004 139.27 18.0287 139.27 28.5C139.27 38.9713 147.758 47.46 158.23 47.46Z" fill="#FF9E6E" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M158.229 16.0498V33.2798" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M158.229 40.6898C159.334 40.6898 160.229 39.7944 160.229 38.6898C160.229 37.5852 159.334 36.6898 158.229 36.6898C157.125 36.6898 156.229 37.5852 156.229 38.6898C156.229 39.7944 157.125 40.6898 158.229 40.6898Z" fill="#1D232D"/>
+<path d="M171.23 230.46C181.701 230.46 190.19 221.971 190.19 211.5C190.19 201.029 181.701 192.54 171.23 192.54C160.758 192.54 152.27 201.029 152.27 211.5C152.27 221.971 160.758 230.46 171.23 230.46Z" fill="#FF9E6E" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M171.229 199.05V216.28" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M171.229 223.69C172.334 223.69 173.229 222.794 173.229 221.69C173.229 220.585 172.334 219.69 171.229 219.69C170.125 219.69 169.229 220.585 169.229 221.69C169.229 222.794 170.125 223.69 171.229 223.69Z" fill="#1D232D"/>
+<path d="M174 84.9601H135V123.96H174V84.9601Z" fill="#FF9E6E" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M213.5 167.46H188.5V192.46H213.5V167.46Z" fill="#FF9E6E" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M135 123.96H98V163.54H135V123.96Z" fill="white" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M154.5 116.78C155.605 116.78 156.5 115.884 156.5 114.78C156.5 113.675 155.605 112.78 154.5 112.78C153.395 112.78 152.5 113.675 152.5 114.78C152.5 115.884 153.395 116.78 154.5 116.78Z" fill="#1D232D"/>
+<path d="M154.37 109.12V107.64C154.37 105.46 155.57 103.46 157.5 102.44H157.52C159.34 101.47 160.47 99.58 160.47 97.52C160.47 94.45 157.98 91.96 154.91 91.96H154.33C151.26 91.96 148.77 94.45 148.77 97.52" stroke="#1D232D" stroke-width="2" stroke-miterlimit="10"/>
+</svg>
