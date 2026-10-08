@@ -115,7 +115,8 @@ def build():
         svg = f.read_text()
         w, h = view_box(svg)
         items.append({
-            "id": f.stem, "group": "new", "title": title(f.stem),
+            "id": f.stem, "group": "new",
+            "title": html.unescape(m.group(1)) if (m := re.search(r"<title>(.*?)</title>", svg)) else title(f.stem),
             "width": w, "height": h, "size_class": size_class("illustrations", w),
             "used_on": [], "new": True, "generated_by": "Claude (Anthropic AI)", "dark_preview": False,
             "path": f"new/{f.name}", "url": PAGES + f"new/{f.name}",
