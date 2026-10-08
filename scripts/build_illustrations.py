@@ -209,10 +209,15 @@ header .links{{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font-siz
 .bar{{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 0}}
 .bar .wrap{{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}}
 .bar input{{flex:1 1 220px;min-width:0;font:inherit;font-size:15px;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}}
-.chips,.pvs{{display:flex;flex-wrap:wrap;gap:4px}}
-.chips button,.pvs button{{font:600 13px var(--isomer-font-body);border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:999px;padding:6px 11px;cursor:pointer}}
-.chips button[aria-pressed=true],.pvs button[aria-pressed=true]{{background:var(--ink);border-color:var(--ink);color:#fff}}
-.pvs span{{font-size:13px;color:var(--muted);align-self:center;margin-right:4px}}
+.chips{{display:flex;flex-wrap:wrap;gap:4px}}
+.chips button{{font:600 13px var(--isomer-font-body);border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:999px;padding:6px 11px;cursor:pointer}}
+.chips button[aria-pressed=true]{{background:var(--ink);border-color:var(--ink);color:#fff}}
+.pvw{{display:flex;align-items:center;gap:8px}}
+.pvw>span{{font-size:13px;color:var(--muted)}}
+.pvs{{display:inline-flex;padding:3px;gap:2px;border:1px solid var(--line);background:var(--surface);border-radius:999px}}
+.pvs button{{font:600 13px var(--isomer-font-body);border:0;background:none;color:var(--muted);border-radius:999px;padding:5px 12px;cursor:pointer}}
+.pvs button[aria-checked=true]{{background:var(--ink);color:#fff}}
+.pvs button:focus-visible{{outline:2px solid var(--purple);outline-offset:1px}}
 .grp{{padding:36px 0 8px}}
 .grp-h{{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-bottom:16px}}
 .grp-h h2{{margin:0;font-size:26px;letter-spacing:-.01em}}
@@ -252,7 +257,7 @@ footer{{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 48px;col
 <div class="bar"><div class="wrap">
 <input type="search" id="q" placeholder="Search by name or page" aria-label="Search illustrations">
 <div class="chips" role="group" aria-label="Filter">{chips}</div>
-<div class="pvs" role="group" aria-label="Preview background"><span>Preview on</span><button type="button" data-pv="white" aria-pressed="true">White</button><button type="button" data-pv="gray" aria-pressed="false">Light gray</button><button type="button" data-pv="dark" aria-pressed="false">Isomer Blue</button></div>
+<div class="pvw"><span id="pvl">Preview on</span><div class="pvs" role="radiogroup" aria-labelledby="pvl"><button type="button" role="radio" data-pv="white" aria-checked="true">White</button><button type="button" role="radio" data-pv="gray" aria-checked="false" tabindex="-1">Light gray</button><button type="button" role="radio" data-pv="dark" aria-checked="false" tabindex="-1">Isomer Blue</button></div></div>
 </div></div>
 <main class="wrap">
 {sections}
@@ -271,7 +276,11 @@ function apply(){{const t=q.value.trim().toLowerCase();let shown=0;
  $("#empty").style.display=shown?"none":"block"}}
 q.addEventListener("input",apply);
 $$(".chips button").forEach(b=>b.addEventListener("click",()=>{{f=b.dataset.f;$$(".chips button").forEach(x=>x.setAttribute("aria-pressed",x===b));apply()}}));
-$$(".pvs button").forEach(b=>b.addEventListener("click",()=>{{document.body.dataset.pv=b.dataset.pv;$$(".pvs button").forEach(x=>x.setAttribute("aria-pressed",x===b))}}));
+const pvb=$$(".pvs button");
+function pick(b){{document.body.dataset.pv=b.dataset.pv;pvb.forEach(x=>{{x.setAttribute("aria-checked",x===b);x.tabIndex=x===b?0:-1}})}}
+pvb.forEach((b,i)=>{{b.addEventListener("click",()=>pick(b));
+ b.addEventListener("keydown",ev=>{{const d={{ArrowRight:1,ArrowDown:1,ArrowLeft:-1,ArrowUp:-1}}[ev.key];if(!d)return;ev.preventDefault();
+  const n=pvb[(i+d+pvb.length)%pvb.length];pick(n);n.focus()}})}});
 const toast=$("#toast");let tt;function say(m){{toast.textContent=m;toast.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove("on"),1400)}}
 $$("[data-url]").forEach(b=>b.addEventListener("click",()=>{{const u=b.dataset.url;
  try{{navigator.clipboard.writeText(u).then(()=>say("Copied URL"),()=>say(u))}}catch(e){{say(u)}}}}));
